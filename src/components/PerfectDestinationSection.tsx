@@ -1,0 +1,82 @@
+import destSahara from "@/assets/dest-sahara.jpg";
+import destMaldives from "@/assets/dest-maldives.jpg";
+import destJapan from "@/assets/dest-japan.jpg";
+import pkgPeru from "@/assets/pkg-peru.jpg";
+import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const destinations = [
+  {
+    name: "Morocco",
+    image: destSahara,
+    rating: 4.9,
+    details: "7 Days • From ₹75,000",
+  },
+  {
+    name: "Maldives",
+    image: destMaldives,
+    rating: 5.0,
+    details: "5 Days • From ₹200,000",
+  },
+  {
+    name: "Japan",
+    image: destJapan,
+    rating: 4.8,
+    details: "10 Days • From ₹150,000",
+  },
+  {
+    name: "Peru",
+    image: pkgPeru,
+    rating: 4.9,
+    details: "8 Days • From ₹110,000",
+  },
+];
+
+const PerfectDestinationSection = () => {
+  return (
+    <section className="py-20 md:py-32 bg-white">
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="mb-12">
+          <h2 className="text-4xl md:text-5xl lg:text-[56px] font-display font-bold text-[#111827] leading-tight mb-4 max-w-3xl">
+            Your Journey to the Perfect Destination Begins Here
+          </h2>
+          <p className="text-gray-500 font-body text-lg max-w-2xl">
+            Handpicked destinations that offer unique experiences, stunning landscapes,
+            and unforgettable memories.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {destinations.map((dest, i) => (
+            <Link
+              to="/packages"
+              key={i}
+              className="relative group rounded-3xl overflow-hidden cursor-pointer h-[320px] sm:h-[400px] lg:h-[500px] block"
+            >
+              <img
+                src={dest.image}
+                alt={dest.name}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
+              
+              <div className="absolute bottom-0 left-0 w-full p-6 text-white flex flex-col justify-end">
+                <div className="flex items-center gap-1.5 mb-2">
+                  <Star className="w-4 h-4 fill-[#f97316] text-[#f97316]" />
+                  <span className="text-sm font-medium">{dest.rating}</span>
+                </div>
+                <h3 className="text-2xl font-display font-bold mb-1">
+                  {dest.name}
+                </h3>
+                <p className="text-white/80 text-sm font-medium">
+                  {dest.details}
+                </p>              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PerfectDestinationSection;
