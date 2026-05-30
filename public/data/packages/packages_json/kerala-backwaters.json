@@ -1,0 +1,61 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Delhi to Cochin and Munnar Travel",
+      "description": "Fly from Delhi to Cochin (flight included). Upon arrival in Cochin, take a scenic drive to Munnar (about 4 hours) through beautiful spice plantations and waterfalls. Check into your resort and relax among the tea gardens."
+    },
+    {
+      "day": "Day 2",
+      "title": "Munnar Sightseeing Tour",
+      "description": "Visit Eravikulam National Park to see the rare Nilgiri Tahr mountain goats, then visit the Tea Museum and Mattupetty Dam. In the afternoon, explore Echo Point and Kundala Lake. Spend the evening shopping for local spices and tea."
+    },
+    {
+      "day": "Day 3",
+      "title": "Munnar to Alleppey Backwaters Travel",
+      "description": "Drive to Alleppey (about 5 hours) and check into a private houseboat. Enjoy a relaxing cruise along the calm backwaters and have traditional Kerala meals cooked onboard. Watch a beautiful sunset over the rice fields and spend the night on the houseboat."
+    },
+    {
+      "day": "Day 4",
+      "title": "Alleppey to Cochin and Delhi Return",
+      "description": "Leave the houseboat and drive to Cochin. Enjoy a sightseeing tour of Fort Kochi, see the famous Chinese Fishing Nets, and walk through Jew Town. In the evening, take your flight back to Delhi."
+    }
+  ],
+  "gallery": [],
+  "title": "Kerala Magic Escape",
+  "location": "Kerala, India",
+  "duration": "4 Days / 3 Nights",
+  "price": 25000,
+  "rating": 4.79,
+  "description": "Experience Kerala’s lush greenery, tranquil backwaters, and spice-scented hills in this 4-day getaway from Delhi. Enjoy houseboat stays, tea gardens, and cultural delights in Munnar & Alleppey.",
+  "highlights": [
+    "Scenic flights and drive to Munnar through tea gardens",
+    "Guided sightseeing of Munnar and Eravikulam National Park",
+    "Overnight stay and dining on a private backwater houseboat",
+    "Fort Kochi city tour before departure"
+  ],
+  "image": "/data/packages/packages_image/kerala-backwaters/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

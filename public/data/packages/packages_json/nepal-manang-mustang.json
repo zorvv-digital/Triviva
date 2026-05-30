@@ -1,0 +1,87 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Kathmandu",
+      "description": "Meet our representative at Tribhuvan International Airport in Kathmandu. Check in at your hotel and attend a short briefing about your upcoming trek. Enjoy a relaxing evening on your own. Spend the night in Kathmandu."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kathmandu to Pokhara Travel",
+      "description": "Enjoy a scenic drive or take a short flight to Pokhara. In the evening, enjoy a peaceful walk and boat ride on Phewa Lake. Spend the night in Pokhara."
+    },
+    {
+      "day": "Day 3",
+      "title": "Pokhara to Manang Valley",
+      "description": "Drive towards the beautiful Manang Valley through Besisahar and Chame. See the amazing views of the Annapurna mountain ranges and the Marsyangdi River. Spend the night in Manang."
+    },
+    {
+      "day": "Day 4",
+      "title": "Manang Valley Sightseeing",
+      "description": "Spend the day resting in Manang Valley to get used to the high altitude. Visit the beautiful Tilicho Lake, the historic Braga Monastery, and nearby Tibetan villages to see the local culture. Spend the night in Manang."
+    },
+    {
+      "day": "Day 5",
+      "title": "Manang to Mustang (Jomsom)",
+      "description": "Drive to Jomsom, which is the gateway to the Mustang region. Explore the local markets and enjoy the beautiful views of the Kali Gandaki Valley. Spend the night in Jomsom."
+    },
+    {
+      "day": "Day 6",
+      "title": "Mustang Exploration: Muktinath and Kagbeni",
+      "description": "Visit the holy Muktinath Temple, which is a sacred place for both Hindus and Buddhists. Explore Kagbeni Village to see the Tibetan culture and old monasteries. Spend the night in the Mustang region."
+    },
+    {
+      "day": "Day 7",
+      "title": "Upper Mustang Excursion to Lo Manthang",
+      "description": "Take a scenic drive to the ancient walled city of Lo Manthang. Walk through its narrow streets and see the historic royal palace. Visit beautiful Buddhist monasteries that are hundreds of years old. Spend the night in Lo Manthang."
+    },
+    {
+      "day": "Day 8",
+      "title": "Lo Manthang Exploration",
+      "description": "Spend another day exploring Lo Manthang. Visit the mysterious sky caves nearby and meet the local people to learn about their daily life. Enjoy the beautiful mountain scenery around the valley. Spend the night in Lo Manthang."
+    },
+    {
+      "day": "Day 9",
+      "title": "Mustang to Pokhara Departure",
+      "description": "Travel back to Pokhara by road or by a short flight. From Pokhara, you can return to Kathmandu for your flight back home. Your amazing Himalayan journey ends here."
+    }
+  ],
+  "gallery": [],
+  "title": "Manang & Mustang Adventure",
+  "location": "Nepal",
+  "duration": "9 Days / 8 Nights",
+  "price": 25000,
+  "rating": 4.93,
+  "description": "Explore the hidden gems of Nepal on this 9-day tour of the Manang and Mustang regions. Witness stunning mountain landscapes, ancient monasteries, high-altitude villages, and unique Tibetan culture. Perfect for nature lovers and adventurers.",
+  "highlights": [
+    "Scenic travel from Kathmandu to Pokhara and Phewa Lake boating",
+    "Rest and sightseeing day in Manang Valley to adjust to the high altitude",
+    "Pilgrimage visit to the sacred Muktinath Temple and Kagbeni Village",
+    "Excursion to the ancient walled city of Lo Manthang in Upper Mustang"
+  ],
+  "image": "/data/packages/packages_image/nepal-manang-mustang/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Mountain",
+    "Adventure Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

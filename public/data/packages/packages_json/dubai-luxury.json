@@ -1,0 +1,66 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Dubai and Dhow Cruise Dinner",
+      "description": "Arrive at Dubai International Airport. Meet our representative and transfer to your hotel for check-in. In the evening, enjoy a traditional wooden Dhow cruise along the Creek or Marina, featuring a buffet dinner and live onboard entertainment."
+    },
+    {
+      "day": "Day 2",
+      "title": "Dubai City Tour and Burj Khalifa",
+      "description": "Take a half-day guided city tour. Visit the Dubai Museum at Al Fahidi Fort, and stop for photos at Jumeirah Mosque, Palm Jumeirah (outside Atlantis), and the iconic Burj Al Arab. Walk through Dubai Marina and the JBR Walk. In the afternoon, visit the observation deck on levels 124 and 125 of the Burj Khalifa, followed by the Fountain Show at Dubai Mall."
+    },
+    {
+      "day": "Day 3",
+      "title": "Desert Jeep Safari and BBQ Camp Dinner",
+      "description": "Enjoy a free morning for shopping or optional activities. In the afternoon, set off in a 4x4 vehicle for a thrilling desert safari. Try sandboarding, take a camel ride, get a henna tattoo, and enjoy a buffet BBQ dinner accompanied by traditional Belly and Tanoura dances at the camp."
+    },
+    {
+      "day": "Day 4",
+      "title": "Leisure Day or Optional Abu Dhabi Day Trip",
+      "description": "Enjoy a free day to relax or choose an optional day tour to Abu Dhabi to visit the magnificent Sheikh Zayed Grand Mosque, Yas Island, and Ferrari World. In the evening, you can optionally visit the Global Village or Miracle Garden."
+    },
+    {
+      "day": "Day 5",
+      "title": "Departure from Dubai",
+      "description": "Enjoy breakfast at your hotel and check out. Transfer to Dubai International Airport for your departure flight."
+    }
+  ],
+  "gallery": [],
+  "title": "Dubai Delight",
+  "location": "Dubai, UAE",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.93,
+  "description": "Experience the modern architecture and desert adventures of Dubai on this 5-day luxury tour. Visit the Burj Khalifa observation deck, watch the Fountain Show at Dubai Mall, and enjoy a desert safari with a BBQ dinner.",
+  "highlights": [
+    "Dhow cruise dinner along Dubai Marina or Creek",
+    "Entry ticket to levels 124 and 125 of the Burj Khalifa tower",
+    "4x4 desert jeep safari with dune bashing and camel riding",
+    "Free day for shopping or optional Abu Dhabi day tour"
+  ],
+  "image": "/data/packages/packages_image/dubai-luxury/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Adventure Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

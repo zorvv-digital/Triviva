@@ -3,8 +3,10 @@ import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useContactInfo } from "@/hooks/useContactInfo";
 
 const Contact = () => {
+  const { data } = useContactInfo();
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -67,10 +69,10 @@ const Contact = () => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#fef5f0] rounded-bl-[100px] -mr-10 -mt-10" />
                 
                 {[
-                  { icon: MapPin, title: "Visit Us", lines: ["123 Travel Lane", "Adventure City, AC 10001"] },
-                  { icon: Phone, title: "Call Us", lines: ["+1 (555) 123-4567", "+1 (555) 987-6543"] },
-                  { icon: Mail, title: "Email Us", lines: ["hello@voyago.com", "bookings@voyago.com"] },
-                  { icon: Clock, title: "Working Hours", lines: ["Mon – Fri: 9am – 7pm", "Sat: 10am – 4pm"] },
+                  { icon: MapPin, title: data?.contact.address.title || "Visit Us", lines: data?.contact.address.lines || ["123 Travel Lane", "Adventure City, AC 10001"] },
+                  { icon: Phone, title: data?.contact.phone.title || "Call Us", lines: data?.contact.phone.lines || ["+1 (555) 123-4567", "+1 (555) 987-6543"] },
+                  { icon: Mail, title: data?.contact.email.title || "Email Us", lines: data?.contact.email.lines || ["hello@triviva.com", "bookings@triviva.com"] },
+                  { icon: Clock, title: data?.contact.workingHours.title || "Working Hours", lines: data?.contact.workingHours.lines || ["Mon – Fri: 9am – 7pm", "Sat: 10am – 4pm"] },
                 ].map((item, i) => (
                   <div key={item.title} className="flex gap-5 relative z-10 group">
                     <div className="w-14 h-14 rounded-2xl bg-[#fef5f0] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">

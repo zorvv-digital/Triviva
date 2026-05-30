@@ -1,9 +1,27 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 
-import testimonials from "@/data/testimonials.json";
+interface Testimonial {
+  name: string;
+  text: string;
+  rating: number;
+  avatar: string;
+}
 
 const TestimonialsSection = () => {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+
+  useEffect(() => {
+    fetch("/data/testimonials.json")
+      .then((res) => res.json())
+      .then((data: Testimonial[]) => setTestimonials(data))
+      .catch((err) => console.error("Error fetching testimonials:", err));
+  }, []);
+
+  if (testimonials.length === 0) {
+    return null;
+  }
   return (
     <section className="py-24 section-padding overflow-hidden">
       <div className="text-center mb-16">
@@ -40,7 +58,7 @@ const TestimonialsSection = () => {
           {[...testimonials, ...testimonials].map((t, i) => (
             <div
               key={i}
-              className="card-elevated p-8 flex flex-col whitespace-normal w-[350px] md:w-[400px] flex-shrink-0"
+              className="bg-card rounded-3xl overflow-hidden p-8 flex flex-col whitespace-normal w-[350px] md:w-[400px] flex-shrink-0 shadow-[0_4px_30px_-8px_rgba(17,24,39,0.08)] border border-slate-100/50"
             >
               <Quote className="w-8 h-8 text-primary/20 mb-4" />
               <p className="text-foreground/80 font-body text-sm md:text-base leading-relaxed flex-1 mb-6">
@@ -57,7 +75,6 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <p className="font-body text-sm font-semibold text-foreground">{t.name}</p>
-                  <p className="font-body text-xs text-muted-foreground">{t.location}</p>
                 </div>
               </div>
             </div>

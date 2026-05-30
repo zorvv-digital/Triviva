@@ -1,0 +1,75 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Delhi to Haridwar Transfer and Ganga Aarti",
+      "description": "Meet our team in Delhi and take a comfortable drive to Haridwar, which takes about 5 to 6 hours. Check into your hotel and relax. In the evening, go to Har Ki Pauri to witness the beautiful and divine Ganga Aarti ceremony by the river."
+    },
+    {
+      "day": "Day 2",
+      "title": "Haridwar Local Temple Sightseeing",
+      "description": "Start your day with an optional holy dip in the River Ganges. Ride the cable car to visit Mansa Devi Temple and Chandi Devi Temple on the hilltops for great views of the city. Later, visit the Daksha Mahadev Temple and Bharat Mata Mandir, with free time to explore the local markets in the evening."
+    },
+    {
+      "day": "Day 3",
+      "title": "Day Trip to Rishikesh and Triveni Ghat Aarti",
+      "description": "Take a short morning drive to the spiritual town of Rishikesh (about 30 minutes away). Visit the famous suspension bridges of Laxman Jhula and Ram Jhula, and enjoy the evening Ganga Aarti at Triveni Ghat before returning to Haridwar for the night."
+    },
+    {
+      "day": "Day 4",
+      "title": "Guided Temples and Ashrams Tour",
+      "description": "Visit the sacred Maya Devi Temple and explore Pawan Dham Temple along with Sapt Rishi Ashram. You can optionally participate in a peaceful meditation or yoga session at an ashram. Enjoy the evening shopping in the local markets."
+    },
+    {
+      "day": "Day 5",
+      "title": "Haridwar Ghats and Local Culture",
+      "description": "Visit Vishnu Ghat and Gau Ghat for a spiritual walk. Walk through the busy local bazaars to shop for handicrafts and religious souvenirs. Taste the authentic vegetarian street food of Haridwar and relax in the evening."
+    },
+    {
+      "day": "Day 6",
+      "title": "Optional Rishikesh Adventure or Leisure Day",
+      "description": "Choose to head back to Rishikesh for optional adventure sports like river rafting, camping, or bungee jumping. Alternatively, enjoy a relaxed day exploring more temples and ashrams around Haridwar at your own pace."
+    },
+    {
+      "day": "Day 7",
+      "title": "Haridwar to Delhi Departure",
+      "description": "After breakfast, check out of your hotel and drive back to Delhi to conclude your spiritual holiday."
+    }
+  ],
+  "gallery": [],
+  "title": "Haridwar & Rishikesh Spiritual",
+  "location": "Haridwar, India",
+  "duration": "7 Days / 6 Nights",
+  "price": 25000,
+  "rating": 4.77,
+  "description": "Explore the spiritual towns of Haridwar and Rishikesh on this 7-day tour from Delhi. Witness the beautiful Ganga Aarti at Har Ki Pauri, visit historic temples via cable car, and walk along the holy River Ganges.",
+  "highlights": [
+    "Attend the divine evening Ganga Aarti at Har Ki Pauri in Haridwar",
+    "Ride the hilltop cable cars to Mansa Devi and Chandi Devi temples",
+    "Explore the suspension bridges and ashrams of Rishikesh",
+    "Spiritual walk along the Vishnu Ghat and Gau Ghat"
+  ],
+  "image": "/data/packages/packages_image/haridwar-spiritual/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Devotional Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "February",
+    "March",
+    "April",
+    "May",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

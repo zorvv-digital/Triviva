@@ -1,0 +1,67 @@
+{
+  "included": [
+    "Overwater villa",
+    "All-inclusive dining",
+    "Seaplane transfers",
+    "Spa treatments",
+    "Water sports"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival",
+      "description": "Seaplane transfer to your overwater villa. Welcome champagne and sunset viewing."
+    },
+    {
+      "day": "Day 2",
+      "title": "Ocean Adventures",
+      "description": "Morning snorkeling at the house reef. Afternoon dolphin cruise."
+    },
+    {
+      "day": "Day 3",
+      "title": "Wellness & Relaxation",
+      "description": "Sunrise yoga on the water. Couples spa journey. Underwater restaurant dinner."
+    },
+    {
+      "day": "Days 4–5",
+      "title": "Island Hopping",
+      "description": "Visit local islands, enjoy a private beach picnic, and depart."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/maldives-luxury/02_gallery.jpg",
+    "/data/packages/packages_image/maldives-luxury/03_gallery.webp"
+  ],
+  "title": "Maldives Paradise",
+  "location": "South Malé Atoll",
+  "duration": "5 Days / 4 Nights",
+  "price": 200000,
+  "rating": 4.95,
+  "description": "The ultimate luxury escape. Overwater villas, private beaches, and crystal-clear waters in one of the world's most exclusive destinations.",
+  "highlights": [
+    "Overwater villa stay",
+    "Private sunset dolphin cruise",
+    "Underwater restaurant dining",
+    "Coral reef snorkeling"
+  ],
+  "image": "/data/packages/packages_image/maldives-luxury/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "Beach",
+    "Romantic",
+    "Luxury",
+    "Honeymoon",
+    "Wellness",
+    "International"
+  ],
+  "priority": 5,
+  "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April"
+  ],
+  "showInHero": true
+}

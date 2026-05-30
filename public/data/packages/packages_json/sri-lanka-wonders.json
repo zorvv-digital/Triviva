@@ -1,0 +1,87 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Colombo and Transfer to Negombo",
+      "description": "Arrive at Bandaranaike International Airport in Colombo. Meet our representative and transfer to the beach town of Negombo. Spend your day relaxing by the beach or lagoon."
+    },
+    {
+      "day": "Day 2",
+      "title": "Pinnawala Elephant Orphanage and Sigiriya",
+      "description": "After breakfast, check out and visit the Pinnawala Elephant Orphanage to see rescued elephants. Drive to Sigiriya. In the evening, enjoy a local village safari or attend a traditional cultural show."
+    },
+    {
+      "day": "Day 3",
+      "title": "Sigiriya Rock Fortress, Dambulla Caves, and Kandy",
+      "description": "Climb the famous 5th-century Sigiriya Rock Fortress in the morning. Afterwards, visit the Dambulla Cave Temple, a ancient Buddhist rock temple complex. Drive to Kandy, the cultural capital of Sri Lanka, for your overnight stay."
+    },
+    {
+      "day": "Day 4",
+      "title": "Guided Kandy City Sightseeing",
+      "description": "Explore the highlights of Kandy. Visit the sacred Temple of the Tooth Relic and stroll through the Royal Botanical Gardens. Visit a local gem museum and watch a traditional Sri Lankan dance performance."
+    },
+    {
+      "day": "Day 5",
+      "title": "Kandy to Nuwara Eliya Tea Country",
+      "description": "Take a scenic drive to the cool hill station of Nuwara Eliya, passing beautiful waterfalls. Tour a working tea factory and plantation, and enjoy a walk around the colonial streets and Gregory Lake."
+    },
+    {
+      "day": "Day 6",
+      "title": "Scenic Ella Train Ride and Travel to Yala",
+      "description": "Take a beautiful train ride from Nanu Oya to the mountain town of Ella. See the famous Nine Arch Bridge, and continue your drive to Yala for your overnight stay."
+    },
+    {
+      "day": "Day 7",
+      "title": "Yala National Park Safari and Bentota",
+      "description": "Wake up early for a guided jeep safari in Yala National Park to spot leopards, wild elephants, and birds. Afterwards, drive to the coastal resort town of Bentota."
+    },
+    {
+      "day": "Day 8",
+      "title": "Bentota Beach Day and Galle Fort Excursion",
+      "description": "Enjoy a free day on the beach in Bentota. Take an optional excursion to the historic Galle Fort, visit a sea turtle hatchery, and enjoy a boat safari on the Madu River."
+    },
+    {
+      "day": "Day 9",
+      "title": "Colombo City Tour and Departure",
+      "description": "Drive back to Colombo for a brief city tour to see the main sights, before transferring to the airport for your return flight home."
+    }
+  ],
+  "gallery": [],
+  "title": "Wonders of Sri Lanka",
+  "location": "Sri Lanka",
+  "duration": "9 Days / 8 Nights",
+  "price": 25000,
+  "rating": 4.95,
+  "description": "Discover the ancient history, wildlife, and beaches of Sri Lanka on this 9-day tour. Climb the Sigiriya fortress, visit the temples of Kandy, take a train ride through tea country, and enjoy a safari in Yala National Park.",
+  "highlights": [
+    "Climb the UNESCO-listed Sigiriya Rock Fortress",
+    "Visit the sacred Temple of the Tooth Relic in Kandy",
+    "Scenic train ride through tea plantations to Ella",
+    "Jeep safari in Yala National Park and beach stay in Bentota"
+  ],
+  "image": "/data/packages/packages_image/sri-lanka-wonders/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Beach",
+    "Honeymoon"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

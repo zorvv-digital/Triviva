@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import EthosSection from "@/components/EthosSection";
 import PerfectDestinationSection from "@/components/PerfectDestinationSection";
 import DestinationsSection from "@/components/DestinationsSection";
+import SeasonalSuggestionsSection from "@/components/SeasonalSuggestionsSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
@@ -15,6 +16,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <PerfectDestinationSection />
+      <SeasonalSuggestionsSection />
       <DestinationsSection />
       <FeaturesSection />
       <EthosSection />

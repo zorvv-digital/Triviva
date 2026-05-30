@@ -1,0 +1,68 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Delhi to Haridwar and Ganga Aarti",
+      "description": "Depart from Delhi and enjoy a comfortable 5-hour drive to Haridwar. Check in at your hotel. In the evening, visit Har Ki Pauri to witness the famous Ganga Aarti ceremony by the holy river."
+    },
+    {
+      "day": "Day 2",
+      "title": "Rishikesh Sightseeing and Yoga Capital Visit",
+      "description": "Spend the day exploring Rishikesh. Experience the morning rituals at Triveni Ghat, visit the historic Beatles Ashram, and walk across the Laxman Jhula suspension bridge. Optional white-water river rafting on the Ganges is available."
+    },
+    {
+      "day": "Day 3",
+      "title": "Mussoorie Queen of Hills Sightseeing",
+      "description": "Drive up to the beautiful hill station of Mussoorie, passing by the Prakasheshwar Mahadev Temple. Visit Kempty Falls and enjoy views from Gun Hill before shopping on the Mall Road in the evening."
+    },
+    {
+      "day": "Day 4",
+      "title": "Dhanaulti Eco Retreat Excursion",
+      "description": "Take a day trip to Dhanaulti. Hike up to the Surkanda Devi Temple, walk through the pine-forested Eco Park, and enjoy a warm bonfire under the stars in the evening."
+    },
+    {
+      "day": "Day 5",
+      "title": "Return Drive from Mussoorie to Delhi",
+      "description": "Enjoy a final morning cup of tea with mountain views, check out, and take a private drive back to Delhi for your onward flight."
+    }
+  ],
+  "gallery": [],
+  "title": "Divine Uttarakhand Journey",
+  "location": "Uttarakhand, India",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.87,
+  "description": "Discover the sacred rivers and beautiful mountain views of Uttarakhand on this 5-day spiritual journey. Witness the Ganga Aarti, explore the ashrams of Rishikesh, and relax in the cool mountain air of Mussoorie and Dhanaulti.",
+  "highlights": [
+    "Experience the evening Ganga Aarti at Har Ki Pauri in Haridwar",
+    "Guided sightseeing of suspension bridges and ashrams in Rishikesh",
+    "Visit Kempty Falls and enjoy valley views in Mussoorie",
+    "Take a nature walk in the quiet pine forests of Dhanaulti"
+  ],
+  "image": "/data/packages/packages_image/uttarakhand-divine/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Adventure Tour",
+    "Devotional Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

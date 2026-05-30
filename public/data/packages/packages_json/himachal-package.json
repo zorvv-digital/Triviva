@@ -1,0 +1,68 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Shimla and Mall Road Walk",
+      "description": "Upon arrival in Shimla, transfer to your hotel and complete check-in. In the afternoon, visit local landmarks like Scandal Point, the Ridge, and Christ Church, followed by a leisurely walk along Mall Road to sample local foods."
+    },
+    {
+      "day": "Day 2",
+      "title": "Excursion to Kufri and Return to Shimla",
+      "description": "After breakfast, take a scenic drive to the adventure resort of Kufri. Enjoy panoramic Himalayan views, horse riding, and a visit to Indira Tourist Park. Return to Shimla in the afternoon for some free time."
+    },
+    {
+      "day": "Day 3",
+      "title": "Scenic Drive from Shimla to Manali",
+      "description": "Check out from your hotel and embark on a scenic 6-7 hour drive to Manali. Stop en route to view the Pandoh Dam and travel through the beautiful Kullu Valley. Arrive in Manali and enjoy a relaxing evening at leisure."
+    },
+    {
+      "day": "Day 4",
+      "title": "Manali Sightseeing and Solang Valley Adventure",
+      "description": "Explore the historic Hadimba Temple, Vashisht Hot Springs, and Old Manali. Later, drive to Solang Valley to experience adventure sports like paragliding, zorbing, or ride the ropeway. Spend your evening shopping at Manali's Mall Road."
+    },
+    {
+      "day": "Day 5",
+      "title": "Departure from Manali",
+      "description": "Enjoy breakfast at the hotel, check out, and proceed to the airport or Volvo bus stand for your onward departure journey."
+    }
+  ],
+  "gallery": [],
+  "title": "Himachal Delight",
+  "location": "Himachal Pradesh, India",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.97,
+  "description": "Enjoy a thrilling 5-day Himachal getaway covering the beautiful hill stations of Shimla, Kufri, and Manali. Includes comfortable stays, daily breakfast, guided local sightseeing, and adventure excursions to Solang Valley.",
+  "highlights": [
+    "Explore Shimla's historic Ridge and Mall Road",
+    "Day trip to Kufri for horse riding and mountain views",
+    "Scenic road trip to Manali via Pandoh Dam and Kullu Valley",
+    "Adventure activities and paragliding in Solang Valley"
+  ],
+  "image": "/data/packages/packages_image/himachal-package/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Adventure Tour",
+    "Honeymoon"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

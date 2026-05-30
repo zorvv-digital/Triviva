@@ -1,0 +1,101 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Departure from India to Paris",
+      "description": "Board your flight from India to Paris. Upon arrival, enjoy a private airport transfer to check into your hotel. Spend the evening relaxing, or optionally enjoy a scenic cruise along the Seine River."
+    },
+    {
+      "day": "Day 2",
+      "title": "Guided Paris City Tour",
+      "description": "Discover the main landmarks of Paris, including the Eiffel Tower up to the second level, Arc de Triomphe, and the famous avenue of Champs-Elysees. Stop for photos outside the Louvre Museum and view the historic Notre-Dame Cathedral. In the evening, there is an option to attend the Lido Show."
+    },
+    {
+      "day": "Day 3",
+      "title": "Travel to Lucerne",
+      "description": "Embark on a scenic road trip across the borders to Switzerland. Take a brief stop in Geneva or Bern if time permits. Arrive in the lakeside city of Lucerne for a brief orientation tour and overnight stay."
+    },
+    {
+      "day": "Day 4",
+      "title": "Mount Titlis and Lucerne City Excursion",
+      "description": "Ride the world's first rotating cable car, the Rotair, to the summit of Mount Titlis. Enjoy optional snow activities. In the afternoon, return to Lucerne to see Chapel Bridge, the Lion Monument, and take a stroll along the lakeside promenade."
+    },
+    {
+      "day": "Day 5",
+      "title": "Interlaken and Lauterbrunnen Excursion",
+      "description": "Spend the day at leisure or choose an optional mountain rail excursion to Jungfraujoch (Top of Europe). Alternatively, explore the scenic resort town of Interlaken and the waterfall-rich Lauterbrunnen valley."
+    },
+    {
+      "day": "Day 6",
+      "title": "Travel from Switzerland to Venice Mestre",
+      "description": "Drive through the Swiss Alps and across the Italian border. Check into your hotel in Venice Mestre, and enjoy the evening at leisure."
+    },
+    {
+      "day": "Day 7",
+      "title": "Venice Sightseeing and Journey to Florence",
+      "description": "Take a classic vaporetto water bus ride to St. Mark's Square. See the historic St. Mark's Basilica, view Doge's Palace from the outside, and watch an authentic glass-blowing demonstration before driving to Florence."
+    },
+    {
+      "day": "Day 8",
+      "title": "Florence Sightseeing and Drive to Rome",
+      "description": "Take a morning tour of Florence to view the Piazza Michelangelo and the Cathedral of Santa Maria del Fiore (Duomo). In the afternoon, travel south to Rome, visiting the historic Trevi Fountain and Spanish Steps."
+    },
+    {
+      "day": "Day 9",
+      "title": "Vatican City and Historic Rome City Tour",
+      "description": "Take a guided tour of Vatican City to explore St. Peter's Basilica. Afterwards, view the iconic Colosseum and Roman Forum from outside, and enjoy the lively atmosphere of Piazza Navona."
+    },
+    {
+      "day": "Day 10",
+      "title": "Rome to Innsbruck via Verona",
+      "description": "Drive north to Austria, stopping briefly in Verona to see the famous balcony of Romeo and Juliet. Continue through the Brenner Pass to Innsbruck, and enjoy an evening orientation tour of the Old Town and the Golden Roof."
+    },
+    {
+      "day": "Day 11",
+      "title": "Munich City Stop and Drive to Amsterdam",
+      "description": "Depart Innsbruck for Munich, Germany. Tour the historic Marienplatz and see the BMW Headquarters from outside. Continue your journey across Germany to Amsterdam for check-in."
+    },
+    {
+      "day": "Day 12",
+      "title": "Amsterdam Canal Cruise and Departure",
+      "description": "Visit the historic windmills of Zaanse Schans, tour a cheese and clog making factory, and enjoy a scenic boat cruise along the canals. In the afternoon, transfer to the airport for your return flight back to India."
+    }
+  ],
+  "gallery": [],
+  "title": "Grand Europe Tour",
+  "location": "Europe",
+  "duration": "12 Days / 11 Nights",
+  "price": 25000,
+  "rating": 4.89,
+  "description": "Explore the best of Europe in 12 days across 6 spectacular countries - France, Switzerland, Italy, Austria, Germany, and the Netherlands. Perfect for travelers seeking iconic landmarks, rich culture, and historic sights in one comprehensive, guided journey.",
+  "highlights": [
+    "Ascend Mount Titlis via the rotating Rotair cable car",
+    "Gondola and water taxi excursions in historic Venice",
+    "Guided sightseeing at Vatican City and St. Peter's Basilica",
+    "Explore the scenic windmills and canals of Amsterdam"
+  ],
+  "image": "/data/packages/packages_image/europe-grand/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Cultural"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

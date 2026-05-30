@@ -1,0 +1,71 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Delhi and Capital Tour",
+      "description": "Arrive in Delhi and check into your hotel. Visit the famous India Gate, Rashtrapati Bhavan, Lotus Temple, and Qutub Minar. Enjoy a free evening to walk around the city or go on a food tour in Chandni Chowk. Spend the night in Delhi."
+    },
+    {
+      "day": "Day 2",
+      "title": "Delhi to Agra Drive and Taj Mahal Sunset View",
+      "description": "Drive to Agra after your breakfast. Visit the Mehtab Bagh gardens to enjoy a beautiful sunset view of the Taj Mahal. Explore the historic Agra Fort and local markets. Spend the night in Agra."
+    },
+    {
+      "day": "Day 3",
+      "title": "Sunrise Taj Mahal, Fatehpur Sikri and Jaipur Drive",
+      "description": "Visit the world-famous Taj Mahal at sunrise to see it in the best light. Drive to Jaipur, stopping along the way to explore the ancient ghost city of Fatehpur Sikri. Check into your hotel in Jaipur. Spend the night in Jaipur."
+    },
+    {
+      "day": "Day 4",
+      "title": "Jaipur Sightseeing Tour",
+      "description": "Explore the majestic Amber Fort in the morning. Visit the iconic Hawa Mahal, the City Palace, and the Jantar Mantar observatory. Spend the afternoon shopping for local handicrafts at Johri Bazaar. Spend the night in Jaipur."
+    },
+    {
+      "day": "Day 5",
+      "title": "Jaipur to Delhi Return",
+      "description": "Drive back to Delhi. Along the way, you can stop to visit the historic Neemrana Fort. Enjoy a free evening for shopping in Delhi. Spend the night in Delhi."
+    },
+    {
+      "day": "Day 6",
+      "title": "Departure from Delhi",
+      "description": "Have breakfast at your hotel and check out. We will transfer you to the airport or railway station for your journey back home."
+    }
+  ],
+  "gallery": [],
+  "title": "Golden Triangle Tour",
+  "location": "Golden Triangle, India",
+  "duration": "6 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.56,
+  "description": "Experience India's cultural heart with our 6-day Golden Triangle tour covering Delhi, Agra, and Jaipur. Highlights include sunrise at the Taj Mahal, Amber Fort excursions, and historic palaces.",
+  "highlights": [
+    "Guided sightseeing tour of historic landmarks in Delhi",
+    "Taj Mahal visit at sunset and guided tour of Agra Fort",
+    "Explore the abandoned stone city of Fatehpur Sikri",
+    "Tour of Amber Fort and the pink palaces of Jaipur"
+  ],
+  "image": "/data/packages/packages_image/golden-triangle/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Cultural"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

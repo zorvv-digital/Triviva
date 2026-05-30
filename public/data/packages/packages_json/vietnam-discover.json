@@ -1,0 +1,72 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Hanoi and Old Quarter Walk",
+      "description": "Arrive at Hanoi Airport. Meet our representative and transfer to your hotel. In the afternoon, visit the historic Ho Chi Minh Mausoleum and take a walk through the bustling streets of the Old Quarter."
+    },
+    {
+      "day": "Day 2",
+      "title": "Halong Bay Cruise Excursion",
+      "description": "Take a day trip to the spectacular Halong Bay. Board a traditional boat to cruise past limestone islands, enjoy a kayak ride, and visit natural caves, before returning to Hanoi for the night."
+    },
+    {
+      "day": "Day 3",
+      "title": "Flight to Da Nang and Hoi An Ancient Town Tour",
+      "description": "Take a morning flight from Hanoi to the coastal city of Da Nang. After checking into your hotel, enjoy an afternoon excursion to the historic streets and lanterns of Hoi An Ancient Town."
+    },
+    {
+      "day": "Day 4",
+      "title": "Marble Mountains and My Khe Beach",
+      "description": "Explore the caves and viewpoints of the Marble Mountains in the morning. Afterwards, spend a relaxing afternoon on the sands of My Khe Beach. Enjoy a free evening for shopping or dining in Da Nang."
+    },
+    {
+      "day": "Day 5",
+      "title": "Flight to Ho Chi Minh City and City Landmarks Tour",
+      "description": "Take a short flight to Ho Chi Minh City. In the afternoon, enjoy a city tour visiting the War Remnants Museum, the colonial Notre Dame Cathedral, and the busy Ben Thanh Market. An optional evening nightlife tour is available."
+    },
+    {
+      "day": "Day 6",
+      "title": "Cu Chi Tunnels and Departure",
+      "description": "Take a morning excursion to explore the historic Cu Chi Tunnels network. Spend your final afternoon shopping, or take a short trip to the Mekong Delta if time permits, before your transfer to the airport for your flight home."
+    }
+  ],
+  "gallery": [],
+  "title": "Vietnam Discovery",
+  "location": "Vietnam",
+  "duration": "6 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.86,
+  "description": "Explore the history and natural beauty of Vietnam on this 6-day budget-friendly tour. Visit the capital city of Hanoi, cruise through Halong Bay, walk the lantern-lit streets of Hoi An, and tour Ho Chi Minh City and the Cu Chi Tunnels.",
+  "highlights": [
+    "Guided sightseeing of Hanoi's historic Old Quarter",
+    "Boat cruise with kayaking in the spectacular Halong Bay",
+    "Guided walking tour of Hoi An Ancient Town near Da Nang",
+    "Explore the historic war-era tunnels of Cu Chi"
+  ],
+  "image": "/data/packages/packages_image/vietnam-discover/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Historical",
+    "Budget"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

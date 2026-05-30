@@ -1,9 +1,11 @@
 {
-  "name": "voyago-travel",
+  "name": "triviva-travel",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/scan_images.cjs",
+    "prebuild": "node scripts/scan_images.cjs",
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",

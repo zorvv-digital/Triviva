@@ -23,7 +23,7 @@ const EthosSection = () => {
           className="mt-8 flex items-center justify-center gap-4"
         >
             <div className="w-12 h-px bg-[#ea580c]/30" />
-            <span className="font-body text-xs md:text-sm text-muted-foreground uppercase tracking-widest font-semibold">The Voyago Promise</span>
+            <span className="font-body text-xs md:text-sm text-muted-foreground uppercase tracking-widest font-semibold">The Triviva Promise</span>
             <div className="w-12 h-px bg-[#ea580c]/30" />
         </motion.div>
       </div>

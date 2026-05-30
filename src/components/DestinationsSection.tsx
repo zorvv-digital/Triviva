@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { getImage } from "@/lib/images";
+import OutlineButton from "@/components/ui/OutlineButton";
 import destinationsData from "@/data/destinations.json";
 
 const destinations = destinationsData.map(dest => ({
@@ -19,12 +20,10 @@ const DestinationsSection = () => {
             Pick the <span className="text-gradient">Place</span>
           </h2>
         </div>
-        <Link to="/packages" className="btn-outline-travel text-sm self-start md:self-auto">
-          See All Destinations <ArrowUpRight className="w-4 h-4" />
-        </Link>
+        <OutlineButton to="/packages" label="See All Destinations" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
         {destinations.map((dest, i) => (
           <motion.div
             key={dest.name}
@@ -42,12 +41,12 @@ const DestinationsSection = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--deep-charcoal)/0.6)_0%,transparent_50%)]" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-2xl font-display font-bold text-card">{dest.name}</h3>
-                    <p className="text-card/70 font-body text-sm">{dest.country}</p>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
+                    <h3 className="text-lg md:text-2xl font-display font-bold text-card">{dest.name}</h3>
+                    <p className="text-card/70 font-body text-xs md:text-sm">{dest.country}</p>
                   </div>
-                  <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
-                    <ArrowUpRight className="w-4 h-4 text-card" />
+                  <div className="absolute top-3 right-3 md:top-4 md:right-4 w-8 h-8 md:w-10 md:h-10 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                    <ArrowUpRight className="w-3.5 h-3.5 md:w-4 md:h-4 text-card" />
                   </div>
                 </div>
               </div>

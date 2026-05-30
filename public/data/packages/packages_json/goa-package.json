@@ -1,0 +1,58 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Goa and Beachside Leisure",
+      "description": "Upon arrival at Goa Airport or Railway Station, transfer to your beach resort and complete check-in. In the evening, head down to Calangute or Baga Beach to relax at the seaside shacks. Explore Tito's Lane to experience local nightlife and shopping."
+    },
+    {
+      "day": "Day 2",
+      "title": "North Goa Beaches and Historical Forts Tour",
+      "description": "After breakfast, spend your day exploring North Goa. Visit the historic Fort Aguada and its Portuguese-era lighthouse. Relax on the sandy shores of Anjuna Beach, and check out Chapora Fort in the afternoon. Optionally, enjoy a sunset cruise on the Mandovi River in the evening."
+    },
+    {
+      "day": "Day 3",
+      "title": "South Goa Heritage and Palolem Beach Visit",
+      "description": "Depart for South Goa (approximately 1.5 hours drive). Explore the UNESCO heritage site of the Basilica of Bom Jesus in Old Goa. Afterwards, unwind on the soft white sands of Colva or Palolem Beach. An optional day trip to Dudhsagar Falls is available before returning to North Goa."
+    },
+    {
+      "day": "Day 4",
+      "title": "Old Panjim Shopping and Departure",
+      "description": "Enjoy breakfast at your resort before checking out. Spend the morning shopping at Mapusa Market or near the historic Panjim Church Complex, before your transfer to the airport or railway station for your return journey."
+    }
+  ],
+  "gallery": [],
+  "title": "Goa Getaway",
+  "location": "Goa, India",
+  "duration": "4 Days / 3 Nights",
+  "price": 25000,
+  "rating": 4.54,
+  "description": "Experience the ultimate beach escape with this 4-day Goa tour. Enjoy sun-drenched beaches, historical Portuguese forts, vibrant local markets, and peaceful South Goa heritage sites with guided transfers and premium beach stays.",
+  "highlights": [
+    "Relax on popular beaches like Baga, Calangute, and Anjuna",
+    "Explore the historic Fort Aguada and Chapora Fort",
+    "Visit the UNESCO World Heritage Basilica of Bom Jesus",
+    "Enjoy an optional sunset boat cruise on the Mandovi River"
+  ],
+  "image": "/data/packages/packages_image/goa-package/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Beach"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February"
+  ],
+  "showInHero": false
+}

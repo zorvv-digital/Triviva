@@ -1,0 +1,1097 @@
+[
+  {
+    "id": "australia-adventure",
+    "title": "Australia Adventure",
+    "location": "Australia",
+    "duration": "9 Days / 8 Nights",
+    "price": 25000,
+    "rating": 4.62,
+    "image": "/data/packages/packages_image/australia-adventure/01_main.jpg",
+    "description": "Explore the top sights of Sydney, the Gold Coast, and Melbourne on this 9-day Australian tour. Experience the Sydney Opera House, take a cable car ride in the Blue Mountains, visit theme parks on the Gold Coast, and drive along the Great Ocean Road.",
+    "highlights": [
+      "Scenic Harbour Cruise and city sights in Sydney",
+      "Cable car rides in the Blue Mountains and wildlife encounters",
+      "Pass to Warner Bros. Movie World on the Gold Coast",
+      "Drive along the Great Ocean Road to see the Twelve Apostles"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "bali-bliss",
+    "title": "Bali Bliss",
+    "location": "Bali, Indonesia",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.84,
+    "image": "/data/packages/packages_image/bali-bliss/01_main.webp",
+    "description": "Experience the culture and beaches of Bali on this 7-day tropical tour. Visit Ubud's rice terraces, view Mount Batur volcano, watch the Uluwatu Kecak dance, and enjoy a seafood dinner on Jimbaran Beach.",
+    "highlights": [
+      "Explore the Sacred Monkey Forest and rice terraces in Ubud",
+      "Visit the cliffside sea temples of Tanah Lot and Uluwatu",
+      "Enjoy water sports at Tanjung Benoa and an optional Nusa Penida trip",
+      "Sunset seafood BBQ dinner on the sands of Jimbaran Beach"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "darjeeling-scenic",
+    "title": "Darjeeling Delight",
+    "location": "Darjeeling, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.92,
+    "image": "/data/packages/packages_image/darjeeling-scenic/01_main.jpg",
+    "description": "Experience the scenic beauty of the Queen of the Hills on this 5-day Darjeeling tour package. Cover spectacular Himalayan views, historic tea estates, the iconic Toy Train joyride, and cultural landmarks.",
+    "highlights": [
+      "Scenic drive to Darjeeling and relaxation at Mall Road",
+      "Tiger Hill sunrise view over Mount Kanchenjunga",
+      "Ride the UNESCO-listed Darjeeling Toy Train to Ghoom",
+      "Day trip excursion to the picturesque Sumendu Lake in Mirik"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "dubai-luxury",
+    "title": "Dubai Delight",
+    "location": "Dubai, UAE",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.93,
+    "image": "/data/packages/packages_image/dubai-luxury/01_main.jpg",
+    "description": "Experience the modern architecture and desert adventures of Dubai on this 5-day luxury tour. Visit the Burj Khalifa observation deck, watch the Fountain Show at Dubai Mall, and enjoy a desert safari with a BBQ dinner.",
+    "highlights": [
+      "Dhow cruise dinner along Dubai Marina or Creek",
+      "Entry ticket to levels 124 and 125 of the Burj Khalifa tower",
+      "4x4 desert jeep safari with dune bashing and camel riding",
+      "Free day for shopping or optional Abu Dhabi day tour"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "europe-grand",
+    "title": "Grand Europe Tour",
+    "location": "Europe",
+    "duration": "12 Days / 11 Nights",
+    "price": 25000,
+    "rating": 4.89,
+    "image": "/data/packages/packages_image/europe-grand/01_main.jpg",
+    "description": "Explore the best of Europe in 12 days across 6 spectacular countries - France, Switzerland, Italy, Austria, Germany, and the Netherlands. Perfect for travelers seeking iconic landmarks, rich culture, and historic sights in one comprehensive, guided journey.",
+    "highlights": [
+      "Ascend Mount Titlis via the rotating Rotair cable car",
+      "Gondola and water taxi excursions in historic Venice",
+      "Guided sightseeing at Vatican City and St. Peter's Basilica",
+      "Explore the scenic windmills and canals of Amsterdam"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Cultural"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "goa-package",
+    "title": "Goa Getaway",
+    "location": "Goa, India",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.54,
+    "image": "/data/packages/packages_image/goa-package/01_main.jpg",
+    "description": "Experience the ultimate beach escape with this 4-day Goa tour. Enjoy sun-drenched beaches, historical Portuguese forts, vibrant local markets, and peaceful South Goa heritage sites with guided transfers and premium beach stays.",
+    "highlights": [
+      "Relax on popular beaches like Baga, Calangute, and Anjuna",
+      "Explore the historic Fort Aguada and Chapora Fort",
+      "Visit the UNESCO World Heritage Basilica of Bom Jesus",
+      "Enjoy an optional sunset boat cruise on the Mandovi River"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Beach"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "November",
+      "December",
+      "January",
+      "February"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "golden-triangle",
+    "title": "Golden Triangle Tour",
+    "location": "Golden Triangle, India",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.56,
+    "image": "/data/packages/packages_image/golden-triangle/01_main.jpg",
+    "description": "Experience India's cultural heart with our 6-day Golden Triangle tour covering Delhi, Agra, and Jaipur. Highlights include sunrise at the Taj Mahal, Amber Fort excursions, and historic palaces.",
+    "highlights": [
+      "Guided sightseeing tour of historic landmarks in Delhi",
+      "Taj Mahal visit at sunset and guided tour of Agra Fort",
+      "Explore the abandoned stone city of Fatehpur Sikri",
+      "Tour of Amber Fort and the pink palaces of Jaipur"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Cultural"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "haridwar-spiritual",
+    "title": "Haridwar & Rishikesh Spiritual",
+    "location": "Haridwar, India",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.77,
+    "image": "/data/packages/packages_image/haridwar-spiritual/01_main.jpg",
+    "description": "Explore the spiritual towns of Haridwar and Rishikesh on this 7-day tour from Delhi. Witness the beautiful Ganga Aarti at Har Ki Pauri, visit historic temples via cable car, and walk along the holy River Ganges.",
+    "highlights": [
+      "Attend the divine evening Ganga Aarti at Har Ki Pauri in Haridwar",
+      "Ride the hilltop cable cars to Mansa Devi and Chandi Devi temples",
+      "Explore the suspension bridges and ashrams of Rishikesh",
+      "Spiritual walk along the Vishnu Ghat and Gau Ghat"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Devotional Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "February",
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "himachal-package",
+    "title": "Himachal Delight",
+    "location": "Himachal Pradesh, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.97,
+    "image": "/data/packages/packages_image/himachal-package/01_main.jpg",
+    "description": "Enjoy a thrilling 5-day Himachal getaway covering the beautiful hill stations of Shimla, Kufri, and Manali. Includes comfortable stays, daily breakfast, guided local sightseeing, and adventure excursions to Solang Valley.",
+    "highlights": [
+      "Explore Shimla's historic Ridge and Mall Road",
+      "Day trip to Kufri for horse riding and mountain views",
+      "Scenic road trip to Manali via Pandoh Dam and Kullu Valley",
+      "Adventure activities and paragliding in Solang Valley"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Adventure Tour",
+      "Honeymoon"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "iceland-lights",
+    "title": "Iceland: Fire & Ice",
+    "location": "Reykjavik & Golden Circle",
+    "duration": "7 Days / 6 Nights",
+    "price": 130000,
+    "rating": 4.9,
+    "image": "/data/packages/packages_image/iceland-lights/01_main.jpg",
+    "description": "Chase the Northern Lights and explore volcanic landscapes. From geysers to glaciers, Iceland is nature at its most dramatic.",
+    "highlights": [
+      "Northern Lights hunt",
+      "Blue Lagoon soak",
+      "Glacier hiking",
+      "Whale watching"
+    ],
+    "region": "international",
+    "categories": [
+      "Adventure Tour",
+      "Wildlife",
+      "Solo",
+      "Romantic",
+      "International"
+    ],
+    "priority": 7,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "japan-cultural",
+    "title": "Japan: Land of the Rising Sun",
+    "location": "Tokyo, Kyoto & Osaka",
+    "duration": "10 Days / 9 Nights",
+    "price": 150000,
+    "rating": 4.95,
+    "image": "/data/packages/packages_image/japan-cultural/01_main.jpg",
+    "description": "A carefully crafted journey through Japan's most iconic cities. From Tokyo's electric energy to Kyoto's serene temples and Osaka's legendary street food scene.",
+    "highlights": [
+      "Cherry blossom viewing",
+      "Traditional tea ceremony",
+      "Bullet train experience",
+      "Geisha district tour"
+    ],
+    "region": "international",
+    "categories": [
+      "Cultural",
+      "Historical",
+      "Culinary",
+      "Family",
+      "Adventure Tour",
+      "International",
+      "College Trip",
+      "Devotional Tour"
+    ],
+    "priority": 2,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "kashmir-escape",
+    "title": "Kashmir Magical Escape",
+    "location": "Kashmir, India",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.95,
+    "image": "/data/packages/packages_image/kashmir-escape/01_main.jpg",
+    "description": "Discover Kashmir’s breathtaking valleys, serene lakes, and snow-capped peaks on this 6-day tour from Delhi. Enjoy shikara rides on Dal Lake, stay in a houseboat, and explore Gulmarg & Pahalgam.",
+    "highlights": [
+      "Delhi to Srinagar flight and sunset Shikara ride on Dal Lake",
+      "Guided sightseeing of Mughal Gardens and Shankaracharya Temple",
+      "Scenic Gondola cable car ride in Gulmarg",
+      "Tour of Pahalgam's Betaab and Aru Valleys next to Lidder River"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Cultural"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "kerala-backwaters",
+    "title": "Kerala Magic Escape",
+    "location": "Kerala, India",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.79,
+    "image": "/data/packages/packages_image/kerala-backwaters/01_main.jpg",
+    "description": "Experience Kerala’s lush greenery, tranquil backwaters, and spice-scented hills in this 4-day getaway from Delhi. Enjoy houseboat stays, tea gardens, and cultural delights in Munnar & Alleppey.",
+    "highlights": [
+      "Scenic flights and drive to Munnar through tea gardens",
+      "Guided sightseeing of Munnar and Eravikulam National Park",
+      "Overnight stay and dining on a private backwater houseboat",
+      "Fort Kochi city tour before departure"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "ladakh-package",
+    "title": "Ladakh Himalayan Odyssey",
+    "location": "Ladakh, India",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.92,
+    "image": "/data/packages/packages_image/ladakh-package/01_main.jpg",
+    "description": "Take an amazing 7-day trip to Ladakh. Visit Leh town, ride camels in Nubra Valley, sleep next to Pangong Lake, and explore ancient Buddhist temples. Includes hotel stays, transfers, and sightseeing.",
+    "highlights": [
+      "Rest day to adjust to the high mountain altitude in Leh",
+      "Cross the high Khardung La road pass to Nubra Valley",
+      "Ride unique double-humped camels on the Hunder sand dunes",
+      "Camp next to the world-famous blue waters of Pangong Lake"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "malaysia-explorer",
+    "title": "Malaysia Explorer",
+    "location": "Malaysia",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.89,
+    "image": "/data/packages/packages_image/malaysia-explorer/01_main.jpg",
+    "description": "Discover the modern city life, historic temples, and cool highlands of Malaysia on this 4-day tour. Perfect for travelers seeking a mix of city sightseeing and mountain nature trails.",
+    "highlights": [
+      "Explore the Petronas Twin Towers and KLCC Park in Kuala Lumpur",
+      "Visit the historic Batu Caves and Royal Selangor Pewter Factory",
+      "Take a day excursion to the cool tea country of Cameron Highlands",
+      "Shop for local crafts at Central Market and Chinatown"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "maldives-getaway",
+    "title": "Maldives Paradise Escape",
+    "location": "Maldives",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.95,
+    "image": "/data/packages/packages_image/maldives-getaway/01_main.jpg",
+    "description": "Escape to the beautiful islands of the Maldives for a 4-day tropical vacation. Enjoy white sand beaches, clear blue waters, and relaxing resort stays. This tour is perfect for couples, families, and anyone looking for a peaceful holiday in nature.",
+    "highlights": [
+      "Scenic speedboat or seaplane transfers",
+      "Snorkeling and water activities",
+      "Local island cultural tour",
+      "Beach barbecue dinner under the stars"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Honeymoon"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "maldives-luxury",
+    "title": "Maldives Paradise",
+    "location": "South Malé Atoll",
+    "duration": "5 Days / 4 Nights",
+    "price": 200000,
+    "rating": 4.95,
+    "image": "/data/packages/packages_image/maldives-luxury/01_main.jpg",
+    "description": "The ultimate luxury escape. Overwater villas, private beaches, and crystal-clear waters in one of the world's most exclusive destinations.",
+    "highlights": [
+      "Overwater villa stay",
+      "Private sunset dolphin cruise",
+      "Underwater restaurant dining",
+      "Coral reef snorkeling"
+    ],
+    "region": "international",
+    "categories": [
+      "Beach",
+      "Romantic",
+      "Luxury",
+      "Honeymoon",
+      "Wellness",
+      "International"
+    ],
+    "priority": 5,
+    "bestTimeToVisit": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "nepal-complete",
+    "title": "Complete Nepal Exploration",
+    "location": "Nepal",
+    "duration": "15 Days / 14 Nights",
+    "price": 25000,
+    "rating": 4.71,
+    "image": "/data/packages/packages_image/nepal-complete/01_main.jpg",
+    "description": "Explore the very best of Nepal on this 15-day tour. Visit holy temples in Kathmandu and Janakpur, see the birthplace of Buddha in Lumbini, go on a jungle safari in Chitwan, and enjoy stunning Himalayan views from Pokhara, Nagarkot, and Dhulikhel.",
+    "highlights": [
+      "Pashupatinath Temple visit and evening Aarti prayer ceremony",
+      "Scenic boat rides on Phewa Lake and views from Sarangkot",
+      "Exciting wildlife jeep safari in Chitwan National Park",
+      "Beautiful sunrise and sunset views over the Himalayas from Nagarkot"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Mountain",
+      "Adventure Tour",
+      "Devotional Tour",
+      "Historical"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "nepal-manang-mustang",
+    "title": "Manang & Mustang Adventure",
+    "location": "Nepal",
+    "duration": "9 Days / 8 Nights",
+    "price": 25000,
+    "rating": 4.93,
+    "image": "/data/packages/packages_image/nepal-manang-mustang/01_main.jpg",
+    "description": "Explore the hidden gems of Nepal on this 9-day tour of the Manang and Mustang regions. Witness stunning mountain landscapes, ancient monasteries, high-altitude villages, and unique Tibetan culture. Perfect for nature lovers and adventurers.",
+    "highlights": [
+      "Scenic travel from Kathmandu to Pokhara and Phewa Lake boating",
+      "Rest and sightseeing day in Manang Valley to adjust to the high altitude",
+      "Pilgrimage visit to the sacred Muktinath Temple and Kagbeni Village",
+      "Excursion to the ancient walled city of Lo Manthang in Upper Mustang"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Mountain",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "nepal-pashupatinath",
+    "title": "Pashupatinath Darshan Tour",
+    "location": "Nepal",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.59,
+    "image": "/data/packages/packages_image/nepal-pashupatinath/01_main.jpg",
+    "description": "Take a spiritual 7-day tour to Nepal. Visit the holy Pashupatinath Temple in Kathmandu, along with famous UNESCO heritage temples, beautiful monasteries, and scenic lake cities like Pokhara. This tour is perfect for families and religious travelers.",
+    "highlights": [
+      "Holy prayers at Pashupatinath Temple and evening Aarti ceremony",
+      "Guided sightseeing tours of UNESCO heritage temples in Kathmandu",
+      "Scenic drive or flight to the beautiful lake city of Pokhara",
+      "Spectacular sunrise views over the Himalayas from Sarangkot"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Mountain",
+      "Devotional Tour",
+      "Historical"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "ooty-package",
+    "title": "Ooty Blissful Holiday",
+    "location": "Ooty, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.59,
+    "image": "/data/packages/packages_image/ooty-package/01_main.jpg",
+    "description": "Escape to the beautiful Nilgiri Hills on this 5-day Ooty package. Ride the historic Toy Train to Coonoor, visit waterfalls and tea estates, and enjoy scenic views from Doddabetta Peak with guided transfers.",
+    "highlights": [
+      "Scenic road trip to Ooty via the famous 36 hairpin bends",
+      "Ride the UNESCO-listed Nilgiri Mountain Railway Toy Train",
+      "Guided tea factory tour and homemade chocolate tasting",
+      "Watch the sunrise from Doddabetta Peak and walk near Pykara Lake"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "peru-expedition",
+    "title": "Peru: Inca Trail Expedition",
+    "location": "Cusco & Machu Picchu",
+    "duration": "9 Days / 8 Nights",
+    "price": 110000,
+    "rating": 4.88,
+    "image": "/data/packages/packages_image/peru-expedition/01_main.jpg",
+    "description": "Walk in the footsteps of the Incas on this epic trek to Machu Picchu. A blend of adventure, history, and Andean culture.",
+    "highlights": [
+      "4-day Inca Trail trek",
+      "Sunrise at Machu Picchu",
+      "Sacred Valley exploration",
+      "Traditional Pachamanca feast"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Adventure Tour",
+      "Mountain",
+      "Historical",
+      "Solo",
+      "Domestic",
+      "Devotional Tour"
+    ],
+    "priority": 6,
+    "bestTimeToVisit": [
+      "May",
+      "June",
+      "July",
+      "August",
+      "September"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "rajasthan-heritage",
+    "title": "Rajasthan Royal Retreat",
+    "location": "Rajasthan, India",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.62,
+    "image": "/data/packages/packages_image/rajasthan-heritage/01_main.jpg",
+    "description": "Experience the grandeur of Rajasthan on this 6-day heritage tour. Explore the magnificent forts, grand palaces, sand dunes, and lakes of Jodhpur, Jaisalmer, and Udaipur with guided tours and stays in heritage settings.",
+    "highlights": [
+      "Guided tours of historic Mehrangarh Fort and Jaswant Thada",
+      "Jeep and camel desert safari with cultural dance in Jaisalmer",
+      "Tour the intricately carved pillars at Ranakpur Jain Temple",
+      "Scenic Lake Pichola boat ride and City Palace tour in Udaipur"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "rishikesh-spiritual",
+    "title": "Rishikesh Spiritual & Adventure",
+    "location": "Rishikesh, India",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.62,
+    "image": "/data/packages/packages_image/rishikesh-spiritual/01_main.jpg",
+    "description": "Experience the perfect mix of adventure and peace on this 7-day Rishikesh tour. Go river rafting, try bungee jumping, hike to waterfalls, visit historic ashrams, and attend the beautiful evening Ganga Aarti.",
+    "highlights": [
+      "Attend the daily evening Ganga Aarti ceremony at Triveni Ghat",
+      "Explore the historic Beatles Ashram and Parmarth Niketan",
+      "Enjoy white-water river rafting and suspension bridge walks",
+      "Hike up to the beautiful natural pools of Neer Garh Waterfall"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Adventure Tour",
+      "Devotional Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "February",
+      "March",
+      "April",
+      "May",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "sahara-odyssey",
+    "title": "Sahara Desert Odyssey",
+    "location": "Marrakech & Merzouga, Morocco",
+    "duration": "6 Days / 5 Nights",
+    "price": 75000,
+    "rating": 4.82,
+    "image": "/data/packages/packages_image/sahara-odyssey/01_main.jpg",
+    "description": "An immersive desert journey from the bustling souks of Marrakech to the silent dunes of the Sahara. Camp under the stars and ride camels at sunrise.",
+    "highlights": [
+      "Camel trek into Erg Chebbi",
+      "Luxury desert camp",
+      "Medina cooking class",
+      "Atlas Mountain drive"
+    ],
+    "region": "international",
+    "categories": [
+      "Desert",
+      "Cultural",
+      "Adventure Tour",
+      "Solo",
+      "Budget",
+      "International"
+    ],
+    "priority": 8,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "santorini-escape",
+    "title": "Santorini Dreamscape",
+    "location": "Santorini, Greece",
+    "duration": "7 Days / 6 Nights",
+    "price": 120000,
+    "rating": 4.9,
+    "image": "/data/packages/packages_image/santorini-escape/01_main.jpg",
+    "description": "Lose yourself in the whitewashed charm of Santorini. From breathtaking caldera sunsets to hidden volcanic beaches, this curated journey blends luxury stays with authentic Greek island life.",
+    "highlights": [
+      "Caldera sunset cruise",
+      "Wine tasting in Pyrgos",
+      "Private villa with infinity pool",
+      "Volcanic hot springs"
+    ],
+    "region": "international",
+    "categories": [
+      "Beach",
+      "Romantic",
+      "Luxury",
+      "Honeymoon",
+      "Cultural",
+      "International"
+    ],
+    "priority": 1,
+    "bestTimeToVisit": [
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "shimla-package",
+    "title": "Shimla Getaway",
+    "location": "Shimla, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.87,
+    "image": "/data/packages/packages_image/shimla-package/01_main.jpg",
+    "description": "Escape to the hills with this 5-day Shimla vacation package. Explore historic British landmarks, hike pine-covered trails in Mashobra and Kufri, and experience mountain scenery with premium transfers and stays.",
+    "highlights": [
+      "Scenic walks along the historic Shimla Ridge and Mall Road",
+      "Day trip to Kufri for horse riding and alpine nature parks",
+      "Guided cultural tours of Christ Church and Jakhu Temple",
+      "Excursion to the quiet orchards and forests of Mashobra"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "singapore-highlights",
+    "title": "Singapore Highlights",
+    "location": "Singapore",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.94,
+    "image": "/data/packages/packages_image/singapore-highlights/01_main.jpg",
+    "description": "Experience the futuristic skyline, theme parks, and rich heritage of Singapore on this 5-day tour. Perfect for travelers seeking a mix of city exploration, shopping, and family-friendly attractions.",
+    "highlights": [
+      "Watch the Spectra Light and Water Show at Marina Bay Sands",
+      "Guided tour of Chinatown, Little India, and Gardens by the Bay",
+      "Pass to Sentosa Island and Universal Studios theme park",
+      "Tram ride at the famous Singapore Zoo Night Safari"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Family",
+      "Luxury"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "sri-lanka-wonders",
+    "title": "Wonders of Sri Lanka",
+    "location": "Sri Lanka",
+    "duration": "9 Days / 8 Nights",
+    "price": 25000,
+    "rating": 4.95,
+    "image": "/data/packages/packages_image/sri-lanka-wonders/01_main.jpg",
+    "description": "Discover the ancient history, wildlife, and beaches of Sri Lanka on this 9-day tour. Climb the Sigiriya fortress, visit the temples of Kandy, take a train ride through tea country, and enjoy a safari in Yala National Park.",
+    "highlights": [
+      "Climb the UNESCO-listed Sigiriya Rock Fortress",
+      "Visit the sacred Temple of the Tooth Relic in Kandy",
+      "Scenic train ride through tea plantations to Ella",
+      "Jeep safari in Yala National Park and beach stay in Bentota"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Honeymoon"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "swiss-alpine",
+    "title": "Swiss Alpine Adventure",
+    "location": "Interlaken & Zermatt",
+    "duration": "6 Days / 5 Nights",
+    "price": 140000,
+    "rating": 4.85,
+    "image": "/data/packages/packages_image/swiss-alpine/01_main.jpg",
+    "description": "Conquer the Swiss Alps with this adventure-packed journey. From paragliding over Lake Brienz to hiking trails with Matterhorn views.",
+    "highlights": [
+      "Paragliding over Interlaken",
+      "Jungfraujoch – Top of Europe",
+      "Glacier Express journey",
+      "Matterhorn viewpoint hike"
+    ],
+    "region": "international",
+    "categories": [
+      "Mountain",
+      "Adventure Tour",
+      "Family",
+      "Luxury",
+      "International",
+      "College Trip"
+    ],
+    "priority": 4,
+    "bestTimeToVisit": [
+      "June",
+      "July",
+      "August",
+      "September",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "thailand-explorer",
+    "title": "Thailand Explorer",
+    "location": "Thailand",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.9,
+    "image": "/data/packages/packages_image/thailand-explorer/01_main.jpg",
+    "description": "Explore the vibrant culture, stunning beaches, and bustling markets of Thailand on this exciting 5-day tour. Perfect for travelers seeking a mix of adventure, coastal relaxation, and temple excursions - all within a curated, premium package.",
+    "highlights": [
+      "Explore the historic Grand Palace and Wat Phra Kaew in Bangkok",
+      "Boat cruise along the Chao Phraya River and local shopping",
+      "Visit the Sanctuary of Truth wooden temple in Pattaya",
+      "Full-day speedboat excursion to Coral Island (Koh Larn)"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Adventure Tour",
+      "Budget"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "uttarakhand-divine",
+    "title": "Divine Uttarakhand Journey",
+    "location": "Uttarakhand, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.87,
+    "image": "/data/packages/packages_image/uttarakhand-divine/01_main.jpg",
+    "description": "Discover the sacred rivers and beautiful mountain views of Uttarakhand on this 5-day spiritual journey. Witness the Ganga Aarti, explore the ashrams of Rishikesh, and relax in the cool mountain air of Mussoorie and Dhanaulti.",
+    "highlights": [
+      "Experience the evening Ganga Aarti at Har Ki Pauri in Haridwar",
+      "Guided sightseeing of suspension bridges and ashrams in Rishikesh",
+      "Visit Kempty Falls and enjoy valley views in Mussoorie",
+      "Take a nature walk in the quiet pine forests of Dhanaulti"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Adventure Tour",
+      "Devotional Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "vietnam-discover",
+    "title": "Vietnam Discovery",
+    "location": "Vietnam",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.86,
+    "image": "/data/packages/packages_image/vietnam-discover/01_main.jpg",
+    "description": "Explore the history and natural beauty of Vietnam on this 6-day budget-friendly tour. Visit the capital city of Hanoi, cruise through Halong Bay, walk the lantern-lit streets of Hoi An, and tour Ho Chi Minh City and the Cu Chi Tunnels.",
+    "highlights": [
+      "Guided sightseeing of Hanoi's historic Old Quarter",
+      "Boat cruise with kayaking in the spectacular Halong Bay",
+      "Guided walking tour of Hoi An Ancient Town near Da Nang",
+      "Explore the historic war-era tunnels of Cu Chi"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Historical",
+      "Budget"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": false
+  }
+]

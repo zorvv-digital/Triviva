@@ -1,0 +1,52 @@
+{
+  "agencyName": "Triviva",
+  "tagline": "Triviva is an independent premium travel agency and curator.",
+  "socials": {
+    "instagram": {
+      "handle": "@trivivatravel",
+      "url": "https://instagram.com/trivivatravel"
+    },
+    "twitter": {
+      "handle": "@trivivatravel",
+      "url": "https://twitter.com/trivivatravel"
+    },
+    "facebook": {
+      "handle": "@trivivatravel",
+      "url": "https://facebook.com/trivivatravel"
+    },
+    "youtube": {
+      "handle": "@trivivatravel",
+      "url": "https://youtube.com/trivivatravel"
+    }
+  },
+  "contact": {
+    "address": {
+      "title": "Visit Us",
+      "lines": [
+        "123 Travel Lane",
+        "Adventure City, AC 10001"
+      ]
+    },
+    "phone": {
+      "title": "Call Us",
+      "lines": [
+        "+1 (555) 123-4567",
+        "+1 (555) 987-6543"
+      ]
+    },
+    "email": {
+      "title": "Email Us",
+      "lines": [
+        "hello@triviva.com",
+        "bookings@triviva.com"
+      ]
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "lines": [
+        "Mon – Fri: 9am – 7pm",
+        "Sat: 10am – 4pm"
+      ]
+    }
+  }
+}

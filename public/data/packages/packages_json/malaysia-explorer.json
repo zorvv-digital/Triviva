@@ -1,0 +1,61 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Kuala Lumpur and City Sightseeing",
+      "description": "Upon arrival at Kuala Lumpur International Airport, transfer to your hotel and complete check-in. In the afternoon, visit the famous Petronas Twin Towers and stroll through KLCC Park. Spend your evening exploring the shopping and dining areas of Bukit Bintang."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kuala Lumpur Landmarks and Batu Caves Tour",
+      "description": "After breakfast, enjoy a city tour. Climb the colorful steps of the Batu Caves temple and visit the Royal Selangor Pewter Factory. Later, visit the Central Market and explore Chinatown before a free evening."
+    },
+    {
+      "day": "Day 3",
+      "title": "Cameron Highlands Nature Excursion",
+      "description": "Take an early morning day trip to the cool hills of Cameron Highlands (approximately 3 hours away). Tour local tea plantations and visit strawberry farms. Enjoy a short nature hike or visit the scenic Mossy Forest before returning to Kuala Lumpur."
+    },
+    {
+      "day": "Day 4",
+      "title": "Shopping and Kuala Lumpur Departure",
+      "description": "Enjoy breakfast and check out of your hotel. Spend your final morning doing last-minute shopping before your private transfer to Kuala Lumpur International Airport for your departure flight."
+    }
+  ],
+  "gallery": [],
+  "title": "Malaysia Explorer",
+  "location": "Malaysia",
+  "duration": "4 Days / 3 Nights",
+  "price": 25000,
+  "rating": 4.89,
+  "description": "Discover the modern city life, historic temples, and cool highlands of Malaysia on this 4-day tour. Perfect for travelers seeking a mix of city sightseeing and mountain nature trails.",
+  "highlights": [
+    "Explore the Petronas Twin Towers and KLCC Park in Kuala Lumpur",
+    "Visit the historic Batu Caves and Royal Selangor Pewter Factory",
+    "Take a day excursion to the cool tea country of Cameron Highlands",
+    "Shop for local crafts at Central Market and Chinatown"
+  ],
+  "image": "/data/packages/packages_image/malaysia-explorer/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Adventure Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

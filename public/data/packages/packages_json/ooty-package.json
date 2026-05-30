@@ -1,0 +1,66 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival and Colonial Ooty Sightseeing",
+      "description": "Arrive at Coimbatore Airport in the morning. Enjoy a scenic 2.5-hour drive to Ooty, winding through 36 hairpin turns, and check into your hotel. In the afternoon, enjoy boating on Ooty Lake and walk through the beautiful Government Rose Garden. Spend your evening shopping at Charring Cross Road."
+    },
+    {
+      "day": "Day 2",
+      "title": "Coonoor Toy Train and Tea Estate Tour",
+      "description": "After breakfast, ride the famous Nilgiri Mountain Railway Toy Train to Coonoor. Visit Sim's Park and take a guided tour of a local Tea Factory to sample fresh Nilgiri tea. After lunch, visit the Dolphin's Nose Viewpoint for great mountain views before returning to Ooty."
+    },
+    {
+      "day": "Day 3",
+      "title": "Nature, Waterfalls, and Botanical Gardens",
+      "description": "Visit the beautiful Pykara Lake and Pykara Waterfalls in the morning. You can optionally take a wildlife jeep safari at Mudumalai National Park. In the afternoon, visit the Wax Museum and stroll through the historic Government Botanical Gardens, ending the day with a cozy bonfire at your resort."
+    },
+    {
+      "day": "Day 4",
+      "title": "Doddabetta Peak and Chocolate Factory",
+      "description": "Wake up early for a spectacular sunrise view from Doddabetta Peak, the highest point in South India. After breakfast, visit a local tribal village to learn about Nilgiri culture. Enjoy a fun tour of a local chocolate factory and take a guided Ooty heritage walk in the evening."
+    },
+    {
+      "day": "Day 5",
+      "title": "Emerald Lake and Coimbatore Departure",
+      "description": "Enjoy breakfast, then visit the peaceful Emerald Lake. Afterwards, check out of your resort and drive back to Coimbatore Airport or Railway Station for your return flight or train."
+    }
+  ],
+  "gallery": [],
+  "title": "Ooty Blissful Holiday",
+  "location": "Ooty, India",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.59,
+  "description": "Escape to the beautiful Nilgiri Hills on this 5-day Ooty package. Ride the historic Toy Train to Coonoor, visit waterfalls and tea estates, and enjoy scenic views from Doddabetta Peak with guided transfers.",
+  "highlights": [
+    "Scenic road trip to Ooty via the famous 36 hairpin bends",
+    "Ride the UNESCO-listed Nilgiri Mountain Railway Toy Train",
+    "Guided tea factory tour and homemade chocolate tasting",
+    "Watch the sunrise from Doddabetta Peak and walk near Pykara Lake"
+  ],
+  "image": "/data/packages/packages_image/ooty-package/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

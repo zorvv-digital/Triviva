@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileMenu from "./MobileMenu";
+import { useGalleryStatus } from "@/hooks/useGalleryStatus";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -12,9 +13,14 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const { showGallery } = useGalleryStatus();
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
+
+  const filteredLinks = showGallery
+    ? navLinks
+    : navLinks.filter((link) => link.path !== "/gallery");
 
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
@@ -35,13 +41,13 @@ const Navbar = () => {
         <div className="section-padding flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-1">
             <span className="text-2xl font-display font-bold text-foreground tracking-tight">
-              Voya<span className="text-primary">go</span>
+              Tri<span className="text-primary">viva</span>
             </span>
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
-            {navLinks.map((link) => (
+            {filteredLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}

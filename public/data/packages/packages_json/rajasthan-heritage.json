@@ -1,0 +1,70 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Jodhpur and Blue City Sightseeing",
+      "description": "Upon arrival at Jodhpur Airport or Railway Station, meet our representative and transfer to your hotel. Later, enjoy a half-day tour visiting the majestic Mehrangarh Fort for panoramic city views, the marble memorial of Jaswant Thada, and stop for photos at Umaid Bhawan Palace. Spend your evening exploring the local Clock Tower Market for souvenirs before staying overnight in Jodhpur."
+    },
+    {
+      "day": "Day 2",
+      "title": "Jodhpur to Jaisalmer and Sam Sand Dunes Safari",
+      "description": "After breakfast at the hotel, drive to the golden city of Jaisalmer (approximately 5-6 hours, 280 km). Check in and freshen up. In the evening, embark on a desert adventure at the Sam Sand Dunes, including a camel ride, jeep safari, traditional cultural dance performance, and a local buffet dinner. Spend the night at Jaisalmer."
+    },
+    {
+      "day": "Day 3",
+      "title": "Jaisalmer Fort and Golden City Exploration",
+      "description": "Spend the day exploring the architectural highlights of Jaisalmer. Visit the living Jaisalmer Fort (Sonar Quila), the beautifully carved Patwon Ki Haveli, and Salim Singh Ki Haveli. Take an optional boat ride at Gadisar Lake, and enjoy free time to wander the local markets before staying overnight in Jaisalmer."
+    },
+    {
+      "day": "Day 4",
+      "title": "Jaisalmer to Udaipur via Ranakpur Jain Temples",
+      "description": "After breakfast, depart for Udaipur (approximately 7-8 hours, 500 km). Stop en route to visit the spectacular Ranakpur Jain Temple, famous for its 1,444 uniquely carved marble pillars. Upon arriving in Udaipur, check in and spend your evening relaxing on the shores of Lake Pichola."
+    },
+    {
+      "day": "Day 5",
+      "title": "Udaipur Lakes and Palaces Sightseeing",
+      "description": "Enjoy a full-day tour of the City of Lakes. Visit the grand City Palace complex, Jag Mandir, Jagdish Temple, and Saheliyon Ki Bari (the queens' garden). Take a scenic boat ride on Lake Pichola to visit Jag Mandir Island, and enjoy a cultural dance show and dinner at a heritage resort."
+    },
+    {
+      "day": "Day 6",
+      "title": "Departure from Udaipur",
+      "description": "Enjoy a final breakfast at your hotel before checking out. Transfer to the Udaipur Airport or Railway Station for your onward journey."
+    }
+  ],
+  "gallery": [],
+  "title": "Rajasthan Royal Retreat",
+  "location": "Rajasthan, India",
+  "duration": "6 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.62,
+  "description": "Experience the grandeur of Rajasthan on this 6-day heritage tour. Explore the magnificent forts, grand palaces, sand dunes, and lakes of Jodhpur, Jaisalmer, and Udaipur with guided tours and stays in heritage settings.",
+  "highlights": [
+    "Guided tours of historic Mehrangarh Fort and Jaswant Thada",
+    "Jeep and camel desert safari with cultural dance in Jaisalmer",
+    "Tour the intricately carved pillars at Ranakpur Jain Temple",
+    "Scenic Lake Pichola boat ride and City Palace tour in Udaipur"
+  ],
+  "image": "/data/packages/packages_image/rajasthan-heritage/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Historical"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false
+}

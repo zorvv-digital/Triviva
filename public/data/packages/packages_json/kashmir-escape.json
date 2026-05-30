@@ -1,0 +1,71 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Delhi to Srinagar Arrival and Shikara Ride",
+      "description": "Fly from Delhi to Srinagar (flight included). Meet our assistant at the airport and transfer to your deluxe houseboat on Dal Lake. In the evening, enjoy a relaxing sunset Shikara boat ride while drinking traditional Kashmiri Kahwa tea."
+    },
+    {
+      "day": "Day 2",
+      "title": "Srinagar Local Sightseeing",
+      "description": "Visit the beautiful Mughal Gardens, including Shalimar Bagh, Nishat Bagh, and Chashme Shahi. In the afternoon, visit the historic Hazratbal Shrine and the Shankaracharya Temple. Enjoy an evening walk around Dal Lake."
+    },
+    {
+      "day": "Day 3",
+      "title": "Srinagar to Gulmarg Adventure Tour",
+      "description": "Take a scenic drive to Gulmarg (about 2.5 hours) and enjoy its beautiful green meadows. Ride the famous Gondola cable car for spectacular views of the snow-capped Himalayan mountains. Spend your evening trying out snow activities."
+    },
+    {
+      "day": "Day 4",
+      "title": "Gulmarg to Pahalgam Valley Tour",
+      "description": "Drive to Pahalgam (about 4 hours) through beautiful saffron fields. In the afternoon, explore Betaab Valley and Aru Valley. In the evening, relax by the banks of the Lidder River."
+    },
+    {
+      "day": "Day 5",
+      "title": "Pahalgam to Srinagar Return",
+      "description": "You can take an optional morning pony ride to Chandanwari. In the afternoon, drive back to Srinagar and visit a carpet weaving center to see local crafts. Spend your evening shopping for dry fruits and pashmina shawls."
+    },
+    {
+      "day": "Day 6",
+      "title": "Srinagar to Delhi Departure",
+      "description": "Transfer to the Srinagar airport and take your flight back to Delhi."
+    }
+  ],
+  "gallery": [],
+  "title": "Kashmir Magical Escape",
+  "location": "Kashmir, India",
+  "duration": "6 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.95,
+  "description": "Discover Kashmir’s breathtaking valleys, serene lakes, and snow-capped peaks on this 6-day tour from Delhi. Enjoy shikara rides on Dal Lake, stay in a houseboat, and explore Gulmarg & Pahalgam.",
+  "highlights": [
+    "Delhi to Srinagar flight and sunset Shikara ride on Dal Lake",
+    "Guided sightseeing of Mughal Gardens and Shankaracharya Temple",
+    "Scenic Gondola cable car ride in Gulmarg",
+    "Tour of Pahalgam's Betaab and Aru Valleys next to Lidder River"
+  ],
+  "image": "/data/packages/packages_image/kashmir-escape/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Cultural"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October"
+  ],
+  "showInHero": false
+}

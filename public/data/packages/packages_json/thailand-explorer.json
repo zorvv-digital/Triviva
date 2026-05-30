@@ -1,0 +1,68 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Bangkok and Asiatique Night Market",
+      "description": "Arrive at Suvarnabhumi Airport in Bangkok, where you will be met by our representative and transferred to your hotel for check-in. In the evening, explore the vibrant Asiatique Riverfront Night Market, and enjoy a welcome dinner featuring traditional Thai cuisine."
+    },
+    {
+      "day": "Day 2",
+      "title": "Bangkok City Temple Tour and River Cruise",
+      "description": "Discover the heritage of Bangkok with a visit to the grand Grand Palace and the Temple of the Emerald Buddha (Wat Phra Kaew). Explore the Wat Pho temple, housing the famous Reclining Buddha. After lunch at a local restaurant, enjoy a boat ride along the Chao Phraya River, followed by shopping time at MBK Center or Siam Paragon."
+    },
+    {
+      "day": "Day 3",
+      "title": "Bangkok to Pattaya and Sanctuary of Truth",
+      "description": "After breakfast, check out of your hotel and drive to the coastal town of Pattaya (approximately two hours). Visit the Sanctuary of Truth, a magnificent hand-carved wooden temple. Spend the afternoon relaxing at Pattaya Beach, with options to explore the nightlife or attend a cabaret show in the evening."
+    },
+    {
+      "day": "Day 4",
+      "title": "Coral Island (Koh Larn) Boat Excursion",
+      "description": "Embark on a full-day excursion to Coral Island (Koh Larn) by boat. Spend your day swimming, sunbathing, or participating in water sports like snorkeling. Enjoy a freshly prepared lunch on the beach before returning to Pattaya for your overnight stay."
+    },
+    {
+      "day": "Day 5",
+      "title": "Pattaya to Bangkok Airport Departure",
+      "description": "Enjoy breakfast at your hotel and check out. Enjoy a comfortable private transfer back to Bangkok's airport for your return flight home."
+    }
+  ],
+  "gallery": [],
+  "title": "Thailand Explorer",
+  "location": "Thailand",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.9,
+  "description": "Explore the vibrant culture, stunning beaches, and bustling markets of Thailand on this exciting 5-day tour. Perfect for travelers seeking a mix of adventure, coastal relaxation, and temple excursions - all within a curated, premium package.",
+  "highlights": [
+    "Explore the historic Grand Palace and Wat Phra Kaew in Bangkok",
+    "Boat cruise along the Chao Phraya River and local shopping",
+    "Visit the Sanctuary of Truth wooden temple in Pattaya",
+    "Full-day speedboat excursion to Coral Island (Koh Larn)"
+  ],
+  "image": "/data/packages/packages_image/thailand-explorer/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Beach",
+    "Adventure Tour",
+    "Budget"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

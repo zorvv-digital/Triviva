@@ -1,0 +1,83 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Luxury accommodation"
+    },
+    {
+      "icon": "coffee",
+      "text": "Daily breakfast"
+    },
+    {
+      "icon": "car",
+      "text": "Airport transfers"
+    },
+    {
+      "icon": "compass",
+      "text": "Private guide"
+    },
+    {
+      "icon": "plane",
+      "text": "Sunset sailing tour"
+    }
+  ],
+  "itinerary": [
+    {
+      "day": "Days 1–2",
+      "title": "Oia",
+      "description": "Arrive and settle into your cliffside villa. Explore the iconic blue-domed churches and narrow pathways of Oia."
+    },
+    {
+      "day": "Days 3–4",
+      "title": "Fira & Imerovigli",
+      "description": "Hike the caldera trail from Fira to Imerovigli. Visit the prehistoric site of Akrotiri."
+    },
+    {
+      "day": "Days 5–6",
+      "title": "Red Beach & Wine Country",
+      "description": "Visit the famous Red Beach and tour the island's finest wineries. Enjoy a private sunset sailing cruise."
+    },
+    {
+      "day": "Day 7",
+      "title": "Departure",
+      "description": "Leisurely morning and transfer to the airport with unforgettable memories."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/santorini-escape/02_gallery.jpg",
+    "/data/packages/packages_image/santorini-escape/03_gallery.jpg"
+  ],
+  "title": "Santorini Dreamscape",
+  "location": "Santorini, Greece",
+  "duration": "7 Days / 6 Nights",
+  "price": 120000,
+  "rating": 4.9,
+  "description": "Lose yourself in the whitewashed charm of Santorini. From breathtaking caldera sunsets to hidden volcanic beaches, this curated journey blends luxury stays with authentic Greek island life.",
+  "highlights": [
+    "Caldera sunset cruise",
+    "Wine tasting in Pyrgos",
+    "Private villa with infinity pool",
+    "Volcanic hot springs"
+  ],
+  "image": "/data/packages/packages_image/santorini-escape/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "Beach",
+    "Romantic",
+    "Luxury",
+    "Honeymoon",
+    "Cultural",
+    "International"
+  ],
+  "priority": 1,
+  "bestTimeToVisit": [
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October"
+  ],
+  "showInHero": false
+}

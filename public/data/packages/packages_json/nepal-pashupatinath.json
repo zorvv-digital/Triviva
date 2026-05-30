@@ -1,0 +1,78 @@
+{
+  "included": [
+    "Hotel accommodations",
+    "Daily breakfast",
+    "Private AC vehicle transfers",
+    "Local sightseeing guides",
+    "24/7 customer support"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Kathmandu",
+      "description": "Travel from Delhi to Kathmandu by flight or road. Meet our assistant at Tribhuvan International Airport. Check in at your hotel and rest. In the evening, you can explore the local markets or relax. Spend the night in Kathmandu."
+    },
+    {
+      "day": "Day 2",
+      "title": "Pashupatinath Temple Visit",
+      "description": "Visit the holy Pashupatinath Temple in the early morning for prayers. See the sacred Bagmati River and watch the evening Aarti prayer ceremony. You will also visit Boudhanath Stupa and Guhyeshwari Temple. Spend the night in Kathmandu."
+    },
+    {
+      "day": "Day 3",
+      "title": "Kathmandu City Tour",
+      "description": "Visit Swayambhunath, which is also called the Monkey Temple. Explore the ancient temples and palaces at Patan Durbar Square and Hanuman Dhoka Durbar Square. You can shop for souvenirs at the Thamel market in the evening. Spend the night in Kathmandu."
+    },
+    {
+      "day": "Day 4",
+      "title": "Kathmandu to Pokhara Travel",
+      "description": "Take a beautiful drive or a short flight to Pokhara. Check in at your hotel. In the evening, enjoy a peaceful walk and boat ride on Phewa Lake. Spend the night in Pokhara."
+    },
+    {
+      "day": "Day 5",
+      "title": "Pokhara City Tour",
+      "description": "Wake up early to see the beautiful sunrise over the Himalayan mountains from Sarangkot. Visit the Bindhyabasini Temple, Devi’s Fall waterfall, and Gupteshwar Mahadev Cave. Enjoy the evening shopping or relaxing. Spend the night in Pokhara."
+    },
+    {
+      "day": "Day 6",
+      "title": "Return to Kathmandu",
+      "description": "Drive or fly back to Kathmandu. Spend the evening visiting more temples or doing last-minute shopping. Spend the night in Kathmandu."
+    },
+    {
+      "day": "Day 7",
+      "title": "Departure from Kathmandu",
+      "description": "Have breakfast and check out of your hotel. You can visit the Pashupatinath Temple again in the morning if you want. We will drop you off at Kathmandu airport for your flight back home."
+    }
+  ],
+  "gallery": [],
+  "title": "Pashupatinath Darshan Tour",
+  "location": "Nepal",
+  "duration": "7 Days / 6 Nights",
+  "price": 25000,
+  "rating": 4.59,
+  "description": "Take a spiritual 7-day tour to Nepal. Visit the holy Pashupatinath Temple in Kathmandu, along with famous UNESCO heritage temples, beautiful monasteries, and scenic lake cities like Pokhara. This tour is perfect for families and religious travelers.",
+  "highlights": [
+    "Holy prayers at Pashupatinath Temple and evening Aarti ceremony",
+    "Guided sightseeing tours of UNESCO heritage temples in Kathmandu",
+    "Scenic drive or flight to the beautiful lake city of Pokhara",
+    "Spectacular sunrise views over the Himalayas from Sarangkot"
+  ],
+  "image": "/data/packages/packages_image/nepal-pashupatinath/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "International",
+    "Mountain",
+    "Devotional Tour",
+    "Historical"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": false
+}

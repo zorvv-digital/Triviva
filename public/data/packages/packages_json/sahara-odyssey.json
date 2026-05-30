@@ -1,0 +1,69 @@
+{
+  "included": [
+    "Riad accommodation",
+    "Desert luxury camp",
+    "All transport",
+    "Camel trek",
+    "Guided medina tour"
+  ],
+  "itinerary": [
+    {
+      "day": "Days 1–2",
+      "title": "Marrakech",
+      "description": "Explore Jemaa el-Fnaa, the souks, and Majorelle Garden. Cooking class in a traditional riad."
+    },
+    {
+      "day": "Day 3",
+      "title": "Atlas Mountains",
+      "description": "Drive through the dramatic Tizi n'Tichka pass and the stunning Dades Gorge."
+    },
+    {
+      "day": "Days 4–5",
+      "title": "Sahara Desert",
+      "description": "Camel trek into the Erg Chebbi dunes. Sleep under the stars at a luxury desert camp."
+    },
+    {
+      "day": "Day 6",
+      "title": "Return",
+      "description": "Sunrise over the dunes before the journey back to Marrakech."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/sahara-odyssey/02_gallery.jpg",
+    "/data/packages/packages_image/sahara-odyssey/03_gallery.jpg"
+  ],
+  "title": "Sahara Desert Odyssey",
+  "location": "Marrakech & Merzouga, Morocco",
+  "duration": "6 Days / 5 Nights",
+  "price": 75000,
+  "rating": 4.82,
+  "description": "An immersive desert journey from the bustling souks of Marrakech to the silent dunes of the Sahara. Camp under the stars and ride camels at sunrise.",
+  "highlights": [
+    "Camel trek into Erg Chebbi",
+    "Luxury desert camp",
+    "Medina cooking class",
+    "Atlas Mountain drive"
+  ],
+  "image": "/data/packages/packages_image/sahara-odyssey/01_main.jpg",
+  "region": "international",
+  "categories": [
+    "Desert",
+    "Cultural",
+    "Adventure Tour",
+    "Solo",
+    "Budget",
+    "International"
+  ],
+  "priority": 8,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May"
+  ],
+  "showInHero": true
+}

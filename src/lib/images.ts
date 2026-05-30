@@ -25,5 +25,8 @@ export const images = {
 export type ImageKey = keyof typeof images;
 
 export const getImage = (key: string): string => {
+  if (key.startsWith("/") || key.startsWith("http")) {
+    return key;
+  }
   return images[key as ImageKey] || images.hero;
 };

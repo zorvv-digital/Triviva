@@ -1,0 +1,30 @@
+[
+  {
+    "id": "swiss-alpine",
+    "name": "Interlaken & Zermatt",
+    "rating": 4.85,
+    "details": "6 Days / 5 Nights",
+    "image": "/data/packages/packages_image/swiss-alpine/01_main.jpg"
+  },
+  {
+    "id": "santorini-escape",
+    "name": "Santorini, Greece",
+    "rating": 4.9,
+    "details": "7 Days / 6 Nights",
+    "image": "/data/packages/packages_image/santorini-escape/01_main.jpg"
+  },
+  {
+    "id": "maldives-luxury",
+    "name": "South Malé Atoll",
+    "rating": 4.95,
+    "details": "5 Days / 4 Nights",
+    "image": "/data/packages/packages_image/maldives-luxury/01_main.jpg"
+  },
+  {
+    "id": "japan-cultural",
+    "name": "Tokyo, Kyoto & Osaka",
+    "rating": 4.95,
+    "details": "10 Days / 9 Nights",
+    "image": "/data/packages/packages_image/japan-cultural/01_main.jpg"
+  }
+]

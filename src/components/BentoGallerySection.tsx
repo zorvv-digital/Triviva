@@ -1,17 +1,54 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { getImage } from "@/lib/images";
-import galleryData from "@/data/gallery.json";
 
-const galleryItems = galleryData.map(item => ({
-  ...item,
-  image: getImage(item.image)
-}));
+interface RawGalleryItem {
+  image: string;
+  alt: string;
+  className: string;
+  title?: string;
+  category?: string;
+}
+
+interface ProcessedGalleryItem {
+  image: string;
+  alt: string;
+  className: string;
+  title?: string;
+  category?: string;
+}
 
 const BentoGallerySection = () => {
+  const [showSection, setShowSection] = useState<boolean>(true);
+  const [galleryItems, setGalleryItems] = useState<ProcessedGalleryItem[]>([]);
+
+  useEffect(() => {
+    fetch("/data/gallery/gallery.json")
+      .then((res) => res.json())
+      .then((data: { enabled: boolean; images: RawGalleryItem[] }) => {
+        if (data && data.enabled === false) {
+          setShowSection(false);
+          return;
+        }
+        const imagesList = data.images || [];
+        const processed = imagesList.map((item) => ({
+          ...item,
+          image: getImage(item.image),
+          title: item.title || item.alt.split(",")[0], // Fallback to city/location name from alt text
+          category: item.category || "Destination", // Fallback category
+        }));
+        setGalleryItems(processed);
+      })
+      .catch((err) => console.error("Error loading gallery data:", err));
+  }, []);
+
+  if (!showSection || galleryItems.length === 0) {
+    return null;
+  }
   return (
     <section className="py-20 md:py-32 bg-brand-light">
       <div className="container px-4 md:px-6 mx-auto">
@@ -33,7 +70,7 @@ const BentoGallerySection = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
           {galleryItems.map((item, index) => (
             <motion.div
               key={index}

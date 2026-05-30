@@ -1,0 +1,66 @@
+{
+  "included": [
+    "Camping gear & porters",
+    "All meals on trek",
+    "Boutique hotel in Cusco",
+    "Train tickets",
+    "Expert guide"
+  ],
+  "itinerary": [
+    {
+      "day": "Days 1–2",
+      "title": "Cusco",
+      "description": "Acclimatize at altitude. Explore colonial Cusco, San Pedro market, and Sacsayhuaman ruins."
+    },
+    {
+      "day": "Days 3–4",
+      "title": "Sacred Valley",
+      "description": "Visit Ollantaytambo, Moray terraces, and Maras salt mines."
+    },
+    {
+      "day": "Days 5–8",
+      "title": "Inca Trail",
+      "description": "Trek through cloud forests and ancient passes. Arrive at the Sun Gate for your first view of Machu Picchu."
+    },
+    {
+      "day": "Day 9",
+      "title": "Departure",
+      "description": "Train back to Cusco and farewell dinner."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/peru-expedition/02_gallery.jpg",
+    "/data/packages/packages_image/peru-expedition/03_gallery.jpg"
+  ],
+  "title": "Peru: Inca Trail Expedition",
+  "location": "Cusco & Machu Picchu",
+  "duration": "9 Days / 8 Nights",
+  "price": 110000,
+  "rating": 4.88,
+  "description": "Walk in the footsteps of the Incas on this epic trek to Machu Picchu. A blend of adventure, history, and Andean culture.",
+  "highlights": [
+    "4-day Inca Trail trek",
+    "Sunrise at Machu Picchu",
+    "Sacred Valley exploration",
+    "Traditional Pachamanca feast"
+  ],
+  "image": "/data/packages/packages_image/peru-expedition/01_main.jpg",
+  "region": "domestic",
+  "categories": [
+    "Adventure Tour",
+    "Mountain",
+    "Historical",
+    "Solo",
+    "Domestic",
+    "Devotional Tour"
+  ],
+  "priority": 6,
+  "bestTimeToVisit": [
+    "May",
+    "June",
+    "July",
+    "August",
+    "September"
+  ],
+  "showInHero": false
+}
