@@ -1,0 +1,28 @@
+{
+  "stats": [
+    { "icon": "Users", "num": "5,000+", "label": "Happy Travelers" },
+    { "icon": "Globe", "num": "120+", "label": "Destinations" },
+    { "icon": "Award", "num": "8+", "label": "Years Experience" },
+    { "icon": "Heart", "num": "98%", "label": "Satisfaction Rate" }
+  ],
+  "values": [
+    { 
+      "title": "Authenticity", 
+      "desc": "We go beyond the tourist trail. Every experience is rooted in genuine local culture, fostering meaningful connections between our travelers and the communities they visit. We prioritize small, family-run establishments over massive international chains." 
+    },
+    { 
+      "title": "Sustainability", 
+      "desc": "We partner strictly with eco-conscious properties and local conservation efforts. A portion of every booking goes directly toward initiatives that protect the vulnerable ecosystems and heritage sites we explore." 
+    },
+    { 
+      "title": "Excellence", 
+      "desc": "From your first inquiry to the moment you return home, every touchpoint is crafted with meticulous care. Our 24/7 concierge team is always on standby, anticipating your needs before you even realize you have them." 
+    }
+  ],
+  "team": [
+    { "name": "Maya Sterling", "role": "Founder & Lead Explorer", "initials": "MS" },
+    { "name": "Lucas Fernández", "role": "Head of Operations", "initials": "LF" },
+    { "name": "Aiko Tanaka", "role": "Asia Specialist", "initials": "AT" },
+    { "name": "Omar Khalil", "role": "Desert & Africa Expert", "initials": "OK" }
+  ]
+}

@@ -13,9 +13,7 @@ const HeroSection = () => {
           alt="Tropical paradise beach resort"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0" style={{
-          background: "linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,1) 100%)"
-        }} />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,rgba(255,255,255,0)_55%,rgba(255,255,255,0.5)_80%,rgba(255,255,255,1)_100%)]" />
       </div>
 
       <div className="relative section-padding w-full">

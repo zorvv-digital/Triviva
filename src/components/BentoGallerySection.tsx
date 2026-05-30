@@ -1,36 +1,15 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-// Using the images from the existing lib
-import { images } from "@/lib/images";
+import { getImage } from "@/lib/images";
+import galleryData from "@/data/gallery.json";
 
-const galleryItems = [
-  {
-    title: "Santorini, Greece",
-    category: "Romantic Getaway",
-    image: images.santorini,
-    className: "col-span-1 border md:col-span-2 row-span-2",
-  },
-  {
-    title: "Kyoto, Japan",
-    category: "Cultural Exploration",
-    image: images.japan,
-    className: "col-span-1 border md:col-span-1 row-span-1",
-  },
-  {
-    title: "Swiss Alps",
-    category: "Alpine Adventure",
-    image: images.swiss,
-    className: "col-span-1 border md:col-span-1 row-span-1",
-  },
-  {
-    title: "Bali, Indonesia",
-    category: "Tropical Wellness",
-    image: images.bali,
-    className: "col-span-1 border md:col-span-2 row-span-1",
-  },
-];
+const galleryItems = galleryData.map(item => ({
+  ...item,
+  image: getImage(item.image)
+}));
 
 const BentoGallerySection = () => {
   return (
@@ -62,7 +41,7 @@ const BentoGallerySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`group relative overflow-hidden rounded-2xl ${item.className}`}
+              className={cn("group relative overflow-hidden rounded-2xl", item.className)}
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500 z-10" />
               

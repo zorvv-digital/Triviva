@@ -1,32 +1,18 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { images } from "@/lib/images";
+import { getImage } from "@/lib/images";
+import galleryData from "@/data/gallery.json";
+import { cn } from "@/lib/utils";
 
 const galleryImages = [
-  ...[
-    { src: images.santorini, alt: "Santorini, Greece", className: "col-span-1 md:col-span-2 row-span-2" },
-    { src: images.japan, alt: "Kyoto, Japan", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.swiss, alt: "Swiss Alps", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.bali, alt: "Bali, Indonesia", className: "col-span-1 md:col-span-2 row-span-1" },
-    { src: images.sahara, alt: "Sahara Desert, Morocco", className: "col-span-1 md:col-span-1 row-span-2" },
-    { src: images.maldives, alt: "Maldives", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.peru, alt: "Machu Picchu, Peru", className: "col-span-1 md:col-span-2 row-span-2" },
-    { src: images.hero, alt: "Tropical Beach Resort", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.about, alt: "Wanderlust Adventure", className: "col-span-1 md:col-span-2 row-span-1" },
-  ],
-  ...[
-    { src: images.santorini, alt: "Santorini, Greece", className: "col-span-1 md:col-span-2 row-span-2" },
-    { src: images.japan, alt: "Kyoto, Japan", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.swiss, alt: "Swiss Alps", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.bali, alt: "Bali, Indonesia", className: "col-span-1 md:col-span-2 row-span-1" },
-    { src: images.sahara, alt: "Sahara Desert, Morocco", className: "col-span-1 md:col-span-1 row-span-2" },
-    { src: images.maldives, alt: "Maldives", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.peru, alt: "Machu Picchu, Peru", className: "col-span-1 md:col-span-2 row-span-2" },
-    { src: images.hero, alt: "Tropical Beach Resort", className: "col-span-1 md:col-span-1 row-span-1" },
-    { src: images.about, alt: "Wanderlust Adventure", className: "col-span-1 md:col-span-2 row-span-1" },
-  ]
-];
+  ...galleryData,
+  ...galleryData
+].map(item => ({
+  src: getImage(item.image),
+  alt: item.alt,
+  className: item.className
+}));
 
 const Gallery = () => {
   return (
@@ -68,7 +54,7 @@ const Gallery = () => {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.08, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className={`group relative overflow-hidden rounded-3xl bg-secondary ${img.className}`}
+              className={cn("group relative overflow-hidden rounded-3xl bg-secondary", img.className)}
             >
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500 z-10" />
               <img

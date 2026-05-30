@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Santorini, Greece",
+    "category": "Romantic Getaway",
+    "image": "santorini",
+    "className": "col-span-1 border md:col-span-2 row-span-2"
+  },
+  {
+    "title": "Kyoto, Japan",
+    "category": "Cultural Exploration",
+    "image": "japan",
+    "className": "col-span-1 border md:col-span-1 row-span-1"
+  },
+  {
+    "title": "Swiss Alps",
+    "category": "Alpine Adventure",
+    "image": "swiss",
+    "className": "col-span-1 border md:col-span-1 row-span-1"
+  },
+  {
+    "title": "Bali, Indonesia",
+    "category": "Tropical Wellness",
+    "image": "bali",
+    "className": "col-span-1 border md:col-span-2 row-span-1"
+  }
+]
