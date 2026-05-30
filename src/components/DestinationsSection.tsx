@@ -1,16 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { images } from "@/lib/images";
+import { getImage } from "@/lib/images";
+import destinationsData from "@/data/destinations.json";
 
-const destinations = [
-  { name: "Santorini", country: "Greece", image: images.santorini, id: "santorini-escape" },
-  { name: "Kyoto", country: "Japan", image: images.japan, id: "japan-cultural" },
-  { name: "Bali", country: "Indonesia", image: images.bali, id: "bali-retreat" },
-  { name: "Maldives", country: "Indian Ocean", image: images.maldives, id: "maldives-luxury" },
-  { name: "Swiss Alps", country: "Switzerland", image: images.swiss, id: "swiss-alpine" },
-  { name: "Sahara", country: "Morocco", image: images.sahara, id: "sahara-odyssey" },
-];
+const destinations = destinationsData.map(dest => ({
+  ...dest,
+  image: getImage(dest.image)
+}));
 
 const DestinationsSection = () => {
   return (
@@ -44,9 +41,7 @@ const DestinationsSection = () => {
                     alt={`${dest.name}, ${dest.country}`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0" style={{
-                    background: "linear-gradient(to top, hsl(var(--deep-charcoal) / 0.6) 0%, transparent 50%)"
-                  }} />
+                  <div className="absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--deep-charcoal)/0.6)_0%,transparent_50%)]" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h3 className="text-2xl font-display font-bold text-card">{dest.name}</h3>
                     <p className="text-card/70 font-body text-sm">{dest.country}</p>

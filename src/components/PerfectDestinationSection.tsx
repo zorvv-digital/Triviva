@@ -1,36 +1,12 @@
-import destSahara from "@/assets/dest-sahara.jpg";
-import destMaldives from "@/assets/dest-maldives.jpg";
-import destJapan from "@/assets/dest-japan.jpg";
-import pkgPeru from "@/assets/pkg-peru.jpg";
+import { getImage } from "@/lib/images";
+import perfectDestinationsData from "@/data/perfectDestinations.json";
 import { Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const destinations = [
-  {
-    name: "Morocco",
-    image: destSahara,
-    rating: 4.9,
-    details: "7 Days • From ₹75,000",
-  },
-  {
-    name: "Maldives",
-    image: destMaldives,
-    rating: 5.0,
-    details: "5 Days • From ₹200,000",
-  },
-  {
-    name: "Japan",
-    image: destJapan,
-    rating: 4.8,
-    details: "10 Days • From ₹150,000",
-  },
-  {
-    name: "Peru",
-    image: pkgPeru,
-    rating: 4.9,
-    details: "8 Days • From ₹110,000",
-  },
-];
+const destinations = perfectDestinationsData.map(dest => ({
+  ...dest,
+  image: getImage(dest.image)
+}));
 
 const PerfectDestinationSection = () => {
   return (

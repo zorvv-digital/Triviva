@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "Compass",
+    "title": "Curated Journeys",
+    "description": "Every trip is handpicked and designed by local experts who know the hidden gems."
+  },
+  {
+    "icon": "Shield",
+    "title": "Travel with Confidence",
+    "description": "Certified guides, 24/7 support, and comprehensive travel insurance on every trip."
+  },
+  {
+    "icon": "Headphones",
+    "title": "Concierge Support",
+    "description": "Your personal travel concierge is just a message away, from planning to return."
+  },
+  {
+    "icon": "Sparkles",
+    "title": "Unique Experiences",
+    "description": "Beyond sightseeing — cultural immersions, local connections, and meaningful moments."
+  }
+]

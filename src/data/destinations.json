@@ -1,0 +1,8 @@
+[
+  { "name": "Santorini", "country": "Greece", "image": "santorini", "id": "santorini-escape" },
+  { "name": "Kyoto", "country": "Japan", "image": "japan", "id": "japan-cultural" },
+  { "name": "Bali", "country": "Indonesia", "image": "bali", "id": "bali-retreat" },
+  { "name": "Maldives", "country": "Indian Ocean", "image": "maldives", "id": "maldives-luxury" },
+  { "name": "Swiss Alps", "country": "Switzerland", "image": "swiss", "id": "swiss-alpine" },
+  { "name": "Sahara", "country": "Morocco", "image": "sahara", "id": "sahara-odyssey" }
+]

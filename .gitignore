@@ -50,3 +50,6 @@ ENV/
 Thumbs.db
 db.db
 
+.agents
+.agent
+claude.md

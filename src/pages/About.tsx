@@ -4,20 +4,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { images } from "@/lib/images";
 
-const stats = [
-  { icon: Users, num: "5,000+", label: "Happy Travelers" },
-  { icon: Globe, num: "120+", label: "Destinations" },
-  { icon: Award, num: "8+", label: "Years Experience" },
-  { icon: Heart, num: "98%", label: "Satisfaction Rate" },
-];
+import aboutData from "@/data/about.json";
 
-const team = [
-  { name: "Maya Sterling", role: "Founder & Lead Explorer", initials: "MS" },
-  { name: "Lucas Fernández", role: "Head of Operations", initials: "LF" },
-  { name: "Aiko Tanaka", role: "Asia Specialist", initials: "AT" },
-  { name: "Omar Khalil", role: "Desert & Africa Expert", initials: "OK" },
-];
+const iconMap = {
+  Users,
+  Globe,
+  Award,
+  Heart,
+};
 
+const stats = aboutData.stats.map(s => ({
+  ...s,
+  icon: iconMap[s.icon as keyof typeof iconMap] || Users,
+}));
+
+const team = aboutData.team;
+const values = aboutData.values;
+
+/**
+ * Renders the About page, detailing the company values, core team,
+ * and key journey metrics loaded from about.json.
+ */
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -89,20 +96,7 @@ const About = () => {
             <h2 className="section-title">What Drives <span className="text-gradient">Us</span></h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { 
-                title: "Authenticity", 
-                desc: "We go beyond the tourist trail. Every experience is rooted in genuine local culture, fostering meaningful connections between our travelers and the communities they visit. We prioritize small, family-run establishments over massive international chains." 
-              },
-              { 
-                title: "Sustainability", 
-                desc: "We partner strictly with eco-conscious properties and local conservation efforts. A portion of every booking goes directly toward initiatives that protect the vulnerable ecosystems and heritage sites we explore." 
-              },
-              { 
-                title: "Excellence", 
-                desc: "From your first inquiry to the moment you return home, every touchpoint is crafted with meticulous care. Our 24/7 concierge team is always on standby, anticipating your needs before you even realize you have them." 
-              },
-            ].map((v, i) => (
+            {values.map((v, i) => (
               <motion.div
                 key={v.title}
                 initial={{ opacity: 0, y: 20 }}

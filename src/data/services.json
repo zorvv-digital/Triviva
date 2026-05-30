@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "Plane",
+    "title": "Flight Reservation",
+    "description": "Seamless bookings with major global airlines to get you to your destination comfortably."
+  },
+  {
+    "icon": "Hotel",
+    "title": "Boutique Lodging",
+    "description": "Handpicked stays ranging from local eco-retreats to premium five-star luxury resorts."
+  },
+  {
+    "icon": "Compass",
+    "title": "Local Guide Tours",
+    "description": "Immersive cultural experiences led by neighborhood experts who know the hidden paths."
+  }
+]

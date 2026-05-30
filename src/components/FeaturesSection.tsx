@@ -1,29 +1,19 @@
 import { motion } from "framer-motion";
 import { Shield, Compass, Headphones, Sparkles } from "lucide-react";
 import { images } from "@/lib/images";
+import featuresData from "@/data/features.json";
 
-const features = [
-  {
-    icon: Compass,
-    title: "Curated Journeys",
-    description: "Every trip is handpicked and designed by local experts who know the hidden gems.",
-  },
-  {
-    icon: Shield,
-    title: "Travel with Confidence",
-    description: "Certified guides, 24/7 support, and comprehensive travel insurance on every trip.",
-  },
-  {
-    icon: Headphones,
-    title: "Concierge Support",
-    description: "Your personal travel concierge is just a message away, from planning to return.",
-  },
-  {
-    icon: Sparkles,
-    title: "Unique Experiences",
-    description: "Beyond sightseeing — cultural immersions, local connections, and meaningful moments.",
-  },
-];
+const iconMap = {
+  Compass,
+  Shield,
+  Headphones,
+  Sparkles,
+};
+
+const features = featuresData.map(feat => ({
+  ...feat,
+  icon: iconMap[feat.icon as keyof typeof iconMap] || Compass,
+}));
 
 const FeaturesSection = () => {
   return (

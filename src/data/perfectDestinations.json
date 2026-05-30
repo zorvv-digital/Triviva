@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Morocco",
+    "image": "sahara",
+    "rating": 4.9,
+    "details": "7 Days • From ₹75,000"
+  },
+  {
+    "name": "Maldives",
+    "image": "maldives",
+    "rating": 5.0,
+    "details": "5 Days • From ₹200,000"
+  },
+  {
+    "name": "Japan",
+    "image": "japan",
+    "rating": 4.8,
+    "details": "10 Days • From ₹150,000"
+  },
+  {
+    "name": "Peru",
+    "image": "peru",
+    "rating": 4.9,
+    "details": "8 Days • From ₹110,000"
+  }
+]
