@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bali-bliss",
+    "name": "Bali, Indonesia",
+    "rating": 4.86,
+    "details": "5 Days / 4 Nights",
+    "image": "/data/packages/packages_image/bali-bliss/01-Bali.webp"
+  },
+  {
+    "id": "kashmir-escape",
+    "name": "Kashmir, India",
+    "rating": 4.9,
+    "details": "6 Days / 5 Nights",
+    "image": "/data/packages/packages_image/kashmir-escape/01-Kashmir.webp"
+  },
+  {
+    "id": "kodaikanal-package",
+    "name": "Kodaikanal, India",
+    "rating": 4.68,
+    "details": "5 Days / 4 Nights",
+    "image": "/data/packages/packages_image/kodaikanal-package/01-Kodai.webp"
+  },
+  {
+    "id": "maldives-luxury",
+    "name": "Maldives",
+    "rating": 4.95,
+    "details": "4 Days / 3 Nights",
+    "image": "/data/packages/packages_image/maldives-luxury/01-Maldives.webp"
+  }
+]

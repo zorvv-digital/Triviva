@@ -1,20 +1,41 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import { getImage } from "@/lib/images";
-import galleryData from "@/data/gallery.json";
 import { cn } from "@/lib/utils";
 
-const galleryImages = [
-  ...galleryData,
-  ...galleryData
-].map(item => ({
-  src: getImage(item.image),
-  alt: item.alt,
-  className: item.className
-}));
+import { useNavigate } from "react-router-dom";
+
+interface RawGalleryItem {
+  image: string;
+  alt: string;
+  className: string;
+}
 
 const Gallery = () => {
+  const navigate = useNavigate();
+  const [galleryImages, setGalleryImages] = useState<{ src: string; alt: string; className: string }[]>([]);
+
+  useEffect(() => {
+    fetch("/data/gallery/gallery.json")
+      .then((res) => res.json())
+      .then((data: { enabled: boolean; images: RawGalleryItem[] }) => {
+        if (data && data.enabled === false) {
+          navigate("/");
+          return;
+        }
+        const imagesList = data.images || [];
+        const doubleData = [...imagesList, ...imagesList].map((item) => ({
+          src: getImage(item.image),
+          alt: item.alt,
+          className: item.className,
+        }));
+        setGalleryImages(doubleData);
+      })
+      .catch((err) => console.error("Error loading gallery data:", err));
+  }, [navigate]);
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -46,7 +67,7 @@ const Gallery = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
           {galleryImages.map((img, i) => (
             <motion.div
               key={i}
@@ -74,6 +95,8 @@ const Gallery = () => {
           ))}
         </div>
       </main>
+
+      <CTASection />
 
       <Footer />
     </div>

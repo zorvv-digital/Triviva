@@ -11,9 +11,11 @@ const HeroSection = () => {
         <img
           src={images.hero}
           alt="Tropical paradise beach resort"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,rgba(255,255,255,0)_55%,rgba(255,255,255,0.5)_80%,rgba(255,255,255,1)_100%)]" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 0%, transparent 55%, hsl(var(--background) / 0.5) 80%, hsl(var(--background)) 100%)" }} />
       </div>
 
       <div className="relative section-padding w-full">
@@ -46,6 +48,20 @@ const HeroSection = () => {
           >
             Discover retreats, active adventures, and boutique stays — all crafted for the mindful explorer.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+          >
+            <Link
+              to="/packages"
+              onMouseEnter={() => import("@/pages/Packages")}
+              className="btn-primary-travel"
+            >
+              Explore Packages <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
         </div>
 
       </div>

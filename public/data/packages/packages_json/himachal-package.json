@@ -1,0 +1,86 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Shimla Heritage & Ancient Temples",
+      "description": "Arrive in Shimla, the former summer capital. Walk the historic Mall Road and visit Jakhoo Temple for panoramic mountain views."
+    },
+    {
+      "day": "Day 2",
+      "title": "Shimla to Manali via Kullu Valley",
+      "description": "Enjoy a scenic drive to Manali, passing through the beautiful Kullu Valley along the Beas River, stopping for local shawl shopping."
+    },
+    {
+      "day": "Day 3",
+      "title": "Solang Valley Adventure Sports",
+      "description": "Excursion to Solang Valley. Enjoy thrilling adventure activities such as paragliding, zorbing, and quad biking, or skiing in winter."
+    },
+    {
+      "day": "Day 4",
+      "title": "Manali to Dharamshala & McLeod Ganj",
+      "description": "Drive to Dharamshala, the seat of the Tibetan government-in-exile. Visit the Tsuglagkhang Complex (Dalai Lama Temple) in McLeod Ganj."
+    },
+    {
+      "day": "Day 5",
+      "title": "Dharamshala to Dalhousie & Khajjiar",
+      "description": "Travel to Dalhousie and take an excursion to Khajjiar, known as the 'Mini Switzerland of India', surrounded by dense pine forests."
+    },
+    {
+      "day": "Day 6",
+      "title": "Kasauli Orchards & Departure",
+      "description": "Drive through Kasauli's peaceful apple orchards. Transfer to the nearest airport or station for your onward flight."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/himachal-package/02_gallery.webp",
+    "/data/packages/packages_image/himachal-package/02_main.webp",
+    "/data/packages/packages_image/himachal-package/02-Himachal (2).webp",
+    "/data/packages/packages_image/himachal-package/02-Himachal.webp",
+    "/data/packages/packages_image/himachal-package/03_gallery.webp",
+    "/data/packages/packages_image/himachal-package/04_gallery.webp"
+  ],
+  "title": "Himachal: Scenic Alpine Escapes",
+  "location": "Himachal Pradesh, India",
+  "duration": "6 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.78,
+  "description": "Escape to the majestic heights of the Himalayas on a journey through Himachal Pradesh's most picturesque valleys and hill stations. Walk the colonial lanes of Shimla, experience high-altitude adventure sports in Solang Valley, and breathe in the spiritual serenity of Dharamshala and McLeod Ganj. From the lush apple orchards of Kasauli to the breathtaking pine-forested meadows of Dalhousie and Khajjiar—often called 'Mini Switzerland'—this alpine retreat is a paradise for adventurers and nature lovers alike.",
+  "highlights": [
+    "Breathtaking hikes and adventure sports in the valleys of Manali and Kullu",
+    "Explore colonial heritage and panoramic views on the historic Shimla Ridge",
+    "Visit the spiritual monasteries of Dharamshala and McLeod Ganj",
+    "Discover the pine-forested meadows of Dalhousie and Khajjiar",
+    "Thrilling paragliding, zorbing, and winter skiing in Solang Valley",
+    "Stroll through the tranquil, lush apple orchards of Kasauli"
+  ],
+  "image": "/data/packages/packages_image/himachal-package/01_Himachal.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Adventure Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": true,
+  "lat": 32.2396,
+  "lng": 77.1887
+}

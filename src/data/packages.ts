@@ -1,5 +1,3 @@
-import rawPackages from "./packages.json";
-
 export interface TravelPackage {
   id: string;
   title: string;
@@ -10,17 +8,16 @@ export interface TravelPackage {
   image: string;
   description: string;
   highlights: string[];
-  included: string[];
+  region: "domestic" | "international";
+  categories: string[];
+  priority: number;
+  bestTimeToVisit: string[];
+  showInHero?: boolean;
+}
+
+export interface TravelPackageDetail extends Omit<TravelPackage, 'id'> {
+  included: (string | { icon: string; text: string })[];
   itinerary: { day: string; title: string; description: string }[];
   gallery: string[];
 }
 
-const basePackages: TravelPackage[] = rawPackages as TravelPackage[];
-
-export const packages: TravelPackage[] = [
-  ...basePackages,
-  ...basePackages.map(pkg => ({
-    ...pkg,
-    id: `${pkg.id}-2`
-  }))
-];

@@ -1,0 +1,77 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Delhi Arrival & Old Delhi Heritage Tour",
+      "description": "Arrive in Delhi and check in. Discover Old Delhi, including the Red Fort and a rickshaw ride through the markets of Chandni Chowk."
+    },
+    {
+      "day": "Day 2",
+      "title": "New Delhi Sightseeing & Lotus Temple",
+      "description": "Visit New Delhi's landmark sights: Qutub Minar, India Gate, and the serene, lotus-shaped Lotus Temple."
+    },
+    {
+      "day": "Day 3",
+      "title": "Delhi to Agra & Taj Mahal Sunset",
+      "description": "Drive to Agra. In the afternoon, visit the magnificent Taj Mahal, witnessing the white marble change colors in the sunset glow."
+    },
+    {
+      "day": "Day 4",
+      "title": "Agra Fort & Fatehpur Sikri Excursion",
+      "description": "Tour the massive red sandstone Agra Fort, then drive to the ghost city of Fatehpur Sikri, the former Mughal capital."
+    },
+    {
+      "day": "Day 5",
+      "title": "Agra to Delhi Departure",
+      "description": "Transfer back to Delhi airport or railway station for your onward journey."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/golden-triangle/02-Delhi.webp",
+    "/data/packages/packages_image/golden-triangle/ChatGPT Image May 31, 2026, 02_29_58 PM.webp",
+    "/data/packages/packages_image/golden-triangle/ChatGPT Image May 31, 2026, 02_32_47 PM.webp"
+  ],
+  "title": "Delhi & Agra: Golden Triangle Heritage",
+  "location": "Delhi & Agra, India",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.56,
+  "description": "Journey through the epicenters of India's royal history and architectural genius. Uncover the layers of Old and New Delhi as you explore the colossal Red Fort, the ancient Qutub Minar, and the bustling bazaar of Chandni Chowk. Travel to Agra to behold the Taj Mahal—a monument of pure white marble and eternal love—before touring the historic sandstone chambers of Agra Fort and the ghost city of Fatehpur Sikri.",
+  "highlights": [
+    "Guided tours of Delhi's iconic Red Fort, Qutub Minar, and India Gate",
+    "Vibrant rickshaw ride through the narrow lanes of historic Chandni Chowk",
+    "Witness the breathtaking beauty of the Taj Mahal at sunrise or sunset",
+    "Explore the imposing red sandstone fortress of Agra Fort",
+    "Walk through the deserted Mughal imperial capital of Fatehpur Sikri",
+    "Experience a perfect blend of rich culture, history, and Mughal cuisine"
+  ],
+  "image": "/data/packages/packages_image/golden-triangle/01-Delhi.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Historical",
+    "Cultural"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": true,
+  "lat": 27.175,
+  "lng": 78.0422
+}

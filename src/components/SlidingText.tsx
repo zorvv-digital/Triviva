@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const destinations = [
   "SANTORINI", "BALI", "KYOTO", "SWISS ALPS", "AMALFI COAST", "DUBAI",
   "MARRAKECH", "MACHU PICCHU", "MALDIVES", "ICELAND"
@@ -8,20 +6,11 @@ const destinations = [
 const SlidingText = () => {
   return (
     <div className="w-full overflow-hidden bg-brand-primary/5 py-4 sm:py-6 border-y border-brand-primary/10 flex items-center">
-      <motion.div
+      <div
         className="flex whitespace-nowrap items-center"
-        animate={{
-          x: [0, -1000],
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 20,
-          ease: "linear",
-        }}
+        style={{ animation: "marquee 20s linear infinite" }}
       >
-        {/* We render the list 3 times to ensure smooth infinite scroll without snapping */}
-        {[...Array(3)].map((_, i) => (
+        {[0, 1].map((i) => (
           <div key={i} className="flex items-center">
             {destinations.map((dest, index) => (
               <div key={`${i}-${index}`} className="flex items-center mx-4 sm:mx-8">
@@ -33,7 +22,7 @@ const SlidingText = () => {
             ))}
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

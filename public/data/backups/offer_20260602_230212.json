@@ -1,0 +1,47 @@
+[
+  {
+    "id": "summer-adventure",
+    "isActive": true,
+    "isPrimaryExitOffer": true,
+    "title": "Exclusive Adventure Awaits!",
+    "subtitle": "Get 15% off on our best tours",
+    "description": "Unlock a 15% discount on selected international packages. Book within the next 24 hours to claim this special rates curation.",
+    "promoCode": "ADVENTURE15",
+    "image": "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
+    "ctaText": "View Offers",
+    "ctaLink": "/packages",
+    "discountPercentage": 25,
+    "applicablePackages": [
+      "dubai-luxury",
+      "thailand-explorer",
+      "maldives-luxury"
+    ]
+  },
+  {
+    "id": "domestic-escape",
+    "isActive": true,
+    "title": "Himalayan Getaway Offer!",
+    "subtitle": "10% off on Domestic Mountain Tours",
+    "description": "Escape to the hills with an extra 10% discount on select domestic mountain packages.",
+    "promoCode": "HILLS10",
+    "discountPercentage": 10,
+    "applicablePackages": [
+      "himachal-package",
+      "kodaikanal-package",
+      "ooty-package",
+      "kashmir-escape"
+    ],
+    "isPrimaryExitOffer": true
+  },
+  {
+    "id": "campaign-6880",
+    "isActive": true,
+    "isPrimaryExitOffer": false,
+    "title": "Exclusive Discount Campaign",
+    "subtitle": "",
+    "description": "Receive a 15% discount on curated travel packages. Book this week.",
+    "promoCode": "SUMMER15",
+    "discountPercentage": 100,
+    "applicablePackages": []
+  }
+]

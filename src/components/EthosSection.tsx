@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 const EthosSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white/50 border-y border-black/[0.03]">
+    <section
+      className="py-16 md:py-24 bg-transparent"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 400px" }}
+    >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -23,7 +26,7 @@ const EthosSection = () => {
           className="mt-8 flex items-center justify-center gap-4"
         >
             <div className="w-12 h-px bg-[#ea580c]/30" />
-            <span className="font-body text-xs md:text-sm text-muted-foreground uppercase tracking-widest font-semibold">The Voyago Promise</span>
+            <span className="font-body text-xs md:text-sm text-muted-foreground uppercase tracking-widest font-semibold">The Triviva Promise</span>
             <div className="w-12 h-px bg-[#ea580c]/30" />
         </motion.div>
       </div>

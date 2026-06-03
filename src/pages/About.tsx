@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Users, Globe, Award, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import { images } from "@/lib/images";
 
 import aboutData from "@/data/about.json";
@@ -58,7 +59,7 @@ const About = () => {
                 transition={{ delay: 0.2 }}
                 className="text-muted-foreground font-body text-lg leading-relaxed mb-8 max-w-lg"
               >
-                Founded in 2018, Voyago was born from a simple belief: travel should be more than tourism. 
+                Founded in 2018, Triviva was born from a simple belief: travel should be more than tourism. 
                 We craft immersive journeys that connect you to the soul of a place — its people, traditions, 
                 and hidden beauty. Every itinerary is handcrafted by locals who call these destinations home.
               </motion.p>
@@ -167,6 +168,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <CTASection />
 
       <Footer />
     </div>

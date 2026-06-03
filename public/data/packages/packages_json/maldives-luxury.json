@@ -1,0 +1,77 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Maldives Arrival & Speedboat Transfer",
+      "description": "Fly into Malé. Meet our coordinator and take a scenic speedboat transfer to your hotel. Spend the evening relaxing on the beach."
+    },
+    {
+      "day": "Day 2",
+      "title": "Snorkeling Safari & Underwater Photo Session",
+      "description": "Embark on a snorkeling excursion. Swim with colorful fish and sea turtles, with a professional guide taking free underwater photos of you."
+    },
+    {
+      "day": "Day 3",
+      "title": "Local Island Cultural Tour & Sunset Fishing",
+      "description": "Tour a local island to experience Maldivian lifestyle. In the evening, try traditional line fishing during a spectacular sunset."
+    },
+    {
+      "day": "Day 4",
+      "title": "Beachside Leisure & Speedboat Departure",
+      "description": "Enjoy free time on the white sand beaches. Take a speedboat back to Malé airport for your departure flight."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/maldives-luxury/02_main.webp",
+    "/data/packages/packages_image/maldives-luxury/02-Maldives.webp",
+    "/data/packages/packages_image/maldives-luxury/03_gallery.webp",
+    "/data/packages/packages_image/maldives-luxury/03_gallery.webp",
+    "/data/packages/packages_image/maldives-luxury/03-Maldives.webp",
+    "/data/packages/packages_image/maldives-luxury/04_gallery.webp",
+    "/data/packages/packages_image/maldives-luxury/031-Maldives.webp"
+  ],
+  "title": "Maldives: Paradise Island Escape",
+  "location": "Maldives",
+  "duration": "4 Days / 3 Nights",
+  "price": 25000,
+  "rating": 4.95,
+  "description": "Escape to a tropical wonderland where endless blue waters meet pristine white sand beaches. Designed for travelers seeking paradise on a budget, this 3-night, 4-day tropical getaway features comfortable hotel stays, delicious all-inclusive meals, and guided activities. Swim among vibrant coral reefs, explore local Maldivian islands, and try your hand at sunset line fishing—all with free underwater photography to preserve your island memories forever.",
+  "highlights": [
+    "An affordable 4-day getaway to the world's most beautiful islands",
+    "Enjoy comfortable beachside accommodations with all-inclusive meals",
+    "Guided snorkeling safaris with free underwater photography included",
+    "Explore local islands to experience traditional Maldivian culture",
+    "Experience traditional line fishing at sunset on the Indian Ocean",
+    "Leisure time to unwind on pristine, powdery white sand beaches"
+  ],
+  "image": "/data/packages/packages_image/maldives-luxury/01-Maldives.webp",
+  "region": "international",
+  "categories": [
+    "International",
+    "Beach",
+    "Honeymoon",
+    "Budget"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April"
+  ],
+  "showInHero": true,
+  "lat": 4.1755,
+  "lng": 73.5093
+}

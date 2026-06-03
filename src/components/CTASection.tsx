@@ -5,7 +5,10 @@ import { images } from "@/lib/images";
 
 const CTASection = () => {
   return (
-    <section className="py-24 section-padding">
+    <section
+      className="py-24 section-padding"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 400px" }}
+    >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +35,7 @@ const CTASection = () => {
             <Link to="/packages" className="btn-primary-travel">
               View Packages <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/contact" className="btn-outline-travel border-card/30 text-card hover:border-primary">
+            <Link to="/contact" className="inline-flex items-center justify-center gap-2.5 px-8 py-4 font-body font-bold text-sm rounded-full transition-all duration-500 border border-white/20 text-white bg-transparent hover:bg-white hover:text-slate-900 hover:scale-[1.02] transform-gpu">
               Contact Us
             </Link>
           </div>

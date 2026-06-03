@@ -1,0 +1,82 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival & Seminyak Beach Leisure",
+      "description": "Arrive in Bali and transfer to Seminyak, a sophisticated beach area. Check into your hotel, relax on Seminyak Beach, and explore the boutiques and restaurants."
+    },
+    {
+      "day": "Day 2",
+      "title": "Ubud Culture, Monkey Forest & Rice Terraces",
+      "description": "Visit Ubud, the cultural heart of Bali. Explore the sacred Monkey Forest, walk through the picturesque Tegalalang Rice Terraces, and shop for souvenirs at the Ubud Art Market."
+    },
+    {
+      "day": "Day 3",
+      "title": "Mount Batur Sunrise Trek & Tirta Empul Temple",
+      "description": "Begin early for a sunrise trek up Mount Batur for panoramic views. Later, experience Bali's spiritual side at Tirta Empul Temple, famous for its holy spring water purification rituals."
+    },
+    {
+      "day": "Day 4",
+      "title": "Tanah Lot & Uluwatu Cliff Temple Sunsets",
+      "description": "Visit the iconic offshore Tanah Lot Temple. In the afternoon, head to Uluwatu Temple, perched on a cliff overlooking the Indian Ocean, and watch the traditional sunset Kecak dance."
+    },
+    {
+      "day": "Day 5",
+      "title": "Bali Departure",
+      "description": "Enjoy a free morning in Bali before checking out and transferring to the airport for your flight home."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/bali-bliss/02.png",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_03_47 PM.png",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_05_54 PM.png",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_07_58 PM.png",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_08_23 PM.png",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_41_57 PM.png",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 12_43_21 PM.png"
+  ],
+  "title": "Bali: Bliss & Island Magic",
+  "location": "Bali, Indonesia",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.86,
+  "description": "Discover the spiritual serenity and natural wonders of the 'Island of the Gods'. Explore the artistic villages, green valleys, and Sacred Monkey Forest of Ubud, and walk along the cliffs of Uluwatu to watch a traditional fire dance at sunset. Hike the active Mount Batur volcano at sunrise, participate in a purification ritual at Tirta Empul's holy springs, and unwind on the pristine beaches of Seminyak, surrounded by luxury and peace.",
+  "highlights": [
+    "Watch the legendary Kecak fire dance at the cliffside Uluwatu Temple at sunset",
+    "Explore Ubud's lush Tegalalang Rice Terraces and Sacred Monkey Forest",
+    "Visit the famous offshore Tanah Lot Temple for breathtaking coastal views",
+    "Unwind along Seminyak's beautiful beaches, boutique shops, and dining hubs",
+    "Trek up Mount Batur at sunrise for panoramic views of Bali's volcanic caldera",
+    "Participate in spiritual purification rituals at Tirta Empul Holy Spring"
+  ],
+  "image": "/data/packages/packages_image/bali-bliss/01-Bali.webp",
+  "region": "international",
+  "categories": [
+    "International",
+    "Beach",
+    "Adventure Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October"
+  ],
+  "showInHero": true,
+  "lat": -8.4095,
+  "lng": 115.1889
+}

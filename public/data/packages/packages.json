@@ -1,0 +1,444 @@
+[
+  {
+    "id": "bali-bliss",
+    "title": "Bali: Bliss & Island Magic",
+    "location": "Bali, Indonesia",
+    "duration": "5 Days / 4 Nights",
+    "price": 35000,
+    "rating": 4.86,
+    "image": "/data/packages/packages_image/bali-bliss/01-Bali.webp",
+    "description": "Discover the spiritual serenity and natural wonders of the 'Island of the Gods'. Explore the artistic villages, green valleys, and Sacred Monkey Forest of Ubud, and walk along the cliffs of Uluwatu to watch a traditional fire dance at sunset. Hike the active Mount Batur volcano at sunrise, participate in a purification ritual at Tirta Empul's holy springs, and unwind on the pristine beaches of Seminyak, surrounded by luxury and peace.",
+    "highlights": [
+      "Watch the legendary Kecak fire dance at the cliffside Uluwatu Temple at sunset",
+      "Explore Ubud's lush Tegalalang Rice Terraces and Sacred Monkey Forest",
+      "Visit the famous offshore Tanah Lot Temple for breathtaking coastal views",
+      "Unwind along Seminyak's beautiful beaches, boutique shops, and dining hubs",
+      "Trek up Mount Batur at sunrise for panoramic views of Bali's volcanic caldera",
+      "Participate in spiritual purification rituals at Tirta Empul Holy Spring"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "dubai-luxury",
+    "title": "Dubai: Luxury & Desert Safari",
+    "location": "Dubai, UAE",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.88,
+    "image": "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
+    "description": "Step into a city where futuristic skyscrapers rise out of golden desert sands. Admire the world's tallest building, the Burj Khalifa, and the iconic sail-shaped Burj Al Arab. Shop at the massive Dubai Mall, explore the historic Gold and Spice Souks, and experience traditional Emirati culture. Highlight your journey with an exciting 4x4 desert safari, complete with dune bashing, camel riding, and a BBQ dinner under a starry desert sky.",
+    "highlights": [
+      "Ascend to the observation deck of the world's tallest tower, the Burj Khalifa",
+      "Vibrant shopping excursions at the Dubai Mall and historic gold & spice souks",
+      "Thrilling 4x4 desert safari with dune bashing, camel riding, and sandboarding",
+      "Enjoy a traditional Arabian night BBQ dinner under the desert stars",
+      "Relax on scenic coastal yacht cruises and view the iconic Burj Al Arab",
+      "Experience traditional Emirati culture and warm hospitality"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "goa-package",
+    "title": "Goa: Beach & Heritage Getaway",
+    "location": "Goa, India",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.65,
+    "image": "/data/packages/packages_image/goa-package/01-Goa.webp",
+    "description": "Experience the perfect harmony of vibrant coastal energy and historical grandeur in India's ultimate beach destination. Relax under the sun on the golden sands of Baga and Calangute, explore the majestic Portuguese architecture and historic cathedrals of Old Goa, and dive into thrilling water sports at Anjuna Beach. Conclude your day with a scenic cruise along the Mandovi River as you savor Goa's unique fusion of Indian and European cultures.",
+    "highlights": [
+      "Unwind on the bustling golden sands of Baga and Calangute beaches",
+      "Explore UNESCO-listed Portuguese-era churches and heritage sites in Old Goa",
+      "Thrilling water sports and legendary seaside nightlife at Anjuna Beach",
+      "Scenic sunset boat cruise with traditional music along the Mandovi River",
+      "Relax in the peaceful and pristine atmosphere of Palolem Beach in South Goa",
+      "Indulge in authentic Indo-Portuguese culinary tours and local street food"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Beach"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "November",
+      "December",
+      "January",
+      "February"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "golden-triangle",
+    "title": "Delhi & Agra: Golden Triangle Heritage",
+    "location": "Delhi & Agra, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.56,
+    "image": "/data/packages/packages_image/golden-triangle/01-Delhi.webp",
+    "description": "Journey through the epicenters of India's royal history and architectural genius. Uncover the layers of Old and New Delhi as you explore the colossal Red Fort, the ancient Qutub Minar, and the bustling bazaar of Chandni Chowk. Travel to Agra to behold the Taj Mahal—a monument of pure white marble and eternal love—before touring the historic sandstone chambers of Agra Fort and the ghost city of Fatehpur Sikri.",
+    "highlights": [
+      "Guided tours of Delhi's iconic Red Fort, Qutub Minar, and India Gate",
+      "Vibrant rickshaw ride through the narrow lanes of historic Chandni Chowk",
+      "Witness the breathtaking beauty of the Taj Mahal at sunrise or sunset",
+      "Explore the imposing red sandstone fortress of Agra Fort",
+      "Walk through the deserted Mughal imperial capital of Fatehpur Sikri",
+      "Experience a perfect blend of rich culture, history, and Mughal cuisine"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical",
+      "Cultural"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "himachal-package",
+    "title": "Himachal: Scenic Alpine Escapes",
+    "location": "Himachal Pradesh, India",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.78,
+    "image": "/data/packages/packages_image/himachal-package/01_Himachal.webp",
+    "description": "Escape to the majestic heights of the Himalayas on a journey through Himachal Pradesh's most picturesque valleys and hill stations. Walk the colonial lanes of Shimla, experience high-altitude adventure sports in Solang Valley, and breathe in the spiritual serenity of Dharamshala and McLeod Ganj. From the lush apple orchards of Kasauli to the breathtaking pine-forested meadows of Dalhousie and Khajjiar—often called 'Mini Switzerland'—this alpine retreat is a paradise for adventurers and nature lovers alike.",
+    "highlights": [
+      "Breathtaking hikes and adventure sports in the valleys of Manali and Kullu",
+      "Explore colonial heritage and panoramic views on the historic Shimla Ridge",
+      "Visit the spiritual monasteries of Dharamshala and McLeod Ganj",
+      "Discover the pine-forested meadows of Dalhousie and Khajjiar",
+      "Thrilling paragliding, zorbing, and winter skiing in Solang Valley",
+      "Stroll through the tranquil, lush apple orchards of Kasauli"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "kashmir-escape",
+    "title": "Kashmir: Magical Escape",
+    "location": "Kashmir, India",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.9,
+    "image": "/data/packages/packages_image/kashmir-escape/01-Kashmir.webp",
+    "description": "Discover a true heaven on earth where snow-capped peaks mirror off tranquil alpine lakes. Stay in a deluxe houseboat on Srinagar's Dal Lake, glide past floating markets on a traditional shikara, and wander through historic Mughal Gardens. Explore the flower-filled alpine meadows and world-class ski slopes of Gulmarg and Pahalgam, and lose yourself in the pristine glaciers and mountain streams of Sonmarg. Kashmir's beauty promises memories that will last a lifetime.",
+    "highlights": [
+      "Deluxe houseboat stay and sunset shikara ride on Srinagar's Dal Lake",
+      "Tour the historic Shalimar and Nishat Mughal Gardens and spring Tulip Gardens",
+      "Scenic Gondola cable car ride to high mountain peaks in Gulmarg",
+      "Explore Betaab Valley and walk along the pristine Lidder River in Pahalgam",
+      "Trek through the majestic alpine glaciers of Sonmarg, the Meadow of Gold",
+      "Immerse in warm Kashmiri hospitality and traditional local gastronomy"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Romantic"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "kerala-backwaters",
+    "title": "Kerala: Serene Backwaters & Hills",
+    "location": "Kerala, India",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.85,
+    "image": "/data/packages/packages_image/kerala-backwaters/01-Kerala.webp",
+    "description": "Immerse yourself in 'God's Own Country' with a journey that seamlessly blends tranquil backwaters, misty mountain peaks, and sun-kissed beaches. Cruise the serene waters of Vembanad Lake in a private houseboat, walk through the sprawling tea estates of Munnar and Wayanad, and unwind along the cliffs of Kovalam and Varkala. From witnessing authentic Kathakali performances in Fort Kochi to spotting exotic wildlife in Periyar National Park, this tour offers a complete rejuvenation of the mind, body, and spirit.",
+    "highlights": [
+      "Overnight cruise on Alleppey's backwaters in a traditional luxury houseboat",
+      "Beachside relaxation along the scenic shores of Kovalam and Varkala",
+      "Trekking through the misty tea and spice plantations of Munnar and Wayanad",
+      "Guided cultural tour of Fort Kochi with live Kathakali dance performances",
+      "Rejuvenating traditional Ayurvedic treatments in serene settings",
+      "Wildlife and birdwatching excursions in Periyar National Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Beach"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "kodaikanal-package",
+    "title": "Kodaikanal: Tranquil Hills Escape",
+    "location": "Kodaikanal, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.68,
+    "image": "/data/packages/packages_image/kodaikanal-package/01-Kodai.webp",
+    "description": "Breathe in the fresh mountain air of Kodaikanal, a serene sanctuary hidden in the hills of Tamil Nadu. Take a peaceful boat ride on the star-shaped Kodaikanal Lake, walk the misty mountain paths of Coaker's Walk, and explore the towering monoliths of Pillar Rocks and the Guna Caves. Complete your retreat with visits to the roaring Silver Cascade and Bear Shola waterfalls, surrounded by forests where the legendary Kurinji flower blooms.",
+    "highlights": [
+      "Enjoy peaceful boating on the tranquil, star-shaped Kodaikanal Lake",
+      "Walk along Coaker's Walk for sweeping, misty views of the valleys below",
+      "Explore the towering Pillar Rocks and the mysterious Guna Caves",
+      "Visit the scenic and refreshing Silver Cascade and Bear Shola waterfalls",
+      "Trek through eucalyptus forests and discover the rare Kurinji flower fields",
+      "Relax in the peaceful, slow-paced atmosphere of the Nilgiri hills"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "malaysia-explorer",
+    "title": "Malaysia: Explorer Odyssey",
+    "location": "Malaysia",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.81,
+    "image": "/data/packages/packages_image/malaysia-explorer/01-Malaysia.webp",
+    "description": "Explore a land of incredible contrasts, from futuristic capital cities to ancient rainforests. Marvel at Kuala Lumpur's towering Petronas Twin Towers and the historic Batu Caves. Wander the colonial streets of George Town in Penang to see vibrant street art and sample famous local street food. Relax on the tropical beaches of Langkawi and Tioman, and journey into Borneo's wild rainforests to meet indigenous communities and encounter unique wildlife.",
+    "highlights": [
+      "View the spectacular Petronas Twin Towers and climb the steps of Batu Caves",
+      "Walk the UNESCO-listed colonial streets and street art lanes of Penang",
+      "Savor Malaysia's world-famous street food in Penang and Kuala Lumpur",
+      "Relax on the tropical beaches of Langkawi and Tioman Islands",
+      "Journey into the ancient rainforests of Borneo to spot wild orangutans",
+      "Meet indigenous Borneo communities and learn their traditional lifestyles"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "maldives-luxury",
+    "title": "Maldives: Paradise Island Escape",
+    "location": "Maldives",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.95,
+    "image": "/data/packages/packages_image/maldives-luxury/01-Maldives.webp",
+    "description": "Escape to a tropical wonderland where endless blue waters meet pristine white sand beaches. Designed for travelers seeking paradise on a budget, this 3-night, 4-day tropical getaway features comfortable hotel stays, delicious all-inclusive meals, and guided activities. Swim among vibrant coral reefs, explore local Maldivian islands, and try your hand at sunset line fishing—all with free underwater photography to preserve your island memories forever.",
+    "highlights": [
+      "An affordable 4-day getaway to the world's most beautiful islands",
+      "Enjoy comfortable beachside accommodations with all-inclusive meals",
+      "Guided snorkeling safaris with free underwater photography included",
+      "Explore local islands to experience traditional Maldivian culture",
+      "Experience traditional line fishing at sunset on the Indian Ocean",
+      "Leisure time to unwind on pristine, powdery white sand beaches"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Honeymoon",
+      "Budget"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "ooty-package",
+    "title": "Ooty: Blue Hills & Tea Gardens Retreat",
+    "location": "Ooty, India",
+    "duration": "5 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.62,
+    "image": "/data/packages/packages_image/ooty-package/01-Ooty.webp",
+    "description": "Discover the colonial charm and scenic grandeur of the Nilgiri Hills. Ride the historic, UNESCO-listed Nilgiri Mountain Railway toy train as it winds past tea gardens and deep ravines. Learn the secrets of tea production at the Ooty Tea Museum, take a quiet rowboat out on Ooty Lake, and explore the rich floral diversity of the Botanical Gardens before standing atop Doddabetta Peak to witness panoramic views of the Blue Mountains.",
+    "highlights": [
+      "Ride the historic, UNESCO-listed Nilgiri Mountain Railway Toy Train",
+      "Guided tea estate walks and tastings at the Ooty Tea Museum",
+      "Scenic rowboat cruise on the peaceful waters of Ooty Lake",
+      "Stroll through the beautifully manicured Ooty Botanical Gardens",
+      "Stand atop Doddabetta Peak, the highest point in South India, for stunning views",
+      "Explore colonial-era architecture and historical stone buildings"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "thailand-explorer",
+    "title": "Thailand: Tropical Explorer",
+    "location": "Thailand",
+    "duration": "7 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.82,
+    "image": "/data/packages/packages_image/thailand-explorer/01-Thailand.webp",
+    "description": "Uncover the colors, culture, and coastal beauty of Thailand on an immersive Southeast Asian journey. Experience the energy of Bangkok's grand palaces and lively street food scenes, and explore the beaches, caves, and snorkeling reefs of Phuket and Krabi. Trek through the misty jungles of Chiang Mai, visit ethical elephant sanctuaries, and experience Pattaya's spectacular wooden Sanctuary of Truth and vibrant seaside entertainment.",
+    "highlights": [
+      "Tour Bangkok's majestic Grand Palace and the iconic riverside Wat Arun temple",
+      "Discover Pattaya's wooden architectural masterpiece, the Sanctuary of Truth",
+      "Visit ethical elephant sanctuaries and trek the jungles of Chiang Mai",
+      "Relax on the world-famous white sand beaches of Phuket, Krabi, and Koh Samui",
+      "Speedboat island-hopping cruises with snorkeling in coral reefs",
+      "Join traditional Thai cooking classes and explore vibrant night markets"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Beach",
+      "Adventure Tour"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "vietnam-discover",
+    "title": "Vietnam: Cultural Discovery",
+    "location": "Vietnam",
+    "duration": "6 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.8,
+    "image": "/data/packages/packages_image/vietnam-discover/01-Vietnam.webp",
+    "description": "Journey through a land of spectacular natural beauty, ancient history, and vibrant cultures. Discover Hanoi's French-colonial Old Quarter and the historic Ho Chi Minh Mausoleum, and cruise past the limestone karsts of Halong Bay on an overnight ship. Walk the magical lantern-lit streets of ancient Hoi An, explore the historic war tunnels of Cu Chi near Ho Chi Minh City, and cruise past the floating markets and orchards of the Mekong Delta.",
+    "highlights": [
+      "Explore Hanoi's historic Old Quarter and visit the Ho Chi Minh Mausoleum",
+      "Overnight luxury cruise through the limestone karsts and caves of Halong Bay",
+      "Go kayaking and cave exploring in Halong Bay's emerald waters",
+      "Stroll through the magical, lantern-lit colonial streets of ancient Hoi An",
+      "Visit the historic Cu Chi Tunnels and War Remnants Museum in Ho Chi Minh City",
+      "Cruise past floating markets and fruit orchards in the lush Mekong Delta"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Cultural",
+      "Historical"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "June",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  }
+]

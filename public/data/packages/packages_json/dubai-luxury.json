@@ -1,0 +1,79 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival, Dubai Mall & Burj Khalifa",
+      "description": "Arrive in Dubai. Transfer to your hotel. Visit the Dubai Mall for shopping and go up to the Burj Khalifa observation deck."
+    },
+    {
+      "day": "Day 2",
+      "title": "Old Dubai Tour & Yacht Cruise",
+      "description": "Explore the Gold and Spice Souks. In the evening, enjoy a premium yacht cruise along the Dubai Marina coastline."
+    },
+    {
+      "day": "Day 3",
+      "title": "Adrenaline Desert Safari & Arabian BBQ",
+      "description": "Spend the morning at leisure. In the afternoon, take a 4x4 desert safari with dune bashing, camel rides, sandboarding, and a BBQ dinner under the stars."
+    },
+    {
+      "day": "Day 4",
+      "title": "Emirati Culture or Hot Air Balloon Flight",
+      "description": "Learn about traditional Emirati culture. Optional hot air balloon ride over the desert or leisure shopping."
+    },
+    {
+      "day": "Day 5",
+      "title": "Dubai Departure",
+      "description": "Transfer to the Dubai airport for your return flight home."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/dubai-luxury/02-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/03-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/04-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/05-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/ChatGPT Image May 31, 2026, 01_54_26 PM.webp",
+    "/data/packages/packages_image/dubai-luxury/ChatGPT Image May 31, 2026, 01_54_56 PM.webp"
+  ],
+  "title": "Dubai: Luxury & Desert Safari",
+  "location": "Dubai, UAE",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.88,
+  "description": "Step into a city where futuristic skyscrapers rise out of golden desert sands. Admire the world's tallest building, the Burj Khalifa, and the iconic sail-shaped Burj Al Arab. Shop at the massive Dubai Mall, explore the historic Gold and Spice Souks, and experience traditional Emirati culture. Highlight your journey with an exciting 4x4 desert safari, complete with dune bashing, camel riding, and a BBQ dinner under a starry desert sky.",
+  "highlights": [
+    "Ascend to the observation deck of the world's tallest tower, the Burj Khalifa",
+    "Vibrant shopping excursions at the Dubai Mall and historic gold & spice souks",
+    "Thrilling 4x4 desert safari with dune bashing, camel riding, and sandboarding",
+    "Enjoy a traditional Arabian night BBQ dinner under the desert stars",
+    "Relax on scenic coastal yacht cruises and view the iconic Burj Al Arab",
+    "Experience traditional Emirati culture and warm hospitality"
+  ],
+  "image": "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
+  "region": "international",
+  "categories": [
+    "International",
+    "Adventure Tour"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April"
+  ],
+  "showInHero": true,
+  "lat": 25.2048,
+  "lng": 55.2708
+}

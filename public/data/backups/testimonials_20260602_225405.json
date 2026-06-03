@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sophia Andersson",
+    "text": "Triviva transformed our honeymoon into a fairytale. The Santorini package exceeded every expectation — the private sunset cruise was pure magic.",
+    "rating": 5,
+    "avatar": "SA"
+  },
+  {
+    "name": "James Chen",
+    "text": "The Japan cultural tour was meticulously planned. Every detail, from the tea ceremony to the hidden ramen shops, showed incredible local expertise.",
+    "rating": 5,
+    "avatar": "JC"
+  },
+  {
+    "name": "Elena Rodriguez",
+    "text": "I've traveled with many agencies but Triviva stands apart. The Bali retreat was life-changing — a perfect blend of adventure and tranquility.",
+    "rating": 5,
+    "avatar": "ER"
+  },
+  {
+    "name": "Marcus Johnson",
+    "text": "The Moroccan desert safari was out of this world. Sleeping under the stars in absolute luxury was an unforgettable experience.",
+    "rating": 5,
+    "avatar": "MJ"
+  },
+  {
+    "name": "New Guest",
+    "text": "The trip was perfect and exceeded every single expectation.",
+    "rating": 5,
+    "avatar": "NG"
+  }
+]

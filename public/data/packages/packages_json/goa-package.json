@@ -1,0 +1,68 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Goa and Mandovi River Sunset Cruise",
+      "description": "Arrive in Goa, meet our representative, and transfer to your hotel. In the evening, enjoy a scenic boat cruise on the Mandovi River with traditional Goan music and dances."
+    },
+    {
+      "day": "Day 2",
+      "title": "North Goa Beaches & Anjuna Nightlife",
+      "description": "Visit the popular beaches of Baga, Calangute, and Vagator. Participate in optional water sports at Calangute and experience the famous nightlife at Anjuna Beach."
+    },
+    {
+      "day": "Day 3",
+      "title": "Old Goa Heritage & Portuguese Churches",
+      "description": "Explore the UNESCO World Heritage monuments of Old Goa, including the Basilica of Bom Jesus and Se Cathedral, showcasing magnificent Portuguese architecture."
+    },
+    {
+      "day": "Day 4",
+      "title": "South Goa Palolem Beach & Departure",
+      "description": "Drive to the beautiful, crescent-shaped Palolem Beach in South Goa for a relaxing morning. Later, transfer to the airport or railway station for your return journey."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/goa-package/02-Goa.webp",
+    "/data/packages/packages_image/goa-package/ChatGPT Image May 31, 2026, 02_13_18 PM.webp"
+  ],
+  "title": "Goa: Beach & Heritage Getaway",
+  "location": "Goa, India",
+  "duration": "4 Days / 3 Nights",
+  "price": 25000,
+  "rating": 4.65,
+  "description": "Experience the perfect harmony of vibrant coastal energy and historical grandeur in India's ultimate beach destination. Relax under the sun on the golden sands of Baga and Calangute, explore the majestic Portuguese architecture and historic cathedrals of Old Goa, and dive into thrilling water sports at Anjuna Beach. Conclude your day with a scenic cruise along the Mandovi River as you savor Goa's unique fusion of Indian and European cultures.",
+  "highlights": [
+    "Unwind on the bustling golden sands of Baga and Calangute beaches",
+    "Explore UNESCO-listed Portuguese-era churches and heritage sites in Old Goa",
+    "Thrilling water sports and legendary seaside nightlife at Anjuna Beach",
+    "Scenic sunset boat cruise with traditional music along the Mandovi River",
+    "Relax in the peaceful and pristine atmosphere of Palolem Beach in South Goa",
+    "Indulge in authentic Indo-Portuguese culinary tours and local street food"
+  ],
+  "image": "/data/packages/packages_image/goa-package/01-Goa.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Beach"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February"
+  ],
+  "showInHero": true,
+  "lat": 15.2993,
+  "lng": 74.124
+}
