@@ -8,6 +8,7 @@ const menuItems = [
   { label: "HOME", path: "/" },
   { label: "ABOUT", path: "/about" },
   { label: "PACKAGES", path: "/packages" },
+  { label: "RENTALS", path: "/rentals" },
   { label: "GALLERY", path: "/gallery" },
   { label: "CONTACT", path: "/contact" },
 ];
@@ -39,9 +40,9 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
     >
       {/* Header */}
       <div className="section-padding flex items-center justify-between h-20">
-        <span className="text-2xl font-display font-bold tracking-tight text-foreground">
-          Tri<span className="text-primary">viva</span>
-        </span>
+        <div className="flex items-center">
+          <img src="/assets/Logo.png" alt="Triviva Logo" className="h-16 w-auto" />
+        </div>
         <button onClick={onClose} className="p-2" aria-label="Close menu">
           <X className="w-6 h-6 text-foreground" />
         </button>

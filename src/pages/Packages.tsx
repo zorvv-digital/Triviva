@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, X } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { TravelPackage } from "@/data/packages";
@@ -18,9 +19,6 @@ import PackageSkeleton from "@/components/packages/PackageSkeleton";
  */
 const Packages = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [packages, setPackages] = useState<TravelPackage[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -29,24 +27,17 @@ const Packages = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    fetch("/data/packages/packages.json")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Failed to load travel packages data.");
-        }
-        return res.json();
-      })
-      .then((data: TravelPackage[]) => {
-        setPackages(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error loading packages:", err);
-        setError(err.message || "An error occurred while fetching packages.");
-        setLoading(false);
-      });
-  }, []);
+  const { data: packages = [], isLoading: loading, isError, error: queryError } = useQuery<TravelPackage[], Error>({
+    queryKey: ["packages"],
+    queryFn: async () => {
+      const res = await fetch("/data/packages/packages.json");
+      if (!res.ok) throw new Error("Failed to load travel packages data.");
+      return res.json() as Promise<TravelPackage[]>;
+    },
+    staleTime: Infinity,
+    gcTime: Infinity,
+  });
+  const error = isError ? (queryError?.message ?? "An error occurred while fetching packages.") : null;
 
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -59,73 +50,39 @@ const Packages = () => {
   /**
    * Toggles selection of a travel style category.
    */
-  const handleCategoryToggle = (category: string) => {
+  const handleCategoryToggle = useCallback((category: string) => {
     setSelectedCategories((prev) =>
       prev.includes(category)
         ? prev.filter((c) => c !== category)
         : [...prev, category]
     );
-  };
+  }, []);
 
   /**
    * Resets all filters to their default states.
    */
-  const handleResetFilters = () => {
+  const handleResetFilters = useCallback(() => {
     setSearchQuery("");
     setSelectedCategories([]);
     setMaxPrice(250000);
     setDurationFilter("All");
     setMinRating(0);
     setTripTypeFilter("All");
-  };
+  }, []);
 
   /**
    * Categorizes duration into Short, Medium, or Long.
    */
-  const getDurationRange = (durationStr: string): string => {
+  const getDurationRange = useCallback((durationStr: string): string => {
     const match = durationStr.match(/^(\d+)\s+Days/);
     if (!match) return "Short";
     const days = parseInt(match[1], 10);
     if (days <= 5) return "Short";
     if (days <= 8) return "Medium";
     return "Long";
-  };
+  }, []);
 
-  /**
-   * Computes matching package counts per category dynamically.
-   */
-  const getCategoryCount = (catName: string): number => {
-    return packages.filter((pkg) => {
-      const query = searchQuery.toLowerCase().trim();
-      const matchesSearch =
-        query === "" ||
-        pkg.location.toLowerCase().includes(query) ||
-        pkg.title.toLowerCase().includes(query) ||
-        pkg.description.toLowerCase().includes(query);
-
-      const matchesTripType =
-        tripTypeFilter === "All" || pkg.region === tripTypeFilter.toLowerCase();
-
-      const matchesPrice = pkg.price <= maxPrice;
-      
-      const pkgDurationRange = getDurationRange(pkg.duration);
-      const matchesDuration =
-        durationFilter === "All" || pkgDurationRange === durationFilter;
-
-      const matchesRating = pkg.rating >= minRating;
-
-      return (
-        matchesSearch &&
-        matchesTripType &&
-        pkg.categories.includes(catName) &&
-        matchesPrice &&
-        matchesDuration &&
-        matchesRating
-      );
-    }).length;
-  };
-
-  const filteredPackages = packages.filter((pkg) => {
+  const filteredPackages = useMemo(() => packages.filter((pkg) => {
     const query = searchQuery.toLowerCase().trim();
     const matchesSearch =
       query === "" ||
@@ -156,9 +113,46 @@ const Packages = () => {
       matchesDuration &&
       matchesRating
     );
-  });
+  }), [packages, searchQuery, tripTypeFilter, selectedCategories, maxPrice, durationFilter, minRating, getDurationRange]);
 
-  const sortedPackages = [...filteredPackages].sort((a, b) => (a.priority ?? 999) - (b.priority ?? 999));
+  const sortedPackages = useMemo(
+    () => [...filteredPackages].sort((a, b) => (a.priority ?? 999) - (b.priority ?? 999)),
+    [filteredPackages]
+  );
+
+  /**
+   * Computes matching package counts per category dynamically.
+   */
+  const getCategoryCount = useCallback((catName: string): number => {
+    return packages.filter((pkg) => {
+      const query = searchQuery.toLowerCase().trim();
+      const matchesSearch =
+        query === "" ||
+        pkg.location.toLowerCase().includes(query) ||
+        pkg.title.toLowerCase().includes(query) ||
+        pkg.description.toLowerCase().includes(query);
+
+      const matchesTripType =
+        tripTypeFilter === "All" || pkg.region === tripTypeFilter.toLowerCase();
+
+      const matchesPrice = pkg.price <= maxPrice;
+
+      const pkgDurationRange = getDurationRange(pkg.duration);
+      const matchesDuration =
+        durationFilter === "All" || pkgDurationRange === durationFilter;
+
+      const matchesRating = pkg.rating >= minRating;
+
+      return (
+        matchesSearch &&
+        matchesTripType &&
+        pkg.categories.includes(catName) &&
+        matchesPrice &&
+        matchesDuration &&
+        matchesRating
+      );
+    }).length;
+  }, [packages, searchQuery, tripTypeFilter, maxPrice, durationFilter, minRating, getDurationRange]);
 
   const activeFiltersCount = [
     selectedCategories.length > 0,

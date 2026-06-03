@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
+}
+
 @layer base {
   :root {
     --background: 40 33% 98%;
@@ -123,29 +128,29 @@
   }
 
   .btn-primary-travel {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-medium rounded-full transition-all duration-500;
+    @apply inline-flex items-center justify-center gap-2.5 px-8 py-4 font-body font-bold text-sm rounded-full transition-all duration-500 transform-gpu;
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    font-family: var(--font-body);
+    box-shadow: 0 4px 15px -3px hsl(var(--primary) / 0.35);
   }
 
   .btn-primary-travel:hover {
     background: hsl(24 80% 44%);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px -8px hsl(var(--primary) / 0.4);
+    transform: translateY(-2.5px) scale(1.02);
+    box-shadow: 0 15px 30px -8px hsl(var(--primary) / 0.45);
+    opacity: 0.96;
   }
 
   .btn-outline-travel {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-medium rounded-full transition-all duration-500;
-    border: 1.5px solid hsl(var(--foreground) / 0.2);
-    color: hsl(var(--foreground));
-    font-family: var(--font-body);
+    @apply inline-flex items-center justify-center gap-2.5 px-8 py-4 font-body font-bold text-sm rounded-full transition-all duration-500 border border-slate-200 bg-white text-slate-800 transform-gpu;
   }
 
   .btn-outline-travel:hover {
-    border-color: hsl(var(--primary));
+    border-color: hsl(var(--primary) / 0.4);
+    background: hsl(var(--primary) / 0.04);
     color: hsl(var(--primary));
-    transform: translateY(-2px);
+    transform: translateY(-2.5px) scale(1.02);
+    box-shadow: 0 8px 20px -8px hsl(var(--primary) / 0.2);
   }
 
   .img-curved {
@@ -223,5 +228,21 @@ html {
 .no-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+/* Orbit container translation media queries for performance optimization */
+.orbit-container-shift {
+  transform: translateX(-22vw);
+  transition: transform 0.3s ease;
+}
+@media (min-width: 480px) {
+  .orbit-container-shift {
+    transform: translateX(-12vw);
+  }
+}
+@media (min-width: 768px) {
+  .orbit-container-shift {
+    transform: none;
+  }
 }
 

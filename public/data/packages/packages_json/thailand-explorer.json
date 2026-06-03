@@ -1,68 +1,88 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Bangkok and Asiatique Night Market",
-      "description": "Arrive at Suvarnabhumi Airport in Bangkok, where you will be met by our representative and transferred to your hotel for check-in. In the evening, explore the vibrant Asiatique Riverfront Night Market, and enjoy a welcome dinner featuring traditional Thai cuisine."
+      "title": "Bangkok Arrival, Grand Palace & Wat Arun",
+      "description": "Arrive in Bangkok. Tour the Grand Palace, Wat Arun (Temple of Dawn), and experience local street markets."
     },
     {
       "day": "Day 2",
-      "title": "Bangkok City Temple Tour and River Cruise",
-      "description": "Discover the heritage of Bangkok with a visit to the grand Grand Palace and the Temple of the Emerald Buddha (Wat Phra Kaew). Explore the Wat Pho temple, housing the famous Reclining Buddha. After lunch at a local restaurant, enjoy a boat ride along the Chao Phraya River, followed by shopping time at MBK Center or Siam Paragon."
+      "title": "Bangkok to Pattaya, Sanctuary of Truth",
+      "description": "Drive to Pattaya. Visit the stunning wooden Sanctuary of Truth temple. In the evening, explore Pattaya's Walking Street."
     },
     {
       "day": "Day 3",
-      "title": "Bangkok to Pattaya and Sanctuary of Truth",
-      "description": "After breakfast, check out of your hotel and drive to the coastal town of Pattaya (approximately two hours). Visit the Sanctuary of Truth, a magnificent hand-carved wooden temple. Spend the afternoon relaxing at Pattaya Beach, with options to explore the nightlife or attend a cabaret show in the evening."
+      "title": "Pattaya to Chiang Mai & Cooking Class",
+      "description": "Fly to Chiang Mai. Explore the old town and join a traditional Thai cooking class in the evening."
     },
     {
       "day": "Day 4",
-      "title": "Coral Island (Koh Larn) Boat Excursion",
-      "description": "Embark on a full-day excursion to Coral Island (Koh Larn) by boat. Spend your day swimming, sunbathing, or participating in water sports like snorkeling. Enjoy a freshly prepared lunch on the beach before returning to Pattaya for your overnight stay."
+      "title": "Elephant Nature Park & Jungle Trekking",
+      "description": "Visit the ethical Elephant Nature Park to interact with rescued elephants, followed by a jungle trek."
     },
     {
       "day": "Day 5",
-      "title": "Pattaya to Bangkok Airport Departure",
-      "description": "Enjoy breakfast at your hotel and check out. Enjoy a comfortable private transfer back to Bangkok's airport for your return flight home."
+      "title": "Chiang Mai to Phuket / Krabi Beaches",
+      "description": "Fly to Phuket or Krabi. Check into your beach resort and relax on the white sands."
+    },
+    {
+      "day": "Day 6",
+      "title": "Krabi/Phuket Island Hopping & Snorkeling",
+      "description": "Take a speedboat island-hopping tour. Snorkel in crystal-clear waters and relax in hidden coves."
+    },
+    {
+      "day": "Day 7",
+      "title": "Thailand Departure",
+      "description": "Enjoy a free morning before transferring to the airport for your return flight."
     }
   ],
-  "gallery": [],
-  "title": "Thailand Explorer",
-  "location": "Thailand",
-  "duration": "5 Days / 4 Nights",
-  "price": 25000,
-  "rating": 4.9,
-  "description": "Explore the vibrant culture, stunning beaches, and bustling markets of Thailand on this exciting 5-day tour. Perfect for travelers seeking a mix of adventure, coastal relaxation, and temple excursions - all within a curated, premium package.",
-  "highlights": [
-    "Explore the historic Grand Palace and Wat Phra Kaew in Bangkok",
-    "Boat cruise along the Chao Phraya River and local shopping",
-    "Visit the Sanctuary of Truth wooden temple in Pattaya",
-    "Full-day speedboat excursion to Coral Island (Koh Larn)"
+  "gallery": [
+    "/data/packages/packages_image/thailand-explorer/02_gallery.webp",
+    "/data/packages/packages_image/thailand-explorer/02-Thai.webp",
+    "/data/packages/packages_image/thailand-explorer/03_gallery.webp",
+    "/data/packages/packages_image/thailand-explorer/04_gallery.webp"
   ],
-  "image": "/data/packages/packages_image/thailand-explorer/01_main.jpg",
+  "title": "Thailand: Tropical Explorer",
+  "location": "Thailand",
+  "duration": "7 Days / 6 Nights",
+  "price": 25000,
+  "rating": 4.82,
+  "description": "Uncover the colors, culture, and coastal beauty of Thailand on an immersive Southeast Asian journey. Experience the energy of Bangkok's grand palaces and lively street food scenes, and explore the beaches, caves, and snorkeling reefs of Phuket and Krabi. Trek through the misty jungles of Chiang Mai, visit ethical elephant sanctuaries, and experience Pattaya's spectacular wooden Sanctuary of Truth and vibrant seaside entertainment.",
+  "highlights": [
+    "Tour Bangkok's majestic Grand Palace and the iconic riverside Wat Arun temple",
+    "Discover Pattaya's wooden architectural masterpiece, the Sanctuary of Truth",
+    "Visit ethical elephant sanctuaries and trek the jungles of Chiang Mai",
+    "Relax on the world-famous white sand beaches of Phuket, Krabi, and Koh Samui",
+    "Speedboat island-hopping cruises with snorkeling in coral reefs",
+    "Join traditional Thai cooking classes and explore vibrant night markets"
+  ],
+  "image": "/data/packages/packages_image/thailand-explorer/01-Thailand.webp",
   "region": "international",
   "categories": [
     "International",
     "Beach",
-    "Adventure Tour",
-    "Budget"
+    "Adventure Tour"
   ],
   "priority": 10,
   "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February",
     "March",
-    "April",
-    "May",
-    "June",
-    "September",
-    "October",
-    "November"
+    "April"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 13.7563,
+  "lng": 100.5018
 }

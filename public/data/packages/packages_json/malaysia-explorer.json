@@ -1,47 +1,72 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Kuala Lumpur and City Sightseeing",
-      "description": "Upon arrival at Kuala Lumpur International Airport, transfer to your hotel and complete check-in. In the afternoon, visit the famous Petronas Twin Towers and stroll through KLCC Park. Spend your evening exploring the shopping and dining areas of Bukit Bintang."
+      "title": "Arrival in Kuala Lumpur & Twin Towers",
+      "description": "Fly into Kuala Lumpur. Visit iconic landmarks such as the Petronas Twin Towers, explore street markets, and check into your hotel."
     },
     {
       "day": "Day 2",
-      "title": "Kuala Lumpur Landmarks and Batu Caves Tour",
-      "description": "After breakfast, enjoy a city tour. Climb the colorful steps of the Batu Caves temple and visit the Royal Selangor Pewter Factory. Later, visit the Central Market and explore Chinatown before a free evening."
+      "title": "Batu Caves Tour & Travel to Penang",
+      "description": "Climb the colorful steps of Batu Caves. In the afternoon, travel to Penang and check in."
     },
     {
       "day": "Day 3",
-      "title": "Cameron Highlands Nature Excursion",
-      "description": "Take an early morning day trip to the cool hills of Cameron Highlands (approximately 3 hours away). Tour local tea plantations and visit strawberry farms. Enjoy a short nature hike or visit the scenic Mossy Forest before returning to Kuala Lumpur."
+      "title": "Penang George Town Street Art & Food Tour",
+      "description": "Take a walking tour of the UNESCO George Town, photographing street art and tasting Penang street food."
     },
     {
       "day": "Day 4",
-      "title": "Shopping and Kuala Lumpur Departure",
-      "description": "Enjoy breakfast and check out of your hotel. Spend your final morning doing last-minute shopping before your private transfer to Kuala Lumpur International Airport for your departure flight."
+      "title": "Penang to Langkawi & Tioman Islands",
+      "description": "Travel to Langkawi or Tioman Islands. Check into your beachfront resort and watch the sunset."
+    },
+    {
+      "day": "Day 5",
+      "title": "Island Snorkeling & Diving Adventure",
+      "description": "Go on a boat trip for snorkeling, diving, and water activities in pristine, crystal-clear island waters."
+    },
+    {
+      "day": "Day 6",
+      "title": "Langkawi to Borneo Rainforest Safari",
+      "description": "Fly to Borneo. Head into the untamed rainforest to spot unique wildlife and explore natural beauty."
+    },
+    {
+      "day": "Day 7",
+      "title": "Borneo Indigenous Community Visit & Departure",
+      "description": "Visit an indigenous community village to immerse in their culture before transferring to the airport for departure."
     }
   ],
-  "gallery": [],
-  "title": "Malaysia Explorer",
-  "location": "Malaysia",
-  "duration": "4 Days / 3 Nights",
-  "price": 25000,
-  "rating": 4.89,
-  "description": "Discover the modern city life, historic temples, and cool highlands of Malaysia on this 4-day tour. Perfect for travelers seeking a mix of city sightseeing and mountain nature trails.",
-  "highlights": [
-    "Explore the Petronas Twin Towers and KLCC Park in Kuala Lumpur",
-    "Visit the historic Batu Caves and Royal Selangor Pewter Factory",
-    "Take a day excursion to the cool tea country of Cameron Highlands",
-    "Shop for local crafts at Central Market and Chinatown"
+  "gallery": [
+    "/data/packages/packages_image/malaysia-explorer/02_gallery.webp",
+    "/data/packages/packages_image/malaysia-explorer/02_main.webp",
+    "/data/packages/packages_image/malaysia-explorer/03_gallery.webp",
+    "/data/packages/packages_image/malaysia-explorer/04_gallery.webp"
   ],
-  "image": "/data/packages/packages_image/malaysia-explorer/01_main.jpg",
+  "title": "Malaysia: Explorer Odyssey",
+  "location": "Malaysia",
+  "duration": "7 Days / 6 Nights",
+  "price": 25000,
+  "rating": 4.81,
+  "description": "Explore a land of incredible contrasts, from futuristic capital cities to ancient rainforests. Marvel at Kuala Lumpur's towering Petronas Twin Towers and the historic Batu Caves. Wander the colonial streets of George Town in Penang to see vibrant street art and sample famous local street food. Relax on the tropical beaches of Langkawi and Tioman, and journey into Borneo's wild rainforests to meet indigenous communities and encounter unique wildlife.",
+  "highlights": [
+    "View the spectacular Petronas Twin Towers and climb the steps of Batu Caves",
+    "Walk the UNESCO-listed colonial streets and street art lanes of Penang",
+    "Savor Malaysia's world-famous street food in Penang and Kuala Lumpur",
+    "Relax on the tropical beaches of Langkawi and Tioman Islands",
+    "Journey into the ancient rainforests of Borneo to spot wild orangutans",
+    "Meet indigenous Borneo communities and learn their traditional lifestyles"
+  ],
+  "image": "/data/packages/packages_image/malaysia-explorer/01-Malaysia.webp",
   "region": "international",
   "categories": [
     "International",
@@ -57,5 +82,7 @@
     "October",
     "November"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 3.139,
+  "lng": 101.6869
 }

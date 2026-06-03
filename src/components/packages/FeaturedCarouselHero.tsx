@@ -5,6 +5,7 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { TravelPackage } from "@/data/packages";
 import { getImage } from "@/lib/images";
 import { cn } from "@/lib/utils";
+import { useOfferInfo } from "@/hooks/useOfferInfo";
 
 interface FeaturedCarouselHeroProps {
   isMobile: boolean;
@@ -17,6 +18,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
   const [isPaused, setIsPaused] = useState(false);
   const [firstSlideDone, setFirstSlideDone] = useState(false);
   const shouldReduceMotion = useReducedMotion();
+  const { offer, getPackageOffer, getDiscountedPrice } = useOfferInfo();
 
   const explicitlyFeatured = packages.filter((pkg) => pkg.showInHero);
   const featuredPackages = explicitlyFeatured.length > 0 
@@ -81,6 +83,8 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
   }
 
   const activePackage = featuredPackages[activeIndex];
+  const pkgOffer = activePackage ? getPackageOffer(activePackage.id) : null;
+  const discountedPrice = activePackage ? getDiscountedPrice(activePackage.id, activePackage.price) : null;
 
   const goToSlide = (index: number) => {
     setActiveIndex((index + featuredPackages.length) % featuredPackages.length);
@@ -108,6 +112,8 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
             key={activePackage.image}
             src={getImage(activePackage.image)}
             alt={activePackage.title}
+            fetchPriority="high"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -160,9 +166,19 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                   <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
                     {activePackage.duration}
                   </div>
-                  <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
-                    ₹{activePackage.price.toLocaleString()}
-                  </div>
+                  {discountedPrice ? (
+                    <div className="inline-flex items-center gap-2 rounded-full border border-[#ea580c]/30 bg-[#ea580c]/15 px-4 py-2 backdrop-blur-md">
+                      <span className="text-white/50 line-through">₹{activePackage.price.toLocaleString()}</span>
+                      <span className="font-bold text-[#ff7a2f]">₹{discountedPrice.toLocaleString()}</span>
+                      <span className="bg-[#ea580c] text-white text-[9px] font-extrabold px-1.5 py-0.5 rounded-full uppercase tracking-wide">
+                        {pkgOffer?.discountPercentage}% OFF
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
+                      ₹{activePackage.price.toLocaleString()}
+                    </div>
+                  )}
                   <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
                     <Star className="h-4 w-4 fill-current text-amber-300" />
                     <span>{activePackage.rating.toFixed(2)} rating</span>
@@ -287,9 +303,19 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                   <div className="rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
                     {activePackage.duration}
                   </div>
-                  <div className="rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
-                    ₹{activePackage.price.toLocaleString()}
-                  </div>
+                  {discountedPrice ? (
+                    <div className="inline-flex items-center gap-1.5 rounded-full border border-[#ea580c]/30 bg-[#ea580c]/15 px-2 py-1 backdrop-blur-md">
+                      <span className="text-white/50 line-through">₹{activePackage.price.toLocaleString()}</span>
+                      <span className="font-bold text-[#ff7a2f]">₹{discountedPrice.toLocaleString()}</span>
+                      <span className="bg-[#ea580c] text-white text-[8px] font-extrabold px-1 rounded-sm uppercase tracking-wide">
+                        {pkgOffer?.discountPercentage}% OFF
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
+                      ₹{activePackage.price.toLocaleString()}
+                    </div>
+                  )}
                   <div className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
                     <Star className="h-3 w-3 fill-current text-amber-300" />
                     <span>{activePackage.rating.toFixed(2)} rating</span>

@@ -31,7 +31,10 @@ const PerfectDestinationSection = () => {
   }, []);
 
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section
+      className="py-20 md:py-32 bg-transparent"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 700px" }}
+    >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-[56px] font-display font-bold text-[#111827] leading-tight mb-4 max-w-3xl">
@@ -54,6 +57,8 @@ const PerfectDestinationSection = () => {
                 <img
                   src={getImage(dest.image)}
                   alt={dest.name}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />

@@ -1,61 +1,84 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Delhi to Cochin and Munnar Travel",
-      "description": "Fly from Delhi to Cochin (flight included). Upon arrival in Cochin, take a scenic drive to Munnar (about 4 hours) through beautiful spice plantations and waterfalls. Check into your resort and relax among the tea gardens."
+      "title": "Cochin to Munnar Tea Gardens",
+      "description": "Arrive in Cochin and drive to the misty hills of Munnar. Tour sprawling tea plantations, visit the local tea museum, and relax in your resort."
     },
     {
       "day": "Day 2",
-      "title": "Munnar Sightseeing Tour",
-      "description": "Visit Eravikulam National Park to see the rare Nilgiri Tahr mountain goats, then visit the Tea Museum and Mattupetty Dam. In the afternoon, explore Echo Point and Kundala Lake. Spend the evening shopping for local spices and tea."
+      "title": "Munnar to Wayanad Hills Exploration",
+      "description": "Drive to Wayanad. Trek through lush green valleys, witness stunning waterfalls, and enjoy panoramic views of the Western Ghats."
     },
     {
       "day": "Day 3",
-      "title": "Munnar to Alleppey Backwaters Travel",
-      "description": "Drive to Alleppey (about 5 hours) and check into a private houseboat. Enjoy a relaxing cruise along the calm backwaters and have traditional Kerala meals cooked onboard. Watch a beautiful sunset over the rice fields and spend the night on the houseboat."
+      "title": "Wayanad to Periyar National Park",
+      "description": "Travel to Thekkady (Periyar). Go on a guided wildlife and birdwatching safari in Periyar National Park and explore the spice gardens."
     },
     {
       "day": "Day 4",
-      "title": "Alleppey to Cochin and Delhi Return",
-      "description": "Leave the houseboat and drive to Cochin. Enjoy a sightseeing tour of Fort Kochi, see the famous Chinese Fishing Nets, and walk through Jew Town. In the evening, take your flight back to Delhi."
+      "title": "Periyar to Alleppey Houseboat Cruise",
+      "description": "Board a traditional houseboat in Alleppey. Cruise the scenic Vembanad Lake and backwaters, enjoying traditional meals cooked onboard."
+    },
+    {
+      "day": "Day 5",
+      "title": "Alleppey to Kovalam & Varkala Beaches",
+      "description": "Drive to the coastal town of Kovalam and Varkala. Unwind on the cliffside sandy beaches and witness a beautiful sunset."
+    },
+    {
+      "day": "Day 6",
+      "title": "Fort Kochi Heritage & Departure",
+      "description": "Travel back to Cochin. Visit Fort Kochi's historic Chinese Fishing Nets, colonial buildings, and attend a Kathakali performance before your departure flight."
     }
   ],
-  "gallery": [],
-  "title": "Kerala Magic Escape",
-  "location": "Kerala, India",
-  "duration": "4 Days / 3 Nights",
-  "price": 25000,
-  "rating": 4.79,
-  "description": "Experience Kerala’s lush greenery, tranquil backwaters, and spice-scented hills in this 4-day getaway from Delhi. Enjoy houseboat stays, tea gardens, and cultural delights in Munnar & Alleppey.",
-  "highlights": [
-    "Scenic flights and drive to Munnar through tea gardens",
-    "Guided sightseeing of Munnar and Eravikulam National Park",
-    "Overnight stay and dining on a private backwater houseboat",
-    "Fort Kochi city tour before departure"
+  "gallery": [
+    "/data/packages/packages_image/kerala-backwaters/02_gallery.webp",
+    "/data/packages/packages_image/kerala-backwaters/02_main.webp",
+    "/data/packages/packages_image/kerala-backwaters/03_gallery.webp",
+    "/data/packages/packages_image/kerala-backwaters/04_gallery.webp",
+    "/data/packages/packages_image/kerala-backwaters/ChatGPT Image May 31, 2026, 03_19_10 PM.webp"
   ],
-  "image": "/data/packages/packages_image/kerala-backwaters/01_main.jpg",
+  "title": "Kerala: Serene Backwaters & Hills",
+  "location": "Kerala, India",
+  "duration": "6 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.85,
+  "description": "Immerse yourself in 'God's Own Country' with a journey that seamlessly blends tranquil backwaters, misty mountain peaks, and sun-kissed beaches. Cruise the serene waters of Vembanad Lake in a private houseboat, walk through the sprawling tea estates of Munnar and Wayanad, and unwind along the cliffs of Kovalam and Varkala. From witnessing authentic Kathakali performances in Fort Kochi to spotting exotic wildlife in Periyar National Park, this tour offers a complete rejuvenation of the mind, body, and spirit.",
+  "highlights": [
+    "Overnight cruise on Alleppey's backwaters in a traditional luxury houseboat",
+    "Beachside relaxation along the scenic shores of Kovalam and Varkala",
+    "Trekking through the misty tea and spice plantations of Munnar and Wayanad",
+    "Guided cultural tour of Fort Kochi with live Kathakali dance performances",
+    "Rejuvenating traditional Ayurvedic treatments in serene settings",
+    "Wildlife and birdwatching excursions in Periyar National Park"
+  ],
+  "image": "/data/packages/packages_image/kerala-backwaters/01-Kerala.webp",
   "region": "domestic",
   "categories": [
     "Domestic",
-    "Mountain"
+    "Mountain",
+    "Beach"
   ],
   "priority": 10,
   "bestTimeToVisit": [
-    "March",
-    "April",
-    "May",
-    "June",
-    "September",
     "October",
-    "November"
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 9.4981,
+  "lng": 76.3388
 }

@@ -5,12 +5,26 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    // Prevent scrolling when splash screen is visible
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+
     // Elegant, deliberate pacing
     const timer = setTimeout(() => {
       setVisible(false);
-      setTimeout(onComplete, 1500); // give time for the exit animation
+      setTimeout(() => {
+        // Restore scrolling when exit animation is finished
+        document.body.style.overflow = "";
+        document.documentElement.style.overflow = "";
+        onComplete();
+      }, 1500); // give time for the exit animation
     }, 2500);
-    return () => clearTimeout(timer);
+
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
   }, [onComplete]);
 
   return (
@@ -26,7 +40,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
         >
           {/* Subtle Grain Overlay (Optional, for texture) */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png")' }} />
-
+ 
           <div className="relative z-10 flex flex-col items-center gap-6">
             <div className="overflow-hidden p-2">
               <motion.div
@@ -35,7 +49,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
                 transition={{ duration: 1, ease: [0.76, 0, 0.24, 1], delay: 0.2 }}
                 className="text-6xl md:text-9xl font-display font-medium text-white tracking-tight flex items-center"
               >
-                Voya<span className="text-white/70">go</span>
+                Trivi<span className="text-white/70">va</span>
               </motion.div>
             </div>
             

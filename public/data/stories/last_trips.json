@@ -1,0 +1,30 @@
+[
+  {
+    "id": "agra-taj",
+    "location": "Agra, India",
+    "title": "Taj Mahal Sunrise",
+    "image": "/data/stories/Memory1.webp",
+    "story": "A magical morning on the Yamuna river, watching the rising sun paint the marble dome of the Taj Mahal in golden hues."
+  },
+  {
+    "id": "thailand-beach",
+    "location": "Phi Phi Islands, Thailand",
+    "title": "Maya Bay Shoreline",
+    "image": "/data/stories/Memory2.webp",
+    "story": "Walking along the warm turquoise shores, tucked between towering limestone cliffs in a hidden tropical paradise."
+  },
+  {
+    "id": "nepal-annapurna",
+    "location": "Annapurna, Nepal",
+    "title": "Himalayan Golden Hour",
+    "image": "/data/stories/Memory3.webp",
+    "story": "Watching the setting sun turn the snowy peaks of the Annapurna range into blazing gold from the terrace of a cozy mountain lodge."
+  },
+  {
+    "id": "kashmir-pahalgam",
+    "location": "Pahalgam, Kashmir",
+    "title": "Lidder River Valley",
+    "image": "/data/stories/Memory4.webp",
+    "story": "A quiet stroll along the rushing Lidder River, surrounded by towering pine forests and the snow-dusted peaks of Kashmir."
+  }
+]

@@ -1,8 +1,10 @@
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Star } from "lucide-react";
 import { TravelPackage } from "@/data/packages";
 import { getImage } from "@/lib/images";
 import { cn } from "@/lib/utils";
+import { useOfferInfo } from "@/hooks/useOfferInfo";
 
 interface PackageCardProps {
   pkg: TravelPackage;
@@ -10,18 +12,24 @@ interface PackageCardProps {
   hideBookNow?: boolean;
 }
 
-const PackageCard = ({ pkg, badge, hideBookNow }: PackageCardProps) => {
+const PackageCard = memo(({ pkg, badge, hideBookNow }: PackageCardProps) => {
+  const { getPackageOffer, getDiscountedPrice } = useOfferInfo();
+  const pkgOffer = getPackageOffer(pkg.id);
+  const discountedPrice = getDiscountedPrice(pkg.id, pkg.price);
+
   return (
     <Link to={`/packages/${pkg.id}`} className="group block h-full">
-      <div className="bg-white rounded-[2rem] p-4 shadow-[0_2px_5px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-500 transform-gpu overflow-hidden flex flex-col h-full border border-slate-100/50">
+      <div className="bg-white rounded-[2rem] p-4 shadow-[0_2px_5_rgba(0,0,0,0.06)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-[box-shadow,transform] duration-500 transform-gpu overflow-hidden flex flex-col h-full border border-slate-200">
         {/* Image wrapper */}
         <div className="relative aspect-[16/10] rounded-2xl overflow-hidden isolate transform-gpu flex-shrink-0">
           <img
             src={getImage(pkg.image)}
             alt={pkg.title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          
+
           {/* Tags overlay */}
           <div className="absolute top-3 left-3 flex flex-wrap gap-1.5 max-w-[70%]">
             {badge && (
@@ -79,14 +87,30 @@ const PackageCard = ({ pkg, badge, hideBookNow }: PackageCardProps) => {
 
           <div className="flex items-center justify-between pt-4 border-t border-slate-100 mt-auto">
             <div>
-              <span className="font-body text-lg font-extrabold text-slate-900">
-                ₹{pkg.price.toLocaleString()}
-              </span>
+              {discountedPrice ? (
+                <div className="flex flex-col items-start leading-none">
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <span className="text-[10px] text-slate-400 line-through font-body font-medium">
+                      ₹{pkg.price.toLocaleString()}
+                    </span>
+                    <span className="bg-[#ea580c]/10 text-[#ea580c] text-[8px] font-extrabold px-1 rounded-sm uppercase tracking-wide">
+                      {pkgOffer?.discountPercentage}% OFF
+                    </span>
+                  </div>
+                  <span className="font-body text-lg font-extrabold text-[#ea580c]">
+                    ₹{discountedPrice.toLocaleString()}
+                  </span>
+                </div>
+              ) : (
+                <span className="font-body text-lg font-extrabold text-slate-900">
+                  ₹{pkg.price.toLocaleString()}
+                </span>
+              )}
             </div>
 
             {!hideBookNow && (
-              <div className="bg-black text-white hover:bg-slate-900 text-xs font-semibold px-4 py-2.5 rounded-full flex items-center gap-1.5 group/btn cursor-pointer lg:opacity-0 lg:group-hover:opacity-100 lg:translate-x-2 lg:group-hover:translate-x-0 transition-all duration-500 ease-out transform-gpu">
-                <span>Book Now</span>
+              <div className="bg-black text-white hover:bg-slate-900 text-xs font-semibold px-4 py-2.5 rounded-full flex items-center gap-1.5 group/btn cursor-pointer lg:opacity-0 lg:group-hover:opacity-100 lg:translate-x-2 lg:group-hover:translate-x-0 transition-[opacity,transform] duration-500 ease-out transform-gpu">
+                <span>View Details</span>
                 <div className="w-5 h-5 rounded-full bg-white text-black flex items-center justify-center">
                   <ArrowUpRight className="w-3 h-3 stroke-[2.5]" />
                 </div>
@@ -97,6 +121,8 @@ const PackageCard = ({ pkg, badge, hideBookNow }: PackageCardProps) => {
       </div>
     </Link>
   );
-};
+});
+
+PackageCard.displayName = "PackageCard";
 
 export default PackageCard;

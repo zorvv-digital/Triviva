@@ -1,52 +1,64 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Dubai and Dhow Cruise Dinner",
-      "description": "Arrive at Dubai International Airport. Meet our representative and transfer to your hotel for check-in. In the evening, enjoy a traditional wooden Dhow cruise along the Creek or Marina, featuring a buffet dinner and live onboard entertainment."
+      "title": "Arrival, Dubai Mall & Burj Khalifa",
+      "description": "Arrive in Dubai. Transfer to your hotel. Visit the Dubai Mall for shopping and go up to the Burj Khalifa observation deck."
     },
     {
       "day": "Day 2",
-      "title": "Dubai City Tour and Burj Khalifa",
-      "description": "Take a half-day guided city tour. Visit the Dubai Museum at Al Fahidi Fort, and stop for photos at Jumeirah Mosque, Palm Jumeirah (outside Atlantis), and the iconic Burj Al Arab. Walk through Dubai Marina and the JBR Walk. In the afternoon, visit the observation deck on levels 124 and 125 of the Burj Khalifa, followed by the Fountain Show at Dubai Mall."
+      "title": "Old Dubai Tour & Yacht Cruise",
+      "description": "Explore the Gold and Spice Souks. In the evening, enjoy a premium yacht cruise along the Dubai Marina coastline."
     },
     {
       "day": "Day 3",
-      "title": "Desert Jeep Safari and BBQ Camp Dinner",
-      "description": "Enjoy a free morning for shopping or optional activities. In the afternoon, set off in a 4x4 vehicle for a thrilling desert safari. Try sandboarding, take a camel ride, get a henna tattoo, and enjoy a buffet BBQ dinner accompanied by traditional Belly and Tanoura dances at the camp."
+      "title": "Adrenaline Desert Safari & Arabian BBQ",
+      "description": "Spend the morning at leisure. In the afternoon, take a 4x4 desert safari with dune bashing, camel rides, sandboarding, and a BBQ dinner under the stars."
     },
     {
       "day": "Day 4",
-      "title": "Leisure Day or Optional Abu Dhabi Day Trip",
-      "description": "Enjoy a free day to relax or choose an optional day tour to Abu Dhabi to visit the magnificent Sheikh Zayed Grand Mosque, Yas Island, and Ferrari World. In the evening, you can optionally visit the Global Village or Miracle Garden."
+      "title": "Emirati Culture or Hot Air Balloon Flight",
+      "description": "Learn about traditional Emirati culture. Optional hot air balloon ride over the desert or leisure shopping."
     },
     {
       "day": "Day 5",
-      "title": "Departure from Dubai",
-      "description": "Enjoy breakfast at your hotel and check out. Transfer to Dubai International Airport for your departure flight."
+      "title": "Dubai Departure",
+      "description": "Transfer to the Dubai airport for your return flight home."
     }
   ],
-  "gallery": [],
-  "title": "Dubai Delight",
+  "gallery": [
+    "/data/packages/packages_image/dubai-luxury/02-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/03-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/04-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/05-Dubai.webp",
+    "/data/packages/packages_image/dubai-luxury/ChatGPT Image May 31, 2026, 01_54_26 PM.webp",
+    "/data/packages/packages_image/dubai-luxury/ChatGPT Image May 31, 2026, 01_54_56 PM.webp"
+  ],
+  "title": "Dubai: Luxury & Desert Safari",
   "location": "Dubai, UAE",
   "duration": "5 Days / 4 Nights",
   "price": 25000,
-  "rating": 4.93,
-  "description": "Experience the modern architecture and desert adventures of Dubai on this 5-day luxury tour. Visit the Burj Khalifa observation deck, watch the Fountain Show at Dubai Mall, and enjoy a desert safari with a BBQ dinner.",
+  "rating": 4.88,
+  "description": "Step into a city where futuristic skyscrapers rise out of golden desert sands. Admire the world's tallest building, the Burj Khalifa, and the iconic sail-shaped Burj Al Arab. Shop at the massive Dubai Mall, explore the historic Gold and Spice Souks, and experience traditional Emirati culture. Highlight your journey with an exciting 4x4 desert safari, complete with dune bashing, camel riding, and a BBQ dinner under a starry desert sky.",
   "highlights": [
-    "Dhow cruise dinner along Dubai Marina or Creek",
-    "Entry ticket to levels 124 and 125 of the Burj Khalifa tower",
-    "4x4 desert jeep safari with dune bashing and camel riding",
-    "Free day for shopping or optional Abu Dhabi day tour"
+    "Ascend to the observation deck of the world's tallest tower, the Burj Khalifa",
+    "Vibrant shopping excursions at the Dubai Mall and historic gold & spice souks",
+    "Thrilling 4x4 desert safari with dune bashing, camel riding, and sandboarding",
+    "Enjoy a traditional Arabian night BBQ dinner under the desert stars",
+    "Relax on scenic coastal yacht cruises and view the iconic Burj Al Arab",
+    "Experience traditional Emirati culture and warm hospitality"
   ],
-  "image": "/data/packages/packages_image/dubai-luxury/01_main.jpg",
+  "image": "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
   "region": "international",
   "categories": [
     "International",
@@ -54,13 +66,14 @@
   ],
   "priority": 10,
   "bestTimeToVisit": [
+    "November",
+    "December",
+    "January",
+    "February",
     "March",
-    "April",
-    "May",
-    "June",
-    "September",
-    "October",
-    "November"
+    "April"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 25.2048,
+  "lng": 55.2708
 }

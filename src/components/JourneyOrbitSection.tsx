@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, Sparkles, Star } from "lucide-react";
+import { useEffect, useMemo, useRef, useState, useCallback } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, MapPin, Sparkles, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { getImage } from "@/lib/images";
 
@@ -58,45 +58,51 @@ const fallbackStories: TripStory[] = [
   },
 ];
 
-type DeckState = {
-  x: number;
-  y: number;
-  scale: number;
-  rotate: number;
-  opacity: number;
-  zIndex: number;
-  height: number;
-};
+function wrapIndex(n: number, len: number) {
+  if (len <= 0) return 0;
+  return ((n % len) + len) % len;
+}
 
-const deckLayouts: Record<"mobile" | "tablet" | "desktop", DeckState[]> = {
-  mobile: [
-    { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1, zIndex: 40, height: 360 },
-    { x: 26, y: 54, scale: 0.88, rotate: 7, opacity: 0.74, zIndex: 20, height: 260 },
-    { x: -10, y: 118, scale: 0.76, rotate: -8, opacity: 0.56, zIndex: 5, height: 220 },
-    { x: -18, y: -34, scale: 0.84, rotate: -5, opacity: 0.44, zIndex: 10, height: 92 },
-  ],
-  tablet: [
-    { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1, zIndex: 40, height: 420 },
-    { x: 188, y: 14, scale: 0.9, rotate: 8, opacity: 0.82, zIndex: 30, height: 340 },
-    { x: -160, y: 110, scale: 0.82, rotate: -10, opacity: 0.66, zIndex: 20, height: 280 },
-    { x: -24, y: -40, scale: 0.88, rotate: -7, opacity: 0.48, zIndex: 10, height: 110 },
-  ],
-  desktop: [
-    { x: 0, y: 0, scale: 1, rotate: 0, opacity: 1, zIndex: 40, height: 440 },
-    { x: 230, y: 22, scale: 0.92, rotate: 10, opacity: 0.84, zIndex: 30, height: 350 },
-    { x: -200, y: 126, scale: 0.84, rotate: -12, opacity: 0.68, zIndex: 20, height: 290 },
-    { x: -30, y: -52, scale: 0.9, rotate: -8, opacity: 0.52, zIndex: 10, height: 112 },
-  ],
-};
+function signedOffset(i: number, active: number, len: number, loop: boolean) {
+  const raw = i - active;
+  if (!loop || len <= 1) return raw;
+  const alt = raw > 0 ? raw - len : raw + len;
+  return Math.abs(alt) < Math.abs(raw) ? alt : raw;
+}
 
 const JourneyOrbitSection = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [stories, setStories] = useState<TripStory[]>(fallbackStories);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [hasEntered, setHasEntered] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
+  const [hasEntered, setHasEntered] = useState(true); // Default to true so auto-play works immediately on load
   const [viewportWidth, setViewportWidth] = useState(1280);
   const shouldReduceMotion = useReducedMotion();
+
+  // Card geometry configuration variables
+  const cardWidth = 336;
+  const maxVisible = 5;
+  const overlap = 0.58;
+  const spreadDeg = 24;
+  const depthPx = 70;
+  const tiltXDeg = 8;
+  const activeLiftPx = 22;
+  const activeScale = 1.03;
+  const inactiveScale = 0.93;
+  const perspectivePx = 1100;
+  const loop = true;
+
+  const len = stories.length;
+  const maxOffset = Math.max(0, Math.floor(maxVisible / 2));
+  const cardSpacing = Math.max(10, Math.round(cardWidth * (1 - overlap)));
+  const stepDeg = maxOffset > 0 ? spreadDeg / maxOffset : 0;
+
+  const goNext = useCallback(() => {
+    setActiveIndex((current) => wrapIndex(current + 1, len));
+  }, [len]);
+
+  const goPrev = useCallback(() => {
+    setActiveIndex((current) => wrapIndex(current - 1, len));
+  }, [len]);
 
   useEffect(() => {
     fetch("/data/stories/last_trips.json")
@@ -107,13 +113,11 @@ const JourneyOrbitSection = () => {
         return response.json();
       })
       .then((data: TripStory[]) => {
-        if (Array.isArray(data) && data.length > 0) {
+        if (data && data.length > 0) {
           setStories(data);
         }
       })
-      .catch(() => {
-        setStories(fallbackStories);
-      });
+      .catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -124,69 +128,44 @@ const JourneyOrbitSection = () => {
   }, []);
 
   useEffect(() => {
-    const element = sectionRef.current;
-    if (!element) {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setHasEntered(true);
-        }
-      },
-      { threshold: 0.34 }
-    );
-
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!hasEntered || isPaused || shouldReduceMotion || stories.length <= 1) {
+    if (shouldReduceMotion || stories.length <= 1) {
       return;
     }
 
     const intervalId = window.setInterval(() => {
-      setActiveIndex((currentIndex) => (currentIndex + 1) % stories.length);
-    }, 5600);
+      goNext();
+    }, 5200);
 
     return () => window.clearInterval(intervalId);
-  }, [hasEntered, isPaused, shouldReduceMotion, stories.length]);
+  }, [shouldReduceMotion, stories.length, goNext]);
 
   const activeStory = stories[activeIndex];
-  const deckMode = viewportWidth < 768 ? "mobile" : viewportWidth < 1024 ? "tablet" : "desktop";
-  const layouts = deckLayouts[deckMode];
+  const openState = hasEntered;
 
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[linear-gradient(180deg,#faf5ec_0%,#f6eee2_42%,#efe5d7_100%)] py-24 md:py-32"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-      onFocusCapture={() => setIsPaused(true)}
-      onBlurCapture={(event) => {
-        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
-          setIsPaused(false);
-        }
+      style={{
+        background: "linear-gradient(180deg, #fbfbf9 0%, #f6efe5 100%)"
       }}
+      className="relative overflow-hidden py-16 md:py-20"
     >
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.14),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.12),transparent_28%)]" />
-        <div className="absolute inset-0 opacity-[0.24] [background-image:linear-gradient(rgba(15,23,42,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.05)_1px,transparent_1px)] [background-size:42px_42px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.06),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(56,189,248,0.04),transparent_26%)]" />
+        <div className="absolute inset-0 opacity-[0.16] [background-image:linear-gradient(rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.03)_1px,transparent_1px)] [background-size:40px_40px]" />
       </div>
 
       <div className="section-padding relative z-10 mx-auto max-w-7xl">
-        <div className="grid items-center gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-12">
-          <div className="max-w-2xl">
+        <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
+          <div className="max-w-2xl text-slate-900">
             <motion.span
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-500/15 bg-white/70 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.3em] text-amber-700 backdrop-blur-md"
+              className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.32em] text-slate-600 backdrop-blur-md"
             >
-              <Sparkles className="h-3.5 w-3.5" />
-              Story deck
+              <Sparkles className="h-3.5 w-3.5 text-primary" />
+              Travel archive
             </motion.span>
 
             <motion.h2
@@ -194,59 +173,32 @@ const JourneyOrbitSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.06, duration: 0.6 }}
-              className="font-display text-4xl font-black uppercase leading-[0.9] tracking-tight text-slate-950 md:text-6xl"
+              className="font-display text-4xl font-black uppercase leading-tight tracking-tight md:text-6xl text-slate-900"
             >
-              Open the deck,
-              <br />
-              <span className="text-gradient">watch it unfold</span>
+              Stories that <span className="text-primary">move into frame</span>
             </motion.h2>
 
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.12, duration: 0.5 }}
-              className="mt-6 max-w-xl text-sm leading-7 text-slate-600 md:text-base"
+              transition={{ delay: 0.14, duration: 0.5 }}
+              className="mt-4 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base"
             >
-              The cards start closed like a stack of postcards. Once this section enters the viewport,
-              they fan open, reveal their stories, and keep rotating with a clear, visible rhythm.
+              A redesigned travel archive: cards begin as a compact stack, open when the section enters view, and then rotate with a clear, cinematic rhythm.
             </motion.p>
-
-            <div className="mt-10 grid grid-cols-3 gap-3 sm:gap-4">
-              {[
-                { label: "Stories", value: stories.length.toString().padStart(2, "0") },
-                { label: "State", value: hasEntered ? "Open" : "Closed" },
-                { label: "Focus", value: activeStory?.month ?? "—" },
-              ].map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.06 * index, duration: 0.45 }}
-                  className="rounded-[1.5rem] border border-white/70 bg-white/70 p-4 shadow-[0_12px_30px_rgba(15,23,42,0.05)] backdrop-blur-md"
-                >
-                  <div className="text-[10px] font-bold uppercase tracking-[0.28em] text-slate-500">
-                    {item.label}
-                  </div>
-                  <div className="mt-2 font-display text-xl font-bold text-slate-950 md:text-2xl">
-                    {item.value}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 to={`/packages/${activeStory?.id ?? "packages"}`}
-                className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-slate-800 shadow-md"
               >
                 Explore this trip
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/packages"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-950/10 bg-white/70 px-6 py-3 text-sm font-semibold text-slate-900 backdrop-blur-md transition-colors hover:bg-white/90"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50"
               >
                 View packages
               </Link>
@@ -254,137 +206,158 @@ const JourneyOrbitSection = () => {
           </div>
 
           <div className="relative">
-            <div className="relative mx-auto h-[34rem] w-full max-w-[46rem] overflow-visible md:h-[41rem]">
-              {stories.map((story, index) => {
-                const relativeIndex = (index - activeIndex + stories.length) % stories.length;
-                const layout = layouts[relativeIndex] ?? layouts[0];
-                const isActive = relativeIndex === 0;
-                const isOpen = hasEntered;
+            <div 
+              className="relative mx-auto h-[29rem] w-full max-w-[46rem] overflow-visible md:h-[35rem] flex items-start justify-center"
+              style={{
+                perspective: `${perspectivePx}px`,
+              }}
+            >
+              {stories.map((story, i) => {
+                const off = signedOffset(i, activeIndex, len, loop);
+                const abs = Math.abs(off);
+                const visible = abs <= maxOffset;
+
+                if (!visible) return null;
+
+                const rotateZ = off * stepDeg;
+                const x = off * cardSpacing;
+                const y = abs * 8; // subtle arc-down feel
+                const z = -abs * depthPx;
+
+                const isActive = off === 0;
+                const scale = isActive ? activeScale : inactiveScale;
+                const lift = isActive ? -activeLiftPx : 0;
+                const rotateX = isActive ? 0 : tiltXDeg;
+                const zIndex = 100 - abs;
 
                 return (
-                  <motion.article
+                  <motion.button
                     key={story.id}
-                    initial={false}
+                    type="button"
+                    onClick={() => {
+                      setActiveIndex(i);
+                    }}
+                    initial={
+                      shouldReduceMotion
+                        ? false
+                        : {
+                            opacity: 0,
+                            y: y + 40,
+                            x,
+                            rotateZ,
+                            rotateX,
+                            scale,
+                          }
+                    }
                     animate={{
-                      x: isOpen ? layout.x : 0,
-                      y: isOpen ? layout.y : 0,
-                      scale: isOpen ? layout.scale : 0.8,
-                      rotate: isOpen ? layout.rotate : 0,
-                      opacity: isOpen ? layout.opacity : 0.14,
-                      height: isOpen ? layout.height : 92,
+                      opacity: openState ? 1 : 0.14,
+                      x: openState ? x : 0,
+                      y: openState ? y + lift : 0,
+                      scale: openState ? scale : 0.76,
+                      rotateZ: openState ? rotateZ : 0,
+                      rotateX: openState ? rotateX : 0,
+                    }}
+                    style={{ 
+                      zIndex,
+                      transformStyle: "preserve-3d",
                     }}
                     transition={{
                       type: "spring",
-                      stiffness: 100,
-                      damping: 18,
-                      mass: 1,
-                      delay: isOpen ? index * 0.06 : index * 0.03,
+                      stiffness: 480, // Snappy transitions
+                      damping: 120,
+                      mass: 0.3,
                     }}
-                    style={{ zIndex: layout.zIndex }}
-                    className="group absolute left-1/2 top-1/2 w-[min(76vw,20rem)] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[1.9rem] border border-white/70 bg-white/65 shadow-[0_18px_45px_rgba(15,23,42,0.12)] backdrop-blur-md"
+                    className="group absolute left-1/2 top-4 w-[min(76vw,21rem)] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] hover:-translate-y-0.5 transition-shadow duration-500 transform-gpu"
                   >
-                    <div className="relative flex h-full flex-col overflow-hidden">
-                      <div className="flex items-center justify-between gap-3 px-4 py-3">
-                        <div className="min-w-0">
-                          <div className="flex items-center gap-1.5 rounded-full bg-slate-950/8 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.22em] text-slate-700">
-                            <CalendarDays className="h-3 w-3" />
-                            {story.month}
-                          </div>
-                        </div>
-                        <div className="inline-flex items-center gap-1 rounded-full bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-950 shadow-sm">
-                          <Star className="h-3 w-3 fill-current text-amber-500" />
-                          deck
-                        </div>
-                      </div>
-
-                      <div className="relative flex-1 overflow-hidden">
-                        <img
-                          src={getImage(story.image)}
-                          alt={story.title}
-                          className={`h-full w-full object-cover transition-transform duration-700 ${
-                            isActive ? "group-hover:scale-105" : "scale-[1.03]"
-                          }`}
-                        />
-                        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.02)_0%,rgba(2,6,23,0.18)_34%,rgba(2,6,23,0.82)_100%)]" />
-
-                        <motion.div
-                          initial={false}
-                          animate={{
-                            opacity: (hasEntered && isActive) ? 1 : 0,
-                            y: (hasEntered && isActive) ? 0 : 28,
-                          }}
-                          transition={{ duration: 0.35, delay: 0.15 }}
-                          className="absolute inset-x-0 bottom-0 p-4 text-white md:p-5"
-                        >
-                          <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/60">
-                            {isActive ? "Now in focus" : "Travel note"}
-                          </p>
-                          <h3 className="mt-2 text-lg font-bold leading-tight md:text-xl">
-                            {story.title}
-                          </h3>
-                          <p className="mt-2 text-sm leading-6 text-white/78">
-                            {story.story}
-                          </p>
-                          <p className="mt-3 text-xs italic leading-5 text-white/72">
-                            “{story.quote}”
-                          </p>
-                          <div className="mt-4 flex items-center justify-between gap-3 text-[10px] font-bold uppercase tracking-[0.24em] text-white/60">
-                            <span>{story.location}</span>
-                            <span>{story.tag}</span>
-                          </div>
-                        </motion.div>
-                      </div>
-                    </div>
-
-                    {!hasEntered && (
-                      <motion.div
-                        aria-hidden="true"
-                        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0.5)_100%)]"
-                        animate={shouldReduceMotion ? undefined : { opacity: [0.5, 0.15, 0.5] }}
-                        transition={{ duration: 2.4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                    <div 
+                      className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden isolate transform-gpu"
+                      style={{
+                        transform: `translateZ(${z}px)`,
+                        transformStyle: "preserve-3d",
+                      }}
+                    >
+                      <img
+                        src={getImage(story.image)}
+                        alt={story.title}
+                        className={`h-full w-full object-cover transition-transform duration-700 ${
+                          isActive ? "group-hover:scale-105" : "scale-[1.02]"
+                        }`}
                       />
-                    )}
-                  </motion.article>
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.02)_0%,rgba(2,6,23,0.08)_30%,rgba(2,6,23,0.72)_100%)]" />
+
+                      <div className="absolute top-3 right-3 flex items-center gap-1 rounded-full bg-white px-3 py-1 text-[10px] font-bold text-slate-950 shadow-sm">
+                        <Star className="h-3 w-3 fill-current text-amber-500" />
+                        <span>{isActive ? "4.84" : "4.90"}</span>
+                      </div>
+
+                      <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+                        <div className="mb-2 flex items-center justify-between gap-3">
+                          <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/70">
+                            {story.month}
+                          </p>
+                          <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/70">
+                            {story.tag}
+                          </p>
+                        </div>
+                        <h3 className="font-display text-2xl font-bold leading-[0.95] text-white">
+                          {story.title}
+                        </h3>
+                        <p className="mt-3 max-w-[90%] text-sm leading-6 text-white/80 line-clamp-2">
+                          {story.story}
+                        </p>
+                      </div>
+
+                      {!openState && (
+                        <motion.div
+                          aria-hidden="true"
+                          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.34)_100%)]"
+                          animate={shouldReduceMotion ? undefined : { opacity: [0.7, 0.18, 0.7] }}
+                          transition={{ duration: 2.6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                        />
+                      )}
+                    </div>
+                  </motion.button>
                 );
               })}
             </div>
 
-            <div className="mt-5 flex items-center justify-center gap-2">
+             <div className="mt-5 flex items-center justify-center gap-2">
               <button
                 type="button"
-                onClick={() => setActiveIndex((current) => (current - 1 + stories.length) % stories.length)}
+                onClick={() => goPrev()}
                 aria-label="Previous story"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-950/10 bg-white/70 text-slate-900 backdrop-blur-md transition-colors hover:bg-white"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition-colors hover:bg-slate-50"
               >
                 <ChevronLeft className="h-4 w-4" />
               </button>
               <button
                 type="button"
-                onClick={() => setActiveIndex((current) => (current + 1) % stories.length)}
+                onClick={() => goNext()}
                 aria-label="Next story"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-950/10 bg-white/70 text-slate-900 backdrop-blur-md transition-colors hover:bg-white"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 shadow-sm transition-colors hover:bg-slate-50"
               >
                 <ChevronRight className="h-4 w-4" />
               </button>
             </div>
 
             <div className="mt-4 flex items-center justify-center gap-2">
-              {stories.map((story, index) => (
-                <button
-                  key={story.id}
-                  type="button"
-                  aria-label={`Show story ${index + 1}`}
-                  aria-pressed={index === activeIndex}
-                  onClick={() => setActiveIndex(index)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
-                    index === activeIndex ? "w-8 bg-slate-950" : "w-2.5 bg-slate-950/20 hover:bg-slate-950/35"
-                  }`}
-                />
-              ))}
-            </div>
-
-            <div className="mt-4 text-center text-xs font-medium uppercase tracking-[0.28em] text-slate-500">
-              {hasEntered ? (isPaused ? "Paused" : "Playing") : "Closed"} • opens on scroll
+              {stories.map((story, index) => {
+                const isActive = index === activeIndex;
+                return (
+                  <button
+                    key={story.id}
+                    type="button"
+                    aria-label={`Show story ${index + 1}`}
+                    aria-pressed={isActive}
+                    onClick={() => {
+                      setActiveIndex(index);
+                    }}
+                    className={`h-2.5 rounded-full transition-all duration-300 ${
+                      isActive ? "w-8 bg-slate-800" : "w-2.5 bg-slate-300 hover:bg-slate-400"
+                    }`}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

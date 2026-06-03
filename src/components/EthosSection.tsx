@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 const EthosSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white/50 border-y border-black/[0.03]">
+    <section
+      className="py-16 md:py-24 bg-transparent"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 400px" }}
+    >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.p
           initial={{ opacity: 0, y: 15 }}

@@ -12,6 +12,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { TravelPackageDetail } from "@/data/packages";
 import { getImage } from "@/lib/images";
+import { useOfferInfo } from "@/hooks/useOfferInfo";
 
 const iconMap = {
   plane: Plane,
@@ -55,6 +56,10 @@ const PackageDetail = () => {
   const [details, setDetails] = useState<TravelPackageDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const { getPackageOffer, getDiscountedPrice } = useOfferInfo();
+
+  const pkgOffer = details ? getPackageOffer(details.id) : null;
+  const discountedPrice = details ? getDiscountedPrice(details.id, details.price) : null;
 
   useEffect(() => {
     if (!id) return;
@@ -253,12 +258,31 @@ const PackageDetail = () => {
               >
                 <div className="mb-6">
                   <span className="text-muted-foreground font-body text-sm">Starting from</span>
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-4xl font-body font-bold text-primary">
-                      ₹{details.price.toLocaleString()}
-                    </span>
-                    <span className="text-muted-foreground font-body text-sm">/ person</span>
-                  </div>
+                  {discountedPrice ? (
+                    <div className="flex flex-col gap-0.5">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm text-slate-400 line-through font-body font-medium">
+                          ₹{details.price.toLocaleString()}
+                        </span>
+                        <span className="bg-[#ea580c]/10 text-[#ea580c] text-[10px] font-extrabold px-1.5 py-0.5 rounded-sm uppercase tracking-wide">
+                          {pkgOffer?.discountPercentage}% OFF
+                        </span>
+                      </div>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-4xl font-body font-bold text-[#ea580c]">
+                          ₹{discountedPrice.toLocaleString()}
+                        </span>
+                        <span className="text-muted-foreground font-body text-sm">/ person</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl font-body font-bold text-primary">
+                        ₹{details.price.toLocaleString()}
+                      </span>
+                      <span className="text-muted-foreground font-body text-sm">/ person</span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-4 mb-8">

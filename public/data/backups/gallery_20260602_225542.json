@@ -1,0 +1,55 @@
+{
+  "enabled": true,
+  "images": [
+    {
+      "image": "/data/gallery/01_Santorini, Greece.jpg",
+      "alt": "Santorini, Greece",
+      "className": "col-span-1 md:col-span-2 row-span-2"
+    },
+    {
+      "image": "/data/gallery/02_Kyoto, Japan.jpg",
+      "alt": "Kyoto, Japan",
+      "className": "col-span-1 md:col-span-1 row-span-1"
+    },
+    {
+      "image": "/data/gallery/03_Swiss Alps.jpg",
+      "alt": "Swiss Alps",
+      "className": "col-span-1 md:col-span-1 row-span-1"
+    },
+    {
+      "image": "/data/gallery/04_Bali, Indonesia.webp",
+      "alt": "Bali, Indonesia",
+      "className": "col-span-1 md:col-span-2 row-span-1"
+    },
+    {
+      "image": "/data/gallery/05_Sahara Desert, Morocco.jpg",
+      "alt": "Sahara Desert, Morocco",
+      "className": "col-span-1 md:col-span-1 row-span-2"
+    },
+    {
+      "image": "/data/gallery/06_Maldives.jpg",
+      "alt": "Maldives",
+      "className": "col-span-1 md:col-span-1 row-span-1"
+    },
+    {
+      "image": "/data/gallery/07_Machu Picchu, Peru.jpg",
+      "alt": "Machu Picchu, Peru",
+      "className": "col-span-1 md:col-span-2 row-span-2"
+    },
+    {
+      "image": "/data/gallery/08_Tropical Beach Resort.jpg",
+      "alt": "Tropical Beach Resort",
+      "className": "col-span-1 md:col-span-1 row-span-1"
+    },
+    {
+      "image": "/data/gallery/09_Wanderlust Adventure.jpg",
+      "alt": "Wanderlust Adventure",
+      "className": "col-span-1 md:col-span-2 row-span-1"
+    },
+    {
+      "image": "/data/gallery/ChatGPT_Image_Jun_2,_2026,_08_51_41_PM.png",
+      "alt": "New Adventure Photo",
+      "className": "col-span-1 md:col-span-1 row-span-1"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Users, Globe, Award, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import { images } from "@/lib/images";
 
 import aboutData from "@/data/about.json";
@@ -167,6 +168,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <CTASection />
 
       <Footer />
     </div>

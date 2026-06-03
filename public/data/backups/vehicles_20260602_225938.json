@@ -1,0 +1,112 @@
+[
+  {
+    "id": "42-seater-luxury-coach",
+    "name": "Premium 42-Seater Luxury Coach",
+    "type": "coach",
+    "capacity": "42 Seats",
+    "image": "/data/vehicles/vehicles_image/luxury_42_seater_coach.png",
+    "description": "Our flagship Volvo multi-axle luxury coach offers unmatched ride comfort with semi-sleeper seats, advanced air suspension, and premium passenger amenities. Ideal for long-distance group tours and corporate travel.",
+    "amenities": [
+      "Air Conditioning",
+      "Reclining Seats",
+      "Charging Ports",
+      "GPS Tracking",
+      "LED TV / Audio",
+      "Large Luggage Space",
+      "Professional Driver",
+      "WiFi Onboard"
+    ],
+    "rating": 4.9,
+    "priority": 1
+  },
+  {
+    "id": "32-seater-deluxe-coach",
+    "name": "Deluxe 32-Seater Tour Bus",
+    "type": "coach",
+    "capacity": "32 Seats",
+    "image": "/data/vehicles/vehicles_image/deluxe_32_seater_bus.png",
+    "description": "Perfectly sized for medium groups, this deluxe coach blends agility with luxury. Features custom push-back seats, individually controlled AC vents, and a high-fidelity sound system for an engaging travel experience.",
+    "amenities": [
+      "Air Conditioning",
+      "Reclining Seats",
+      "Charging Ports",
+      "GPS Tracking",
+      "LED TV / Audio",
+      "Luggage Space",
+      "Professional Driver"
+    ],
+    "rating": 4.8,
+    "priority": 2
+  },
+  {
+    "id": "25-seater-executive-minibus",
+    "name": "Executive 25-Seater Mini Bus",
+    "type": "minibus",
+    "capacity": "25 Seats",
+    "image": "/data/vehicles/vehicles_image/executive_25_seater_minibus.png",
+    "description": "An executive-class mini bus designed for corporate team outings, weddings, and airport transfers. Offers ample head and legroom, premium upholstery, and a quiet cabin environment.",
+    "amenities": [
+      "Air Conditioning",
+      "Reclining Seats",
+      "Charging Ports",
+      "GPS Tracking",
+      "Audio System",
+      "Luggage Space",
+      "Professional Driver"
+    ],
+    "rating": 4.7,
+    "priority": 3
+  },
+  {
+    "id": "17-seater-comfort-traveller",
+    "name": "Luxury 17-Seater Traveller",
+    "type": "minibus",
+    "capacity": "17 Seats",
+    "image": "/data/vehicles/vehicles_image/comfort_17_seater_minibus.png",
+    "description": "A spacious and high-roof traveller custom-configured with plush seating. Highly popular for family vacation trips, offering great fuel efficiency and maneuvering in hill stations.",
+    "amenities": [
+      "Air Conditioning",
+      "Reclining Seats",
+      "Charging Ports",
+      "GPS Tracking",
+      "Audio System",
+      "Luggage Space",
+      "Professional Driver"
+    ],
+    "rating": 4.9,
+    "priority": 4
+  },
+  {
+    "id": "12-seater-luxury-traveller",
+    "name": "Premium 12-Seater Traveller",
+    "type": "minibus",
+    "capacity": "12 Seats",
+    "image": "/data/vehicles/vehicles_image/luxury_12_seater_minibus.png",
+    "description": "A customized luxury traveller featuring 1x1 captain chairs, rich leatherette interior trim, ambient roof lighting, and personal entertainment monitors. Experience ultimate comfort in smaller groups.",
+    "amenities": [
+      "Air Conditioning",
+      "Premium Leather Seats",
+      "Charging Ports",
+      "GPS Tracking",
+      "Personal LCD Screens",
+      "Ambient Lighting",
+      "Professional Driver"
+    ],
+    "rating": 4.9,
+    "priority": 5
+  },
+  {
+    "id": "vehicle-7842",
+    "name": "Volvo Luxury Tour Bus",
+    "type": "coach",
+    "capacity": "35 Seats",
+    "image": "/placeholder.svg",
+    "description": "Comfortable coach for group tours.",
+    "amenities": [
+      "Air Conditioning",
+      "Reclining Seats"
+    ],
+    "rating": 4.8,
+    "priority": 5
+  }
+]

@@ -79,22 +79,42 @@ detailFiles.forEach((file) => {
 
   // Read images from folder
   const imageFiles = fs.readdirSync(packageImageDir)
-    .filter(f => /\.(jpe?g|png|webp|gif)$/i.test(f))
+    .filter(f => /\.(jpe?g|png|webp|gif)$/i.test(f));
+
+  const allDiskPaths = new Set(imageFiles.map(f => `/data/packages/packages_image/${baseId}/${f}`));
+
+  // Check if current image/gallery still exist on disk to preserve curator selection
+  let currentImage = detailData.image;
+  let currentGallery = Array.isArray(detailData.gallery) ? detailData.gallery : [];
+
+  let verifiedImage = (currentImage && allDiskPaths.has(currentImage)) ? currentImage : null;
+  let verifiedGallery = currentGallery.filter(path => allDiskPaths.has(path));
+
+  // Determine which images on disk are not yet in the verified set
+  const usedPaths = new Set();
+  if (verifiedImage) usedPaths.add(verifiedImage);
+  verifiedGallery.forEach(p => usedPaths.add(p));
+
+  const remainingDiskPaths = imageFiles
+    .map(f => `/data/packages/packages_image/${baseId}/${f}`)
+    .filter(p => !usedPaths.has(p))
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 
-  let mainImageRelative = "/placeholder.svg";
-  let galleryRelatives = [];
-
-  if (imageFiles.length > 0) {
-    mainImageRelative = `/data/packages/packages_image/${baseId}/${imageFiles[0]}`;
-    galleryRelatives = imageFiles.slice(1).map(f => `/data/packages/packages_image/${baseId}/${f}`);
-  } else {
-    console.warn(`Warning: No images found in package directory: ${packageImageDir}`);
+  // If we don't have a verified image, pick the first one from the disk (or remaining)
+  if (!verifiedImage) {
+    if (remainingDiskPaths.length > 0) {
+      verifiedImage = remainingDiskPaths.shift();
+    } else {
+      verifiedImage = "/placeholder.svg";
+    }
   }
 
-  // Update dynamic scanned image fields
-  detailData.image = mainImageRelative;
-  detailData.gallery = galleryRelatives;
+  // Append any new/remaining disk paths to the gallery
+  verifiedGallery = [...verifiedGallery, ...remainingDiskPaths];
+
+  // Update dynamic fields while preserving custom selections & orderings
+  detailData.image = verifiedImage;
+  detailData.gallery = verifiedGallery;
   if (typeof detailData.showInHero !== 'boolean') {
     detailData.showInHero = false;
   }
@@ -111,7 +131,7 @@ detailFiles.forEach((file) => {
     duration: detailData.duration || "",
     price: detailData.price || 0,
     rating: detailData.rating || 0.0,
-    image: mainImageRelative,
+    image: verifiedImage,
     description: detailData.description || "",
     highlights: detailData.highlights || [],
     region: detailData.region || "international",
@@ -138,13 +158,13 @@ if (!fs.existsSync(galleryDestDir)) {
   const defaults = [
     { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'santorini.jpg'), name: '01_Santorini, Greece.jpg' },
     { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'japan.jpg'), name: '02_Kyoto, Japan.jpg' },
-    { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'swiz.jpg'), name: '03_Swiss Alps.jpg' },
+    { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'swiz.webp'), name: '03_Swiss Alps.webp' },
     { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'breathtaking-bali-nature-picjumbo-com.webp'), name: '04_Bali, Indonesia.webp' },
     { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'sahara.jpg'), name: '05_Sahara Desert, Morocco.jpg' },
     { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'maldives.jpg'), name: '06_Maldives.jpg' },
     { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'peru.jpg'), name: '07_Machu Picchu, Peru.jpg' },
     { src: path.join(__dirname, '..', 'src', 'assets', 'hero-beach.jpg'), name: '08_Tropical Beach Resort.jpg' },
-    { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'swiz.jpg'), name: '09_Wanderlust Adventure.jpg' }
+    { src: path.join(__dirname, '..', 'src', 'assets', 'quality', 'swiz.webp'), name: '09_Wanderlust Adventure.webp' }
   ];
 
   defaults.forEach(def => {
@@ -156,7 +176,7 @@ if (!fs.existsSync(galleryDestDir)) {
 }
 
 const galleryFiles = fs.readdirSync(galleryDestDir)
-  .filter(f => /\.(jpe?g|png|webp|gif)$/i.test(f))
+  .filter(f => /\.webp$/i.test(f))
   .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
 
 const gridClasses = [
@@ -171,35 +191,44 @@ const gridClasses = [
   "col-span-1 md:col-span-2 row-span-1"
 ];
 
-const galleryList = galleryFiles.map((file, idx) => {
-  // Clean filename: remove extension
-  const ext = path.extname(file);
-  let nameWithoutExt = path.basename(file, ext);
-
-  // Remove leading sort prefix (e.g. "01_", "01 - ", etc)
-  nameWithoutExt = nameWithoutExt.replace(/^\d+[\s_-]*/, '');
-
-  // Replace underscores or hyphens with spaces
-  const cleanName = nameWithoutExt.replace(/[_-]+/g, ' ').trim();
-
-  return {
-    image: `/data/gallery/${file}`,
-    alt: cleanName || "Travel Destination",
-    className: gridClasses[idx % gridClasses.length]
-  };
-});
-
+// Read existing gallery file first to build a map of custom metadata
+let existingImagesMap = new Map();
 let enabled = true;
 if (fs.existsSync(galleryJsonPath)) {
   try {
     const existing = JSON.parse(fs.readFileSync(galleryJsonPath, 'utf8'));
-    if (existing && typeof existing.enabled === 'boolean') {
-      enabled = existing.enabled;
+    if (existing) {
+      if (typeof existing.enabled === 'boolean') {
+        enabled = existing.enabled;
+      }
+      if (Array.isArray(existing.images)) {
+        existing.images.forEach(img => {
+          if (img && img.image) {
+            existingImagesMap.set(img.image, img);
+          }
+        });
+      }
     }
   } catch (e) {
     // Ignore parse errors
   }
 }
+
+const galleryList = galleryFiles.map((file, idx) => {
+  const imgPath = `/data/gallery/${file}`;
+  const ext = path.extname(file);
+  let nameWithoutExt = path.basename(file, ext);
+  nameWithoutExt = nameWithoutExt.replace(/^\d+[\s_-]*/, '');
+  const cleanName = nameWithoutExt.replace(/[_-]+/g, ' ').trim();
+
+  // If the image already exists in the JSON, keep its user-edited alt & grid className
+  const existingItem = existingImagesMap.get(imgPath);
+  return {
+    image: imgPath,
+    alt: (existingItem && existingItem.alt) ? existingItem.alt : (cleanName || "Travel Destination"),
+    className: (existingItem && existingItem.className) ? existingItem.className : gridClasses[idx % gridClasses.length]
+  };
+});
 
 fs.writeFileSync(galleryJsonPath, JSON.stringify({ enabled, images: galleryList }, null, 2), 'utf8');
 console.log(`Successfully compiled and wrote gallery index file to: ${galleryJsonPath} (Count: ${galleryList.length}, Enabled: ${enabled})`);

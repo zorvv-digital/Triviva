@@ -1,6 +1,7 @@
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import FilterTabs from "@/components/ui/FilterTabs";
 
 interface SearchFiltersBarProps {
   searchQuery: string;
@@ -122,20 +123,15 @@ const SearchFiltersBar = ({
           )}
         </button>
 
-        {["All", "Domestic", "International"].map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setTripTypeFilter(tripTypeFilter === cat ? "All" : cat)}
-            className={cn(
-              "px-5 py-2.5 text-xs font-bold rounded-full uppercase tracking-wider transition-all duration-300 border cursor-pointer flex-shrink-0 active:scale-[0.98]",
-              tripTypeFilter === cat
-                ? "bg-slate-950 text-white border-slate-950 shadow-sm"
-                : "bg-slate-50 hover:bg-slate-100/80 text-slate-600 border-slate-100"
-            )}
-          >
-            {cat}
-          </button>
-        ))}
+        <FilterTabs
+          options={[
+            { value: "All", label: "All" },
+            { value: "Domestic", label: "Domestic" },
+            { value: "International", label: "International" },
+          ]}
+          selectedValue={tripTypeFilter}
+          onChange={setTripTypeFilter}
+        />
       </div>
     </div>
   );

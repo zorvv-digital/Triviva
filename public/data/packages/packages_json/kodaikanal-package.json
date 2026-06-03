@@ -1,0 +1,77 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival and Kodaikanal Lake Boating",
+      "description": "Arrive in Kodaikanal, check into your resort, and head to Kodaikanal Lake for a tranquil boating session."
+    },
+    {
+      "day": "Day 2",
+      "title": "Pillar Rocks & Mystical Guna Caves",
+      "description": "Visit the majestic Pillar Rocks and explore the mysterious deep chambers of Guna Caves (Devil's Kitchen)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Coaker's Walk & Scenic Waterfalls",
+      "description": "Stroll along Coaker's Walk for mountain vistas. Later, feel rejuvenated at Silver Cascade and Bear Shola Falls."
+    },
+    {
+      "day": "Day 4",
+      "title": "Hill Treks & Kurinji Plantations",
+      "description": "Enjoy trekking through eucalyptus forests and explore valleys known for the unique Kurinji flower."
+    },
+    {
+      "day": "Day 5",
+      "title": "Kodaikanal Departure",
+      "description": "Enjoy a final hill sunrise, check out, and transfer to Madurai or Coimbatore for departure."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/kodaikanal-package/02_gallery.webp",
+    "/data/packages/packages_image/kodaikanal-package/02_main.webp",
+    "/data/packages/packages_image/kodaikanal-package/03_gallery.webp",
+    "/data/packages/packages_image/kodaikanal-package/04_gallery.webp"
+  ],
+  "title": "Kodaikanal: Tranquil Hills Escape",
+  "location": "Kodaikanal, India",
+  "duration": "5 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.68,
+  "description": "Breathe in the fresh mountain air of Kodaikanal, a serene sanctuary hidden in the hills of Tamil Nadu. Take a peaceful boat ride on the star-shaped Kodaikanal Lake, walk the misty mountain paths of Coaker's Walk, and explore the towering monoliths of Pillar Rocks and the Guna Caves. Complete your retreat with visits to the roaring Silver Cascade and Bear Shola waterfalls, surrounded by forests where the legendary Kurinji flower blooms.",
+  "highlights": [
+    "Enjoy peaceful boating on the tranquil, star-shaped Kodaikanal Lake",
+    "Walk along Coaker's Walk for sweeping, misty views of the valleys below",
+    "Explore the towering Pillar Rocks and the mysterious Guna Caves",
+    "Visit the scenic and refreshing Silver Cascade and Bear Shola waterfalls",
+    "Trek through eucalyptus forests and discover the rare Kurinji flower fields",
+    "Relax in the peaceful, slow-paced atmosphere of the Nilgiri hills"
+  ],
+  "image": "/data/packages/packages_image/kodaikanal-package/01-Kodai.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "April",
+    "May",
+    "June",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": true,
+  "lat": 10.2381,
+  "lng": 77.4892
+}

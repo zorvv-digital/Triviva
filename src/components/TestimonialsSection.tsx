@@ -45,16 +45,10 @@ const TestimonialsSection = () => {
       </div>
 
       <div className="relative flex overflow-hidden group">
-        <motion.div
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            repeat: Infinity,
-            ease: "linear",
-            duration: 30,
-          }}
+        <div
           className="flex whitespace-nowrap gap-6 w-max"
+          style={{ animation: "marquee 30s linear infinite" }}
         >
-          {/* Double array length to ensure smooth infinitely looping marquee */}
           {[...testimonials, ...testimonials].map((t, i) => (
             <div
               key={i}
@@ -79,7 +73,7 @@ const TestimonialsSection = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

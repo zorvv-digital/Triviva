@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileMenu from "./MobileMenu";
@@ -7,6 +7,7 @@ import { useGalleryStatus } from "@/hooks/useGalleryStatus";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Packages", path: "/packages" },
+  { label: "Rentals", path: "/rentals" },
   { label: "Gallery", path: "/gallery" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
@@ -22,27 +23,22 @@ const Navbar = () => {
     ? navLinks
     : navLinks.filter((link) => link.path !== "/gallery");
 
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", () => {
-      setScrolled(window.scrollY > 50);
-    });
-  }
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled ? "glass-surface shadow-sm" : ""
         }`}
       >
         <div className="section-padding flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-1">
-            <span className="text-2xl font-display font-bold text-foreground tracking-tight">
-              Tri<span className="text-primary">viva</span>
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src="/assets/Logo.png" alt="Triviva Logo" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
@@ -51,6 +47,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onMouseEnter={link.path === "/packages" ? () => import("@/pages/Packages") : undefined}
                 className={`font-body text-sm font-medium tracking-wide transition-colors duration-300 ${
                   location.pathname === link.path
                     ? "text-primary"
@@ -63,7 +60,11 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/packages" className="btn-primary-travel text-sm px-6 py-3">
+            <Link
+              to="/packages"
+              onMouseEnter={() => import("@/pages/Packages")}
+              className="btn-primary-travel text-sm px-6 py-3"
+            >
               Book Now
             </Link>
           </div>
@@ -79,7 +80,7 @@ const Navbar = () => {
             <span className="block w-6 h-0.5 bg-foreground rounded-full" />
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       <AnimatePresence>
         {menuOpen && <MobileMenu onClose={() => setMenuOpen(false)} />}

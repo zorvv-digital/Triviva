@@ -1,11 +1,26 @@
-import { Link } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Youtube, ArrowUpRight } from "lucide-react";
 import { useGalleryStatus } from "@/hooks/useGalleryStatus";
 import { useContactInfo } from "@/hooks/useContactInfo";
+import type { GlobeMarker } from "@/components/ui/3d-globe";
+
+const Globe3D = lazy(() => import("@/components/ui/3d-globe"));
+
+const sampleMarkers: GlobeMarker[] = [
+  { lat: 40.7128, lng: -74.006, src: "https://assets.aceternity.com/avatars/1.webp", label: "New York" },
+  { lat: 51.5074, lng: -0.1278, src: "https://assets.aceternity.com/avatars/2.webp", label: "London" },
+  { lat: 35.6762, lng: 139.6503, src: "https://assets.aceternity.com/avatars/3.webp", label: "Tokyo" },
+  { lat: 28.6139, lng: 77.209, src: "https://assets.aceternity.com/avatars/6.webp", label: "New Delhi" },
+  { lat: 25.2048, lng: 55.2708, src: "https://assets.aceternity.com/avatars/10.webp", label: "Dubai" },
+  { lat: 1.3521, lng: 103.8198, src: "https://assets.aceternity.com/avatars/12.webp", label: "Singapore" }
+];
 
 const Footer = () => {
   const { showGallery } = useGalleryStatus();
   const { data } = useContactInfo();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const footerLinks = [
     { l: "Packages", p: "/packages" },
@@ -46,7 +61,7 @@ const Footer = () => {
   const agencyPhone = data?.contact?.phone?.lines?.[0] || "";
 
   return (
-    <footer className="bg-[#fcfaf8] pt-24 overflow-hidden rounded-t-[3rem] mt-12 border-t border-black/[0.05]">
+    <footer className="relative bg-[#fcfaf8] pt-24 overflow-hidden rounded-t-[3rem] mt-12 border-t border-black/[0.05]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-12">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -118,10 +133,35 @@ const Footer = () => {
 
       {/* Massive Typographic Brand Name */}
       <div className="w-full overflow-hidden flex justify-center translate-y-6 md:translate-y-12">
-        <h1 className="text-[22vw] leading-[0.75] font-display font-black text-[#111827] tracking-wider uppercase">
+        <h1 className="text-[22vw] leading-[0.75] font-display font-black text-[#111827] tracking-wider uppercase select-none">
           {agencyName}
         </h1>
       </div>
+
+      {/* Transparent 3D Globe - bottom right corner overlay (midpoint reveal) - only rendered on Homepage to prevent memory/CPU overhead on navigation */}
+      {isHome && (
+        <div className="absolute -right-32 -bottom-32 md:-right-[240px] md:-bottom-[240px] lg:-right-[340px] lg:-bottom-[340px] z-10 w-80 h-80 md:w-[600px] md:h-[600px] lg:w-[850px] lg:h-[850px] pointer-events-none select-none overflow-hidden flex items-center justify-center">
+          <Suspense fallback={null}>
+            <Globe3D
+              className="h-full w-full"
+              markers={[]}
+              config={{
+                atmosphereColor: "#f97316",
+                atmosphereIntensity: 1.6,
+                atmosphereBlur: 3.5,
+                bumpScale: 5,
+                autoRotateSpeed: 0.8,
+                enableZoom: false,
+                enablePan: false,
+                radius: 2.1,
+                showWireframe: false,
+                ambientIntensity: 1.5,
+                pointLightIntensity: 2.5
+              }}
+            />
+          </Suspense>
+        </div>
+      )}
     </footer>
   );
 };

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
 import { getImage } from "@/lib/images";
 import { cn } from "@/lib/utils";
 
@@ -94,6 +95,8 @@ const Gallery = () => {
           ))}
         </div>
       </main>
+
+      <CTASection />
 
       <Footer />
     </div>

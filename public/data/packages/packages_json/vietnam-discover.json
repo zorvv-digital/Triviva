@@ -1,62 +1,73 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Hanoi and Old Quarter Walk",
-      "description": "Arrive at Hanoi Airport. Meet our representative and transfer to your hotel. In the afternoon, visit the historic Ho Chi Minh Mausoleum and take a walk through the bustling streets of the Old Quarter."
+      "title": "Hanoi Arrival & Old Quarter Tour",
+      "description": "Arrive in Hanoi. Explore the Old Quarter and Hoan Kiem Lake, and enjoy local Vietnamese coffee."
     },
     {
       "day": "Day 2",
-      "title": "Halong Bay Cruise Excursion",
-      "description": "Take a day trip to the spectacular Halong Bay. Board a traditional boat to cruise past limestone islands, enjoy a kayak ride, and visit natural caves, before returning to Hanoi for the night."
+      "title": "Hanoi to Halong Bay Overnight Cruise",
+      "description": "Drive to Halong Bay. Board a luxury cruise ship. Kayak around limestone karsts and visit caves."
     },
     {
       "day": "Day 3",
-      "title": "Flight to Da Nang and Hoi An Ancient Town Tour",
-      "description": "Take a morning flight from Hanoi to the coastal city of Da Nang. After checking into your hotel, enjoy an afternoon excursion to the historic streets and lanterns of Hoi An Ancient Town."
+      "title": "Halong Bay to Hoi An Ancient Town",
+      "description": "Fly to Da Nang and transfer to Hoi An. Tour the lantern-lit ancient streets and historic buildings."
     },
     {
       "day": "Day 4",
-      "title": "Marble Mountains and My Khe Beach",
-      "description": "Explore the caves and viewpoints of the Marble Mountains in the morning. Afterwards, spend a relaxing afternoon on the sands of My Khe Beach. Enjoy a free evening for shopping or dining in Da Nang."
+      "title": "Hoi An to Ho Chi Minh City Sightseeing",
+      "description": "Fly to Ho Chi Minh City. Visit the War Remnants Museum and the historic Post Office."
     },
     {
       "day": "Day 5",
-      "title": "Flight to Ho Chi Minh City and City Landmarks Tour",
-      "description": "Take a short flight to Ho Chi Minh City. In the afternoon, enjoy a city tour visiting the War Remnants Museum, the colonial Notre Dame Cathedral, and the busy Ben Thanh Market. An optional evening nightlife tour is available."
+      "title": "Cu Chi Tunnels & Mekong Delta Tour",
+      "description": "Excursion to the Cu Chi Tunnels. Later, take a boat trip through the Mekong Delta floating markets."
     },
     {
       "day": "Day 6",
-      "title": "Cu Chi Tunnels and Departure",
-      "description": "Take a morning excursion to explore the historic Cu Chi Tunnels network. Spend your final afternoon shopping, or take a short trip to the Mekong Delta if time permits, before your transfer to the airport for your flight home."
+      "title": "Ho Chi Minh City Departure",
+      "description": "Check out and transfer to the airport for your onward flight."
     }
   ],
-  "gallery": [],
-  "title": "Vietnam Discovery",
+  "gallery": [
+    "/data/packages/packages_image/vietnam-discover/02_gallery.webp",
+    "/data/packages/packages_image/vietnam-discover/02_main.webp",
+    "/data/packages/packages_image/vietnam-discover/02-Vietnam.webp",
+    "/data/packages/packages_image/vietnam-discover/03_gallery.webp",
+    "/data/packages/packages_image/vietnam-discover/04_gallery.webp"
+  ],
+  "title": "Vietnam: Cultural Discovery",
   "location": "Vietnam",
   "duration": "6 Days / 5 Nights",
   "price": 25000,
-  "rating": 4.86,
-  "description": "Explore the history and natural beauty of Vietnam on this 6-day budget-friendly tour. Visit the capital city of Hanoi, cruise through Halong Bay, walk the lantern-lit streets of Hoi An, and tour Ho Chi Minh City and the Cu Chi Tunnels.",
+  "rating": 4.8,
+  "description": "Journey through a land of spectacular natural beauty, ancient history, and vibrant cultures. Discover Hanoi's French-colonial Old Quarter and the historic Ho Chi Minh Mausoleum, and cruise past the limestone karsts of Halong Bay on an overnight ship. Walk the magical lantern-lit streets of ancient Hoi An, explore the historic war tunnels of Cu Chi near Ho Chi Minh City, and cruise past the floating markets and orchards of the Mekong Delta.",
   "highlights": [
-    "Guided sightseeing of Hanoi's historic Old Quarter",
-    "Boat cruise with kayaking in the spectacular Halong Bay",
-    "Guided walking tour of Hoi An Ancient Town near Da Nang",
-    "Explore the historic war-era tunnels of Cu Chi"
+    "Explore Hanoi's historic Old Quarter and visit the Ho Chi Minh Mausoleum",
+    "Overnight luxury cruise through the limestone karsts and caves of Halong Bay",
+    "Go kayaking and cave exploring in Halong Bay's emerald waters",
+    "Stroll through the magical, lantern-lit colonial streets of ancient Hoi An",
+    "Visit the historic Cu Chi Tunnels and War Remnants Museum in Ho Chi Minh City",
+    "Cruise past floating markets and fruit orchards in the lush Mekong Delta"
   ],
-  "image": "/data/packages/packages_image/vietnam-discover/01_main.jpg",
+  "image": "/data/packages/packages_image/vietnam-discover/01-Vietnam.webp",
   "region": "international",
   "categories": [
     "International",
-    "Historical",
-    "Budget"
+    "Cultural",
+    "Historical"
   ],
   "priority": 10,
   "bestTimeToVisit": [
@@ -68,5 +79,7 @@
     "October",
     "November"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 21.0285,
+  "lng": 105.8542
 }

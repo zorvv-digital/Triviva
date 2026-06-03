@@ -1,71 +1,77 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Delhi and Capital Tour",
-      "description": "Arrive in Delhi and check into your hotel. Visit the famous India Gate, Rashtrapati Bhavan, Lotus Temple, and Qutub Minar. Enjoy a free evening to walk around the city or go on a food tour in Chandni Chowk. Spend the night in Delhi."
+      "title": "Delhi Arrival & Old Delhi Heritage Tour",
+      "description": "Arrive in Delhi and check in. Discover Old Delhi, including the Red Fort and a rickshaw ride through the markets of Chandni Chowk."
     },
     {
       "day": "Day 2",
-      "title": "Delhi to Agra Drive and Taj Mahal Sunset View",
-      "description": "Drive to Agra after your breakfast. Visit the Mehtab Bagh gardens to enjoy a beautiful sunset view of the Taj Mahal. Explore the historic Agra Fort and local markets. Spend the night in Agra."
+      "title": "New Delhi Sightseeing & Lotus Temple",
+      "description": "Visit New Delhi's landmark sights: Qutub Minar, India Gate, and the serene, lotus-shaped Lotus Temple."
     },
     {
       "day": "Day 3",
-      "title": "Sunrise Taj Mahal, Fatehpur Sikri and Jaipur Drive",
-      "description": "Visit the world-famous Taj Mahal at sunrise to see it in the best light. Drive to Jaipur, stopping along the way to explore the ancient ghost city of Fatehpur Sikri. Check into your hotel in Jaipur. Spend the night in Jaipur."
+      "title": "Delhi to Agra & Taj Mahal Sunset",
+      "description": "Drive to Agra. In the afternoon, visit the magnificent Taj Mahal, witnessing the white marble change colors in the sunset glow."
     },
     {
       "day": "Day 4",
-      "title": "Jaipur Sightseeing Tour",
-      "description": "Explore the majestic Amber Fort in the morning. Visit the iconic Hawa Mahal, the City Palace, and the Jantar Mantar observatory. Spend the afternoon shopping for local handicrafts at Johri Bazaar. Spend the night in Jaipur."
+      "title": "Agra Fort & Fatehpur Sikri Excursion",
+      "description": "Tour the massive red sandstone Agra Fort, then drive to the ghost city of Fatehpur Sikri, the former Mughal capital."
     },
     {
       "day": "Day 5",
-      "title": "Jaipur to Delhi Return",
-      "description": "Drive back to Delhi. Along the way, you can stop to visit the historic Neemrana Fort. Enjoy a free evening for shopping in Delhi. Spend the night in Delhi."
-    },
-    {
-      "day": "Day 6",
-      "title": "Departure from Delhi",
-      "description": "Have breakfast at your hotel and check out. We will transfer you to the airport or railway station for your journey back home."
+      "title": "Agra to Delhi Departure",
+      "description": "Transfer back to Delhi airport or railway station for your onward journey."
     }
   ],
-  "gallery": [],
-  "title": "Golden Triangle Tour",
-  "location": "Golden Triangle, India",
-  "duration": "6 Days / 5 Nights",
+  "gallery": [
+    "/data/packages/packages_image/golden-triangle/02-Delhi.webp",
+    "/data/packages/packages_image/golden-triangle/ChatGPT Image May 31, 2026, 02_29_58 PM.webp",
+    "/data/packages/packages_image/golden-triangle/ChatGPT Image May 31, 2026, 02_32_47 PM.webp"
+  ],
+  "title": "Delhi & Agra: Golden Triangle Heritage",
+  "location": "Delhi & Agra, India",
+  "duration": "5 Days / 4 Nights",
   "price": 25000,
   "rating": 4.56,
-  "description": "Experience India's cultural heart with our 6-day Golden Triangle tour covering Delhi, Agra, and Jaipur. Highlights include sunrise at the Taj Mahal, Amber Fort excursions, and historic palaces.",
+  "description": "Journey through the epicenters of India's royal history and architectural genius. Uncover the layers of Old and New Delhi as you explore the colossal Red Fort, the ancient Qutub Minar, and the bustling bazaar of Chandni Chowk. Travel to Agra to behold the Taj Mahal—a monument of pure white marble and eternal love—before touring the historic sandstone chambers of Agra Fort and the ghost city of Fatehpur Sikri.",
   "highlights": [
-    "Guided sightseeing tour of historic landmarks in Delhi",
-    "Taj Mahal visit at sunset and guided tour of Agra Fort",
-    "Explore the abandoned stone city of Fatehpur Sikri",
-    "Tour of Amber Fort and the pink palaces of Jaipur"
+    "Guided tours of Delhi's iconic Red Fort, Qutub Minar, and India Gate",
+    "Vibrant rickshaw ride through the narrow lanes of historic Chandni Chowk",
+    "Witness the breathtaking beauty of the Taj Mahal at sunrise or sunset",
+    "Explore the imposing red sandstone fortress of Agra Fort",
+    "Walk through the deserted Mughal imperial capital of Fatehpur Sikri",
+    "Experience a perfect blend of rich culture, history, and Mughal cuisine"
   ],
-  "image": "/data/packages/packages_image/golden-triangle/01_main.jpg",
+  "image": "/data/packages/packages_image/golden-triangle/01-Delhi.webp",
   "region": "domestic",
   "categories": [
     "Domestic",
+    "Historical",
     "Cultural"
   ],
   "priority": 10,
   "bestTimeToVisit": [
-    "March",
-    "April",
-    "May",
-    "June",
-    "September",
     "October",
-    "November"
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 27.175,
+  "lng": 78.0422
 }

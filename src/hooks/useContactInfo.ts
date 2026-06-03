@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 export interface ContactDetails {
   agencyName: string;
@@ -18,18 +18,16 @@ export interface ContactDetails {
 }
 
 export const useContactInfo = () => {
-  const [data, setData] = useState<ContactDetails | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  const { data, isLoading: loading } = useQuery<ContactDetails>({
+    queryKey: ["contact"],
+    queryFn: async () => {
+      const res = await fetch("/data/contact.json");
+      if (!res.ok) throw new Error("Failed to load contact details");
+      return res.json() as Promise<ContactDetails>;
+    },
+    staleTime: Infinity,
+    gcTime: Infinity,
+  });
 
-  useEffect(() => {
-    fetch("/data/contact.json")
-      .then((res) => res.json())
-      .then((json: ContactDetails) => {
-        setData(json);
-      })
-      .catch((err) => console.error("Error loading contact details:", err))
-      .finally(() => setLoading(false));
-  }, []);
-
-  return { data, loading };
+  return { data: data ?? null, loading };
 };

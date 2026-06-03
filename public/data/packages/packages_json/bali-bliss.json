@@ -1,65 +1,65 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Bali and Beachside Relaxation",
-      "description": "Arrive at Ngurah Rai International Airport (DPS) in Bali, where our team will welcome you and transfer you to your hotel in Seminyak or Kuta. Spend the rest of the day at leisure, relaxing by the pool or taking a walk on the nearby beaches."
+      "title": "Arrival & Seminyak Beach Leisure",
+      "description": "Arrive in Bali and transfer to Seminyak, a sophisticated beach area. Check into your hotel, relax on Seminyak Beach, and explore the boutiques and restaurants."
     },
     {
       "day": "Day 2",
-      "title": "Ubud Culture, Rice Terraces, and Kintamani Volcano",
-      "description": "Enjoy a full-day tour of Ubud. Visit the Sacred Monkey Forest, the scenic Tegalalang Rice Terraces, and drive up to Kintamani Volcano to enjoy lunch overlooking Mount Batur and its crater lake. Visit the holy springs of Tirta Empul Temple and shop for souvenirs at the Ubud Art Market."
+      "title": "Ubud Culture, Monkey Forest & Rice Terraces",
+      "description": "Visit Ubud, the cultural heart of Bali. Explore the sacred Monkey Forest, walk through the picturesque Tegalalang Rice Terraces, and shop for souvenirs at the Ubud Art Market."
     },
     {
       "day": "Day 3",
-      "title": "Tanah Lot Temple Sunset and Balinese Spa",
-      "description": "Spend the morning at leisure, or opt for an optional white-water river rafting or cycling tour. In the afternoon, visit the famous cliffside Tanah Lot Sea Temple for sunset views. End the day with a relaxing 60-minute traditional Balinese massage and spa treatment."
+      "title": "Mount Batur Sunrise Trek & Tirta Empul Temple",
+      "description": "Begin early for a sunrise trek up Mount Batur for panoramic views. Later, experience Bali's spiritual side at Tirta Empul Temple, famous for its holy spring water purification rituals."
     },
     {
       "day": "Day 4",
-      "title": "Tanjung Benoa Water Sports and Uluwatu Kecak Dance",
-      "description": "Head to Tanjung Benoa Beach for fun water activities like a banana boat ride, jet skiing, or parasailing. In the afternoon, relax on the sands of Padang Padang Beach or Dreamland Beach. Travel to the cliffside Uluwatu Temple to watch the traditional sunset Kecak Fire Dance."
+      "title": "Tanah Lot & Uluwatu Cliff Temple Sunsets",
+      "description": "Visit the iconic offshore Tanah Lot Temple. In the afternoon, head to Uluwatu Temple, perched on a cliff overlooking the Indian Ocean, and watch the traditional sunset Kecak dance."
     },
     {
       "day": "Day 5",
-      "title": "Nusa Penida Island Tour or Canggu Beach Day",
-      "description": "Take an optional day trip to Nusa Penida Island to visit Kelingking Beach, Angel's Billabong, and Broken Beach. Alternatively, spend a free day beach hopping and shopping around Canggu, Seminyak, or Uluwatu."
-    },
-    {
-      "day": "Day 6",
-      "title": "Optional Lovina Dolphin Watching and Jimbaran BBQ Dinner",
-      "description": "Enjoy an optional early morning boat trip to see wild dolphins at Lovina Beach in North Bali. Alternatively, spend a relaxing day at your resort. In the evening, enjoy a sunset beachside seafood BBQ dinner at Jimbaran Bay."
-    },
-    {
-      "day": "Day 7",
-      "title": "Departure from Bali",
-      "description": "Enjoy a final breakfast at your resort before checking out and taking a private transfer to the airport for your departure flight."
+      "title": "Bali Departure",
+      "description": "Enjoy a free morning in Bali before checking out and transferring to the airport for your flight home."
     }
   ],
   "gallery": [
-    "/data/packages/packages_image/bali-bliss/02_gallery.jpg",
-    "/data/packages/packages_image/bali-bliss/03_gallery.jpg"
+    "/data/packages/packages_image/bali-bliss/02.webp",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_03_47 PM.webp",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_05_54 PM.webp",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_07_58 PM.webp",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_08_23 PM.webp",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 01_41_57 PM.webp",
+    "/data/packages/packages_image/bali-bliss/ChatGPT Image May 31, 2026, 12_43_21 PM.webp"
   ],
-  "title": "Bali Bliss",
+  "title": "Bali: Bliss & Island Magic",
   "location": "Bali, Indonesia",
-  "duration": "7 Days / 6 Nights",
-  "price": 25000,
-  "rating": 4.84,
-  "description": "Experience the culture and beaches of Bali on this 7-day tropical tour. Visit Ubud's rice terraces, view Mount Batur volcano, watch the Uluwatu Kecak dance, and enjoy a seafood dinner on Jimbaran Beach.",
+  "duration": "5 Days / 4 Nights",
+  "price": 35000,
+  "rating": 4.86,
+  "description": "Discover the spiritual serenity and natural wonders of the 'Island of the Gods'. Explore the artistic villages, green valleys, and Sacred Monkey Forest of Ubud, and walk along the cliffs of Uluwatu to watch a traditional fire dance at sunset. Hike the active Mount Batur volcano at sunrise, participate in a purification ritual at Tirta Empul's holy springs, and unwind on the pristine beaches of Seminyak, surrounded by luxury and peace.",
   "highlights": [
-    "Explore the Sacred Monkey Forest and rice terraces in Ubud",
-    "Visit the cliffside sea temples of Tanah Lot and Uluwatu",
-    "Enjoy water sports at Tanjung Benoa and an optional Nusa Penida trip",
-    "Sunset seafood BBQ dinner on the sands of Jimbaran Beach"
+    "Watch the legendary Kecak fire dance at the cliffside Uluwatu Temple at sunset",
+    "Explore Ubud's lush Tegalalang Rice Terraces and Sacred Monkey Forest",
+    "Visit the famous offshore Tanah Lot Temple for breathtaking coastal views",
+    "Unwind along Seminyak's beautiful beaches, boutique shops, and dining hubs",
+    "Trek up Mount Batur at sunrise for panoramic views of Bali's volcanic caldera",
+    "Participate in spiritual purification rituals at Tirta Empul Holy Spring"
   ],
-  "image": "/data/packages/packages_image/bali-bliss/01_main.webp",
+  "image": "/data/packages/packages_image/bali-bliss/01-Bali.webp",
   "region": "international",
   "categories": [
     "International",
@@ -68,13 +68,16 @@
   ],
   "priority": 10,
   "bestTimeToVisit": [
-    "March",
     "April",
     "May",
     "June",
+    "July",
+    "August",
     "September",
-    "October",
-    "November"
+    "October"
   ],
-  "showInHero": true
+  "showInHero": true,
+  "lat": -8.4095,
+  "lng": 115.1889,
+  "id": "bali-bliss"
 }

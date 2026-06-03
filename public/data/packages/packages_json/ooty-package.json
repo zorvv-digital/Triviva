@@ -1,52 +1,64 @@
 {
   "included": [
-    "Hotel accommodations",
-    "Daily breakfast",
-    "Private AC vehicle transfers",
-    "Local sightseeing guides",
-    "24/7 customer support support"
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
   ],
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival and Colonial Ooty Sightseeing",
-      "description": "Arrive at Coimbatore Airport in the morning. Enjoy a scenic 2.5-hour drive to Ooty, winding through 36 hairpin turns, and check into your hotel. In the afternoon, enjoy boating on Ooty Lake and walk through the beautiful Government Rose Garden. Spend your evening shopping at Charring Cross Road."
+      "title": "Arrival and Ooty Lake Boating",
+      "description": "Arrive in Ooty, transfer to your hotel, and check in. In the afternoon, enjoy a relaxing boat ride on the scenic Ooty Lake."
     },
     {
       "day": "Day 2",
-      "title": "Coonoor Toy Train and Tea Estate Tour",
-      "description": "After breakfast, ride the famous Nilgiri Mountain Railway Toy Train to Coonoor. Visit Sim's Park and take a guided tour of a local Tea Factory to sample fresh Nilgiri tea. After lunch, visit the Dolphin's Nose Viewpoint for great mountain views before returning to Ooty."
+      "title": "Nilgiri Mountain Railway Train Ride",
+      "description": "Experience the enchanting Nilgiri Mountain Railway toy train journey, a UNESCO-listed marvel, winding through the Western Ghats."
     },
     {
       "day": "Day 3",
-      "title": "Nature, Waterfalls, and Botanical Gardens",
-      "description": "Visit the beautiful Pykara Lake and Pykara Waterfalls in the morning. You can optionally take a wildlife jeep safari at Mudumalai National Park. In the afternoon, visit the Wax Museum and stroll through the historic Government Botanical Gardens, ending the day with a cozy bonfire at your resort."
+      "title": "Tea Gardens & Ooty Tea Museum Visit",
+      "description": "Explore local tea gardens. Visit the Ooty Tea Museum to learn about tea processing and enjoy fresh tea tastings."
     },
     {
       "day": "Day 4",
-      "title": "Doddabetta Peak and Chocolate Factory",
-      "description": "Wake up early for a spectacular sunrise view from Doddabetta Peak, the highest point in South India. After breakfast, visit a local tribal village to learn about Nilgiri culture. Enjoy a fun tour of a local chocolate factory and take a guided Ooty heritage walk in the evening."
+      "title": "Ooty Botanical Gardens & Doddabetta Peak",
+      "description": "Visit the lush Ooty Botanical Gardens to see diverse flora. In the afternoon, drive up to Doddabetta Peak for sweeping views of the valleys."
     },
     {
       "day": "Day 5",
-      "title": "Emerald Lake and Coimbatore Departure",
-      "description": "Enjoy breakfast, then visit the peaceful Emerald Lake. Afterwards, check out of your resort and drive back to Coimbatore Airport or Railway Station for your return flight or train."
+      "title": "Ooty Departure",
+      "description": "Enjoy a final breakfast and transfer back to the Coimbatore airport or railway station."
     }
   ],
-  "gallery": [],
-  "title": "Ooty Blissful Holiday",
+  "gallery": [
+    "/data/packages/packages_image/ooty-package/02_gallery.webp",
+    "/data/packages/packages_image/ooty-package/02_main.webp",
+    "/data/packages/packages_image/ooty-package/02-Ooty.webp",
+    "/data/packages/packages_image/ooty-package/03_gallery.webp",
+    "/data/packages/packages_image/ooty-package/03-Ooty.webp",
+    "/data/packages/packages_image/ooty-package/04_gallery.webp"
+  ],
+  "title": "Ooty: Blue Hills & Tea Gardens Retreat",
   "location": "Ooty, India",
   "duration": "5 Days / 4 Nights",
   "price": 25000,
-  "rating": 4.59,
-  "description": "Escape to the beautiful Nilgiri Hills on this 5-day Ooty package. Ride the historic Toy Train to Coonoor, visit waterfalls and tea estates, and enjoy scenic views from Doddabetta Peak with guided transfers.",
+  "rating": 4.62,
+  "description": "Discover the colonial charm and scenic grandeur of the Nilgiri Hills. Ride the historic, UNESCO-listed Nilgiri Mountain Railway toy train as it winds past tea gardens and deep ravines. Learn the secrets of tea production at the Ooty Tea Museum, take a quiet rowboat out on Ooty Lake, and explore the rich floral diversity of the Botanical Gardens before standing atop Doddabetta Peak to witness panoramic views of the Blue Mountains.",
   "highlights": [
-    "Scenic road trip to Ooty via the famous 36 hairpin bends",
-    "Ride the UNESCO-listed Nilgiri Mountain Railway Toy Train",
-    "Guided tea factory tour and homemade chocolate tasting",
-    "Watch the sunrise from Doddabetta Peak and walk near Pykara Lake"
+    "Ride the historic, UNESCO-listed Nilgiri Mountain Railway Toy Train",
+    "Guided tea estate walks and tastings at the Ooty Tea Museum",
+    "Scenic rowboat cruise on the peaceful waters of Ooty Lake",
+    "Stroll through the beautifully manicured Ooty Botanical Gardens",
+    "Stand atop Doddabetta Peak, the highest point in South India, for stunning views",
+    "Explore colonial-era architecture and historical stone buildings"
   ],
-  "image": "/data/packages/packages_image/ooty-package/01_main.jpg",
+  "image": "/data/packages/packages_image/ooty-package/01-Ooty.webp",
   "region": "domestic",
   "categories": [
     "Domestic",
@@ -62,5 +74,7 @@
     "October",
     "November"
   ],
-  "showInHero": false
+  "showInHero": true,
+  "lat": 11.4102,
+  "lng": 76.695
 }

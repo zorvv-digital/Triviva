@@ -17,7 +17,12 @@ const features = featuresData.map(feat => ({
 
 const FeaturesSection = () => {
   return (
-    <section className="py-28 bg-[#faf7f2] relative overflow-hidden">
+    <section
+      style={{
+        background: "linear-gradient(180deg, hsl(var(--background)) 0%, #faf7f2 15%, #faf7f2 85%, hsl(var(--background)) 100%)",
+      }}
+      className="py-28 relative overflow-hidden"
+    >
       {/* Decorative background glow blobs */}
       <div className="absolute top-1/4 -left-48 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-rose-200/20 rounded-full blur-3xl pointer-events-none" />
@@ -83,24 +88,24 @@ const FeaturesSection = () => {
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.5 }}
               className="relative z-10"
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="img-curved-lg aspect-[3/4] shadow-md hover:scale-[1.01] transition-transform duration-500">
-                    <img src={images.sahara} alt="Desert adventure" className="w-full h-full object-cover" />
+                    <img src={images.iceland} alt="Iceland adventure" decoding="async" className="w-full h-full object-cover" />
                   </div>
                   <div className="img-curved aspect-square shadow-sm hover:scale-[1.01] transition-transform duration-500">
-                    <img src={images.japan} alt="Japan culture" className="w-full h-full object-cover" />
+                    <img src={images.japan} alt="Japan culture" decoding="async" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
                   <div className="img-curved aspect-square shadow-sm hover:scale-[1.01] transition-transform duration-500">
-                    <img src={images.santorini} alt="Greece views" className="w-full h-full object-cover" />
+                    <img src={images.santorini} alt="Greece views" decoding="async" className="w-full h-full object-cover" />
                   </div>
                   <div className="img-curved-lg aspect-[3/4] shadow-md hover:scale-[1.01] transition-transform duration-500">
-                    <img src={images.maldives} alt="Luxury escape" className="w-full h-full object-cover" />
+                    <img src={images.maldives} alt="Luxury escape" decoding="async" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
