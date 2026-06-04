@@ -8,8 +8,7 @@ const CTASection = () => {
 
   return (
     <section
-      className="py-24 section-padding"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 400px" }}
+      className="py-10 md:py-16 section-padding"
     >
       <div
         ref={ref}

@@ -39,7 +39,6 @@ const DestinationsSection = () => {
   return (
     <section
       className="py-24 section-padding"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 500px" }}
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
         <div>

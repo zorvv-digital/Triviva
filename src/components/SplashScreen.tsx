@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import heroImage from "@/assets/hero.webp";
+
 const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
   const [visible, setVisible] = useState(true);
 
@@ -9,19 +11,54 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
     document.body.style.overflow = "hidden";
     document.documentElement.style.overflow = "hidden";
 
-    // Elegant, deliberate pacing
-    const timer = setTimeout(() => {
+    const preventScroll = (e: Event) => {
+      e.preventDefault();
+    };
+
+    window.addEventListener("wheel", preventScroll, { passive: false });
+    window.addEventListener("touchmove", preventScroll, { passive: false });
+
+    let hasCompleted = false;
+
+    const completeSplash = () => {
+      if (hasCompleted) return;
+      hasCompleted = true;
       setVisible(false);
+      window.removeEventListener("wheel", preventScroll);
+      window.removeEventListener("touchmove", preventScroll);
       setTimeout(() => {
         // Restore scrolling when exit animation is finished
         document.body.style.overflow = "";
         document.documentElement.style.overflow = "";
         onComplete();
       }, 1500); // give time for the exit animation
-    }, 2500);
+    };
+
+    const startTime = Date.now();
+    const minDelay = 2500; // minimum duration for splash branding animations
+    const maxDelay = 5000; // maximum splash screen duration
+
+    // 1. Force completion after max delay
+    const maxTimer = setTimeout(completeSplash, maxDelay);
+
+    // 2. Preload the hero image
+    const img = new Image();
+
+    const handleImageLoad = () => {
+      const elapsed = Date.now() - startTime;
+      const remainingTime = Math.max(0, minDelay - elapsed);
+      // Wait for minDelay if image loads extremely fast, otherwise complete immediately
+      setTimeout(completeSplash, remainingTime);
+    };
+
+    img.onload = handleImageLoad;
+    img.onerror = handleImageLoad; // fallback to complete splash anyway if it fails
+    img.src = heroImage;
 
     return () => {
-      clearTimeout(timer);
+      clearTimeout(maxTimer);
+      window.removeEventListener("wheel", preventScroll);
+      window.removeEventListener("touchmove", preventScroll);
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
     };

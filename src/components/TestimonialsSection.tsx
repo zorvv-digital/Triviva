@@ -26,21 +26,13 @@ const TestimonialsSection = () => {
   }
   return (
     <section
-      className="py-24 section-padding overflow-hidden"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 500px" }}
+      className="py-12 md:py-16 section-padding overflow-hidden"
     >
-      <div className="text-center mb-16">
-        <span
-          ref={labelRef}
-          className={`reveal${labelVisible ? " is-visible" : ""} section-label mb-3 inline-block`}
-        >
+      <div className="text-center mb-10">
+        <span className="section-label mb-3 inline-block">
           Testimonials
         </span>
-        <h2
-          ref={headingRef}
-          className={`reveal${headingVisible ? " is-visible" : ""} section-title`}
-          style={{ transitionDelay: "0.1s" }}
-        >
+        <h2 className="section-title">
           What Travelers <span className="text-gradient">Say</span>
         </h2>
       </div>

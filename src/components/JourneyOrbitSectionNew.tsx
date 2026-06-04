@@ -124,9 +124,7 @@ const JourneyOrbitSectionNew = () => {
     <section
       ref={sectionRef}
       style={{
-        background: "linear-gradient(180deg, hsl(var(--background)) 0%, #fbfbf9 15%, #f6efe5 65%, hsl(var(--background)) 100%)",
-        contentVisibility: "auto",
-        containIntrinsicSize: "auto 600px",
+        background: "linear-gradient(180deg, hsl(var(--background)) 0%, #fbfbf9 15%, #f6efe5 65%, hsl(var(--background)) 100%)"
       }}
       className="relative overflow-visible z-20 pt-16 pb-12 md:pt-20 md:pb-16"
     >
@@ -163,7 +161,7 @@ const JourneyOrbitSectionNew = () => {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                to={`/packages/${activeStory?.id ?? "packages"}`}
+                to="/packages"
                 className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-slate-800 shadow-md"
               >
                 Explore this trip

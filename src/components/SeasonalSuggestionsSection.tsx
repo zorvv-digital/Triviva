@@ -46,9 +46,7 @@ const SeasonalSuggestionsSection = () => {
     <section
       style={{
         background:
-          "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(210 40% 98% / 0.5) 15%, hsl(210 40% 98% / 0.5) 85%, hsl(var(--background)) 100%)",
-        contentVisibility: "auto",
-        containIntrinsicSize: "auto 500px",
+          "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(210 40% 98% / 0.5) 15%, hsl(210 40% 98% / 0.5) 85%, hsl(var(--background)) 100%)"
       }}
       className="py-20"
     >
