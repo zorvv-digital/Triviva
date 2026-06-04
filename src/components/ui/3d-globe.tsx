@@ -130,6 +130,14 @@ function Marker({
   const imageGroupRef = useRef<THREE.Group>(null);
   const { camera } = useThree();
 
+  const [primaryColor, setPrimaryColor] = useState("#10b981");
+  useEffect(() => {
+    const val = getComputedStyle(document.documentElement).getPropertyValue('--primary').trim();
+    if (val) {
+      setPrimaryColor(`hsl(${val})`);
+    }
+  }, []);
+
   // Surface position (where the line starts)
   const surfacePosition = useMemo(() => {
     return latLngToVector3(marker.lat, marker.lng, radius * 1.001);
@@ -204,7 +212,7 @@ function Marker({
       {/* Pin point at the surface */}
       <mesh position={surfacePosition} quaternion={lineQuaternion}>
         <coneGeometry args={[0.015, 0.04, 8]} />
-        <meshBasicMaterial color={hovered ? "#f97316" : "#ef4444"} />
+        <meshBasicMaterial color={hovered ? "#ffffff" : primaryColor} />
       </mesh>
 
       {/* Circular image at the top */}

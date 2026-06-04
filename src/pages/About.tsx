@@ -59,9 +59,7 @@ const About = () => {
                 transition={{ delay: 0.2 }}
                 className="text-muted-foreground font-body text-lg leading-relaxed mb-8 max-w-lg"
               >
-                Founded in 2018, Triviva was born from a simple belief: travel should be more than tourism. 
-                We craft immersive journeys that connect you to the soul of a place — its people, traditions, 
-                and hidden beauty. Every itinerary is handcrafted by locals who call these destinations home.
+                Our journey began in 2016 as Triviva Trip Advisor, built on the belief that travel should be meaningful and personal. Over the years, our brand has evolved, and we are proud to continue this legacy today as Triviva Holidays. We craft custom itineraries that connect you to local cultures, authentic traditions, and hidden destinations. Every journey is designed by local experts to ensure a seamless, worry-free vacation filled with memories that last a lifetime.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

@@ -79,7 +79,7 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
           <Link
             to="/packages"
             onClick={onClose}
-            className="btn-primary-travel text-lg px-8 py-4 inline-block shadow-lg"
+            className="btn-primary-travel text-lg px-8 py-4 inline-block"
           >
             Book Now
           </Link>

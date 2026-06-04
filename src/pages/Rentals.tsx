@@ -144,7 +144,7 @@ const Rentals = () => {
       </section>
 
       {/* Why Rent From Us Section */}
-      <section className="py-32 section-padding bg-[#fef5f0]/30 border-t border-black/[0.02]">
+      <section className="py-32 section-padding bg-primary/5 border-t border-black/[0.02]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="section-label mb-3 block">The Triviva Experience</span>
@@ -154,8 +154,8 @@ const Rentals = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-[2rem] p-10 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)] shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-500 border border-black/[0.02] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 transition-transform duration-500 group-hover:scale-110" />
-              <div className="w-12 h-12 rounded-2xl bg-[#fef5f0] flex items-center justify-center text-primary mb-6 relative z-10">
-                <ShieldCheck className="w-6 h-6 text-[#ea580c]" />
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 relative z-10">
+                <ShieldCheck className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-2xl font-bold text-[#111827] mb-4">Fully Certified & Safe</h3>
               <p className="text-[#6b7280] font-body text-base leading-relaxed">
@@ -165,8 +165,8 @@ const Rentals = () => {
 
             <div className="bg-white rounded-[2rem] p-10 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)] shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-500 border border-black/[0.02] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 transition-transform duration-500 group-hover:scale-110" />
-              <div className="w-12 h-12 rounded-2xl bg-[#fef5f0] flex items-center justify-center text-primary mb-6 relative z-10">
-                <Users className="w-6 h-6 text-[#ea580c]" />
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 relative z-10">
+                <Users className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-2xl font-bold text-[#111827] mb-4">Professional Chauffeurs</h3>
               <p className="text-[#6b7280] font-body text-base leading-relaxed">
@@ -176,8 +176,8 @@ const Rentals = () => {
 
             <div className="bg-white rounded-[2rem] p-10 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)] shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-500 border border-black/[0.02] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 transition-transform duration-500 group-hover:scale-110" />
-              <div className="w-12 h-12 rounded-2xl bg-[#fef5f0] flex items-center justify-center text-primary mb-6 relative z-10">
-                <Clock className="w-6 h-6 text-[#ea580c]" />
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 relative z-10">
+                <Clock className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-display text-2xl font-bold text-[#111827] mb-4">24/7 Roadside Support</h3>
               <p className="text-[#6b7280] font-body text-base leading-relaxed">

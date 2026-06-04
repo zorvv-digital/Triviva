@@ -1,12 +1,10 @@
 import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import OutlineButton from "@/components/ui/OutlineButton";
 import { TravelPackage } from "@/data/packages";
-
-const EASE = [0.22, 1, 0.36, 1] as const;
+import { useInView } from "@/hooks/useInView";
 
 const DestinationsSection = () => {
   const { data: packages = [] } = useQuery<TravelPackage[]>({
@@ -19,6 +17,8 @@ const DestinationsSection = () => {
     staleTime: Infinity,
     gcTime: Infinity,
   });
+
+  const { ref: gridRef, isVisible: gridVisible } = useInView<HTMLDivElement>({ rootMargin: "-50px" });
 
   const destinations = useMemo(() => {
     if (!packages.length) return [];
@@ -51,14 +51,15 @@ const DestinationsSection = () => {
         <OutlineButton to="/packages" label="See All Destinations" />
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+      <div
+        ref={gridRef}
+        className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6"
+      >
         {destinations.map((dest, i) => (
-          <motion.div
+          <div
             key={dest.id}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ delay: i * 0.1, duration: 0.6, ease: EASE }}
+            className={`reveal${gridVisible ? " is-visible" : ""}`}
+            style={{ transitionDelay: gridVisible ? `${i * 0.1}s` : "0s" }}
           >
             <Link to={`/packages/${dest.id}`} className="group block">
               <div className="card-elevated">
@@ -68,7 +69,7 @@ const DestinationsSection = () => {
                     alt={`${dest.name}, ${dest.country}`}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover transform-gpu transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--deep-charcoal)/0.6)_0%,transparent_50%)]" />
                   <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
@@ -83,7 +84,7 @@ const DestinationsSection = () => {
                 </div>
               </div>
             </Link>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

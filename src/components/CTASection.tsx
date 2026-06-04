@@ -1,24 +1,26 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { images } from "@/lib/images";
+import { useInView } from "@/hooks/useInView";
 
 const CTASection = () => {
+  const { ref, isVisible } = useInView<HTMLDivElement>();
+
   return (
     <section
       className="py-24 section-padding"
       style={{ contentVisibility: "auto", containIntrinsicSize: "auto 400px" }}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="relative rounded-[2.5rem] overflow-hidden min-h-[400px] flex items-center"
+      <div
+        ref={ref}
+        className={`reveal${isVisible ? " is-visible" : ""} relative rounded-[2.5rem] overflow-hidden min-h-[400px] flex items-center`}
+        style={{ transitionDuration: "0.8s" }}
       >
         <img
           src={images.about}
           alt="Adventure awaits"
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0" style={{
@@ -40,7 +42,7 @@ const CTASection = () => {
             </Link>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };

@@ -1,22 +1,22 @@
 [
   {
     "icon": "Compass",
-    "title": "Curated Journeys",
-    "description": "Every trip is handpicked and designed by local experts who know the hidden gems."
+    "title": "Hand-picked by people who've been there",
+    "description": "We don't list every property — we've stayed in them. Every itinerary is built by someone who knows the destination firsthand."
   },
   {
     "icon": "Shield",
-    "title": "Travel with Confidence",
-    "description": "Certified guides, 24/7 support, and comprehensive travel insurance on every trip."
+    "title": "One contact, start to finish",
+    "description": "No call centers, no handoffs. One person who knows your name, your trip, and picks up when something changes."
   },
   {
     "icon": "Headphones",
-    "title": "Concierge Support",
-    "description": "Your personal travel concierge is just a message away, from planning to return."
+    "title": "Built around your pace, not ours",
+    "description": "No cookie-cutter packages. Your dates, your rhythm, your preferences — we build around you, not the other way around."
   },
   {
     "icon": "Sparkles",
-    "title": "Unique Experiences",
-    "description": "Beyond sightseeing — cultural immersions, local connections, and meaningful moments."
+    "title": "The moments no guidebook mentions",
+    "description": "The rooftop nobody knows, the village market on a Tuesday, the restaurant the locals actually eat at. That's what we find for you."
   }
 ]

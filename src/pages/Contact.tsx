@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useContactInfo } from "@/hooks/useContactInfo";
@@ -8,6 +9,19 @@ import { useContactInfo } from "@/hooks/useContactInfo";
 const Contact = () => {
   const { data } = useContactInfo();
   const [submitted, setSubmitted] = useState(false);
+  const [searchParams] = useSearchParams();
+
+  const pkgParam = searchParams.get("package") ? decodeURIComponent(searchParams.get("package")!) : "";
+  const askParam = searchParams.get("ask") === "1";
+
+  const [selectedDestination, setSelectedDestination] = useState(pkgParam || "");
+  const [message, setMessage] = useState(
+    pkgParam
+      ? askParam
+        ? `Hi, I have a question about the "${pkgParam}" trip...`
+        : `Hi, I would like to inquire about booking the "${pkgParam}" package. Please share details.`
+      : ""
+  );
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,8 +32,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Decorative Background Glows */}
-      <div className="absolute top-[20%] left-[-15%] w-[45vw] h-[45vw] bg-[#ea580c]/5 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-[15%] right-[-15%] w-[40vw] h-[40vw] bg-[#f59e0b]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-[20%] left-[-15%] w-[45vw] h-[45vw] bg-primary/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-[15%] right-[-15%] w-[40vw] h-[40vw] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
       <Navbar />
 
@@ -49,7 +63,7 @@ const Contact = () => {
               transition={{ delay: 0.2 }}
               className="text-muted-foreground font-body text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0"
             >
-              Every great journey begins with a conversation. Whether you know exactly where you want to go or you're just starting to dream, our travel curators are here to listen. 
+              Every great trip starts with a friendly conversation. Whether you already have a destination in mind or you are just starting to plan, we are here to help.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 15 }}
@@ -57,7 +71,7 @@ const Contact = () => {
               transition={{ delay: 0.3 }}
               className="text-muted-foreground font-body text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0 mt-4"
             >
-              Fill out the form below to schedule your complimentary initial consultation. We'll get back to you within 24 hours to begin designing a bespoke itinerary tailored precisely to your passions, pace, and preferences.
+              Fill out the form below to plan your trip. We will get back to you within 24 hours to start designing the perfect itinerary tailored to your style and interests.
             </motion.p>
           </div>
 
@@ -70,7 +84,7 @@ const Contact = () => {
               className="lg:col-span-2 space-y-6"
             >
               <div className="bg-card rounded-3xl p-8 shadow-[0_4px_30px_-8px_rgba(0,0,0,0.05)] border border-black/[0.03] space-y-8 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#ea580c]/5 rounded-bl-[100px] -mr-10 -mt-10 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 pointer-events-none" />
                 
                 {[
                   { icon: MapPin, title: data?.contact.address.title || "Visit Us", lines: data?.contact.address.lines || ["123 Travel Lane", "Adventure City, AC 10001"] },
@@ -79,8 +93,8 @@ const Contact = () => {
                   { icon: Clock, title: data?.contact.workingHours.title || "Working Hours", lines: data?.contact.workingHours.lines || ["Mon – Fri: 9am – 7pm", "Sat: 10am – 4pm"] },
                 ].map((item, i) => (
                   <div key={item.title} className="flex gap-5 relative z-10 group">
-                    <div className="w-14 h-14 rounded-2xl bg-[#ea580c]/5 border border-[#ea580c]/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:bg-[#ea580c]/10 transition-all duration-300">
-                      <item.icon className="w-6 h-6 text-[#ea580c]" strokeWidth={1.5} />
+                    <div className="w-14 h-14 rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:bg-primary/10 transition-all duration-300">
+                      <item.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                     </div>
                     <div>
                       <h3 className="font-display font-bold text-lg text-foreground mb-1">{item.title}</h3>
@@ -108,11 +122,11 @@ const Contact = () => {
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Full Name *</label>
                       <input
-                        type="text"
-                        required
-                        id="name"
-                        placeholder="e.g. Alexander Mercer"
-                        className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-[#ea580c]/50 focus:ring-4 focus:ring-[#ea580c]/10 transition-all duration-300 shadow-sm"
+                         type="text"
+                         required
+                         id="name"
+                         placeholder="e.g. Alexander Mercer"
+                         className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm"
                       />
                     </div>
                     <div className="space-y-2">
@@ -122,7 +136,7 @@ const Contact = () => {
                         required
                         id="email"
                         placeholder="e.g. alexander@example.com"
-                        className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-[#ea580c]/50 focus:ring-4 focus:ring-[#ea580c]/10 transition-all duration-300 shadow-sm"
+                        className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm"
                       />
                     </div>
                   </div>
@@ -133,10 +147,14 @@ const Contact = () => {
                       <select
                         id="destination"
                         required
-                        defaultValue=""
-                        className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-[#ea580c]/50 focus:ring-4 focus:ring-[#ea580c]/10 transition-all duration-300 shadow-sm appearance-none cursor-pointer"
+                        value={selectedDestination}
+                        onChange={(e) => setSelectedDestination(e.target.value)}
+                        className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm appearance-none cursor-pointer"
                       >
                         <option value="" disabled hidden>Select a destination</option>
+                        {pkgParam && (
+                          <option value={pkgParam}>{pkgParam}</option>
+                        )}
                         <option>Santorini, Greece</option>
                         <option>Kyoto, Japan</option>
                         <option>Bali, Indonesia</option>
@@ -160,8 +178,10 @@ const Contact = () => {
                       id="message"
                       rows={5}
                       required
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       placeholder="Tell us about your dream trip..."
-                      className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-[#ea580c]/50 focus:ring-4 focus:ring-[#ea580c]/10 transition-all duration-300 shadow-sm resize-none"
+                      className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm resize-none"
                     />
                   </div>
 

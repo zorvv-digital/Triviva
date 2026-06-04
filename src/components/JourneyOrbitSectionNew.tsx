@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef, useState, useCallback } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, MapPin, Star } from "lucide-react";
+import { useEffect, useRef, useState, useCallback } from "react";
+import { useReducedMotion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
 import { Link } from "react-router-dom";
 import { getImage } from "@/lib/images";
 
@@ -59,8 +60,12 @@ const JourneyOrbitSectionNew = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [stories, setStories] = useState<TripStory[]>(fallbackStories);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [hasEntered, setHasEntered] = useState(true);
+  const hasEntered = true;
   const shouldReduceMotion = useReducedMotion();
+
+  const { ref: labelRef, isVisible: labelVisible } = useInView<HTMLSpanElement>();
+  const { ref: headingRef, isVisible: headingVisible } = useInView<HTMLHeadingElement>();
+  const { ref: paraRef, isVisible: paraVisible } = useInView<HTMLParagraphElement>();
 
   // Card geometry configuration variables
   const cardWidth = 280; 
@@ -82,10 +87,6 @@ const JourneyOrbitSectionNew = () => {
 
   const goNext = useCallback(() => {
     setActiveIndex((current) => wrapIndex(current + 1, len));
-  }, [len]);
-
-  const goPrev = useCallback(() => {
-    setActiveIndex((current) => wrapIndex(current - 1, len));
   }, [len]);
 
   useEffect(() => {
@@ -124,6 +125,8 @@ const JourneyOrbitSectionNew = () => {
       ref={sectionRef}
       style={{
         background: "linear-gradient(180deg, hsl(var(--background)) 0%, #fbfbf9 15%, #f6efe5 65%, hsl(var(--background)) 100%)",
+        contentVisibility: "auto",
+        containIntrinsicSize: "auto 600px",
       }}
       className="relative overflow-visible z-20 pt-16 pb-12 md:pt-20 md:pb-16"
     >
@@ -135,35 +138,28 @@ const JourneyOrbitSectionNew = () => {
       <div className="section-padding relative z-10 mx-auto max-w-7xl">
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           <div className="max-w-2xl text-slate-900">
-            <motion.span
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.32em] text-slate-600 backdrop-blur-md"
+            <span
+              ref={labelRef}
+              className={`reveal${labelVisible ? " is-visible" : ""} mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.32em] text-slate-600 backdrop-blur-md`}
             >
               Trip memories
-            </motion.span>
+            </span>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.06, duration: 0.6 }}
-              className="font-display text-4xl font-black uppercase leading-tight tracking-tight md:text-6xl text-slate-900"
+            <h2
+              ref={headingRef}
+              className={`reveal${headingVisible ? " is-visible" : ""} font-display text-4xl font-black uppercase leading-tight tracking-tight md:text-6xl text-slate-900`}
+              style={{ transitionDelay: "0.06s" }}
             >
               Memories that <span className="text-primary">move into frame</span>
-            </motion.h2>
+            </h2>
 
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.14, duration: 0.5 }}
-              className="mt-4 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base"
+            <p
+              ref={paraRef}
+              className={`reveal${paraVisible ? " is-visible" : ""} mt-4 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base`}
+              style={{ transitionDelay: "0.14s" }}
             >
               A curated collection of unforgettable memories from our travels: cards begin as a compact stack, open when the section enters view, and then rotate with a clear, cinematic rhythm.
-            </motion.p>
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
@@ -220,20 +216,14 @@ const JourneyOrbitSectionNew = () => {
                       opacity: openState ? 1 : 0.14,
                       transition: shouldReduceMotion
                         ? "none"
-                        : "transform 750ms cubic-bezier(0.16, 1, 0.3, 1), opacity 750ms cubic-bezier(0.16, 1, 0.3, 1)",
+                        : "transform 850ms cubic-bezier(0.4, 0, 0.2, 1), opacity 850ms cubic-bezier(0.4, 0, 0.2, 1)",
                       transformStyle: "preserve-3d",
                       willChange: "transform, opacity",
                       backfaceVisibility: "hidden",
                     }}
                     className="group absolute left-1/2 top-4 w-[min(64vw,16.5rem)] md:w-[17.5rem] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] hover:-translate-y-0.5 transition-shadow duration-500 transform-gpu"
                   >
-                    <div 
-                      className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden isolate transform-gpu"
-                      style={{
-                        transform: `translateZ(${z}px)`,
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
+                    <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden isolate transform-gpu">
                       <img
                         src={getImage(story.image)}
                         alt={story.title}

@@ -1,4 +1,4 @@
-import heroBeach from "@/assets/hero-beach.jpg";
+import heroBeach from "@/assets/hero.webp";
 import destSantorini from "@/assets/quality/santorini.webp";
 import destSahara from "@/assets/quality/sahara.webp";
 import destJapan from "@/assets/quality/japan.webp";
@@ -8,9 +8,11 @@ import destMaldives from "@/assets/quality/maldives.webp";
 import aboutHero from "@/assets/quality/swiz.webp";
 import pkgPeru from "@/assets/quality/peru.webp";
 import pkgIceland from "@/assets/quality/iceland.webp";
+import azoresLandscape from "@/assets/azores.png";
 
 export const images = {
   hero: heroBeach,
+  azores: azoresLandscape,
   santorini: destSantorini,
   sahara: destSahara,
   japan: destJapan,
