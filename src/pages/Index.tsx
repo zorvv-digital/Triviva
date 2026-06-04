@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import BrandStorySection from "@/components/BrandStorySection";
 import EthosSection from "@/components/EthosSection";
 import PerfectDestinationSection from "@/components/PerfectDestinationSection";
 import DestinationsSection from "@/components/DestinationsSection";
@@ -48,8 +49,9 @@ const Index = () => {
       <SeasonalSuggestionsSection />
       <JourneyOrbitSectionNew />
       <DestinationsSection />
-      <FeaturesSection />
+      <BrandStorySection />
       <EthosSection />
+      <FeaturesSection />
       <TestimonialsSection />
       <CTASection />
       <Footer />

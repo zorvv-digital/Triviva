@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-
 import { getImage } from "@/lib/images";
+import { useInView } from "@/hooks/useInView";
 
 interface RawGalleryItem {
   image: string;
@@ -25,6 +24,7 @@ interface ProcessedGalleryItem {
 const BentoGallerySection = () => {
   const [showSection, setShowSection] = useState<boolean>(true);
   const [galleryItems, setGalleryItems] = useState<ProcessedGalleryItem[]>([]);
+  const { ref: gridRef, isVisible: gridVisible } = useInView<HTMLDivElement>({ rootMargin: "-50px" });
 
   useEffect(() => {
     fetch("/data/gallery/gallery.json")
@@ -38,8 +38,8 @@ const BentoGallerySection = () => {
         const processed = imagesList.map((item) => ({
           ...item,
           image: getImage(item.image),
-          title: item.title || item.alt.split(",")[0], // Fallback to city/location name from alt text
-          category: item.category || "Destination", // Fallback category
+          title: item.title || item.alt.split(",")[0],
+          category: item.category || "Destination",
         }));
         setGalleryItems(processed);
       })
@@ -50,7 +50,10 @@ const BentoGallerySection = () => {
     return null;
   }
   return (
-    <section className="py-20 md:py-32 bg-brand-light">
+    <section
+      className="py-20 md:py-32 bg-brand-light"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 600px" }}
+    >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <div className="max-w-xl">
@@ -70,22 +73,28 @@ const BentoGallerySection = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]"
+        >
           {galleryItems.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={cn("group relative overflow-hidden rounded-2xl", item.className)}
+              className={cn(
+                "reveal group relative overflow-hidden rounded-2xl",
+                item.className,
+                gridVisible ? "is-visible" : ""
+              )}
+              style={{ transitionDelay: gridVisible ? `${index * 0.08}s` : "0s" }}
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500 z-10" />
-              
+
               <img
                 src={item.image}
                 alt={item.title}
-                className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover transform-gpu group-hover:scale-105 transition-transform duration-700 ease-out"
               />
 
               <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end z-20 text-white">
@@ -96,7 +105,7 @@ const BentoGallerySection = () => {
                   {item.title}
                 </h3>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

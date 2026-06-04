@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileMenu from "./MobileMenu";
@@ -18,16 +18,32 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
+  const rafRef = useRef<number | null>(null);
 
-  const filteredLinks = showGallery
-    ? navLinks
-    : navLinks.filter((link) => link.path !== "/gallery");
+  const filteredLinks = useMemo(
+    () => showGallery ? navLinks : navLinks.filter((link) => link.path !== "/gallery"),
+    [showGallery]
+  );
+
+  const handleScroll = useCallback(() => {
+    if (rafRef.current !== null) return;
+    rafRef.current = requestAnimationFrame(() => {
+      setScrolled(window.scrollY > 50);
+      rafRef.current = null;
+    });
+  }, []);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    };
+  }, [handleScroll]);
+
+  const isHomePage = location.pathname === "/";
+  const isPackagesPage = location.pathname === "/packages";
+  const useWhiteNav = (isHomePage || isPackagesPage) && !scrolled;
 
   return (
     <>
@@ -38,7 +54,12 @@ const Navbar = () => {
       >
         <div className="section-padding flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <img src="/assets/Logo.png" alt="Triviva Logo" className="h-16 w-auto" />
+            <img
+              src="/assets/Logo.png"
+              alt="Triviva Logo"
+              className="h-16 w-auto transition-all duration-300"
+              style={useWhiteNav ? { filter: "brightness(0) invert(1)" } : undefined}
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -50,7 +71,11 @@ const Navbar = () => {
                 onMouseEnter={link.path === "/packages" ? () => import("@/pages/Packages") : undefined}
                 className={`font-body text-sm font-medium tracking-wide transition-colors duration-300 ${
                   location.pathname === link.path
-                    ? "text-primary"
+                    ? useWhiteNav
+                      ? "text-white font-semibold"
+                      : "text-primary"
+                    : useWhiteNav
+                    ? "text-white/80 hover:text-white"
                     : "text-foreground/70 hover:text-foreground"
                 }`}
               >
@@ -75,9 +100,9 @@ const Navbar = () => {
             className="md:hidden flex flex-col gap-1.5 p-2"
             aria-label="Open menu"
           >
-            <span className="block w-6 h-0.5 bg-foreground rounded-full" />
-            <span className="block w-4 h-0.5 bg-foreground rounded-full" />
-            <span className="block w-6 h-0.5 bg-foreground rounded-full" />
+            <span className={`block w-6 h-0.5 rounded-full transition-colors duration-300 ${useWhiteNav ? "bg-white" : "bg-foreground"}`} />
+            <span className={`block w-4 h-0.5 rounded-full transition-colors duration-300 ${useWhiteNav ? "bg-white" : "bg-foreground"}`} />
+            <span className={`block w-6 h-0.5 rounded-full transition-colors duration-300 ${useWhiteNav ? "bg-white" : "bg-foreground"}`} />
           </button>
         </div>
       </nav>

@@ -6,7 +6,7 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
-    port: 3016,
+    port: 3017,
     hmr: {
       overlay: false,
     },

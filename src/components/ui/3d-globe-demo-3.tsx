@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Globe3D, GlobeMarker } from "@/components/ui/3d-globe";
 
 const sampleMarkers: GlobeMarker[] = [
@@ -82,23 +83,32 @@ const sampleMarkers: GlobeMarker[] = [
 ];
 
 export default function Globe3DDemoThird() {
+  const [primaryColor, setPrimaryColor] = useState("#10b981");
+
+  useEffect(() => {
+    const val = getComputedStyle(document.documentElement).getPropertyValue('--primary').trim();
+    if (val) {
+      setPrimaryColor(`hsl(${val})`);
+    }
+  }, []);
+
   return (
     <div className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 border border-white/[0.08] shadow-2xl my-16">
       {/* Ambient Decorative Glows */}
-      <div className="absolute top-0 left-1/4 -translate-y-1/2 w-96 h-96 bg-brand-primary/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 md:p-12 lg:p-16">
         {/* Left text column */}
         <div className="lg:col-span-7 flex flex-col justify-center text-left max-w-2xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] w-fit mb-6">
-            <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-white/80 text-xs font-semibold tracking-wider uppercase">Global Travel network</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight text-white mb-6 leading-tight">
             Explore the World <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-orange-400 to-amber-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-amber-300">
               Without Limits
             </span>
           </h2>
@@ -108,7 +118,7 @@ export default function Globe3DDemoThird() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="flex cursor-pointer items-center justify-center rounded-xl bg-brand-primary px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-brand-primary/95 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:-translate-y-0.5 active:translate-y-0 active:scale-98">
+            <button className="flex cursor-pointer items-center justify-center rounded-xl bg-primary px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-primary/95 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:-translate-y-0.5 active:translate-y-0 active:scale-98">
               Plan Your Adventure
             </button>
             <button className="flex cursor-pointer items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] px-8 py-4 font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/[0.06] hover:border-white/20 hover:-translate-y-0.5 active:translate-y-0 active:scale-98">
@@ -123,7 +133,7 @@ export default function Globe3DDemoThird() {
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="absolute w-[80%] h-[80%] rounded-full border border-white/[0.03] animate-[spin_120s_linear_infinite]" />
             <div className="absolute w-[65%] h-[65%] rounded-full border border-white/[0.05] border-dashed animate-[spin_80s_linear_infinite]" />
-            <div className="absolute w-[50%] h-[50%] rounded-full border border-brand-primary/10 animate-[spin_40s_linear_infinite]" />
+            <div className="absolute w-[50%] h-[50%] rounded-full border border-primary/10 animate-[spin_40s_linear_infinite]" />
           </div>
 
           <div className="w-full h-full relative z-10 flex items-center justify-center">
@@ -131,7 +141,7 @@ export default function Globe3DDemoThird() {
               className="h-full w-full max-w-[450px] max-h-[450px]"
               markers={sampleMarkers}
               config={{
-                atmosphereColor: "#f97316",
+                atmosphereColor: primaryColor,
                 atmosphereIntensity: 1.8,
                 atmosphereBlur: 3.5,
                 bumpScale: 6,
@@ -140,7 +150,7 @@ export default function Globe3DDemoThird() {
                 enablePan: false,
                 radius: 2.1,
                 showWireframe: true,
-                wireframeColor: "#ef4444"
+                wireframeColor: primaryColor
               }}
               onMarkerClick={undefined}
             />

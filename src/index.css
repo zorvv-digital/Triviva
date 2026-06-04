@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,9 +7,70 @@
   to   { transform: translateX(-50%); }
 }
 
+/* ── Scroll-reveal classes (toggled by useInView hook) ─────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.98) translateY(8px);
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-fade.is-visible {
+  opacity: 1;
+}
+
+/* ── Hero entrance animations (CSS keyframes, no JS per-frame cost) ────── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.hero-enter {
+  animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.hero-enter-desc {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+.hero-enter-cta {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+}
+
+/* ── Floating button CSS show/hide ─────────────────────────────────────── */
+.float-btn {
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.float-btn.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
 @layer base {
   :root {
-    --background: 40 33% 98%;
+    --background: 40 25% 98%;
     --foreground: 220 20% 10%;
 
     --card: 0 0% 100%;
@@ -20,7 +79,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 10%;
 
-    --primary: 24 80% 50%;
+    --primary: 22 100% 48%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 40 30% 94%;
@@ -37,12 +96,12 @@
 
     --border: 40 20% 90%;
     --input: 40 20% 90%;
-    --ring: 24 80% 50%;
+    --ring: 22 100% 48%;
 
     --radius: 1rem;
 
     --warm-sand: 38 40% 92%;
-    --warm-gold: 40 70% 55%;
+    --warm-gold: 43 100% 55%;
     --deep-charcoal: 220 20% 12%;
     --soft-cream: 42 50% 96%;
 
@@ -66,7 +125,8 @@
   }
 
   html, body {
-    @apply overflow-x-hidden max-w-full;
+    max-width: 100%;
+    overflow-x: clip;
   }
 
   body {
@@ -131,13 +191,11 @@
     @apply inline-flex items-center justify-center gap-2.5 px-8 py-4 font-body font-bold text-sm rounded-full transition-all duration-500 transform-gpu;
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    box-shadow: 0 4px 15px -3px hsl(var(--primary) / 0.35);
   }
 
   .btn-primary-travel:hover {
-    background: hsl(24 80% 44%);
+    background: hsl(22 100% 40%);
     transform: translateY(-2.5px) scale(1.02);
-    box-shadow: 0 15px 30px -8px hsl(var(--primary) / 0.45);
     opacity: 0.96;
   }
 

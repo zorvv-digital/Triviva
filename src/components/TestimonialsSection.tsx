@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
 
 interface Testimonial {
   name: string;
@@ -11,6 +11,8 @@ interface Testimonial {
 
 const TestimonialsSection = () => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const { ref: labelRef, isVisible: labelVisible } = useInView<HTMLSpanElement>();
+  const { ref: headingRef, isVisible: headingVisible } = useInView<HTMLHeadingElement>();
 
   useEffect(() => {
     fetch("/data/testimonials.json")
@@ -23,31 +25,30 @@ const TestimonialsSection = () => {
     return null;
   }
   return (
-    <section className="py-24 section-padding overflow-hidden">
+    <section
+      className="py-24 section-padding overflow-hidden"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 500px" }}
+    >
       <div className="text-center mb-16">
-        <motion.span
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="section-label mb-3 inline-block"
+        <span
+          ref={labelRef}
+          className={`reveal${labelVisible ? " is-visible" : ""} section-label mb-3 inline-block`}
         >
           Testimonials
-        </motion.span>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="section-title"
+        </span>
+        <h2
+          ref={headingRef}
+          className={`reveal${headingVisible ? " is-visible" : ""} section-title`}
+          style={{ transitionDelay: "0.1s" }}
         >
           What Travelers <span className="text-gradient">Say</span>
-        </motion.h2>
+        </h2>
       </div>
 
       <div className="relative flex overflow-hidden group">
         <div
           className="flex whitespace-nowrap gap-6 w-max"
-          style={{ animation: "marquee 30s linear infinite" }}
+          style={{ animation: "marquee 30s linear infinite", willChange: "transform" }}
         >
           {[...testimonials, ...testimonials].map((t, i) => (
             <div

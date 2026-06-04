@@ -112,7 +112,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
             key={activePackage.image}
             src={getImage(activePackage.image)}
             alt={activePackage.title}
-            fetchPriority="high"
+            fetchpriority="high"
             decoding="async"
             className="absolute inset-0 h-full w-full object-cover"
             initial={{ opacity: 0, scale: 1.05 }}
@@ -154,33 +154,33 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                     Explore package
                     <ArrowUpRight className="h-4 w-4" />
                   </Link>
-                  <Link
-                    to="/packages"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-colors hover:bg-white/15"
+                  <button
+                    onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-900/10 bg-black/5 hover:bg-black/10 px-6 py-3 text-sm font-semibold text-slate-900 transition-colors duration-300 cursor-pointer"
                   >
                     View all packages
-                  </Link>
+                  </button>
                 </div>
 
                 <div className="mt-5 flex flex-wrap gap-2 text-xs md:text-sm">
-                  <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
+                  <div className="rounded-full bg-white/70 px-4 py-2 backdrop-blur-sm text-slate-800 shadow-sm">
                     {activePackage.duration}
                   </div>
                   {discountedPrice ? (
-                    <div className="inline-flex items-center gap-2 rounded-full border border-[#ea580c]/30 bg-[#ea580c]/15 px-4 py-2 backdrop-blur-md">
-                      <span className="text-white/50 line-through">₹{activePackage.price.toLocaleString()}</span>
-                      <span className="font-bold text-[#ff7a2f]">₹{discountedPrice.toLocaleString()}</span>
-                      <span className="bg-[#ea580c] text-white text-[9px] font-extrabold px-1.5 py-0.5 rounded-full uppercase tracking-wide">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 backdrop-blur-sm text-slate-800 shadow-sm">
+                      <span className="text-slate-500 line-through">₹{activePackage.price.toLocaleString()}</span>
+                      <span className="font-bold text-primary">₹{discountedPrice.toLocaleString()}</span>
+                      <span className="bg-primary text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
                         {pkgOffer?.discountPercentage}% OFF
                       </span>
                     </div>
                   ) : (
-                    <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
+                    <div className="rounded-full bg-white/70 px-4 py-2 backdrop-blur-sm text-slate-800 shadow-sm">
                       ₹{activePackage.price.toLocaleString()}
                     </div>
                   )}
-                  <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
-                    <Star className="h-4 w-4 fill-current text-amber-300" />
+                  <div className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 backdrop-blur-sm text-slate-800 shadow-sm">
+                    <Star className="h-4 w-4 fill-current text-amber-500" />
                     <span>{activePackage.rating.toFixed(2)} rating</span>
                   </div>
                 </div>
@@ -300,24 +300,24 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                 </div>
 
                 <div className="mt-2.5 flex flex-wrap gap-1.5 text-[10px] sm:text-xs">
-                  <div className="rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
+                  <div className="rounded-full bg-white/70 px-2 py-1 backdrop-blur-sm text-slate-800 shadow-sm">
                     {activePackage.duration}
                   </div>
                   {discountedPrice ? (
-                    <div className="inline-flex items-center gap-1.5 rounded-full border border-[#ea580c]/30 bg-[#ea580c]/15 px-2 py-1 backdrop-blur-md">
-                      <span className="text-white/50 line-through">₹{activePackage.price.toLocaleString()}</span>
-                      <span className="font-bold text-[#ff7a2f]">₹{discountedPrice.toLocaleString()}</span>
-                      <span className="bg-[#ea580c] text-white text-[8px] font-extrabold px-1 rounded-sm uppercase tracking-wide">
+                    <div className="inline-flex items-center gap-1.5 rounded-full bg-white/70 px-2 py-1 backdrop-blur-sm text-slate-800 shadow-sm">
+                      <span className="text-slate-500 line-through">₹{activePackage.price.toLocaleString()}</span>
+                      <span className="font-bold text-primary">₹{discountedPrice.toLocaleString()}</span>
+                      <span className="bg-primary text-white text-[8px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wide">
                         {pkgOffer?.discountPercentage}% OFF
                       </span>
                     </div>
                   ) : (
-                    <div className="rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
+                    <div className="rounded-full bg-white/70 px-2 py-1 backdrop-blur-sm text-slate-800 shadow-sm">
                       ₹{activePackage.price.toLocaleString()}
                     </div>
                   )}
-                  <div className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/10 px-2 py-1 backdrop-blur-md">
-                    <Star className="h-3 w-3 fill-current text-amber-300" />
+                  <div className="inline-flex items-center gap-1 rounded-full bg-white/70 px-2 py-1 backdrop-blur-sm text-slate-800 shadow-sm">
+                    <Star className="h-3 w-3 fill-current text-amber-500" />
                     <span>{activePackage.rating.toFixed(2)} rating</span>
                   </div>
                 </div>
@@ -325,17 +325,17 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                 <div className="mt-3 flex flex-wrap gap-2">
                   <Link
                     to={`/packages/${activePackage.id}`}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2.5 text-xs sm:px-5 sm:py-3 sm:text-sm font-semibold text-slate-950 transition-transform duration-300 active:scale-[0.98]"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2.5 text-xs sm:px-5 sm:py-3 sm:text-sm font-semibold text-slate-950 transition-transform duration-300 active:scale-[0.98] shadow-sm"
                   >
                     Explore package
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </Link>
-                  <Link
-                    to="/packages"
-                    className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-4 py-2.5 text-xs sm:px-5 sm:py-3 sm:text-sm font-semibold text-white backdrop-blur-md"
+                  <button
+                    onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-slate-900/10 bg-black/5 px-4 py-2.5 text-xs sm:px-5 sm:py-3 sm:text-sm font-semibold text-slate-900 transition-colors duration-300 active:scale-[0.98]"
                   >
                     View all packages
-                  </Link>
+                  </button>
                 </div>
               </motion.div>
             </AnimatePresence>
