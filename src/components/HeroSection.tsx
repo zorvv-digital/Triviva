@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { images } from "@/lib/images";
+import { useOnScreen } from "@/hooks/useOnScreen";
 
 const DESTINATIONS = [
   "HIMACHAL",
@@ -92,19 +93,22 @@ const HeroSection = () => {
   const prefersReducedMotion = useReducedMotion();
   const [destinationIndex, setDestinationIndex] = useState(0);
   const activeDestination = DESTINATIONS[destinationIndex];
+  // Pause the word-cycle animation once the hero is scrolled out of view, so
+  // its per-letter motion work stops competing with scroll. No visual change.
+  const { ref: heroRef, onScreen: heroOnScreen } = useOnScreen<HTMLElement>();
 
   useEffect(() => {
-    if (prefersReducedMotion) return undefined;
+    if (prefersReducedMotion || !heroOnScreen) return undefined;
 
     const intervalId = window.setInterval(() => {
       setDestinationIndex((currentIndex) => (currentIndex + 1) % DESTINATIONS.length);
     }, 3200);
 
     return () => window.clearInterval(intervalId);
-  }, [prefersReducedMotion]);
+  }, [prefersReducedMotion, heroOnScreen]);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex flex-col justify-between p-6 md:p-16 text-white select-none bg-[#111c16]">
+    <section ref={heroRef} className="relative h-screen w-full overflow-hidden flex flex-col justify-between p-6 md:p-16 text-white select-none bg-[#111c16]">
 
       {/* Static Background Image & Blend Gradients */}
       <div className="absolute inset-0 z-0">

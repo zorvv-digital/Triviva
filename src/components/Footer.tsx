@@ -119,12 +119,12 @@ const Footer = () => {
               
               <Link to="/packages" className="group block pt-2">
                 <div className="flex items-center justify-between border-b border-gray-200 pb-2 mb-2">
-                  <h4 className="font-display text-lg text-[#111827] font-medium group-hover:text-[#ea580c] transition-colors">Special Offers</h4>
+                  <h4 className="font-display text-lg text-[#111827] font-medium group-hover:text-[#ea580c] transition-colors">Featured Packages</h4>
                   <div className="w-6 h-6 rounded-full bg-[#111827] text-white flex items-center justify-center transform group-hover:rotate-45 group-hover:bg-[#ea580c] transition-all duration-300">
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </div>
                 </div>
-                <p className="font-body text-sm text-[#6b7280]">Limited time deals</p>
+                <p className="font-body text-sm text-[#6b7280]">Explore our handpicked routes</p>
               </Link>
             </div>
           </div>

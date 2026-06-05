@@ -1,8 +1,8 @@
 [
   {
     "icon": "Compass",
-    "title": "Hand-picked by people who've been there",
-    "description": "We don't list every property — we've stayed in them. Every itinerary is built by someone who knows the destination firsthand."
+    "title": "Personally chosen by people who have been there",
+    "description": "We do not list every property because we have stayed in them. Every itinerary is built by someone who knows the destination firsthand."
   },
   {
     "icon": "Shield",
@@ -12,11 +12,11 @@
   {
     "icon": "Headphones",
     "title": "Built around your pace, not ours",
-    "description": "No cookie-cutter packages. Your dates, your rhythm, your preferences — we build around you, not the other way around."
+    "description": "No generic packages. Your dates, your rhythm, and your preferences because we build around you, not the other way around."
   },
   {
     "icon": "Sparkles",
     "title": "The moments no guidebook mentions",
-    "description": "The rooftop nobody knows, the village market on a Tuesday, the restaurant the locals actually eat at. That's what we find for you."
+    "description": "The rooftop nobody knows, the village market on a Tuesday, the restaurant the locals actually eat at. That is what we find for you."
   }
 ]

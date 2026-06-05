@@ -20,7 +20,7 @@ const ServicesSection = () => {
             What We <span className="text-gradient">Offer</span>
           </h2>
           <p className="mt-4 text-slate-500 font-body">
-            We provide everything you need for a comfortable, stress-free, and memorable journey.
+            We provide everything you need for a comfortable, relaxed, and memorable journey.
           </p>
         </div>
 

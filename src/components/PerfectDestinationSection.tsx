@@ -32,7 +32,7 @@ const PerfectDestinationSection = () => {
 
   return (
     <section
-      className="py-20 md:py-32 bg-transparent"
+      className="pt-20 pb-10 md:pt-32 md:pb-12 bg-transparent"
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="mb-12">
@@ -46,12 +46,12 @@ const PerfectDestinationSection = () => {
         </div>
 
         {destinations.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {destinations.map((dest, i) => (
               <Link
                 to={dest.id ? `/packages/${dest.id}` : "/packages"}
                 key={dest.id || i}
-                className="relative group rounded-3xl overflow-hidden cursor-pointer h-[320px] sm:h-[400px] lg:h-[500px] block"
+                className="relative group rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer h-[200px] xs:h-[240px] sm:h-[400px] lg:h-[500px] block"
               >
                 <img
                   src={getImage(dest.image)}
@@ -62,15 +62,15 @@ const PerfectDestinationSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
                 
-                <div className="absolute bottom-0 left-0 w-full p-6 text-white flex flex-col justify-end">
-                  <div className="flex items-center gap-1.5 mb-2">
-                    <Star className="w-4 h-4 fill-[#f97316] text-[#f97316]" />
-                    <span className="text-sm font-medium">{dest.rating}</span>
+                <div className="absolute bottom-0 left-0 w-full p-3 sm:p-6 text-white flex flex-col justify-end">
+                  <div className="flex items-center gap-1.5 mb-1 sm:mb-2">
+                    <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-[#f97316] text-[#f97316]" />
+                    <span className="text-xs sm:text-sm font-medium">{dest.rating}</span>
                   </div>
-                  <h3 className="text-2xl font-display font-bold mb-1">
+                  <h3 className="text-base sm:text-2xl font-display font-bold mb-0.5 sm:mb-1 leading-tight">
                     {dest.name}
                   </h3>
-                  <p className="text-white/80 text-sm font-medium">
+                  <p className="text-white/80 text-[10px] sm:text-sm font-medium line-clamp-1">
                     {dest.details}
                   </p>
                 </div>

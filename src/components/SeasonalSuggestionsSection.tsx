@@ -48,7 +48,7 @@ const SeasonalSuggestionsSection = () => {
         background:
           "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(210 40% 98% / 0.5) 15%, hsl(210 40% 98% / 0.5) 85%, hsl(var(--background)) 100%)"
       }}
-      className="py-20"
+      className="pt-10 pb-20 md:pt-12 md:pb-32"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">

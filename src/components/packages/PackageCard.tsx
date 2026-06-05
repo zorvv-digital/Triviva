@@ -19,7 +19,7 @@ const PackageCard = memo(({ pkg, badge, hideBookNow }: PackageCardProps) => {
 
   return (
     <Link to={`/packages/${pkg.id}`} className="group block h-full">
-      <div className="bg-white rounded-[2rem] p-4 shadow-[0_2px_5_rgba(0,0,0,0.06)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-[box-shadow,transform] duration-500 transform-gpu overflow-hidden flex flex-col h-full border border-slate-200">
+      <div className="bg-white rounded-[2rem] p-4 shadow-[0_1px_3px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:-translate-y-0.5 transition-[box-shadow,transform] duration-500 transform-gpu overflow-hidden flex flex-col h-full border border-slate-100">
         {/* Image wrapper */}
         <div className="relative aspect-[16/10] rounded-2xl overflow-hidden isolate transform-gpu flex-shrink-0">
           <img
