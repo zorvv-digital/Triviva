@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { useReducedMotion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
+import { useOnScreen } from "@/hooks/useOnScreen";
 import { Link } from "react-router-dom";
 import { getImage } from "@/lib/images";
 
@@ -63,6 +64,10 @@ const JourneyOrbitSectionNew = () => {
   const shouldReduceMotion = useReducedMotion();
 
   const { ref: sectionRef, isVisible: sectionVisible } = useInView<HTMLElement>();
+  // Tracks live on-screen state so the auto-rotate timer + GPU card layers
+  // only stay active while the deck is actually visible. No visual change —
+  // off-screen frames can't be seen anyway.
+  const { ref: deckRef, onScreen: deckOnScreen } = useOnScreen<HTMLDivElement>();
 
   // Card geometry configuration variables
   const cardWidth = 280; 
@@ -103,7 +108,7 @@ const JourneyOrbitSectionNew = () => {
   }, []);
 
   useEffect(() => {
-    if (shouldReduceMotion || stories.length <= 1) {
+    if (shouldReduceMotion || stories.length <= 1 || !deckOnScreen) {
       return;
     }
 
@@ -112,7 +117,7 @@ const JourneyOrbitSectionNew = () => {
     }, 3000);
 
     return () => window.clearInterval(intervalId);
-  }, [shouldReduceMotion, stories.length, goNext]);
+  }, [shouldReduceMotion, stories.length, goNext, deckOnScreen]);
 
   const activeStory = stories[activeIndex];
   const openState = hasEntered;
@@ -171,7 +176,8 @@ const JourneyOrbitSectionNew = () => {
           </div>
 
           <div className="relative">
-            <div 
+            <div
+              ref={deckRef}
               className="relative mx-auto h-[23rem] w-full max-w-[46rem] overflow-visible md:h-[28rem] flex items-start justify-center orbit-container-shift max-md:-translate-x-32"
               style={{
                 perspective: `${perspectivePx}px`,
@@ -210,7 +216,10 @@ const JourneyOrbitSectionNew = () => {
                         ? "none"
                         : "transform 850ms cubic-bezier(0.4, 0, 0.2, 1), opacity 850ms cubic-bezier(0.4, 0, 0.2, 1)",
                       transformStyle: "preserve-3d",
-                      willChange: "transform, opacity",
+                      // Only promote to a compositor layer while the deck is on
+                      // screen + animating. Permanent will-change keeps every
+                      // card layer alive and starves scroll on mobile.
+                      willChange: deckOnScreen ? "transform, opacity" : "auto",
                       backfaceVisibility: "hidden",
                     }}
                     className="group absolute left-1/2 top-4 w-[min(64vw,16.5rem)] md:w-[17.5rem] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] transition-shadow duration-500 transform-gpu"

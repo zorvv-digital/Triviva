@@ -83,7 +83,7 @@ const Contact = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="lg:col-span-2 space-y-6"
             >
-              <div className="bg-card rounded-3xl p-8 shadow-[0_4px_30px_-8px_rgba(0,0,0,0.05)] border border-black/[0.03] space-y-8 relative overflow-hidden">
+              <div className="bg-white rounded-[2rem] p-8 shadow-[0_1px_3px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-shadow duration-500 border border-slate-100 space-y-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 pointer-events-none" />
                 
                 {[
@@ -114,7 +114,7 @@ const Contact = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="lg:col-span-3"
             >
-              <form onSubmit={handleSubmit} className="bg-card rounded-3xl p-8 md:p-10 shadow-[0_4px_30px_-8px_rgba(0,0,0,0.05)] border border-black/[0.03]">
+              <form onSubmit={handleSubmit} className="bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-shadow duration-500 border border-slate-100">
                 <h3 className="font-display text-2xl font-bold text-foreground mb-8">Send us a message</h3>
                 
                 <div className="space-y-6">
@@ -143,33 +143,15 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <label htmlFor="destination" className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Destination of Interest *</label>
-                    <div className="relative">
-                      <select
-                        id="destination"
-                        required
-                        value={selectedDestination}
-                        onChange={(e) => setSelectedDestination(e.target.value)}
-                        className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm appearance-none cursor-pointer"
-                      >
-                        <option value="" disabled hidden>Select a destination</option>
-                        {pkgParam && (
-                          <option value={pkgParam}>{pkgParam}</option>
-                        )}
-                        <option>Santorini, Greece</option>
-                        <option>Kyoto, Japan</option>
-                        <option>Bali, Indonesia</option>
-                        <option>Swiss Alps</option>
-                        <option>Maldives</option>
-                        <option>Peru</option>
-                        <option>Morocco</option>
-                        <option>Other / Not Sure Yet</option>
-                      </select>
-                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
-                        <svg className="fill-current h-4 w-4" viewBox="0 0 20 20">
-                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                        </svg>
-                      </div>
-                    </div>
+                    <input
+                      type="text"
+                      id="destination"
+                      required
+                      value={selectedDestination}
+                      onChange={(e) => setSelectedDestination(e.target.value)}
+                      placeholder="e.g. Kyoto, Japan or Swiss Alps"
+                      className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm"
+                    />
                   </div>
 
                   <div className="space-y-2">

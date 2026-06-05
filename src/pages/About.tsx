@@ -77,7 +77,7 @@ const About = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="relative"
             >
-              <div className="img-curved-lg aspect-[4/5] md:aspect-[3/4] overflow-hidden shadow-2xl relative">
+              <div className="img-curved-lg aspect-[4/5] md:aspect-[3/4] overflow-hidden shadow-[0_3px_8px_rgba(0,0,0,0.03)] border border-slate-100 relative">
                 <div className="absolute inset-0 bg-black/10 z-10" />
                 <img src={images.about} alt="Explorer overlooking canyon" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" />
               </div>
@@ -102,7 +102,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="bg-white rounded-[2rem] p-10 hover:shadow-[0_10px_40px_rgba(0,0,0,0.06)] shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-500 border border-black/[0.02] relative overflow-hidden group"
+                className="bg-white rounded-[2rem] p-10 shadow-[0_1px_3px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:-translate-y-0.5 transition-[box-shadow,transform] duration-500 transform-gpu border border-slate-100 relative overflow-hidden group"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] -mr-10 -mt-10 transition-transform duration-500 group-hover:scale-110" />
                 <span className="text-6xl font-display font-bold text-[#ea580c]/10 block mb-6">0{i + 1}</span>
@@ -148,7 +148,7 @@ const About = () => {
               >
                 <div className="relative w-28 h-28 sm:w-40 sm:h-40 mx-auto mb-4 sm:mb-6">
                   {/* Avatar wrapper */}
-                  <div className="absolute inset-0 rounded-full bg-white flex items-center justify-center p-1 shadow-xl">
+                  <div className="absolute inset-0 rounded-full bg-white flex items-center justify-center p-1 shadow-[0_1px_3px_rgba(0,0,0,0.02)] group-hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-shadow duration-500">
                     <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center overflow-hidden relative">
                       {/* Optional: Add real images here if available, otherwise stylish initials */}
                       <span className="font-display text-2xl sm:text-3xl font-bold text-[#ea580c] group-hover:scale-110 transition-transform duration-500">{member.initials}</span>

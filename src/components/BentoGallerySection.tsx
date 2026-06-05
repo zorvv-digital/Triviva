@@ -57,17 +57,17 @@ const BentoGallerySection = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <div className="max-w-xl">
             <span className="inline-block py-1 px-3 rounded-full bg-brand-primary/10 text-brand-primary text-sm font-medium mb-4">
-              Explore the World
+              Visual Diary
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-brand-primary leading-tight">
-              Breathtaking Destinations Await
+              Destinations that stay with you
             </h2>
           </div>
           <Link
             to="/packages"
             className="group flex items-center gap-2 text-brand-primary font-medium hover:text-brand-secondary transition-colors"
           >
-            See all destinations
+            View all galleries
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

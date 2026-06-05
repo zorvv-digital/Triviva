@@ -27,10 +27,10 @@ const CTASection = () => {
         }} />
         <div className="relative p-10 md:p-16 max-w-xl">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-card leading-tight mb-4">
-            Ready for your next adventure?
+            Ready to explore the world differently?
           </h2>
           <p className="text-card/70 font-body mb-8 leading-relaxed">
-            Let us craft the journey of a lifetime. From planning to landing, we handle every detail.
+            Let us shape your next path. We handle every detail so you can simply be present.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link to="/packages" className="btn-primary-travel">
