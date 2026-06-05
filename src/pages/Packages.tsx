@@ -170,7 +170,7 @@ const Packages = () => {
 
       <FeaturedCarouselHero isMobile={isMobile} packages={packages} loading={loading} />
 
-      <section id="all-packages" className="pb-24 section-padding max-w-7xl mx-auto w-full">
+      <section id="all-packages" className="pb-24 pt-8 md:pt-0 bg-white section-padding max-w-7xl mx-auto w-full">
         {/* Title Header */}
         <div className="mb-8 border-b border-slate-100 pb-6">
           <h2 className="text-3xl font-display font-black uppercase text-slate-900 tracking-tight sm:text-4xl">
