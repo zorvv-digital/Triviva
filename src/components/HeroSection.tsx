@@ -138,7 +138,7 @@ const HeroSection = () => {
       <div className="relative z-20 h-20" />
 
       {/* Content Area */}
-      <div className="relative z-20 w-full flex flex-col items-start max-w-7xl mx-auto mt-auto pb-6 md:pb-12">
+      <div className="relative z-20 w-full flex flex-col items-start max-w-7xl mx-auto mt-auto pb-0">
         {/* CSS keyframe entrance — zero JS per frame */}
         <p className="hero-enter text-xs font-bold tracking-[0.35em] text-white uppercase mb-4">
           Triviva • Premium Packages
@@ -163,13 +163,13 @@ const HeroSection = () => {
             href="/packages"
             className="inline-flex items-center justify-center px-10 py-4 bg-primary hover:bg-primary/90 text-white rounded-full font-semibold text-sm transition-transform duration-300 hover:scale-105"
           >
-            Book now
+            View Packages
           </a>
         </div>
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto flex items-center justify-end mt-auto">
+      <div className="relative z-20 w-full max-w-7xl mx-auto flex items-center justify-end mt-4 md:mt-6">
         <div className="flex items-center gap-3">
           <span className="hidden sm:inline text-xs font-medium tracking-wider text-white/80 select-none">
             Scroll down

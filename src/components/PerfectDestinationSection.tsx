@@ -33,7 +33,6 @@ const PerfectDestinationSection = () => {
   return (
     <section
       className="py-20 md:py-32 bg-transparent"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 700px" }}
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="mb-12">

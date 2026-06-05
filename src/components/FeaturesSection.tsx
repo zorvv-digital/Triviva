@@ -11,11 +11,9 @@ const FeaturesSection = () => {
   return (
     <section
       style={{
-        background: "linear-gradient(180deg, hsl(var(--background)) 0%, #faf7f2 15%, #faf7f2 85%, hsl(var(--background)) 100%)",
-        contentVisibility: "auto",
-        containIntrinsicSize: "auto 700px",
+        background: "linear-gradient(180deg, hsl(var(--background)) 0%, #faf7f2 15%, #faf7f2 85%, hsl(var(--background)) 100%)"
       }}
-      className="py-14 md:py-28 relative overflow-hidden"
+      className="py-10 md:py-16 relative overflow-hidden"
     >
       <div className="absolute top-1/4 -left-48 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -right-48 w-96 h-96 bg-rose-200/20 rounded-full blur-3xl pointer-events-none" />

@@ -156,7 +156,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                   </Link>
                   <button
                     onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-900/10 bg-black/5 hover:bg-black/10 px-6 py-3 text-sm font-semibold text-slate-900 transition-colors duration-300 cursor-pointer"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition-transform duration-300 hover:-translate-y-0.5 cursor-pointer"
                   >
                     View all packages
                   </button>
@@ -332,7 +332,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
                   </Link>
                   <button
                     onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-slate-900/10 bg-black/5 px-4 py-2.5 text-xs sm:px-5 sm:py-3 sm:text-sm font-semibold text-slate-900 transition-colors duration-300 active:scale-[0.98]"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2.5 text-xs sm:px-5 sm:py-3 sm:text-sm font-semibold text-slate-950 transition-transform duration-300 active:scale-[0.98] shadow-sm"
                   >
                     View all packages
                   </button>
