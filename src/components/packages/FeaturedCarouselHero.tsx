@@ -123,10 +123,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
         </AnimatePresence>
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.22),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(14,165,233,0.18),transparent_35%)]" />
-        {/* Mobile: keep bottom dark so cards don't bleed into white next section */}
-        <div className="absolute inset-0 md:hidden bg-[linear-gradient(180deg,rgba(2,6,23,0.28)_0%,rgba(2,6,23,0.55)_50%,rgba(2,6,23,0.72)_100%)]" />
-        {/* Desktop: fade to white at bottom for seamless transition */}
-        <div className="absolute inset-0 hidden md:block bg-[linear-gradient(180deg,rgba(2,6,23,0.28)_0%,rgba(2,6,23,0.4)_45%,rgba(255,255,255,0.7)_80%,rgba(255,255,255,1)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.28)_0%,rgba(2,6,23,0.4)_45%,rgba(255,255,255,0.7)_80%,rgba(255,255,255,1)_100%)]" />
       </div>
 
       <div className="relative section-padding pb-8 md:pb-10">

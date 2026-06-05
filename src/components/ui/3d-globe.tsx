@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Html, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { cn } from "@/lib/utils";
+import { useOnScreen } from "@/hooks/useOnScreen";
 
 // ============================================================================
 // Types
@@ -496,12 +497,13 @@ function Scene({ markers, config, onMarkerClick, onMarkerHover }: SceneProps) {
 // Frame Throttle — limits render calls to 30fps via demand-based loop
 // ============================================================================
 
-function FrameThrottle() {
+function FrameThrottle({ active }: { active: boolean }) {
   const { invalidate } = useThree();
   useEffect(() => {
+    if (!active) return;
     const id = setInterval(invalidate, 1000 / 30);
     return () => clearInterval(id);
-  }, [invalidate]);
+  }, [invalidate, active]);
   return null;
 }
 
@@ -556,13 +558,14 @@ export function Globe3D({
   onMarkerClick,
   onMarkerHover,
 }: Globe3DProps) {
+  const { ref: containerRef, onScreen } = useOnScreen<HTMLDivElement>();
   const mergedConfig = useMemo(
     () => ({ ...defaultConfig, ...config }),
     [config],
   );
 
   return (
-    <div className={cn("relative h-[500px] w-full", className)}>
+    <div ref={containerRef} className={cn("relative h-[500px] w-full", className)}>
       <Canvas
         frameloop="demand"
         gl={{
@@ -582,7 +585,7 @@ export function Globe3D({
         }}
       >
         <Suspense fallback={<LoadingFallback />}>
-          <FrameThrottle />
+          <FrameThrottle active={onScreen} />
           <Scene
             markers={markers}
             config={mergedConfig}
