@@ -53,7 +53,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
 
   if (loading || featuredPackages.length === 0) {
     return (
-      <section className="relative overflow-hidden h-screen min-h-screen flex flex-col justify-end pt-16 sm:pt-20 md:pt-28 bg-slate-950 animate-pulse select-none w-full">
+      <section className="relative overflow-hidden min-h-[100dvh] md:h-screen md:min-h-screen flex flex-col justify-end pt-16 sm:pt-20 md:pt-28 bg-slate-950 animate-pulse select-none w-full">
         <div className="absolute inset-0 bg-slate-900/60" />
         <div className="relative section-padding pb-8 md:pb-10 max-w-7xl mx-auto w-full">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:gap-8 lg:gap-12 md:min-h-[72vh]">
@@ -96,7 +96,7 @@ const FeaturedCarouselHero = ({ isMobile, packages, loading }: FeaturedCarouselH
 
   return (
     <section
-      className="relative isolate overflow-hidden h-screen min-h-screen flex flex-col justify-end pt-16 sm:pt-20 md:pt-28"
+      className="relative isolate overflow-hidden min-h-[100dvh] md:h-screen md:min-h-screen flex flex-col justify-end pt-16 sm:pt-20 md:pt-28"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocusCapture={() => setIsPaused(true)}
