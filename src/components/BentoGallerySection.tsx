@@ -52,7 +52,6 @@ const BentoGallerySection = () => {
   return (
     <section
       className="py-20 md:py-32 bg-brand-light"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 600px" }}
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
