@@ -7,7 +7,6 @@ const EthosSection = () => {
   return (
     <section
       className="py-16 md:py-24 bg-transparent"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 400px" }}
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p
