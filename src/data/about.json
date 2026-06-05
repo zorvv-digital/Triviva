@@ -7,16 +7,16 @@
   ],
   "values": [
     { 
-      "title": "Authenticity", 
-      "desc": "We go beyond the tourist trail. Every experience is rooted in genuine local culture, fostering meaningful connections between our travelers and the communities they visit. We prioritize small, family-run establishments over massive international chains." 
+      "title": "Curated Stays", 
+      "desc": "Every accommodation is handpicked for its location, design, and local charm. We do not support mass market hotel chains." 
     },
     { 
-      "title": "Sustainability", 
-      "desc": "We partner strictly with eco-conscious properties and local conservation efforts. A portion of every booking goes directly toward initiatives that protect the vulnerable ecosystems and heritage sites we explore." 
+      "title": "Custom Routes", 
+      "desc": "We design itineraries from scratch tailored to your interests and pacing. No two trips we build are ever the same." 
     },
     { 
-      "title": "Excellence", 
-      "desc": "From your first inquiry to the moment you return home, every touchpoint is crafted with meticulous care. Our 24/7 concierge team is always on standby, anticipating your needs before you even realize you have them." 
+      "title": "On Ground Care", 
+      "desc": "Our local coordinators are available throughout your journey to manage detours, changes, and requests in real time." 
     }
   ],
   "team": [

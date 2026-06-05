@@ -59,7 +59,7 @@ const About = () => {
                 transition={{ delay: 0.2 }}
                 className="text-muted-foreground font-body text-lg leading-relaxed mb-8 max-w-lg"
               >
-                Our journey began in 2016 as Triviva Trip Advisor, built on the belief that travel should be meaningful and personal. Over the years, our brand has evolved, and we are proud to continue this legacy today as Triviva Holidays. We craft custom itineraries that connect you to local cultures, authentic traditions, and hidden destinations. Every journey is designed by local experts to ensure a seamless, worry-free vacation filled with memories that last a lifetime.
+                In 2016, we started as a small group of friends mapping out raw, unexplored paths under the name Triviva. We wanted to escape the commercial tourist buses and build something honest. Today, as Triviva Holidays, that same restless curiosity drives us. We do not just sell itineraries, we live them. We spend months exploring back alleys, sharing meals with local families, and vetting stays to design travel that feels deeply personal, relaxed, and true to the place.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -124,10 +124,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-2xl md:text-3xl lg:text-4xl font-display text-[#111827] leading-tight tracking-tight"
           >
-            "Our team of seasoned explorers and dedicated curators spend months scouting locations, 
-            testing experiences, and building relationships with local artisans and guides. 
-            We sweat the small stuff so you don't have to, ensuring every sunset cruise, 
-            mountain trek, and culinary class is nothing short of extraordinary."
+            "We believe the best travel stories aren't found in brochures. They happen when you take a wrong turn down a beautiful street, talk to the local potter, or watch the fog lift off a valley with a hot cup of tea. We gather those quiet, real moments so you can just be present."
           </motion.p>
         </div>
       </section>
