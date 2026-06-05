@@ -63,7 +63,7 @@ const Contact = () => {
               transition={{ delay: 0.2 }}
               className="text-muted-foreground font-body text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0"
             >
-              Every great trip starts with a friendly conversation. Whether you already have a destination in mind or you are just starting to plan, we are here to help.
+              We believe a great trip doesn't start with a catalog search; it starts with a real conversation. Whether you have a detailed bucket list or just a vague mood and a desired season, we want to hear about it.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 15 }}
@@ -71,7 +71,7 @@ const Contact = () => {
               transition={{ delay: 0.3 }}
               className="text-muted-foreground font-body text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0 mt-4"
             >
-              Fill out the form below to plan your trip. We will get back to you within 24 hours to start designing the perfect itinerary tailored to your style and interests.
+              Drop us a message below. Tell us how you like to travel, what gets you excited, and what you'd rather skip. We will get back to you personally to start sketching out your journey.
             </motion.p>
           </div>
 

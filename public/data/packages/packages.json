@@ -106,7 +106,7 @@
     "price": 25000,
     "rating": 4.56,
     "image": "/data/packages/packages_image/golden-triangle/01-Delhi.webp",
-    "description": "Journey through the epicenters of India's royal history and architectural genius. Uncover the layers of Old and New Delhi as you explore the colossal Red Fort, the ancient Qutub Minar, and the bustling bazaar of Chandni Chowk. Travel to Agra to behold the Taj Mahal—a monument of pure white marble and eternal love—before touring the historic sandstone chambers of Agra Fort and the ghost city of Fatehpur Sikri.",
+    "description": "Journey through the epicenters of India's royal history and architectural genius. Uncover the layers of Old and New Delhi as you explore the colossal Red Fort, the ancient Qutub Minar, and the bustling bazaar of Chandni Chowk. Travel to Agra to behold the Taj Mahal, a monument of pure white marble and eternal love, before touring the historic sandstone chambers of Agra Fort and the ghost city of Fatehpur Sikri.",
     "highlights": [
       "Guided tours of Delhi's iconic Red Fort, Qutub Minar, and India Gate",
       "Vibrant rickshaw ride through the narrow lanes of historic Chandni Chowk",
@@ -140,7 +140,7 @@
     "price": 25000,
     "rating": 4.78,
     "image": "/data/packages/packages_image/himachal-package/01_Himachal.webp",
-    "description": "Escape to the majestic heights of the Himalayas on a journey through Himachal Pradesh's most picturesque valleys and hill stations. Walk the colonial lanes of Shimla, experience high-altitude adventure sports in Solang Valley, and breathe in the spiritual serenity of Dharamshala and McLeod Ganj. From the lush apple orchards of Kasauli to the breathtaking pine-forested meadows of Dalhousie and Khajjiar—often called 'Mini Switzerland'—this alpine retreat is a paradise for adventurers and nature lovers alike.",
+    "description": "Escape to the majestic heights of the Himalayas on a journey through Himachal Pradesh's most picturesque valleys and hill stations. Walk the colonial lanes of Shimla, experience high altitude adventure sports in Solang Valley, and breathe in the spiritual serenity of Dharamshala and McLeod Ganj. From the apple orchards of Kasauli to the breathtaking pine forested meadows of Dalhousie and Khajjiar, often called Mini Switzerland, this alpine retreat is a paradise for adventurers and nature lovers alike.",
     "highlights": [
       "Breathtaking hikes and adventure sports in the valleys of Manali and Kullu",
       "Explore colonial heritage and panoramic views on the historic Shimla Ridge",
@@ -311,7 +311,7 @@
     "price": 25000,
     "rating": 4.95,
     "image": "/data/packages/packages_image/maldives-luxury/01-Maldives.webp",
-    "description": "Escape to a tropical wonderland where endless blue waters meet pristine white sand beaches. Designed for travelers seeking paradise on a budget, this 3-night, 4-day tropical getaway features comfortable hotel stays, delicious all-inclusive meals, and guided activities. Swim among vibrant coral reefs, explore local Maldivian islands, and try your hand at sunset line fishing—all with free underwater photography to preserve your island memories forever.",
+    "description": "Escape to a tropical wonderland where endless blue waters meet pristine white sand beaches. Designed for travelers seeking paradise on a budget, this 3-night, 4-day tropical getaway features comfortable hotel stays, delicious all-inclusive meals, and guided activities. Swim among vibrant coral reefs, explore local Maldivian islands, and try your hand at sunset line fishing, with free underwater photography to preserve your island memories forever.",
     "highlights": [
       "An affordable 4-day getaway to the world's most beautiful islands",
       "Enjoy comfortable beachside accommodations with all-inclusive meals",

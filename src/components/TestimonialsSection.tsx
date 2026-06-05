@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Star, Quote } from "lucide-react";
-import { useInView } from "@/hooks/useInView";
+import { motion } from "framer-motion";
 
 interface Testimonial {
   name: string;
@@ -11,8 +11,6 @@ interface Testimonial {
 
 const TestimonialsSection = () => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
-  const { ref: labelRef, isVisible: labelVisible } = useInView<HTMLSpanElement>();
-  const { ref: headingRef, isVisible: headingVisible } = useInView<HTMLHeadingElement>();
 
   useEffect(() => {
     fetch("/data/testimonials.json")
@@ -29,12 +27,24 @@ const TestimonialsSection = () => {
       className="py-12 md:py-16 section-padding overflow-hidden"
     >
       <div className="text-center mb-10">
-        <span className="section-label mb-3 inline-block">
+        <motion.span
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="section-label mb-3 inline-block"
+        >
           Testimonials
-        </span>
-        <h2 className="section-title">
+        </motion.span>
+        <motion.h2
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="section-title"
+        >
           What Travelers <span className="text-gradient">Say</span>
-        </h2>
+        </motion.h2>
       </div>
 
       <div className="relative flex overflow-hidden group">

@@ -40,7 +40,7 @@ const fallbackStories: TripStory[] = [
     location: "Pahalgam, Kashmir",
     title: "Lidder River Valley",
     image: "/data/stories/Memory4.webp",
-    story: "A quiet stroll along the rushing Lidder River, surrounded by towering pine forests and the snow-dusted peaks of Kashmir."
+    story: "A quiet stroll along the rushing Lidder River, surrounded by towering pine forests and the snowy peaks of Kashmir."
   }
 ];
 
@@ -57,15 +57,12 @@ function signedOffset(i: number, active: number, len: number, loop: boolean) {
 }
 
 const JourneyOrbitSectionNew = () => {
-  const sectionRef = useRef<HTMLElement | null>(null);
   const [stories, setStories] = useState<TripStory[]>(fallbackStories);
   const [activeIndex, setActiveIndex] = useState(0);
   const hasEntered = true;
   const shouldReduceMotion = useReducedMotion();
 
-  const { ref: labelRef, isVisible: labelVisible } = useInView<HTMLSpanElement>();
-  const { ref: headingRef, isVisible: headingVisible } = useInView<HTMLHeadingElement>();
-  const { ref: paraRef, isVisible: paraVisible } = useInView<HTMLParagraphElement>();
+  const { ref: sectionRef, isVisible: sectionVisible } = useInView<HTMLElement>();
 
   // Card geometry configuration variables
   const cardWidth = 280; 
@@ -137,23 +134,20 @@ const JourneyOrbitSectionNew = () => {
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           <div className="max-w-2xl text-slate-900">
             <span
-              ref={labelRef}
-              className={`reveal${labelVisible ? " is-visible" : ""} mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.32em] text-slate-600 backdrop-blur-md`}
+              className={`reveal${sectionVisible ? " is-visible" : ""} mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.32em] text-slate-600 backdrop-blur-md`}
             >
               Trip memories
             </span>
 
             <h2
-              ref={headingRef}
-              className={`reveal${headingVisible ? " is-visible" : ""} font-display text-4xl font-black uppercase leading-tight tracking-tight md:text-6xl text-slate-900`}
+              className={`reveal${sectionVisible ? " is-visible" : ""} font-display text-4xl font-black uppercase leading-tight tracking-tight md:text-6xl text-slate-900`}
               style={{ transitionDelay: "0.06s" }}
             >
               Memories that <span className="text-primary">move into frame</span>
             </h2>
 
             <p
-              ref={paraRef}
-              className={`reveal${paraVisible ? " is-visible" : ""} mt-4 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base`}
+              className={`reveal${sectionVisible ? " is-visible" : ""} mt-4 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base`}
               style={{ transitionDelay: "0.14s" }}
             >
               A curated collection of unforgettable memories from our travels: cards begin as a compact stack, open when the section enters view, and then rotate with a clear, cinematic rhythm.
@@ -192,7 +186,7 @@ const JourneyOrbitSectionNew = () => {
 
                 const rotateZ = off * stepDeg;
                 const x = off * cardSpacing;
-                const y = abs * 8; // subtle arc-down feel
+                const y = abs * 8;
                 const z = -abs * depthPx;
 
                 const isActive = off === 0;
@@ -219,7 +213,7 @@ const JourneyOrbitSectionNew = () => {
                       willChange: "transform, opacity",
                       backfaceVisibility: "hidden",
                     }}
-                    className="group absolute left-1/2 top-4 w-[min(64vw,16.5rem)] md:w-[17.5rem] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] hover:-translate-y-0.5 transition-shadow duration-500 transform-gpu"
+                    className="group absolute left-1/2 top-4 w-[min(64vw,16.5rem)] md:w-[17.5rem] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] transition-shadow duration-500 transform-gpu"
                   >
                     <div className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden isolate transform-gpu">
                       <img
@@ -233,7 +227,6 @@ const JourneyOrbitSectionNew = () => {
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.02)_0%,rgba(2,6,23,0.08)_30%,rgba(2,6,23,0.72)_100%)]" />
 
-                      {/* Place Name at Top Left */}
                       <div className="absolute top-4 left-4 rounded-full bg-slate-900/40 backdrop-blur-md px-3 py-1.5 border border-white/10 shadow-sm">
                         <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-white">
                           {story.location}

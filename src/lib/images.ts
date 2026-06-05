@@ -8,7 +8,7 @@ import destMaldives from "@/assets/quality/maldives.webp";
 import aboutHero from "@/assets/quality/swiz.webp";
 import pkgPeru from "@/assets/quality/peru.webp";
 import pkgIceland from "@/assets/quality/iceland.webp";
-import azoresLandscape from "@/assets/azores.png";
+import azoresLandscape from "@/assets/azores.webp";
 
 export const images = {
   hero: heroBeach,

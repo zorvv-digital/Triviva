@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, useCallback } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, MapPin, Sparkles, Star } from "lucide-react";
+import { useReducedMotion } from "framer-motion";
+import { ArrowUpRight, ChevronLeft, ChevronRight, Sparkles, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { getImage } from "@/lib/images";
 
@@ -22,7 +22,7 @@ const fallbackStories: TripStory[] = [
     location: "Santorini, Greece",
     image: "santorini",
     month: "May",
-    story: "Golden rooftops, cobalt domes, and a cliffside dinner that turned the whole evening into a slow-moving postcard.",
+    story: "Golden rooftops, cobalt domes, and a cliffside dinner that turned the whole evening into a slow moving postcard.",
     quote: "The sunset felt staged just for us.",
     tag: "Sunset story",
   },
@@ -32,7 +32,7 @@ const fallbackStories: TripStory[] = [
     location: "Tokyo, Kyoto & Osaka",
     image: "japan",
     month: "May",
-    story: "Morning trains, neon evenings, and temple stillness — each city revealed a completely different rhythm.",
+    story: "Morning trains, neon evenings, and temple stillness where each city revealed a completely different rhythm.",
     quote: "Every stop felt like a new chapter.",
     tag: "City drift",
   },
@@ -42,7 +42,7 @@ const fallbackStories: TripStory[] = [
     location: "South Malé Atoll",
     image: "maldives",
     month: "April",
-    story: "Overwater silence, coral-blue water, and a luxury escape that moved as softly as the tide itself.",
+    story: "Overwater silence, coral blue water, and a luxury escape that moved as softly as the tide itself.",
     quote: "It was impossible not to slow down here.",
     tag: "Waterline",
   },
@@ -74,8 +74,7 @@ const JourneyOrbitSection = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [stories, setStories] = useState<TripStory[]>(fallbackStories);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [hasEntered, setHasEntered] = useState(true); // Default to true so auto-play works immediately on load
-  const [viewportWidth, setViewportWidth] = useState(1280);
+  const [hasEntered, setHasEntered] = useState(true);
   const shouldReduceMotion = useReducedMotion();
 
   // Card geometry configuration variables
@@ -121,13 +120,6 @@ const JourneyOrbitSection = () => {
   }, []);
 
   useEffect(() => {
-    const updateViewport = () => setViewportWidth(window.innerWidth);
-    updateViewport();
-    window.addEventListener("resize", updateViewport);
-    return () => window.removeEventListener("resize", updateViewport);
-  }, []);
-
-  useEffect(() => {
     if (shouldReduceMotion || stories.length <= 1) {
       return;
     }
@@ -158,35 +150,24 @@ const JourneyOrbitSection = () => {
       <div className="section-padding relative z-10 mx-auto max-w-7xl">
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           <div className="max-w-2xl text-slate-900">
-            <motion.span
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+            <span
               className="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.32em] text-slate-600 backdrop-blur-md"
             >
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               Travel archive
-            </motion.span>
+            </span>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.06, duration: 0.6 }}
+            <h2
               className="font-display text-4xl font-black uppercase leading-tight tracking-tight md:text-6xl text-slate-900"
             >
               Stories that <span className="text-primary">move into frame</span>
-            </motion.h2>
+            </h2>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.14, duration: 0.5 }}
+            <p
               className="mt-4 max-w-xl text-sm leading-relaxed text-slate-600 md:text-base"
             >
               A redesigned travel archive: cards begin as a compact stack, open when the section enters view, and then rotate with a clear, cinematic rhythm.
-            </motion.p>
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
@@ -221,7 +202,7 @@ const JourneyOrbitSection = () => {
 
                 const rotateZ = off * stepDeg;
                 const x = off * cardSpacing;
-                const y = abs * 8; // subtle arc-down feel
+                const y = abs * 8;
                 const z = -abs * depthPx;
 
                 const isActive = off === 0;
@@ -231,54 +212,33 @@ const JourneyOrbitSection = () => {
                 const zIndex = 100 - abs;
 
                 return (
-                  <motion.button
+                  <button
                     key={story.id}
                     type="button"
                     onClick={() => {
                       setActiveIndex(i);
                     }}
-                    initial={
-                      shouldReduceMotion
-                        ? false
-                        : {
-                            opacity: 0,
-                            y: y + 40,
-                            x,
-                            rotateZ,
-                            rotateX,
-                            scale,
-                          }
-                    }
-                    animate={{
-                      opacity: openState ? 1 : 0.14,
-                      x: openState ? x : 0,
-                      y: openState ? y + lift : 0,
-                      scale: openState ? scale : 0.76,
-                      rotateZ: openState ? rotateZ : 0,
-                      rotateX: openState ? rotateX : 0,
-                    }}
                     style={{ 
                       zIndex,
                       transformStyle: "preserve-3d",
+                      transform: `translate3d(${openState ? x : 0}px, ${openState ? y + lift : 0}px, ${z}px) scale(${openState ? scale : 0.76}) rotate(${openState ? rotateZ : 0}deg) rotateX(${openState ? rotateX : 0}deg)`,
+                      opacity: openState ? 1 : 0.14,
+                      transition: shouldReduceMotion
+                        ? "none"
+                        : "transform 750ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 750ms cubic-bezier(0.34, 1.56, 0.64, 1)",
+                      willChange: "transform, opacity",
+                      backfaceVisibility: "hidden",
                     }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 480, // Snappy transitions
-                      damping: 120,
-                      mass: 0.3,
-                    }}
-                    className="group absolute left-1/2 top-4 w-[min(76vw,21rem)] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] hover:-translate-y-0.5 transition-shadow duration-500 transform-gpu"
+                    className="group absolute left-1/2 top-4 w-[min(76vw,21rem)] -translate-x-1/2 overflow-hidden rounded-[1.75rem] bg-transparent p-0 text-left shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)] transition-shadow duration-500 transform-gpu"
                   >
                     <div 
                       className="relative aspect-[4/5] rounded-[1.75rem] overflow-hidden isolate transform-gpu"
-                      style={{
-                        transform: `translateZ(${z}px)`,
-                        transformStyle: "preserve-3d",
-                      }}
                     >
                       <img
                         src={getImage(story.image)}
                         alt={story.title}
+                        decoding="async"
+                        loading="lazy"
                         className={`h-full w-full object-cover transition-transform duration-700 ${
                           isActive ? "group-hover:scale-105" : "scale-[1.02]"
                         }`}
@@ -306,17 +266,8 @@ const JourneyOrbitSection = () => {
                           {story.story}
                         </p>
                       </div>
-
-                      {!openState && (
-                        <motion.div
-                          aria-hidden="true"
-                          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.34)_100%)]"
-                          animate={shouldReduceMotion ? undefined : { opacity: [0.7, 0.18, 0.7] }}
-                          transition={{ duration: 2.6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                        />
-                      )}
                     </div>
-                  </motion.button>
+                  </button>
                 );
               })}
             </div>
