@@ -156,8 +156,29 @@ const HeroSection = () => {
         },
       };
 
+  const [isSplashComplete, setIsSplashComplete] = useState(() => {
+    return typeof window !== "undefined" && !!(window as any).splashDone;
+  });
+
   useEffect(() => {
-    if (prefersReducedMotion || !heroOnScreen) return undefined;
+    if (isSplashComplete) return;
+
+    const handleSplashComplete = () => {
+      setIsSplashComplete(true);
+    };
+
+    window.addEventListener("splashComplete", handleSplashComplete);
+    if ((window as any).splashDone) {
+      setIsSplashComplete(true);
+    }
+
+    return () => {
+      window.removeEventListener("splashComplete", handleSplashComplete);
+    };
+  }, [isSplashComplete]);
+
+  useEffect(() => {
+    if (prefersReducedMotion || !heroOnScreen || !isSplashComplete) return undefined;
 
     let timeoutId: number;
 
@@ -204,7 +225,7 @@ const HeroSection = () => {
     return () => {
       window.clearTimeout(timeoutId);
     };
-  }, [destinationIndex, prefersReducedMotion, heroOnScreen]);
+  }, [destinationIndex, prefersReducedMotion, heroOnScreen, isSplashComplete]);
 
   return (
     <section ref={heroRef} className="relative h-screen w-full overflow-hidden flex flex-col justify-between p-6 md:p-16 text-white select-none bg-[#111c16]">
@@ -255,7 +276,7 @@ const HeroSection = () => {
                 activeTicket={activeTicket}
                 ticketVariants={mobileTicketVariants}
                 prefersReducedMotion={prefersReducedMotion}
-                isVisible={heroOnScreen}
+                isVisible={heroOnScreen && isSplashComplete}
               />
             </div>
           </div>
@@ -296,7 +317,7 @@ const HeroSection = () => {
               activeTicket={activeTicket}
               ticketVariants={ticketVariants}
               prefersReducedMotion={prefersReducedMotion}
-              isVisible={heroOnScreen}
+              isVisible={heroOnScreen && isSplashComplete}
             />
           </div>
         </div>

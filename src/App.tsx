@@ -28,7 +28,15 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        {!splashDone && <SplashScreen onComplete={() => setSplashDone(true)} />}
+        {!splashDone && (
+          <SplashScreen
+            onComplete={() => {
+              setSplashDone(true);
+              (window as any).splashDone = true;
+              window.dispatchEvent(new CustomEvent("splashComplete"));
+            }}
+          />
+        )}
         <BrowserRouter>
           <ScrollToTop />
           {splashDone && <ExitIntentModal />}
