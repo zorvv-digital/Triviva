@@ -159,12 +159,52 @@ const HeroSection = () => {
   useEffect(() => {
     if (prefersReducedMotion || !heroOnScreen) return undefined;
 
-    const intervalId = window.setInterval(() => {
-      setDestinationIndex((currentIndex) => (currentIndex + 1) % DESTINATIONS.length);
-    }, 5500);
+    let timeoutId: number;
 
-    return () => window.clearInterval(intervalId);
-  }, [prefersReducedMotion, heroOnScreen]);
+    const scheduleNextTransition = () => {
+      timeoutId = window.setTimeout(() => {
+        const nextIndex = (destinationIndex + 1) % DESTINATIONS.length;
+        const nextDest = DESTINATIONS[nextIndex];
+        const nextImgUrl = DESTINATION_IMAGES[nextDest] || images.hero;
+
+        const img = new Image();
+        
+        // Use a flag to ensure we don't trigger state updates if the component unmounts
+        let active = true;
+
+        img.onload = () => {
+          if (active) {
+            setDestinationIndex(nextIndex);
+          }
+        };
+
+        img.onerror = () => {
+          // If the image fails to load, advance anyway so the carousel doesn't get permanently stuck
+          if (active) {
+            setDestinationIndex(nextIndex);
+          }
+        };
+
+        img.src = nextImgUrl;
+
+        // If the browser already has the image cached/loaded, advance immediately
+        if (img.complete) {
+          setDestinationIndex(nextIndex);
+          active = false;
+        }
+
+        return () => {
+          active = false;
+        };
+      }, 5500);
+    };
+
+    scheduleNextTransition();
+
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, [destinationIndex, prefersReducedMotion, heroOnScreen]);
 
   return (
     <section ref={heroRef} className="relative h-screen w-full overflow-hidden flex flex-col justify-between p-6 md:p-16 text-white select-none bg-[#111c16]">
