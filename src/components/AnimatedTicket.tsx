@@ -139,19 +139,20 @@ export interface AnimatedTicketProps {
 export function AnimatedTicket({ activeDestination, activeTicket, ticketVariants, prefersReducedMotion, isVisible = true }: AnimatedTicketProps) {
   return (
     <AnimatePresence mode="wait">
-      <motion.div
-        key={activeDestination}
-        variants={ticketVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        className="w-full h-full relative"
-      >
+      {isVisible && (
         <motion.div
-          animate={prefersReducedMotion || !isVisible ? {} : { y: [0, -9, 0], rotateZ: [0, 0.4, 0, -0.4, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-          className="w-full h-full"
+          key={activeDestination}
+          variants={ticketVariants}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="w-full h-full relative"
         >
+          <motion.div
+            animate={prefersReducedMotion ? {} : { y: [0, -9, 0], rotateZ: [0, 0.4, 0, -0.4, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+            className="w-full h-full"
+          >
           <svg className="absolute inset-0 w-full h-full text-[#fcfafb] lg:drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)]" viewBox="0 0 500 210" fill="currentColor">
             <path d="M 16,0 L 135,0 A 9,9 0 0,0 153,0 L 484,0 A 16,16 0 0,1 500,16 L 500,194 A 16,16 0 0,1 484,210 L 153,210 A 9,9 0 0,0 135,210 L 16,210 A 16,16 0 0,1 0,194 L 0,16 A 16,16 0 0,1 16,0 Z" />
           </svg>
@@ -214,6 +215,7 @@ export function AnimatedTicket({ activeDestination, activeTicket, ticketVariants
           </div>
         </motion.div>
       </motion.div>
+      )}
     </AnimatePresence>
   );
 }
