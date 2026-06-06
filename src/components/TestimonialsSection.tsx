@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
   if (testimonials.length === 0) return null;
 
   // We duplicate the list to ensure seamless looping in the marquee
-  const marqueeList = [...testimonials, ...testimonials, ...testimonials];
+  const marqueeList = [...testimonials, ...testimonials];
 
   return (
     <section
@@ -53,7 +53,6 @@ const TestimonialsSection = () => {
           className="flex gap-6 w-max hover:[animation-play-state:paused]"
           style={{
             animation: "marquee 45s linear infinite",
-            willChange: "transform",
           }}
         >
           {marqueeList.map((t, idx) => (

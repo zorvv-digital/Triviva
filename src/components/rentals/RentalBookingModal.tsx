@@ -26,21 +26,18 @@ const RentalBookingModal = ({ vehicle, isOpen, onClose }: RentalBookingModalProp
 
   const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!startDate || !pickup) {
-      toast.error("Please fill in Travel Date and Location.");
-      return;
+
+    const formattedDate = startDate ? format(startDate, "PPP") : "";
+    let message = `Hello *Triviva*, I would like to inquire about renting:\n\n*${vehicle.name}* (${vehicle.capacity})`;
+
+    if (startDate) {
+      message += `\n📅 *Travel Date:* _${formattedDate}_`;
+    }
+    if (pickup) {
+      message += `\n📍 *Route:* ${pickup}`;
     }
 
-    const formattedDate = format(startDate, "PPP");
-    const message = `
-    Hello *Triviva*, I would like to inquire about renting:
-    
-*${vehicle.name}* (${vehicle.capacity})
-
-📅 *Travel Date:* _${formattedDate}_
-📍 *Route:* ${pickup}
-
-Please let me know the availability and share a quote at the earliest. Thank you!`;
+    message += `\n\nPlease let me know the availability and share a quote at the earliest. Thank you!`;
 
     const rawPhone = data?.contact?.phone?.lines?.[0] || "";
     const cleanPhone = rawPhone.replace(/[^0-9]/g, "");
@@ -100,7 +97,7 @@ Please let me know the availability and share a quote at the earliest. Thank you
               <div className="space-y-6">
                 {/* Start Date */}
                 <div className="space-y-2 flex flex-col">
-                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Travel Date *</label>
+                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Travel Date</label>
                   <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
                     <PopoverTrigger asChild>
                       <Button
@@ -111,7 +108,7 @@ Please let me know the availability and share a quote at the earliest. Thank you
                         )}
                       >
                         <CalendarIcon className="mr-2 h-4 w-4 text-slate-400" />
-                        {startDate ? format(startDate, "PPP") : <span className="text-slate-400">Pick travel date</span>}
+                        {startDate ? format(startDate, "PPP") : <span className="text-slate-400">Pick travel date (optional)</span>}
                       </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0 z-[110]" align="start">
@@ -130,13 +127,12 @@ Please let me know the availability and share a quote at the earliest. Thank you
 
                 {/* Pickup Location */}
                 <div className="space-y-2">
-                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Pickup & Route Location *</label>
+                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Pickup & Route Location</label>
                   <input
                     type="text"
-                    required
                     value={pickup}
                     onChange={(e) => setPickup(e.target.value)}
-                    placeholder="e.g. Bangalore to Mysore Palace"
+                    placeholder="e.g. Bangalore to Mysore Palace (optional)"
                     className="w-full bg-slate-50 border border-slate-200/80 rounded-xl px-4 py-3 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm"
                   />
                 </div>
