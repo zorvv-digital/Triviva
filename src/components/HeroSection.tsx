@@ -216,9 +216,9 @@ const HeroSection = () => {
             key={activeDestination}
             src={DESTINATION_IMAGES[activeDestination] || images.hero}
             alt={`${activeDestination} background`}
-            initial={{ opacity: 0, scale: 1.08 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 1.12 }}
+            animate={{ opacity: 1, scale: 1.02 }}
+            exit={{ opacity: 0, scale: 1.0 }}
             transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1] }}
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
           />
