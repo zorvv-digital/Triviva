@@ -117,7 +117,7 @@ export default function ExitIntentModal() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
             onClick={handleClose}
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/60"
           />
 
           {/* Modal Card */}
@@ -125,12 +125,13 @@ export default function ExitIntentModal() {
             initial={{ scale: 0.9, y: 20, opacity: 0 }}
             animate={{ scale: 1, y: 0, opacity: 1 }}
             exit={{ scale: 0.9, y: 20, opacity: 0 }}
-            transition={{ type: "spring", duration: 0.5, bounce: 0.12 }}
+            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            style={{ willChange: "transform, opacity" }}
             className="relative w-full max-w-sm sm:max-w-md md:max-w-lg overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] bg-white p-6 sm:p-8 text-slate-900 border border-black/[0.05] shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-10"
           >
-            {/* Ambient Glows */}
-            <div className="absolute -top-12 -right-12 w-48 h-48 bg-[#ea580c]/5 rounded-full blur-[60px] pointer-events-none" />
-            <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-blue-500/5 rounded-full blur-[60px] pointer-events-none" />
+            {/* Ambient Glows (Using radial gradients instead of heavy CSS blur filters) */}
+            <div className="absolute -top-12 -right-12 w-48 h-48 bg-[radial-gradient(circle,rgba(234,88,12,0.08)_0%,transparent_70%)] pointer-events-none" />
+            <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-[radial-gradient(circle,rgba(59,130,246,0.08)_0%,transparent_70%)] pointer-events-none" />
 
             {/* Close Button */}
             <button
@@ -161,6 +162,7 @@ export default function ExitIntentModal() {
                     to={dest.id ? `/packages/${dest.id}` : "/packages"}
                     onClick={handleClose}
                     className={`absolute w-[105px] sm:w-[145px] h-[140px] sm:h-[190px] rounded-xl sm:rounded-2xl overflow-hidden border border-black/[0.04] transition-all duration-300 cursor-pointer shadow-md ${cardStyle}`}
+                    style={{ willChange: "transform" }}
                   >
                     <img
                       src={dest.image}
@@ -170,7 +172,7 @@ export default function ExitIntentModal() {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/15 to-transparent" />
                     
                     {/* Location badge */}
-                    <div className="absolute top-2 left-2 sm:top-2.5 sm:left-2.5 rounded-full bg-slate-900/40 backdrop-blur-sm px-1.5 py-0.5 sm:px-2 border border-white/10">
+                    <div className="absolute top-2 left-2 sm:top-2.5 sm:left-2.5 rounded-full bg-slate-950/75 px-1.5 py-0.5 sm:px-2 border border-white/10">
                       <p className="text-[5.5px] sm:text-[6.5px] font-bold uppercase tracking-wider text-white">
                         {dest.name.split(",")[1]?.trim() || dest.name}
                       </p>
