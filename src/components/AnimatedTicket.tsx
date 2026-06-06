@@ -1,10 +1,22 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Plane } from "lucide-react";
+import heroBg from "@/assets/hero.webp";
 
 export const TICKET_DATA = {
+  "WITH TRIVIVA": {
+    fromCity: "KANNUR",
+    fromCode: "CNN",
+    toCity: "ANYWHERE",
+    toCode: "AYW",
+    date: "ANY DATE",
+    time: "ANYTIME",
+    passenger: "KAUSHAL SHIVADAS",
+    message: "EXPLORE ANYWHERE ON EARTH WITH TRIVIVA!",
+    image: heroBg,
+  },
   HIMACHAL: {
-    fromCity: "DELHI",
-    fromCode: "DEL",
+    fromCity: "BANGALORE",
+    fromCode: "BLR",
     toCity: "SHIMLA, INDIA",
     toCode: "SLV",
     date: "12 OCT 2026",
@@ -14,8 +26,8 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/himachal-package/01_Himachal.webp",
   },
   KASHMIR: {
-    fromCity: "DELHI",
-    fromCode: "DEL",
+    fromCity: "KOCHI",
+    fromCode: "COK",
     toCity: "SRINAGAR, KASHMIR",
     toCode: "SXR",
     date: "18 DEC 2026",
@@ -25,8 +37,8 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/kashmir-escape/01-Kashmir.webp",
   },
   DUBAI: {
-    fromCity: "MUMBAI",
-    fromCode: "BOM",
+    fromCity: "KOZHIKODE",
+    fromCode: "CCJ",
     toCity: "DUBAI, UAE",
     toCode: "DXB",
     date: "15 NOV 2026",
@@ -36,10 +48,10 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
   },
   VIETNAM: {
-    fromCity: "HANOI",
-    fromCode: "HAN",
-    toCity: "DA NANG, VIETNAM",
-    toCode: "DAD",
+    fromCity: "BANGALORE",
+    fromCode: "BLR",
+    toCity: "HANOI, VIETNAM",
+    toCode: "HAN",
     date: "22 SEP 2026",
     time: "1:10 PM",
     passenger: "NGUYEN MINH",
@@ -47,10 +59,10 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/vietnam-discover/01-Vietnam.webp",
   },
   THAILAND: {
-    fromCity: "BANGKOK",
-    fromCode: "BKK",
-    toCity: "PHUKET, THAILAND",
-    toCode: "HKT",
+    fromCity: "KOZHIKODE",
+    fromCode: "CCJ",
+    toCity: "BANGKOK, THAILAND",
+    toCode: "BKK",
     date: "16 APR 2026",
     time: "11:20 AM",
     passenger: "SOMCHAI DEE",
@@ -58,8 +70,8 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/thailand-explorer/01-Thailand.webp",
   },
   MALDIVES: {
-    fromCity: "COLOMBO",
-    fromCode: "CMB",
+    fromCity: "KOCHI",
+    fromCode: "COK",
     toCity: "MALE, MALDIVES",
     toCode: "MLE",
     date: "23 JAN 2026",
@@ -69,8 +81,8 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/maldives-luxury/01-Maldives.webp",
   },
   BALI: {
-    fromCity: "MUMBAI",
-    fromCode: "BOM",
+    fromCity: "BANGALORE",
+    fromCode: "BLR",
     toCity: "BALI, INDONESIA",
     toCode: "DPS",
     date: "27 JUL 2026",
@@ -91,8 +103,8 @@ export const TICKET_DATA = {
     image: "/data/packages/packages_image/kerala-backwaters/01-Kerala.webp",
   },
   GOA: {
-    fromCity: "MUMBAI",
-    fromCode: "BOM",
+    fromCity: "KOCHI",
+    fromCode: "COK",
     toCity: "GOA, INDIA",
     toCode: "GOI",
     date: "03 OCT 2026",
@@ -121,9 +133,10 @@ export interface AnimatedTicketProps {
   activeTicket: (typeof TICKET_DATA)[keyof typeof TICKET_DATA];
   ticketVariants: any;
   prefersReducedMotion: boolean | null;
+  isVisible?: boolean;
 }
 
-export function AnimatedTicket({ activeDestination, activeTicket, ticketVariants, prefersReducedMotion }: AnimatedTicketProps) {
+export function AnimatedTicket({ activeDestination, activeTicket, ticketVariants, prefersReducedMotion, isVisible = true }: AnimatedTicketProps) {
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -135,7 +148,7 @@ export function AnimatedTicket({ activeDestination, activeTicket, ticketVariants
         className="w-full h-full relative"
       >
         <motion.div
-          animate={prefersReducedMotion ? {} : { y: [0, -9, 0], rotateZ: [0, 0.4, 0, -0.4, 0] }}
+          animate={prefersReducedMotion || !isVisible ? {} : { y: [0, -9, 0], rotateZ: [0, 0.4, 0, -0.4, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
           className="w-full h-full"
         >

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   ArrowLeft, Star, Clock, MapPin, Check, Plane, Hotel, 
@@ -54,11 +54,21 @@ const includedIcons = [Plane, Hotel, Utensils, Camera, Check];
 
 const PackageDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [details, setDetails] = useState<TravelPackageDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const { getPackageOffer, getDiscountedPrice } = useOfferInfo();
+
+  const handleBack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (window.history.length > 1) {
+      navigate(-1);
+    } else {
+      navigate("/packages");
+    }
+  };
 
   const pkgOffer = details ? getPackageOffer(details.id) : null;
   const discountedPrice = details ? getDiscountedPrice(details.id, details.price) : null;
@@ -167,9 +177,9 @@ const PackageDetail = () => {
           background: "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.3) 40%, transparent 60%)"
         }} />
         <div className="absolute bottom-0 left-0 right-0 section-padding pb-12">
-          <Link to="/packages" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-[1.02] active:scale-[0.98] mb-6">
+          <button onClick={handleBack} className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/20 hover:scale-[1.02] active:scale-[0.98] mb-6 cursor-pointer">
             <ArrowLeft className="w-4 h-4" /> Back to Packages
-          </Link>
+          </button>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

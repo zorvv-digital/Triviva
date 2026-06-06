@@ -50,18 +50,6 @@ const PackageCard = memo(({ pkg, badge, hideBookNow }: PackageCardProps) => {
             <span>{pkg.rating}</span>
           </div>
 
-          {/* Carousel Dots */}
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
-            {[0, 1, 2, 3, 4].map((dot) => (
-              <span
-                key={dot}
-                className={cn(
-                  "w-1.5 h-1.5 rounded-full transition-all duration-300",
-                  dot === 0 ? "bg-white w-3.5" : "bg-white/50"
-                )}
-              />
-            ))}
-          </div>
         </div>
 
         {/* Content area */}

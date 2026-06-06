@@ -19,7 +19,7 @@ interface PackageBookingModalProps {
 
 const PackageBookingModal = ({ pkg, isOpen, onClose, price }: PackageBookingModalProps) => {
   const [startDate, setStartDate] = useState<Date>();
-  const [guests, setGuests] = useState("2");
+  const [guests, setGuests] = useState("");
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const { data } = useContactInfo();
 
@@ -27,20 +27,19 @@ const PackageBookingModal = ({ pkg, isOpen, onClose, price }: PackageBookingModa
 
   const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!startDate) {
-      toast.error("Please fill in Travel Date.");
-      return;
-    }
 
-    const formattedDate = format(startDate, "PPP");
-    const message = `
-    Hello *Triviva*, I would like to inquire about booking the package:
+    const formattedDate = startDate ? format(startDate, "PPP") : "";
     
-*${pkg.title}* (${pkg.location})
-📅 *Travel Date:* _${formattedDate}_
-👥 *Number of Guests:* ${guests} person(s)
-
-Please let me know the availability and share details at the earliest. Thank you!`;
+    let message = `Hello *Triviva*, I would like to inquire about booking the package:\n\n*${pkg.title}* (${pkg.location})`;
+    
+    if (startDate) {
+      message += `\n📅 *Travel Date:* _${formattedDate}_`;
+    }
+    if (guests) {
+      message += `\n👥 *Number of Guests:* ${guests} person(s)`;
+    }
+    
+    message += `\n\nPlease let me know the availability and share details at the earliest. Thank you!`;
 
     const rawPhone = data?.contact?.phone?.lines?.[0] || "";
     const cleanPhone = rawPhone.replace(/[^0-9]/g, "");
@@ -100,7 +99,7 @@ Please let me know the availability and share details at the earliest. Thank you
               <div className="space-y-6">
                 {/* Start Date */}
                 <div className="space-y-2 flex flex-col">
-                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Preferred Travel Date *</label>
+                   <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Preferred Travel Date</label>
                   <Popover open={isCalendarOpen} onOpenChange={setIsCalendarOpen}>
                     <PopoverTrigger asChild>
                       <Button
@@ -111,7 +110,7 @@ Please let me know the availability and share details at the earliest. Thank you
                         )}
                       >
                         <CalendarIcon className="mr-2 h-4 w-4 text-slate-400" />
-                        {startDate ? format(startDate, "PPP") : <span className="text-slate-400">Pick travel date</span>}
+                        {startDate ? format(startDate, "PPP") : <span className="text-slate-400">Pick travel date (optional)</span>}
                       </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0 z-[110]" align="start">
@@ -130,19 +129,18 @@ Please let me know the availability and share details at the earliest. Thank you
 
                 {/* Number of Guests */}
                 <div className="space-y-2">
-                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Number of Persons *</label>
+                  <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block">Number of Persons</label>
                   <div className="relative">
                     <span className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                       <Users className="w-4 h-4 text-slate-400" />
                     </span>
                     <input
                       type="number"
-                      required
                       min="1"
                       max="100"
                       value={guests}
                       onChange={(e) => setGuests(e.target.value)}
-                      placeholder="Number of persons"
+                      placeholder="Number of persons (optional)"
                       className="w-full bg-slate-50 border border-slate-200/80 rounded-xl pl-11 pr-4 py-3 text-slate-900 font-body text-sm outline-none focus:bg-white focus:border-primary/50 focus:ring-4 focus:ring-primary/10 transition-all duration-300 shadow-sm"
                     />
                   </div>

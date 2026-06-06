@@ -10,6 +10,7 @@ export interface Vehicle {
   amenities: string[];
   rating: number;
   priority: number;
+  price?: number;
 }
 
 interface VehicleCardProps {
@@ -33,10 +34,6 @@ const VehicleCard = ({ vehicle, onRentClick }: VehicleCardProps) => {
           <span className="bg-white text-slate-900 border border-slate-100 shadow-[0_2px_6px_rgba(0,0,0,0.08)] text-[9px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
             {vehicle.type === "coach" ? "Luxury Coach" : "Executive Traveller"}
           </span>
-          <span className="bg-black/45 backdrop-blur-md text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
-            <Users className="w-2.5 h-2.5" />
-            {vehicle.capacity}
-          </span>
         </div>
 
         {/* Rating overlay */}
@@ -54,9 +51,7 @@ const VehicleCard = ({ vehicle, onRentClick }: VehicleCardProps) => {
           </h3>
         </div>
 
-        <p className="text-slate-500 font-body text-xs md:text-sm line-clamp-3 leading-relaxed mb-4">
-          {vehicle.description}
-        </p>
+
 
         {/* Amenities List */}
         <div className="mb-5 mt-auto">
@@ -80,10 +75,12 @@ const VehicleCard = ({ vehicle, onRentClick }: VehicleCardProps) => {
         </div>
 
         <div className="flex items-center justify-between pt-4 border-t border-slate-100 mt-auto">
-          <span className="text-xs text-slate-400 font-semibold tracking-wider uppercase flex items-center gap-1">
-            <Bus className="w-4 h-4 text-primary" />
-            Charter Fleet
-          </span>
+          <div className="flex flex-col">
+            <span className="text-[9px] font-bold uppercase tracking-wider text-slate-400">Capacity</span>
+            <span className="text-base font-black text-slate-900 leading-none mt-0.5">
+              {vehicle.capacity}
+            </span>
+          </div>
 
           <button
             onClick={() => onRentClick(vehicle)}

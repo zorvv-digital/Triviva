@@ -8,7 +8,10 @@ let exitIntentShown = false;
 
 export default function ExitIntentModal() {
   const [isOpen, setIsOpen] = useState(false);
-  const { offer, getDiscountedPrice } = useOfferInfo();
+  const { offers, offer, getDiscountedPrice } = useOfferInfo();
+  const highestDiscount = offers.length > 0
+    ? Math.max(...offers.map((o) => o.discountPercentage || 0))
+    : 0;
   const [copied, setCopied] = useState(false);
   const location = useLocation();
   const homeEntryTimeRef = useRef<number | null>(null);
@@ -111,19 +114,19 @@ export default function ExitIntentModal() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.15, ease: "easeIn" } }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
             onClick={handleClose}
-            className="absolute inset-0 bg-[#111827]/30 backdrop-blur-[1.5px]"
+            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
           />
 
           {/* Modal Card */}
           <motion.div
-            initial={{ scale: 0.94, y: 10, opacity: 0 }}
+            initial={{ scale: 0.9, y: 20, opacity: 0 }}
             animate={{ scale: 1, y: 0, opacity: 1 }}
-            exit={{ scale: 0.97, y: 6, opacity: 0, transition: { duration: 0.15, ease: "easeIn" } }}
-            transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-sm sm:max-w-md md:max-w-lg overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] bg-white p-6 sm:p-8 text-slate-900 border border-black/[0.05] shadow-[0_20px_50px_rgba(0,0,0,0.1)] z-10"
+            exit={{ scale: 0.9, y: 20, opacity: 0 }}
+            transition={{ type: "spring", duration: 0.5, bounce: 0.12 }}
+            className="relative w-full max-w-sm sm:max-w-md md:max-w-lg overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] bg-white p-6 sm:p-8 text-slate-900 border border-black/[0.05] shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-10"
           >
             {/* Ambient Glows */}
             <div className="absolute -top-12 -right-12 w-48 h-48 bg-[#ea580c]/5 rounded-full blur-[60px] pointer-events-none" />
@@ -197,11 +200,11 @@ export default function ExitIntentModal() {
             {/* Content */}
             <div className="text-center">
               <h2 className="text-xl sm:text-2xl font-display font-bold mb-1.5 sm:mb-2 tracking-tight text-[#111827]">
-                {offer ? offer.title : "Explore Trending Destinations"}
+                {highestDiscount > 0 ? `Get Upto ${highestDiscount}% Off!` : "Explore Trending Destinations"}
               </h2>
               
               <p className="text-slate-500 font-body text-[11px] sm:text-xs leading-relaxed mb-4 sm:mb-6 max-w-xs mx-auto">
-                {offer ? offer.description : "Click on a featured destination above, or browse our curated packages catalog to customize your journey."}
+                {offer ? `Unlock a ${highestDiscount}% discount on selected international packages. Book within the next 24 hours to claim this special rates curation.` : "Click on a featured destination above, or browse our curated packages catalog to customize your journey."}
               </p>
 
 

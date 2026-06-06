@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowDown, Plane } from "lucide-react";
+import { ArrowDown, Plane, ArrowUpRight } from "lucide-react";
 import { images } from "@/lib/images";
 import { useOnScreen } from "@/hooks/useOnScreen";
 import { AnimatedTicket, TICKET_DATA } from "./AnimatedTicket";
 
 const DESTINATIONS = [
-  "HIMACHAL",
+  "WITH TRIVIVA",
   "VIETNAM",
+  "HIMACHAL",
   "DUBAI",
   "THAILAND",
   "MALDIVES",
@@ -91,6 +92,7 @@ function AnimatedDestinationWord({ word, prefersReducedMotion }: AnimatedDestina
 }
 
 const DESTINATION_IMAGES: Record<string, string> = {
+  "WITH TRIVIVA": images.hero,
   HIMACHAL: "/data/packages/packages_image/himachal-package/01_Himachal.webp",
   KASHMIR: "/data/packages/packages_image/kashmir-escape/01-Kashmir.webp",
   DUBAI: "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
@@ -213,6 +215,7 @@ const HeroSection = () => {
                 activeTicket={activeTicket}
                 ticketVariants={mobileTicketVariants}
                 prefersReducedMotion={prefersReducedMotion}
+                isVisible={heroOnScreen}
               />
             </div>
           </div>
@@ -223,7 +226,7 @@ const HeroSection = () => {
 
           <h1 className="font-sans font-extrabold relative z-10 text-[clamp(3.8rem,7vw,6.5rem)] lg:text-[clamp(3.8rem,6.8vw,6.5rem)] leading-[0.95] tracking-tight text-white max-w-4xl flex flex-col">
             <span className="block">EXPLORE</span>
-            <span className="mt-1 block min-h-[1.25em]">
+            <span className={`mt-1 block min-h-[1.25em] ${activeDestination === "WITH TRIVIVA" ? "text-[clamp(3.5rem,7vw,6.5rem)]" : ""}`}>
               <AnimatedDestinationWord
                 word={activeDestination}
                 prefersReducedMotion={Boolean(prefersReducedMotion)}
@@ -238,9 +241,9 @@ const HeroSection = () => {
           <div className="hero-enter-cta relative z-10 mt-6 sm:mt-8">
             <a
               href="/packages"
-              className="inline-flex items-center justify-center px-10 py-4 bg-primary hover:bg-primary/90 text-white rounded-full font-semibold text-sm transition-transform duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-primary hover:bg-primary/90 text-white rounded-full font-semibold text-sm transition-transform duration-300 hover:scale-105"
             >
-              View Packages
+              View Packages <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -253,6 +256,7 @@ const HeroSection = () => {
               activeTicket={activeTicket}
               ticketVariants={ticketVariants}
               prefersReducedMotion={prefersReducedMotion}
+              isVisible={heroOnScreen}
             />
           </div>
         </div>
@@ -260,7 +264,7 @@ const HeroSection = () => {
 
 
 
-      {/* Scroll Down Indicator */}
+      {/* Scroll Down Indicator
       <div className="relative z-20 w-full max-w-7xl mx-auto flex items-center justify-end mt-4 md:mt-6">
         <div className="flex items-center gap-3">
           <span className="hidden sm:inline text-xs font-medium tracking-wider text-white/80 select-none">
@@ -276,7 +280,7 @@ const HeroSection = () => {
             <ArrowDown className="w-5 h-5" />
           </button>
         </div>
-      </div>
+      </div> */}
 
     </section>
   );

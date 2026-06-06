@@ -4,8 +4,8 @@
     "isActive": true,
     "isPrimaryExitOffer": true,
     "title": "Exclusive Adventure Awaits!",
-    "subtitle": "Get 15% off on our best tours",
-    "description": "Unlock a 15% discount on selected international packages. Book within the next 24 hours to claim this special rates curation.",
+    "subtitle": "Get 25% off on our best tours",
+    "description": "Unlock a 25% discount on selected international packages. Book within the next 24 hours to claim this special rates curation.",
     "promoCode": "ADVENTURE15",
     "image": "/data/packages/packages_image/dubai-luxury/01-Dubai.webp",
     "ctaText": "View Offers",
@@ -32,5 +32,20 @@
       "kashmir-escape"
     ],
     "isPrimaryExitOffer": true
+  },
+  {
+    "id": "monsoon-magic",
+    "isActive": true,
+    "title": "Monsoon Magic Special!",
+    "subtitle": "Get 15% off on Tropical Escapes",
+    "description": "Unlock a 15% discount on select tropical and coastal getaways. Book within the next 24 hours.",
+    "promoCode": "MONSOON15",
+    "discountPercentage": 15,
+    "applicablePackages": [
+      "kerala-backwaters",
+      "goa-package",
+      "bali-bliss"
+    ],
+    "isPrimaryExitOffer": false
   }
 ]

@@ -200,13 +200,13 @@
   }
 
   .btn-outline-travel {
-    @apply inline-flex items-center justify-center gap-2.5 px-8 py-4 font-body font-bold text-sm rounded-full transition-all duration-500 border border-slate-200 bg-white text-slate-800 transform-gpu;
+    @apply inline-flex items-center justify-center gap-2.5 px-8 py-4 font-body font-bold text-sm rounded-full transition-all duration-500 border bg-white transform-gpu;
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
   }
 
   .btn-outline-travel:hover {
-    border-color: hsl(var(--primary) / 0.4);
     background: hsl(var(--primary) / 0.04);
-    color: hsl(var(--primary));
     transform: translateY(-2.5px) scale(1.02);
     box-shadow: 0 8px 20px -8px hsl(var(--primary) / 0.2);
   }
@@ -255,10 +255,7 @@
   background: hsl(var(--background));
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
+/* Smooth scroll is disabled globally to prevent animated scroll restoration on back navigation */
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
