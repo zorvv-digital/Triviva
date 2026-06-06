@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState, Component, ErrorInfo, ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Youtube, ArrowUpRight } from "lucide-react";
 import { useGalleryStatus } from "@/hooks/useGalleryStatus";
@@ -15,6 +15,36 @@ const sampleMarkers: GlobeMarker[] = [
   { lat: 25.2048, lng: 55.2708, src: "https://assets.aceternity.com/avatars/10.webp", label: "Dubai" },
   { lat: 1.3521, lng: 103.8198, src: "https://assets.aceternity.com/avatars/12.webp", label: "Singapore" }
 ];
+
+interface ErrorBoundaryProps {
+  children: ReactNode;
+  fallback?: ReactNode;
+}
+
+interface ErrorBoundaryState {
+  hasError: boolean;
+}
+
+class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  public state: ErrorBoundaryState = {
+    hasError: false
+  };
+
+  public static getDerivedStateFromError(_: Error): ErrorBoundaryState {
+    return { hasError: true };
+  }
+
+  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    console.error("ErrorBoundary caught WebGL/Globe error:", error, errorInfo);
+  }
+
+  public render() {
+    if (this.state.hasError) {
+      return this.props.fallback || null;
+    }
+    return this.props.children;
+  }
+}
 
 const Footer = () => {
   const { showGallery } = useGalleryStatus();
@@ -163,25 +193,27 @@ const Footer = () => {
 
       {isHome && isGlobeVisible && (
         <div className="absolute -right-32 -bottom-32 md:-right-[240px] md:-bottom-[240px] lg:-right-[340px] lg:-bottom-[340px] z-10 w-80 h-80 md:w-[600px] md:h-[600px] lg:w-[850px] lg:h-[850px] pointer-events-none select-none overflow-hidden flex items-center justify-center">
-          <Suspense fallback={null}>
-            <Globe3D
-              className="h-full w-full"
-              markers={[]}
-              config={{
-                atmosphereColor: "#f97316",
-                atmosphereIntensity: 1.6,
-                atmosphereBlur: 3.5,
-                bumpScale: 5,
-                autoRotateSpeed: 0.8,
-                enableZoom: false,
-                enablePan: false,
-                radius: 2.1,
-                showWireframe: false,
-                ambientIntensity: 1.5,
-                pointLightIntensity: 2.5
-              }}
-            />
-          </Suspense>
+          <ErrorBoundary fallback={null}>
+            <Suspense fallback={null}>
+              <Globe3D
+                className="h-full w-full"
+                markers={[]}
+                config={{
+                  atmosphereColor: "#f97316",
+                  atmosphereIntensity: 1.6,
+                  atmosphereBlur: 3.5,
+                  bumpScale: 5,
+                  autoRotateSpeed: 0.8,
+                  enableZoom: false,
+                  enablePan: false,
+                  radius: 2.1,
+                  showWireframe: false,
+                  ambientIntensity: 1.5,
+                  pointLightIntensity: 2.5
+                }}
+              />
+            </Suspense>
+          </ErrorBoundary>
         </div>
       )}
     </footer>

@@ -494,14 +494,14 @@ function Scene({ markers, config, onMarkerClick, onMarkerHover }: SceneProps) {
 }
 
 // ============================================================================
-// Frame Throttle — limits render calls to 30fps via demand-based loop
+// Frame Throttle — limits render calls to 15fps via demand-based loop
 // ============================================================================
 
 function FrameThrottle({ active }: { active: boolean }) {
   const { invalidate } = useThree();
   useEffect(() => {
     if (!active) return;
-    const id = setInterval(invalidate, 1000 / 30);
+    const id = setInterval(invalidate, 1000 / 15);
     return () => clearInterval(id);
   }, [invalidate, active]);
   return null;
