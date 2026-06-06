@@ -62,7 +62,7 @@
     "January",
     "February"
   ],
-  "showInHero": true,
+  "showInHero": false,
   "lat": 15.2993,
   "lng": 74.124
 }

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Youtube, ArrowUpRight } from "lucide-react";
 import { useGalleryStatus } from "@/hooks/useGalleryStatus";
@@ -21,6 +21,29 @@ const Footer = () => {
   const { data } = useContactInfo();
   const location = useLocation();
   const isHome = location.pathname === "/";
+  
+  const footerRef = useRef<HTMLElement>(null);
+  const [isGlobeVisible, setIsGlobeVisible] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsGlobeVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "250px" }
+    );
+
+    if (footerRef.current) {
+      observer.observe(footerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isHome]);
 
   const footerLinks = [
     { l: "Packages", p: "/packages" },
@@ -61,7 +84,7 @@ const Footer = () => {
   const agencyPhone = data?.contact?.phone?.lines?.[0] || "";
 
   return (
-    <footer className="relative bg-[#fcfaf8] pt-24 overflow-hidden rounded-t-[3rem] mt-12 border-t border-black/[0.05]">
+    <footer ref={footerRef} className="relative bg-[#fcfaf8] pt-24 overflow-hidden rounded-t-[3rem] mt-12 border-t border-black/[0.05]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-12">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -138,8 +161,7 @@ const Footer = () => {
         </h1>
       </div>
 
-      {/* Transparent 3D Globe - bottom right corner overlay (midpoint reveal) - only rendered on Homepage to prevent memory/CPU overhead on navigation */}
-      {isHome && (
+      {isHome && isGlobeVisible && (
         <div className="absolute -right-32 -bottom-32 md:-right-[240px] md:-bottom-[240px] lg:-right-[340px] lg:-bottom-[340px] z-10 w-80 h-80 md:w-[600px] md:h-[600px] lg:w-[850px] lg:h-[850px] pointer-events-none select-none overflow-hidden flex items-center justify-center">
           <Suspense fallback={null}>
             <Globe3D
