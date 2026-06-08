@@ -6,17 +6,17 @@
     { "icon": "Heart", "num": "98%", "label": "Satisfaction Rate" }
   ],
   "values": [
-    { 
-      "title": "Curated Stays", 
-      "desc": "Every accommodation is handpicked for its location, design, and local charm. We do not support mass market hotel chains." 
+    {
+      "title": "Personal Itineraries",
+      "desc": "Every journey is designed from scratch around you — your pace, your interests, your story. No templated packages, ever."
     },
-    { 
-      "title": "Custom Routes", 
-      "desc": "We design itineraries from scratch tailored to your interests and pacing. No two trips we build are ever the same." 
+    {
+      "title": "Authentic Connections",
+      "desc": "We take you beyond the tourist trail — to local kitchens, hidden villages, and conversations that stay with you long after you're home."
     },
-    { 
-      "title": "On Ground Care", 
-      "desc": "Our local coordinators are available throughout your journey to manage detours, changes, and requests in real time." 
+    {
+      "title": "Care That Travels With You",
+      "desc": "From the first inquiry to the final mile home, our team is with you — handling every detail so you can simply be present."
     }
   ],
   "team": [

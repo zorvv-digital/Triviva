@@ -36,30 +36,21 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative z-10">
-              <motion.span
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="section-label mb-4 block"
-              >
-                Our Story
-              </motion.span>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] text-foreground mb-6"
               >
-                We Believe Travel
-                <br />
-                <span className="text-gradient">Changes Lives</span>
+                About <span className="text-gradient">Us</span>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-muted-foreground font-body text-lg leading-relaxed mb-8 max-w-lg"
+                className="text-muted-foreground font-display text-lg md:text-xl leading-relaxed mb-8 max-w-xl"
               >
-                In 2016, we started as a small group of friends mapping out raw, unexplored paths under the name Triviva. We wanted to escape the commercial tourist buses and build something honest. Today, as Triviva Holidays, that same restless curiosity drives us. We do not just sell itineraries, we live them. We spend months exploring back alleys, sharing meals with local families, and vetting stays to design travel that feels deeply personal, relaxed, and true to the place.
+                Founded in 2016, our travel agency was born from our father's vision and deep love for travel. A man full of innovative ideas, passion, and an endless curiosity about the world, he built this venture with dedication, determination, and heart. What began as his dream has now become our responsibility and privilege to continue.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -75,7 +66,7 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="relative"
+              className="relative max-w-md mx-auto md:mx-0"
             >
               <div className="img-curved-lg aspect-[4/5] md:aspect-[3/4] overflow-hidden shadow-[0_3px_8px_rgba(0,0,0,0.03)] border border-slate-100 relative">
                 <div className="absolute inset-0 bg-black/10 z-10" />
@@ -84,6 +75,53 @@ const About = () => {
 
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Legacy */}
+      <section className="py-20 md:py-28 section-padding border-t border-black/[0.03]">
+        <div className="max-w-6xl mx-auto space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
+            className="max-w-xl mr-auto text-left"
+          >
+            <span className="section-label mb-3 block">Carrying It Forward</span>
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-[#111827] mb-4 leading-snug">
+              Responsibility &amp; Privilege
+            </h3>
+            <p className="text-[#6b7280] font-body text-base md:text-lg leading-relaxed">
+              Today, we proudly carry his legacy forward, staying true to the values and passion that inspired the foundation of this company while helping travelers create unforgettable experiences across the globe.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="max-w-xl ml-auto text-right"
+          >
+            <span className="section-label mb-3 block">Our Promise</span>
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-[#111827] mb-4 leading-snug">
+              A Tribute to His Spirit
+            </h3>
+            <p className="text-[#6b7280] font-body text-base md:text-lg leading-relaxed">
+              More than a travel agency, this business is a tribute to his spirit, our family's shared passion for exploration, and the belief that every journey has a story worth telling. Whether it's a long-awaited vacation, a business trip, or a once-in-a-lifetime adventure, we are committed to making every travel experience seamless, memorable, and meaningful.
+            </p>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-display text-xl md:text-2xl font-bold text-[#111827] leading-snug border-l-2 border-primary/30 pl-6 max-w-xl mx-auto text-center"
+          >
+            Since 2016, we have been turning travel dreams into cherished memories — one journey at a time.
+          </motion.p>
         </div>
       </section>
 

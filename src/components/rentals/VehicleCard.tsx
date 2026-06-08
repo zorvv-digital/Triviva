@@ -1,4 +1,4 @@
-import { Bus, Users, Star, Check } from "lucide-react";
+import { Bus, Users, Check } from "lucide-react";
 
 export interface Vehicle {
   id: string;
@@ -8,7 +8,6 @@ export interface Vehicle {
   image: string;
   description: string;
   amenities: string[];
-  rating: number;
   priority: number;
   price?: number;
 }
@@ -34,12 +33,6 @@ const VehicleCard = ({ vehicle, onRentClick }: VehicleCardProps) => {
           <span className="bg-white text-slate-900 border border-slate-100 shadow-[0_2px_6px_rgba(0,0,0,0.08)] text-[9px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
             {vehicle.type === "coach" ? "Luxury Coach" : "Executive Traveller"}
           </span>
-        </div>
-
-        {/* Rating overlay */}
-        <div className="absolute top-3 right-3 flex items-center gap-1 text-white text-xs font-bold bg-black/45 backdrop-blur-md px-2.5 py-1 rounded-full">
-          <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-          <span>{vehicle.rating}</span>
         </div>
       </div>
 

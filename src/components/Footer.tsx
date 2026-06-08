@@ -185,14 +185,14 @@ const Footer = () => {
       </div>
 
       {/* Massive Typographic Brand Name */}
-      <div className="w-full overflow-hidden flex justify-center translate-y-6 md:translate-y-12">
-        <h1 className="text-[22vw] leading-[0.75] font-display font-black text-[#111827] tracking-wider uppercase select-none">
+      <div className={`w-full overflow-hidden flex ${isHome ? "justify-start pl-2 md:pl-3 lg:pl-4" : "justify-center"} translate-y-6 md:translate-y-12`}>
+        <h1 className="text-[19vw] leading-[0.75] font-display font-black text-[#111827] tracking-wider uppercase select-none">
           {agencyName}
         </h1>
       </div>
 
       {isHome && isGlobeVisible && (
-        <div className="absolute -right-32 -bottom-32 md:-right-[240px] md:-bottom-[240px] lg:-right-[340px] lg:-bottom-[340px] z-10 w-80 h-80 md:w-[600px] md:h-[600px] lg:w-[850px] lg:h-[850px] pointer-events-none select-none overflow-hidden flex items-center justify-center">
+        <div className="absolute -right-32 -bottom-32 md:-right-[240px] md:-bottom-[240px] lg:-right-[420px] lg:-bottom-[420px] z-10 w-80 h-80 md:w-[600px] md:h-[600px] lg:w-[850px] lg:h-[850px] pointer-events-none select-none overflow-hidden flex items-center justify-center">
           <ErrorBoundary fallback={null}>
             <Suspense fallback={null}>
               <Globe3D
