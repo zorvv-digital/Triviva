@@ -1,0 +1,58 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Kodaikanal, Hogenakkal & Mysore: Lakes, Falls & Palaces",
+  "location": "Kodaikanal, Hogenakkal & Mysore, India",
+  "duration": "4 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.82,
+  "description": "A beautiful tour linking Kodaikanal's hill-station charm, the raw power of Hogenakkal Falls, royal palace heritage in Mysore, and the theme park rides of Wonderla. A complete family holiday package.",
+  "highlights": [
+    "Enjoy boating on Kodaikanal Lake and tour Coaker's Walk",
+    "Experience a coracle boat ride at Hogenakkal Falls",
+    "Tour the illuminated Mysore Palace and Chamundi Hills",
+    "Enjoy a full day of thrilling rides at Wonderla Amusement Park"
+  ],
+  "image": "/data/packages/packages_image/kodaikanal-hogenekkel-wonderla-mysore/01_kodaikanal2.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature",
+    "Historical"
+  ],
+  "priority": 15,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 10.2381,
+  "lng": 77.4892
+}

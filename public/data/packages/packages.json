@@ -1,5 +1,40 @@
 [
   {
+    "id": "athirapally-vazhachal-kochi-thenmala",
+    "title": "Athirapally, Kochi & Thenmala Tour",
+    "location": "Kerala, India",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.72,
+    "image": "/data/packages/packages_image/athirapally-vazhachal-kochi-thenmala/01_Athirapally.webp",
+    "description": "Embark on a natural and heritage tour across Kerala. Witness the spectacular Athirapally and Vazhachal waterfalls, explore the history and backwaters of Fort Kochi and Mattancherry, and experience eco-tourism, wildlife, and laser shows in Thenmala.",
+    "highlights": [
+      "Witness the breathtaking Athirapally and Vazhachal waterfalls",
+      "Tour the historic sites of Mattancherry and Fort Kochi",
+      "Enjoy a relaxing 3-hour backwater boating tour",
+      "Explore Thenmala Dam, Deer Park, and Palaruvi and Kuttikalam Waterfalls",
+      "Watch the spectacular Laser Show at Thenmala",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Nature",
+      "Cultural"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "bali-bliss",
     "title": "Bali: Bliss & Island Magic",
     "location": "Bali, Indonesia",
@@ -35,6 +70,141 @@
     "showInHero": true
   },
   {
+    "id": "banglore-hyderabad-mysore-coorg",
+    "title": "Bangalore, Hyderabad & Coorg: Heritage Cities & Coffee Estates",
+    "location": "Bangalore, Hyderabad & Coorg, India",
+    "duration": "5 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.86,
+    "image": "/data/packages/packages_image/banglore-hyderabad-mysore-coorg/01_coorg.webp",
+    "description": "A premium tour combining Bangalore's urban parks, Hyderabad's rich Nizami heritage (Charminar, Golconda Fort), the royal grandeur of Mysore Palace, and the peaceful, misty coffee estates of Coorg.",
+    "highlights": [
+      "Tour Hyderabad's historic Charminar and Golconda Fort",
+      "Explore Coorg's Dubare Elephant Camp and Abbey Falls",
+      "Visit Mysore Palace and Bangalore's Lalbagh Botanical Gardens"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "City Tour",
+      "Historical",
+      "Mountain"
+    ],
+    "priority": 12,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "chikmagalur-mysore-coorg",
+    "title": "Chikmagalur, Mysore & Coorg Tour",
+    "location": "Karnataka, India",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.8,
+    "image": "/data/packages/packages_image/chikmagalur-mysore-coorg/01_MysorePalace.webp",
+    "description": "Experience Karnataka's finest heritage and hill stations. Trek through the mist-covered coffee hills of Chikmagalur, admire the historic palaces of Mysore, and explore the waterfalls, elephant camps, and monasteries of Coorg.",
+    "highlights": [
+      "Enjoy a full-day trekking (trucking) expedition in Chikmagalur",
+      "Tour the magnificent Mysore Palace and Chamundi Hills",
+      "Enjoy the colorful lights and water show at Brindavan Gardens",
+      "Interact with elephants at Dubare Elephant Camp in Coorg",
+      "Walk through Nisargadhama island and visit the Tibetan Golden Temple",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Historical",
+      "Adventure Tour"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "coorg-hyderabad-hogenekkal",
+    "title": "Coorg, Hyderabad & Hogenakkal: Hills, Heritage & Waterfalls",
+    "location": "Coorg, Hyderabad & Hogenakkal, India",
+    "duration": "6 Days / 7 Nights",
+    "price": 25000,
+    "rating": 4.84,
+    "image": "/data/packages/packages_image/coorg-hyderabad-hogenekkal/01_coorg.webp",
+    "description": "Experience the cool mist of Coorg's coffee valleys, the royal Nizami charm and film city attractions of Hyderabad, and the roaring, Kaveri river cascades of Hogenakkal waterfalls. A complete tour of Central and Southern India.",
+    "highlights": [
+      "Spend a full day exploring the grand sets of Ramoji Film City",
+      "Explore Coorg's Abbey Falls, Golden Temple, and Raja's Seat",
+      "Experience a traditional coracle ride at Hogenakkal Falls",
+      "Tour the historic Charminar and Golconda Fort in Hyderabad"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Historical",
+      "Nature"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "coorg-mysore-wonderla",
+    "title": "Coorg & Mysore: Hills, Heritage & Thrills",
+    "location": "Coorg, Mysore & Kochi, India",
+    "duration": "3 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.85,
+    "image": "/data/packages/packages_image/coorg-mysore-wonderla/01_coorg.webp",
+    "description": "A fantastic 3-day journey from the misty coffee plantations of Coorg to the historic palaces of Mysore and the thrilling adventure rides of Wonderla. Visit elephant camps, Buddhist monasteries, royal palaces, and experience high-speed waterslides.",
+    "highlights": [
+      "Walk through the fragrant coffee estates and waterfalls of Coorg",
+      "Visit the Namdroling Monastery (Golden Temple) in Bylakuppe",
+      "Tour the historic Mysore Palace and Brindavan Gardens",
+      "Enjoy a full day of entertainment at Wonderla Amusement Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Historical",
+      "Adventure Tour"
+    ],
+    "priority": 22,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "dubai-luxury",
     "title": "Dubai: Luxury & Desert Safari",
     "location": "Dubai, UAE",
@@ -68,13 +238,46 @@
     "showInHero": true
   },
   {
+    "id": "goa-dandeli-shimoga-chikmanglore",
+    "title": "Goa, Dandeli & Chikmagalur: Beaches, Rafting & Coffee Hills",
+    "location": "Goa, Dandeli & Chikmagalur, India",
+    "duration": "5 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.85,
+    "image": "/data/packages/packages_image/goa-dandeli-shimoga-chikmanglore/01_chikmangalur.webp",
+    "description": "Embark on an adventure of a lifetime. Relax on Goa's beaches, go white-water rafting and jungle safari in Dandeli, visit the heritage sites of Shimoga, and trek through the lush coffee estates of Chikmagalur.",
+    "highlights": [
+      "Enjoy water sports and nightlife on Goa's sun-kissed beaches",
+      "Go white-water rafting and crocodile spotting in Dandeli",
+      "Trek Mullayanagiri Peak and walk coffee plantations in Chikmagalur"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Adventure Tour",
+      "Nature",
+      "Mountain"
+    ],
+    "priority": 12,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "goa-package",
     "title": "Goa: Beach & Heritage Getaway",
     "location": "Goa, India",
     "duration": "4 Days / 3 Nights",
     "price": 25000,
     "rating": 4.65,
-    "image": "/data/packages/packages_image/goa-package/01-Goa.webp",
+    "image": "/data/packages/packages_image/goa-package/01_goa.webp",
     "description": "Experience the perfect harmony of vibrant coastal energy and historical grandeur in India's ultimate beach destination. Relax under the sun on the golden sands of Baga and Calangute, explore the majestic Portuguese architecture and historic cathedrals of Old Goa, and dive into thrilling water sports at Anjuna Beach. Conclude your day with a scenic cruise along the Mandovi River as you savor Goa's unique fusion of Indian and European cultures.",
     "highlights": [
       "Unwind on the bustling golden sands of Baga and Calangute beaches",
@@ -133,6 +336,38 @@
     "showInHero": true
   },
   {
+    "id": "hampi-goa-mysore-wonderla",
+    "title": "Hampi, Goa & Mysore: Ruins, Beaches & Palaces",
+    "location": "Hampi, Goa & Mysore, India",
+    "duration": "6 Days / 7 Nights",
+    "price": 25000,
+    "rating": 4.9,
+    "image": "/data/packages/packages_image/hampi-goa-mysore-wonderla/01_goa.webp",
+    "description": "A grand 6-day holiday blending the ancient stone temples of Hampi, the tropical beaches and river cruises of Goa, the royal palaces of Mysore, and a day of amusement park fun at Wonderla.",
+    "highlights": [
+      "Tour the ancient Vijayanagara ruins and temples in Hampi",
+      "Enjoy a Mandovi River sunset cruise and beach sports in Goa",
+      "Explore the illuminated Mysore Palace and Chamundi Hills",
+      "Enjoy high-thrill rides and adventure at Wonderla Amusement Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical",
+      "Beach",
+      "Cultural"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "himachal-package",
     "title": "Himachal: Scenic Alpine Escapes",
     "location": "Himachal Pradesh, India",
@@ -166,6 +401,140 @@
       "November"
     ],
     "showInHero": true
+  },
+  {
+    "id": "hogenakkal-yercaud-kodaikanal",
+    "title": "Hogenakkal, Yercaud & Kodaikanal Hills",
+    "location": "Tamil Nadu, India",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.7,
+    "image": "/data/packages/packages_image/hogenakkal-yercaud-kodaikanal/01_hogenakkal.webp",
+    "description": "A refreshing trip through Tamil Nadu's finest nature and hill stations. Enjoy boating at the roaring Hogenakkal falls, visit the orchards and parks of Yercaud, and explore the lakes, views, and pine forests of Kodaikanal.",
+    "highlights": [
+      "Enjoy a traditional boating experience at Hogenakkal Falls",
+      "Visit Yercaud's Orange Farm, Deer Park, and Fish Park",
+      "Take in panoramic vistas from Yercaud's key View Points",
+      "Explore Kodaikanal Lake, the Pillar Rocks, and Suicide Point",
+      "Relax with a cozy evening Campfire",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "holy-land",
+    "title": "Holy Land: Historical & Spiritual Pilgrimage",
+    "location": "Jordan, Israel & Egypt",
+    "duration": "9 Days / 8 Nights",
+    "price": 25000,
+    "rating": 4.9,
+    "image": "/data/packages/packages_image/holy-land/01_HolyLand.webp",
+    "description": "Embark on a profound journey through Jordan, Israel, and Egypt. Visit holy sites including Mount Nebo, Nazareth, Cana, Mount of Beatitude, Capernaum, the Sea of Galilee, Jaffa, Mount of Olives, Gethsemane, Jericho, Dead Sea, Bethlehem, Golgotha, Bethany, and the pyramids of Cairo.",
+    "highlights": [
+      "Visit Mount Nebo, Nazareth, Cana, and Mount of Beatitudes",
+      "Sail on the Sea of Galilee and float in the Dead Sea",
+      "Explore Jerusalem (Mount of Olives, Garden of Gethsemane, Golgotha)",
+      "Tour Bethlehem, Jericho, Jaffa, and the Pyramids of Giza in Cairo",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "Historical",
+      "Cultural"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "March",
+      "April",
+      "May",
+      "September",
+      "October",
+      "November"
+    ],
+    "showInHero": true
+  },
+  {
+    "id": "hyderabad-package",
+    "title": "Hyderabad: The City of Pearls",
+    "location": "Telangana, India",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.65,
+    "image": "/data/packages/packages_image/hyderabad-package/01_Charminar.webp",
+    "description": "Discover the heritage and modern entertainment of Hyderabad. Tour the iconic Charminar and Golconda Fort, marvel at the exhibits in Salar Jung Museum, visit Birla Temple, walk through NTR Gardens, see the Lumbini Park laser show, and explore Ramoji Film City.",
+    "highlights": [
+      "Spend a full day at the world-famous Ramoji Film City",
+      "Tour the historic Charminar and Mecca Masjid",
+      "Explore the archaeological wonders of Golconda Fort",
+      "Visit the Salar Jung Museum and white-marble Birla Temple",
+      "Enjoy NTR Gardens and the Lumbini Park Laser Show",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical",
+      "City Tour"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "jogfalls-hampi-goa",
+    "title": "Jog Falls, Hampi & Goa: Waterfalls, Ruins & Beaches",
+    "location": "Hampi, Shimoga & Goa, India",
+    "duration": "5 Days / 6 Nights",
+    "price": 25000,
+    "rating": 4.88,
+    "image": "/data/packages/packages_image/jogfalls-hampi-goa/01_goa.webp",
+    "description": "Discover the spectacular ruins of the Vijayanagara Empire in Hampi, marvel at the majestic height of Jog Falls (one of India's tallest waterfalls), and unwind on the sandy beaches and heritage churches of Goa.",
+    "highlights": [
+      "Explore the UNESCO World Heritage ruins of Hampi (Virupaksha Temple, Stone Chariot)",
+      "Witness the breathtaking, roaring cascades of Jog Falls in Shimoga",
+      "Unwind on the golden sand beaches of Goa and explore Old Goa heritage"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Nature",
+      "Historical",
+      "Beach"
+    ],
+    "priority": 12,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February"
+    ],
+    "showInHero": false
   },
   {
     "id": "kashmir-escape",
@@ -237,6 +606,74 @@
     "showInHero": true
   },
   {
+    "id": "kodaikanal-hogenekkel-wonderla-mysore",
+    "title": "Kodaikanal, Hogenakkal & Mysore: Lakes, Falls & Palaces",
+    "location": "Kodaikanal, Hogenakkal & Mysore, India",
+    "duration": "4 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.82,
+    "image": "/data/packages/packages_image/kodaikanal-hogenekkel-wonderla-mysore/01_kodaikanal2.webp",
+    "description": "A beautiful tour linking Kodaikanal's hill-station charm, the raw power of Hogenakkal Falls, royal palace heritage in Mysore, and the theme park rides of Wonderla. A complete family holiday package.",
+    "highlights": [
+      "Enjoy boating on Kodaikanal Lake and tour Coaker's Walk",
+      "Experience a coracle boat ride at Hogenakkal Falls",
+      "Tour the illuminated Mysore Palace and Chamundi Hills",
+      "Enjoy a full day of thrilling rides at Wonderla Amusement Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Historical"
+    ],
+    "priority": 15,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "kodaikanal-munnar-wonderla",
+    "title": "Kodaikanal & Munnar: Double Hill-Station & Thrills",
+    "location": "Kodaikanal, Munnar & Kochi, India",
+    "duration": "3 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.84,
+    "image": "/data/packages/packages_image/kodaikanal-munnar-wonderla/01_kodaikanal.webp",
+    "description": "Escape to two of South India's most beloved hill stations, Kodaikanal and Munnar, followed by a day of adventure. Visit the star-shaped Kodai Lake, walk through the misty tea gardens of Munnar, and ride the rollercoasters at Wonderla.",
+    "highlights": [
+      "Explore Kodaikanal's Pillar Rocks and Coaker's Walk",
+      "Walk in Munnar's tea plantations and Echo Point",
+      "Enjoy high-energy rides and amusement at Wonderla"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Adventure Tour"
+    ],
+    "priority": 22,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "kodaikanal-package",
     "title": "Kodaikanal: Tranquil Hills Escape",
     "location": "Kodaikanal, India",
@@ -267,29 +704,29 @@
       "October",
       "November"
     ],
-    "showInHero": true
+    "showInHero": false
   },
   {
     "id": "malaysia-explorer",
-    "title": "Malaysia: Explorer Odyssey",
+    "title": "Malaysia: Kuala Lumpur & Genting Highlands",
     "location": "Malaysia",
-    "duration": "7 Days / 6 Nights",
+    "duration": "4 Days / 3 Nights",
     "price": 25000,
     "rating": 4.81,
     "image": "/data/packages/packages_image/malaysia-explorer/01-Malaysia.webp",
-    "description": "Explore a land of incredible contrasts, from futuristic capital cities to ancient rainforests. Marvel at Kuala Lumpur's towering Petronas Twin Towers and the historic Batu Caves. Wander the colonial streets of George Town in Penang to see vibrant street art and sample famous local street food. Relax on the tropical beaches of Langkawi and Tioman, and journey into Borneo's wild rainforests to meet indigenous communities and encounter unique wildlife.",
+    "description": "Explore the vibrant heart of Malaysia. Tour the bustling capital of Kuala Lumpur, marvel at the towering Petronas Twin Towers, visit the historic Independence Square and the serene National Mosque. Venture up to the cool slopes of Genting Highlands for mountain scenery, theme parks, and entertainment.",
     "highlights": [
-      "View the spectacular Petronas Twin Towers and climb the steps of Batu Caves",
-      "Walk the UNESCO-listed colonial streets and street art lanes of Penang",
-      "Savor Malaysia's world-famous street food in Penang and Kuala Lumpur",
-      "Relax on the tropical beaches of Langkawi and Tioman Islands",
-      "Journey into the ancient rainforests of Borneo to spot wild orangutans",
-      "Meet indigenous Borneo communities and learn their traditional lifestyles"
+      "Explore iconic sights in Kuala Lumpur: Petronas Twin Towers and Independence Square",
+      "Visit the historic and majestic King's Palace (Istana Negara)",
+      "Enjoy the serene atmosphere of the National Mosque",
+      "Day trip to Genting Highlands with a scenic cable car ride",
+      "Please note: Itinerary details are subject to change"
     ],
     "region": "international",
     "categories": [
       "International",
-      "Adventure Tour"
+      "City Tour",
+      "Cultural"
     ],
     "priority": 10,
     "bestTimeToVisit": [
@@ -339,6 +776,241 @@
     "showInHero": true
   },
   {
+    "id": "munnar-chinnar-marayoor",
+    "title": "Munnar, Chinnar & Marayoor Eco-Tour",
+    "location": "Kerala, India",
+    "duration": "2 Days / 1 Night",
+    "price": 25000,
+    "rating": 4.82,
+    "image": "/data/packages/packages_image/munnar-chinnar-marayoor/01_Munnar.webp",
+    "description": "A wonderful weekend getaway into the hills and forests of Munnar. Spot rare wildlife at Eravikulam National Park, visit scenic dams and echo points, go trekking in Chinnar Wildlife Sanctuary, and explore Marayoor's sandalwood forests.",
+    "highlights": [
+      "Explore Eravikulam National Park and view tea plantations",
+      "Visit Mattupetty Dam, Echo Point, and Kundala Dam in Munnar",
+      "Embark on a guided trekking (trucking) adventure in Chinnar Sanctuary",
+      "Walk through the fragrant Sandalwood Forests of Marayoor",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Weekend Gateway"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "munnar-thekkady-wagamon-alleppey",
+    "title": "Munnar, Thekkady & Alleppey: Highlands & Backwaters",
+    "location": "Munnar, Thekkady & Alleppey, India",
+    "duration": "4 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.87,
+    "image": "/data/packages/packages_image/munnar-thekkady-wagamon-alleppey/01_wagamon.webp",
+    "description": "Experience the classic Kerala highlands and backwaters circuit. Trek Munnar's tea estates, enjoy a wildlife boating safari in Periyar Lake (Thekkady), walk the pine forests of Wagamon, and cruise on a traditional Alleppey houseboat.",
+    "highlights": [
+      "Walk through the tea estates and echo points of Munnar",
+      "Take a guided wildlife safari on Periyar Lake in Thekkady",
+      "Walk through the serene Pine Forest and green meadows of Wagamon",
+      "Overnight cruise and traditional meals on an Alleppey houseboat"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Beach"
+    ],
+    "priority": 15,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "munnar-wonderla-escape",
+    "title": "Munnar & Wonderla: Hills & Amusement Thrills",
+    "location": "Munnar & Kochi, Kerala",
+    "duration": "2 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.82,
+    "image": "/data/packages/packages_image/munnar-wonderla-escape/01_munnar.webp",
+    "description": "Enjoy a perfect balance of highland tranquility and high-energy excitement. Stroll through the misty, endless tea plantations of Munnar, spot rare Nilgiri Tahr in Eravikulam, and spend a full day of thrilling rides and water slides at Wonderla Amusement Park near Kochi.",
+    "highlights": [
+      "Trek through the rolling, green tea estates of Munnar",
+      "Spot rare wildlife in Eravikulam National Park",
+      "Spend a full day of adventure at Wonderla Amusement Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Adventure Tour"
+    ],
+    "priority": 25,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "mysore-bangalore-hogenekkel",
+    "title": "Mysore, Bangalore & Hogenakkal: Royal Cities & Waterfalls",
+    "location": "Bangalore, Mysore & Hogenakkal, India",
+    "duration": "3 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.78,
+    "image": "/data/packages/packages_image/mysore-bangalore-hogenekkel/01_banglore.webp",
+    "description": "Tour the cosmopolitan capital Bangalore, the royal heritage city Mysore, and the roaring Hogenakkal waterfalls. See palaces, technological hubs, botanical gardens, and experience a traditional coracle boat ride.",
+    "highlights": [
+      "Visit Bangalore Palace and the serene Lalbagh Botanical Gardens",
+      "Tour the majestic Mysore Palace and Chamundi Hills",
+      "Take a thrilling coracle boat ride at Hogenakkal Falls"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical",
+      "City Tour",
+      "Nature"
+    ],
+    "priority": 22,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "mysore-hogenakkal-tour",
+    "title": "Mysore & Hogenakkal: Palaces & Waterfalls Tour",
+    "location": "Mysore & Hogenakkal, India",
+    "duration": "2 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.75,
+    "image": "/data/packages/packages_image/mysore-hogenakkal-tour/01_hogenakkal.webp",
+    "description": "Combine the royal heritage of Mysore with the raw natural power of Hogenakkal Falls. Marvel at the grand architecture of Mysore Palace and Brindavan Gardens, then take a traditional coracle boat ride down the roaring, misty waters of the Kaveri river at Hogenakkal.",
+    "highlights": [
+      "Tour the historic Mysore Palace and Chamundi Hills",
+      "Experience a thrilling coracle boat ride at Hogenakkal Falls",
+      "Relax in the serene garden settings of Mysore"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical",
+      "Nature"
+    ],
+    "priority": 25,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "nelliyampathi-munnar-cochin-alleppey",
+    "title": "Nelliyampathi, Munnar & Alleppey: Eco-Hills & Houseboat",
+    "location": "Nelliyampathi, Munnar & Alleppey, India",
+    "duration": "4 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.88,
+    "image": "/data/packages/packages_image/nelliyampathi-munnar-cochin-alleppey/01_nelliyampathi.webp",
+    "description": "Immerse yourself in Kerala's finest nature reserves and backwaters. Visit the untouched orange orchards and misty valleys of Nelliyampathi, tour Munnar's tea gardens, explore historic Fort Kochi, and cruise Alleppey's backwaters on a private houseboat.",
+    "highlights": [
+      "Explore Nelliyampathi's orange farms and Seetharkundu viewpoint",
+      "Walk in the tea plantations and spice farms of Munnar",
+      "See Fort Kochi's Chinese Fishing Nets and historical churches",
+      "Enjoy an overnight stay on a traditional luxury Alleppey houseboat"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Beach"
+    ],
+    "priority": 15,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "ooty-mysore-escape",
+    "title": "Ooty & Mysore: Royal Heritage & Scenic Hills",
+    "location": "Mysore & Ooty, India",
+    "duration": "2 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.8,
+    "image": "/data/packages/packages_image/ooty-mysore-escape/01_mysore.webp",
+    "description": "Embark on a delightful short escape combining the royal history of Mysore and the misty charm of Ooty. Stroll through the majestic Mysore Palace and the colorful Brindavan Gardens, then climb into the Nilgiri hills to experience Ooty's quiet lakes and sprawling tea gardens.",
+    "highlights": [
+      "Explore the magnificent Mysore Palace and its evening illuminations",
+      "Walk through the musical fountain paths of Brindavan Gardens",
+      "Enjoy a relaxing boat cruise on the scenic Ooty Lake",
+      "Visit the lush Botanical Gardens and Doddabetta Peak"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Historical"
+    ],
+    "priority": 25,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "ooty-package",
     "title": "Ooty: Blue Hills & Tea Gardens Retreat",
     "location": "Ooty, India",
@@ -373,21 +1045,90 @@
     "showInHero": true
   },
   {
+    "id": "rameshwaram-dhanushkodi-kodaikanal",
+    "title": "Rameshwaram, Dhanushkodi & Kodaikanal Tour",
+    "location": "Tamil Nadu & Kerala",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.81,
+    "image": "/data/packages/packages_image/rameshwaram-dhanushkodi-kodaikanal/01_kodaikanal.webp",
+    "description": "A diverse journey combining spiritual pilgrimage, historic ghost towns, lush grape farms, and cool hill stations. Visit Rameswaram Temple and Dhanushkodi, tour the grape gardens of Theni, explore Wagamon's pine forests, and see Kodaikanal's lakes and cliffs.",
+    "highlights": [
+      "Visit the historic Ramanathaswamy Temple in Rameswaram",
+      "Explore the ghost town of Dhanushkodi and Abdul Kalam Museum",
+      "Tour the grape farms of Cumbum and Theni",
+      "Walk in the Pine Valley Forest and Mottakunnu hills in Wagamon",
+      "Explore Kodaikanal Lake, Pillar Rocks, and Suicide Point",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Historical",
+      "Mountain",
+      "Nature"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "singapore-explorer",
+    "title": "Singapore: City of Gardens & Entertainment",
+    "location": "Singapore",
+    "duration": "4 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.85,
+    "image": "/data/packages/packages_image/singapore-explorer/01_Singapore.webp",
+    "description": "Experience the ultimate fusion of modern architecture and nature in Singapore. Walk along Orchard Road, view the city from Marina Bay Sands SkyPark, visit the historic Thian Hock Temple, explore Sentosa Island, enjoy Universal Studios, and see exotic birds at Jurong Bird Park.",
+    "highlights": [
+      "Ascend the Marina Bay Sands SkyPark and shop on Orchard Road",
+      "See Suntec City's Fountain of Wealth and the famous Merlion",
+      "Visit the historical Thian Hock Temple and Sentosa Island",
+      "Enjoy a full day at Universal Studios Singapore and visit Jurong Bird Park",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "international",
+    "categories": [
+      "International",
+      "City Tour",
+      "Historical"
+    ],
+    "priority": 10,
+    "bestTimeToVisit": [
+      "January",
+      "February",
+      "March",
+      "June",
+      "July",
+      "August",
+      "December"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "thailand-explorer",
-    "title": "Thailand: Tropical Explorer",
+    "title": "Thailand: Bangkok & Pattaya Explorer",
     "location": "Thailand",
-    "duration": "7 Days / 6 Nights",
+    "duration": "4 Days / 3 Nights",
     "price": 25000,
     "rating": 4.82,
     "image": "/data/packages/packages_image/thailand-explorer/01-Thailand.webp",
-    "description": "Uncover the colors, culture, and coastal beauty of Thailand on an immersive Southeast Asian journey. Experience the energy of Bangkok's grand palaces and lively street food scenes, and explore the beaches, caves, and snorkeling reefs of Phuket and Krabi. Trek through the misty jungles of Chiang Mai, visit ethical elephant sanctuaries, and experience Pattaya's spectacular wooden Sanctuary of Truth and vibrant seaside entertainment.",
+    "description": "Discover the vibrant cities of Bangkok and Pattaya. Enjoy the gorgeous beaches and water activities at Coral Island, watch the spectacular Alcazar Show, visit the Sri Racha Tiger Zoo, and experience the thrill of Safari World and Marine Park.",
     "highlights": [
-      "Tour Bangkok's majestic Grand Palace and the iconic riverside Wat Arun temple",
-      "Discover Pattaya's wooden architectural masterpiece, the Sanctuary of Truth",
-      "Visit ethical elephant sanctuaries and trek the jungles of Chiang Mai",
-      "Relax on the world-famous white sand beaches of Phuket, Krabi, and Koh Samui",
-      "Speedboat island-hopping cruises with snorkeling in coral reefs",
-      "Join traditional Thai cooking classes and explore vibrant night markets"
+      "Attend the world-famous Alcazar Cabaret Show in Pattaya",
+      "Take a speedboat trip to Coral Island for beach activities",
+      "Explore the Sri Racha Tiger Zoo",
+      "Enjoy a full day at Safari World and Marine Park in Bangkok",
+      "Please note: Itinerary details are subject to change"
     ],
     "region": "international",
     "categories": [
@@ -407,21 +1148,181 @@
     "showInHero": true
   },
   {
+    "id": "theyyam-experience",
+    "title": "Theyyam: Mystical Ritual of Malabar",
+    "location": "Kannur, Kerala",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.88,
+    "image": "/data/packages/packages_image/theyyam-experience/01_theyyam.webp",
+    "description": "Experience the mystical world of Theyyam, an ancient ritual dance drama of North Kerala. Witness the divine invocation where mortals dress as deities, wearing elaborate red makeup, heavy ornaments, and towering headgear. Feel the intense devotion, traditional percussion, and fire-walking rituals in the sacred groves (kavus) of Kannur and Kasaragod. A once-in-a-lifetime spiritual journey into the heart of Malabar's folklore and ancient traditions.",
+    "highlights": [
+      "Witness authentic live Theyyam performances in traditional village shrines (kavus)",
+      "Interact with Theyyam artists and learn about the sacred makeup and towering headgears",
+      "Experience the vibrant drum beats, ancient chants, and mystical fire-walking rituals",
+      "Guided cultural tour focused entirely on the history and spiritual significance of Theyyam"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Cultural"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "trivandrum-kanyakumari-ponmudi-thenmala",
+    "title": "Trivandrum, Kanyakumari & Ponmudi: Southern Hills & Coast",
+    "location": "Trivandrum, Kanyakumari & Ponmudi, India",
+    "duration": "4 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.83,
+    "image": "/data/packages/packages_image/trivandrum-kanyakumari-ponmudi-thenmala/01_trivandrum.webp",
+    "description": "Uncover the scenic diversity of India's far south. Visit Trivandrum's heritage sites, watch the sunrise and sunset at Vivekananda Rock in Kanyakumari, climb the winding hairpin bends of Ponmudi hill station, and experience eco-tourism in Thenmala.",
+    "highlights": [
+      "Tour Padmanabhaswamy Temple and Kovalam Beach in Trivandrum",
+      "Explore Kanyakumari Rock Memorial and Gandhi Memorial",
+      "Trek the misty, winding peaks of Ponmudi Hill Station",
+      "See Thenmala Dam, Deer Park, and the musical fountain show"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Beach",
+      "Mountain",
+      "Nature"
+    ],
+    "priority": 15,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "trivandrum-kanyakumari-thenmala",
+    "title": "Trivandrum, Kanyakumari & Thenmala",
+    "location": "Kerala & Tamil Nadu",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.75,
+    "image": "/data/packages/packages_image/trivandrum-kanyakumari-thenmala/01_trivandrum.webp",
+    "description": "Experience the culture, beaches, and natural beauty of Southern India. Explore Trivandrum's temples and galleries, see Kanyakumari's famous rock memorial, enjoy Kovalam Beach, and experience eco-tourism and waterfalls in Thenmala.",
+    "highlights": [
+      "Visit Padmanabha Swami Temple, Trivandrum Zoo, and Art Gallery",
+      "Explore Kanyakumari and Vivekananda Rock Memorial (Vivekananda Para)",
+      "Relax on Kovalam Beach and visit Kanyakumari Palace",
+      "See Thenmala Dam, Palaruvi Water Falls, Kuttalam Waterfalls, and the Laser Show",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Beach",
+      "Cultural"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "trivandrum-kanyakumari-weekend",
+    "title": "Trivandrum & Kanyakumari: Southern Tip Getaway",
+    "location": "Trivandrum & Kanyakumari, India",
+    "duration": "2 Days / 3 Nights",
+    "price": 25000,
+    "rating": 4.83,
+    "image": "/data/packages/packages_image/trivandrum-kanyakumari-weekend/01_kanyakumari.webp",
+    "description": "Discover the spiritual and coastal highlights of India's southern tip. Visit the historic temples of Trivandrum, relax on the golden shores of Kovalam Beach, and stand at the confluence of three oceans in Kanyakumari to witness a spectacular sunset over the Vivekananda Rock Memorial.",
+    "highlights": [
+      "Visit the legendary Sree Padmanabhaswamy Temple in Trivandrum",
+      "Watch the sunset at the Vivekananda Rock Memorial in Kanyakumari",
+      "Relax on the crescent beaches of Kovalam"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Beach",
+      "Cultural"
+    ],
+    "priority": 25,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "trivandrum-kanyakumari-wonderla",
+    "title": "Trivandrum, Kanyakumari & Wonderla: Coast & Theme Park",
+    "location": "Trivandrum, Kanyakumari & Kochi, India",
+    "duration": "3 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.8,
+    "image": "/data/packages/packages_image/trivandrum-kanyakumari-wonderla/01_trivandrum.webp",
+    "description": "Enjoy a coastal exploration of Trivandrum and Kanyakumari, followed by a day of non-stop action at Wonderla Amusement Park. Visit historic temples, beaches, Vivekananda Rock, and enjoy top-tier amusement park rides.",
+    "highlights": [
+      "Tour Padmanabhaswamy Temple and Kovalam Beach in Trivandrum",
+      "Witness the sunrise and sunset in Kanyakumari",
+      "Spend an exciting day at Wonderla Amusement Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Beach",
+      "City Tour",
+      "Adventure Tour"
+    ],
+    "priority": 22,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
     "id": "vietnam-discover",
     "title": "Vietnam: Cultural Discovery",
     "location": "Vietnam",
-    "duration": "6 Days / 5 Nights",
+    "duration": "4 Days / 3 Nights",
     "price": 25000,
     "rating": 4.8,
     "image": "/data/packages/packages_image/vietnam-discover/01-Vietnam.webp",
-    "description": "Journey through a land of spectacular natural beauty, ancient history, and vibrant cultures. Discover Hanoi's French-colonial Old Quarter and the historic Ho Chi Minh Mausoleum, and cruise past the limestone karsts of Halong Bay on an overnight ship. Walk the magical lantern-lit streets of ancient Hoi An, explore the historic war tunnels of Cu Chi near Ho Chi Minh City, and cruise past the floating markets and orchards of the Mekong Delta.",
+    "description": "Immerse yourself in Vietnam's rich heritage. Explore Hanoi's historic sites including the Temple of Literature and Ho Chi Minh Mausoleum, enjoy a traditional Water Puppet Show by Hoan Kiem Lake, and cruise through the majestic limestone islands of Halong Bay.",
     "highlights": [
-      "Explore Hanoi's historic Old Quarter and visit the Ho Chi Minh Mausoleum",
-      "Overnight luxury cruise through the limestone karsts and caves of Halong Bay",
-      "Go kayaking and cave exploring in Halong Bay's emerald waters",
-      "Stroll through the magical, lantern-lit colonial streets of ancient Hoi An",
-      "Visit the historic Cu Chi Tunnels and War Remnants Museum in Ho Chi Minh City",
-      "Cruise past floating markets and fruit orchards in the lush Mekong Delta"
+      "Visit Hanoi's historic Temple of Literature and Ho Chi Minh Mausoleum",
+      "Enjoy a traditional Water Puppet Show in Hanoi",
+      "Walk around the peaceful shores of Hoan Kiem Lake",
+      "Cruise through the spectacular limestone karsts of Halong Bay",
+      "Please note: Itinerary details are subject to change"
     ],
     "region": "international",
     "categories": [
@@ -440,5 +1341,111 @@
       "November"
     ],
     "showInHero": true
+  },
+  {
+    "id": "wagamon-thekkadi-ramakalmedu",
+    "title": "Wagamon, Thekkady & Wonderla Escape",
+    "location": "Kerala, India",
+    "duration": "3 Days / 2 Nights",
+    "price": 25000,
+    "rating": 4.78,
+    "image": "/data/packages/packages_image/wagamon-thekkadi-ramakalmedu/01_Wagamon.webp",
+    "description": "An action-packed holiday combining hill stations, wildlife, and theme park amusement. Experience the serene pine forests of Wagamon, wildlife boating in Thekkady, the monumental hills of Ramakkalmedu and Paruthumpara, and the fun rides at Wonderla.",
+    "highlights": [
+      "Explore Wagamon's Pine Valley Forest and Mottakunnu hills",
+      "Enjoy a wildlife watching boat safari in Periyar Lake, Thekkady",
+      "Visit the windy heights and historic monuments of Ramakkalmedu",
+      "Admire the panoramic canyon view at Paruthumpara (Eagle Rock)",
+      "Enjoy a full day of excitement at Wonderla Amusement Park",
+      "Please note: Itinerary details are subject to change"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Adventure Tour"
+    ],
+    "priority": 20,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "wayanad-ooty-black-thunder",
+    "title": "Wayanad & Ooty: Scenic Hills & Theme Park Tour",
+    "location": "Wayanad & Ooty, India",
+    "duration": "3 Days / 4 Nights",
+    "price": 25000,
+    "rating": 4.81,
+    "image": "/data/packages/packages_image/wayanad-ooty-black-thunder/01_wayanad.webp",
+    "description": "Immerse yourself in the double hill-station paradise of Wayanad and Ooty, combined with water park fun. Walk through Wayanad's spice forests, cruise Ooty Lake, and enjoy the high-thrill wave pools and water slides of Black Thunder Theme Park.",
+    "highlights": [
+      "Explore Edakkal Caves and Banasura Sagar Dam in Wayanad",
+      "Tour Ooty's Botanical Gardens and Doddabetta Peak",
+      "Enjoy a full day of water activities at Black Thunder Theme Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Nature",
+      "Adventure Tour"
+    ],
+    "priority": 22,
+    "bestTimeToVisit": [
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": false
+  },
+  {
+    "id": "wayanad-ooty-mysore-wonderla",
+    "title": "Wayanad, Ooty & Mysore: Heritage, Hills & Thrills",
+    "location": "Wayanad, Ooty, Mysore & Kochi, India",
+    "duration": "4 Days / 5 Nights",
+    "price": 25000,
+    "rating": 4.86,
+    "image": "/data/packages/packages_image/wayanad-ooty-mysore-wonderla/01_wayanad.webp",
+    "description": "A comprehensive 4-day tour covering the best of South Indian hills, heritage, and entertainment. Trek the spice hills of Wayanad, ride the toy train in Ooty, tour the historic Mysore Palace, and scream on the rollercoasters of Wonderla.",
+    "highlights": [
+      "Visit Edakkal Caves and Banasura Sagar Dam in Wayanad",
+      "Stroll through Ooty's tea gardens and Doddabetta Peak",
+      "Tour Mysore Palace and watch the musical fountain show",
+      "Enjoy a full day of excitement at Wonderla Amusement Park"
+    ],
+    "region": "domestic",
+    "categories": [
+      "Domestic",
+      "Mountain",
+      "Historical",
+      "Adventure Tour"
+    ],
+    "priority": 15,
+    "bestTimeToVisit": [
+      "September",
+      "October",
+      "November",
+      "December",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "showInHero": false
   }
 ]

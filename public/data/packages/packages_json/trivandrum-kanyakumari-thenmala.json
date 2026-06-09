@@ -1,0 +1,60 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Trivandrum City Tour",
+      "description": "Explore Trivandrum. Visit the historic Sree Padmanabhaswamy Temple, the Zoo, the Planetarium, ISRO display, and the Art Gallery. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kanyakumari & Kovalam Beach",
+      "description": "Travel to Kanyakumari. Visit the Vivekananda Rock Memorial (Vivekananda Para), the Padmanabhapuram Palace, and relax on the golden sands of Kovalam Beach. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Thenmala Eco-Tourism & Waterfalls",
+      "description": "Discover Thenmala Eco-Tourism. Visit Thenmala Dam, the Deer Park, Palaruvi and Kuttalam waterfalls, and watch the evening Laser Show before departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Trivandrum, Kanyakumari & Thenmala",
+  "location": "Kerala & Tamil Nadu",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.75,
+  "description": "Experience the culture, beaches, and natural beauty of Southern India. Explore Trivandrum's temples and galleries, see Kanyakumari's famous rock memorial, enjoy Kovalam Beach, and experience eco-tourism and waterfalls in Thenmala.",
+  "highlights": [
+    "Visit Padmanabha Swami Temple, Trivandrum Zoo, and Art Gallery",
+    "Explore Kanyakumari and Vivekananda Rock Memorial (Vivekananda Para)",
+    "Relax on Kovalam Beach and visit Kanyakumari Palace",
+    "See Thenmala Dam, Palaruvi Water Falls, Kuttalam Waterfalls, and the Laser Show",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/trivandrum-kanyakumari-thenmala/01_trivandrum.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Beach",
+    "Cultural"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 8.5241,
+  "lng": 76.9366
+}

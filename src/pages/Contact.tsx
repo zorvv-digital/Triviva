@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { MapPin, Phone, Mail, Clock, Send, ArrowUpRight, X } from "lucide-react";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -7,8 +7,9 @@ import Footer from "@/components/Footer";
 import { useContactInfo } from "@/hooks/useContactInfo";
 
 const Contact = () => {
-  const { data } = useContactInfo();
+  const { data, loading } = useContactInfo();
   const [submitted, setSubmitted] = useState(false);
+  const [modalType, setModalType] = useState<"whatsapp" | "phone" | null>(null);
   const [searchParams] = useSearchParams();
 
   const pkgParam = searchParams.get("package") ? decodeURIComponent(searchParams.get("package")!) : "";
@@ -23,21 +24,25 @@ const Contact = () => {
       : ""
   );
 
-  const addressLines = data?.contact.address.lines || [
-    "Trikaripur, near Trikaripur Polytechnic",
-    "PO Udinur, Kasaragod District",
-    "Kerala, PIN 671310"
-  ];
-  const primaryAddress = addressLines[0]?.includes(",")
-    ? addressLines[0].split(",")[0]
-    : addressLines[0] || "Trikaripur";
-  const secondaryAddress = addressLines.join(", ").replace(/^[A-Za-z]+,\s*/, "");
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
   };
+
+  if (loading || !data) {
+    return (
+      <div className="min-h-screen bg-background relative flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  const addressLines = data.contact.address.lines;
+  const primaryAddress = addressLines[0].includes(",")
+    ? addressLines[0].split(",")[0]
+    : addressLines[0];
+  const secondaryAddress = addressLines.join(", ").replace(/^[A-Za-z]+,\s*/, "");
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -95,7 +100,12 @@ const Contact = () => {
               className="lg:col-span-2 space-y-6"
             >
               {/* Card 1: OUR OFFICE (Address & Map) */}
-              <div className="relative bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-slate-200 hover:scale-[1.01] transition-all duration-300 min-h-[160px] flex flex-col md:flex-row items-center overflow-hidden">
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressLines.join(", "))}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-primary/20 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 min-h-[160px] flex flex-col md:flex-row items-center overflow-hidden cursor-pointer group w-full"
+              >
                 <div className="flex gap-5 items-center z-10 w-full md:w-[60%] pr-4">
                   <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-primary" strokeWidth={1.5} />
@@ -111,6 +121,10 @@ const Contact = () => {
                       {secondaryAddress}
                     </p>
                   </div>
+                </div>
+
+                <div className="ml-auto w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 text-slate-400 flex-shrink-0 z-10 mr-4 md:mr-[42%]">
+                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
 
                 <div className="relative w-full h-40 md:h-full md:absolute md:right-0 md:top-0 md:bottom-0 md:w-[40%] mt-4 md:mt-0 overflow-hidden rounded-2xl md:rounded-r-[2rem] md:rounded-l-none">
@@ -133,10 +147,13 @@ const Contact = () => {
                     }}
                   />
                 </div>
-              </div>
+              </a>
 
               {/* Card 2: EMAIL */}
-              <div className="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-slate-200 hover:scale-[1.01] transition-all duration-300 flex items-center gap-5">
+              <a
+                href={`mailto:${data.contact.email.lines[0]}`}
+                className="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-primary/20 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex items-center gap-5 cursor-pointer group w-full"
+              >
                 <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6 text-primary" strokeWidth={1.5} />
                 </div>
@@ -144,52 +161,74 @@ const Contact = () => {
                   <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 block mb-1">
                     EMAIL
                   </span>
-                  <a
-                    href={`mailto:${(data?.contact.email.lines || ["trivivatripadvisor@gmail.com"])[0]}`}
-                    className="font-body font-medium text-base md:text-lg text-slate-700 hover:text-primary transition-colors duration-300 break-all"
-                  >
-                    {(data?.contact.email.lines || ["trivivatripadvisor@gmail.com"])[0]}
-                  </a>
+                  <span className="font-body font-medium text-base md:text-lg text-slate-700 hover:text-primary transition-colors duration-300 break-all">
+                    {data.contact.email.lines[0]}
+                  </span>
                 </div>
-              </div>
+                <div className="ml-auto w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 text-slate-400 flex-shrink-0">
+                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </a>
 
-              {/* Cards for Phone/WhatsApp */}
-              {(data?.contact.phone.lines || ["+91 6238390320", "+91 9745686333"]).map((phone, idx) => (
-                <div 
-                  key={phone} 
-                  className="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-slate-200 hover:scale-[1.01] transition-all duration-300 flex items-center gap-5"
-                >
-                  <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center flex-shrink-0">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="w-6 h-6 text-primary"
-                    >
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 block mb-1">
-                      WHATSAPP {(data?.contact.phone.lines || ["+91 6238390320", "+91 9745686333"]).length > 1 ? idx + 1 : ""}
-                    </span>
-                    <a
-                      href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-body font-medium text-base md:text-lg text-slate-700 hover:text-primary transition-colors duration-300"
-                    >
-                      {phone}
-                    </a>
-                  </div>
+              {/* Card 3: WHATSAPP CHAT (unified) */}
+              <button
+                type="button"
+                onClick={() => setModalType("whatsapp")}
+                className="bg-white text-left rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-emerald-500/20 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 flex items-center gap-5 cursor-pointer group w-full"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-emerald-600" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
                 </div>
-              ))}
+                <div>
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 block mb-1">
+                    WHATSAPP CHAT
+                  </span>
+                  <span className="font-body font-medium text-base md:text-lg text-slate-700 group-hover:text-emerald-600 transition-colors duration-300">
+                    Chat with our Travel Experts
+                  </span>
+                  <span className="block text-[11px] text-slate-400 font-body mt-1 font-medium">
+                    {data.contact.phone.lines.join(" / ")}
+                  </span>
+                </div>
+                <div className="ml-auto w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-emerald-500/10 group-hover:text-emerald-600 transition-all duration-300 text-slate-400 flex-shrink-0">
+                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </button>
+
+              {/* Card 4: PHONE CALL (unified) */}
+              <button
+                type="button"
+                onClick={() => setModalType("phone")}
+                className="bg-white text-left rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-primary/20 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex items-center gap-5 cursor-pointer group w-full"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-primary" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 block mb-1">
+                    DIRECT CALL
+                  </span>
+                  <span className="font-body font-medium text-base md:text-lg text-slate-700 group-hover:text-primary transition-colors duration-300">
+                    Speak with our Travel Experts
+                  </span>
+                  <span className="block text-[11px] text-slate-400 font-body mt-1 font-medium">
+                    {data.contact.phone.lines.join(" / ")}
+                  </span>
+                </div>
+                <div className="ml-auto w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 text-slate-400 flex-shrink-0">
+                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </button>
 
               {/* Card 5: INSTAGRAM */}
-              <div className="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-slate-200 hover:scale-[1.01] transition-all duration-300 flex items-center gap-5">
+              <a
+                href={data.socials.instagram.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-100 hover:border-primary/20 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 flex items-center gap-5 cursor-pointer group w-full"
+              >
                 <div className="w-14 h-14 rounded-2xl bg-primary/5 flex items-center justify-center flex-shrink-0">
                   <svg
                     viewBox="0 0 24 24"
@@ -209,16 +248,14 @@ const Contact = () => {
                   <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-400 block mb-1">
                     INSTAGRAM
                   </span>
-                  <a
-                    href={data?.socials.instagram.url || "https://instagram.com/trivivatravel"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-body font-medium text-base md:text-lg text-slate-700 hover:text-primary transition-colors duration-300"
-                  >
-                    {data?.socials.instagram.handle || "@trivivatravel"}
-                  </a>
+                  <span className="font-body font-medium text-base md:text-lg text-slate-700 hover:text-primary transition-colors duration-300">
+                    {data.socials.instagram.handle}
+                  </span>
                 </div>
-              </div>
+                <div className="ml-auto w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300 text-slate-400 flex-shrink-0">
+                  <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </div>
+              </a>
             </motion.div>
 
             {/* Form Container */}
@@ -296,6 +333,91 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Phone/WhatsApp Selection Modal */}
+      <AnimatePresence>
+        {modalType !== null && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setModalType(null)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm"
+            />
+
+            {/* Modal Container */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ type: "spring", duration: 0.5 }}
+              className="relative bg-white w-full max-w-sm rounded-[2rem] shadow-2xl border border-black/[0.02] p-8 overflow-hidden z-10 flex flex-col"
+            >
+              {/* Decorative Glow */}
+              <div className={`absolute top-0 right-0 w-32 h-32 rounded-bl-[100px] -mr-10 -mt-10 pointer-events-none ${modalType === "whatsapp" ? "bg-emerald-500/5" : "bg-primary/5"}`} />
+
+              {/* Close Button */}
+              <button
+                onClick={() => setModalType(null)}
+                className="absolute top-4 right-4 w-8 h-8 rounded-full border border-gray-200 bg-white flex items-center justify-center text-gray-400 hover:text-slate-900 transition-colors z-20"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              {/* Header */}
+              <div className="relative z-10 mb-6 text-left">
+                <span className="section-label mb-1 block">
+                  {modalType === "whatsapp" ? "WhatsApp Chat" : "Direct Hotline"}
+                </span>
+                <h3 className="text-xl font-display font-bold text-[#111827]">
+                  {modalType === "whatsapp" ? "Choose WhatsApp Contact" : "Choose Number to Call"}
+                </h3>
+              </div>
+
+              {/* Number Buttons */}
+              <div className="space-y-3 relative z-10">
+                {data.contact.phone.lines.map((phone, idx) => {
+                  const href = modalType === "whatsapp"
+                    ? `https://wa.me/${phone.replace(/[^0-9]/g, "")}`
+                    : `tel:${phone.replace(/[^0-9+]/g, "")}`;
+
+                  return (
+                    <a
+                      key={phone}
+                      href={href}
+                      target={modalType === "whatsapp" ? "_blank" : undefined}
+                      rel={modalType === "whatsapp" ? "noopener noreferrer" : undefined}
+                      onClick={() => setModalType(null)}
+                      className={`w-full flex items-center gap-3 p-4 rounded-2xl border transition-all duration-300 ${
+                        modalType === "whatsapp"
+                          ? "border-emerald-100 hover:border-emerald-500 hover:bg-emerald-50 text-emerald-800"
+                          : "border-orange-100 hover:border-primary hover:bg-orange-50 text-[#ea580c]"
+                      }`}
+                    >
+                      {modalType === "whatsapp" ? (
+                        <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                      ) : (
+                        <Phone className="w-5 h-5 flex-shrink-0" strokeWidth={1.5} />
+                      )}
+                      <div className="flex-1 text-left font-body font-medium text-sm">
+                        <span className="block text-xs opacity-60 font-semibold tracking-wide">
+                          CONTACT {idx + 1}
+                        </span>
+                        {phone}
+                      </div>
+                      <ArrowUpRight className="w-4 h-4 opacity-50" />
+                    </a>
+                  );
+                })}
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       <Footer />
     </div>

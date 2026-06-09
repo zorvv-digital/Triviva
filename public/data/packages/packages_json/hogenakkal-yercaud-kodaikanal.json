@@ -1,0 +1,63 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Hogenakkal Falls Boating & Yercaud",
+      "description": "Experience boating at the majestic Hogenakkal Falls (famous Niagara of India). Later, drive to Yercaud and visit the Orange farm, Deer Park, and Fish Park. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Yercaud View Points & Kodaikanal Transfer",
+      "description": "Explore Yercaud's beautiful view points. In the afternoon, transfer to the misty hills of Kodaikanal and check into your resort. Enjoy an evening campfire. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Kodaikanal Lake, Pillar Rocks & Departure",
+      "description": "Explore Kodaikanal. Row a boat on Kodaikanal Lake, visit the towering Pillar Rocks and the scenic Suicide Point before your departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Hogenakkal, Yercaud & Kodaikanal Hills",
+  "location": "Tamil Nadu, India",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.7,
+  "description": "A refreshing trip through Tamil Nadu's finest nature and hill stations. Enjoy boating at the roaring Hogenakkal falls, visit the orchards and parks of Yercaud, and explore the lakes, views, and pine forests of Kodaikanal.",
+  "highlights": [
+    "Enjoy a traditional boating experience at Hogenakkal Falls",
+    "Visit Yercaud's Orange Farm, Deer Park, and Fish Park",
+    "Take in panoramic vistas from Yercaud's key View Points",
+    "Explore Kodaikanal Lake, the Pillar Rocks, and Suicide Point",
+    "Relax with a cozy evening Campfire",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/hogenakkal-yercaud-kodaikanal/01_hogenakkal.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May"
+  ],
+  "showInHero": false,
+  "lat": 11.7753,
+  "lng": 78.2093
+}

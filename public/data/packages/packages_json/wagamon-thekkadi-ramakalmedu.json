@@ -1,0 +1,63 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Wagamon Meadows & Pine Forests",
+      "description": "Arrive in Wagamon. Walk through the scenic Pine Valley Forest and stroll over the rolling green hills of Mottakunnu. Check into your hotel. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Thekkady Boating & Ramakkalmedu View Point",
+      "description": "Travel to Thekkady for boating on Lake Periyar. Later, visit the spectacular windy viewpoints and statues of Ramakkalmedu. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Paruthumpara Vista & Wonderla Theme Park",
+      "description": "Visit the majestic canyon view at Paruthumpara. Transfer to Kochi to spend the afternoon enjoying thrilling rides at Wonderla Amusement Park. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Wagamon, Thekkady & Wonderla Escape",
+  "location": "Kerala, India",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.78,
+  "description": "An action-packed holiday combining hill stations, wildlife, and theme park amusement. Experience the serene pine forests of Wagamon, wildlife boating in Thekkady, the monumental hills of Ramakkalmedu and Paruthumpara, and the fun rides at Wonderla.",
+  "highlights": [
+    "Explore Wagamon's Pine Valley Forest and Mottakunnu hills",
+    "Enjoy a wildlife watching boat safari in Periyar Lake, Thekkady",
+    "Visit the windy heights and historic monuments of Ramakkalmedu",
+    "Admire the panoramic canyon view at Paruthumpara (Eagle Rock)",
+    "Enjoy a full day of excitement at Wonderla Amusement Park",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/wagamon-thekkadi-ramakalmedu/01_Wagamon.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature",
+    "Adventure Tour"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 9.6878,
+  "lng": 76.9036
+}

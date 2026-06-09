@@ -1,0 +1,57 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Trivandrum, Kanyakumari & Wonderla: Coast & Theme Park",
+  "location": "Trivandrum, Kanyakumari & Kochi, India",
+  "duration": "3 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.8,
+  "description": "Enjoy a coastal exploration of Trivandrum and Kanyakumari, followed by a day of non-stop action at Wonderla Amusement Park. Visit historic temples, beaches, Vivekananda Rock, and enjoy top-tier amusement park rides.",
+  "highlights": [
+    "Tour Padmanabhaswamy Temple and Kovalam Beach in Trivandrum",
+    "Witness the sunrise and sunset in Kanyakumari",
+    "Spend an exciting day at Wonderla Amusement Park"
+  ],
+  "image": "/data/packages/packages_image/trivandrum-kanyakumari-wonderla/01_trivandrum.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Beach",
+    "City Tour",
+    "Adventure Tour"
+  ],
+  "priority": 22,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 8.5241,
+  "lng": 76.9366
+}

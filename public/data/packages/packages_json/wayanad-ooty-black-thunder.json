@@ -1,0 +1,59 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Wayanad & Ooty: Scenic Hills & Theme Park Tour",
+  "location": "Wayanad & Ooty, India",
+  "duration": "3 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.81,
+  "description": "Immerse yourself in the double hill-station paradise of Wayanad and Ooty, combined with water park fun. Walk through Wayanad's spice forests, cruise Ooty Lake, and enjoy the high-thrill wave pools and water slides of Black Thunder Theme Park.",
+  "highlights": [
+    "Explore Edakkal Caves and Banasura Sagar Dam in Wayanad",
+    "Tour Ooty's Botanical Gardens and Doddabetta Peak",
+    "Enjoy a full day of water activities at Black Thunder Theme Park"
+  ],
+  "image": "/data/packages/packages_image/wayanad-ooty-black-thunder/01_wayanad.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature",
+    "Adventure Tour"
+  ],
+  "priority": 22,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May"
+  ],
+  "showInHero": false,
+  "lat": 11.6854,
+  "lng": 76.132
+}

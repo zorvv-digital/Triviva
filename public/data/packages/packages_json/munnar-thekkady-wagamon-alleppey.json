@@ -1,0 +1,59 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Munnar, Thekkady & Alleppey: Highlands & Backwaters",
+  "location": "Munnar, Thekkady & Alleppey, India",
+  "duration": "4 Days / 5 Nights",
+  "price": 25000,
+  "rating": 4.87,
+  "description": "Experience the classic Kerala highlands and backwaters circuit. Trek Munnar's tea estates, enjoy a wildlife boating safari in Periyar Lake (Thekkady), walk the pine forests of Wagamon, and cruise on a traditional Alleppey houseboat.",
+  "highlights": [
+    "Walk through the tea estates and echo points of Munnar",
+    "Take a guided wildlife safari on Periyar Lake in Thekkady",
+    "Walk through the serene Pine Forest and green meadows of Wagamon",
+    "Overnight cruise and traditional meals on an Alleppey houseboat"
+  ],
+  "image": "/data/packages/packages_image/munnar-thekkady-wagamon-alleppey/01_wagamon.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature",
+    "Beach"
+  ],
+  "priority": 15,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 9.6031,
+  "lng": 77.1614
+}

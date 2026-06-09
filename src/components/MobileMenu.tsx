@@ -41,7 +41,7 @@ const MobileMenu = ({ onClose }: { onClose: () => void }) => {
       {/* Header */}
       <div className="section-padding flex items-center justify-between h-20">
         <div className="flex items-center">
-          <img src="/assets/Logo.png" alt="Triviva Logo" className="h-16 w-auto" />
+          <img src="/assets/Logo.webp" alt="Triviva Logo" className="h-10 w-auto" />
         </div>
         <button onClick={onClose} className="p-2" aria-label="Close menu">
           <X className="w-6 h-6 text-foreground" />

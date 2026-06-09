@@ -1,0 +1,57 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Bangalore, Hyderabad & Coorg: Heritage Cities & Coffee Estates",
+  "location": "Bangalore, Hyderabad & Coorg, India",
+  "duration": "5 Days / 6 Nights",
+  "price": 25000,
+  "rating": 4.86,
+  "description": "A premium tour combining Bangalore's urban parks, Hyderabad's rich Nizami heritage (Charminar, Golconda Fort), the royal grandeur of Mysore Palace, and the peaceful, misty coffee estates of Coorg.",
+  "highlights": [
+    "Tour Hyderabad's historic Charminar and Golconda Fort",
+    "Explore Coorg's Dubare Elephant Camp and Abbey Falls",
+    "Visit Mysore Palace and Bangalore's Lalbagh Botanical Gardens"
+  ],
+  "image": "/data/packages/packages_image/banglore-hyderabad-mysore-coorg/01_coorg.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "City Tour",
+    "Historical",
+    "Mountain"
+  ],
+  "priority": 12,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 12.9716,
+  "lng": 77.5946
+}

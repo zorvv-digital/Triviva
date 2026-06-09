@@ -19,13 +19,8 @@ const stats = aboutData.stats.map(s => ({
   icon: iconMap[s.icon as keyof typeof iconMap] || Users,
 }));
 
-const team = aboutData.team;
 const values = aboutData.values;
 
-/**
- * Renders the About page, detailing the company values, core team,
- * and key journey metrics loaded from about.json.
- */
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -113,7 +108,7 @@ const About = () => {
             </p>
           </motion.div>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -121,7 +116,7 @@ const About = () => {
             className="font-display text-xl md:text-2xl font-bold text-[#111827] leading-snug border-l-2 border-primary/30 pl-6 max-w-xl mx-auto text-center"
           >
             Since 2016, we have been turning travel dreams into cherished memories — one journey at a time.
-          </motion.p>
+          </motion.div>
         </div>
       </section>
 
@@ -164,41 +159,6 @@ const About = () => {
           >
             "We believe the best travel stories aren't found in brochures. They happen when you take a wrong turn down a beautiful street, talk to the local potter, or watch the fog lift off a valley with a hot cup of tea. We gather those quiet, real moments so you can just be present."
           </motion.p>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-32 section-padding">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <span className="section-label mb-3 block">Our Team</span>
-            <h2 className="section-title">Meet the <span className="text-gradient">Explorers</span></h2>
-          </div>
-          <div className="flex flex-wrap md:grid md:grid-cols-3 lg:grid-cols-4 justify-center gap-y-12 gap-x-4 sm:gap-8">
-            {team.map((member, i) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="text-center group cursor-pointer w-[45%] md:w-auto"
-              >
-                <div className="relative w-28 h-28 sm:w-40 sm:h-40 mx-auto mb-4 sm:mb-6">
-                  {/* Avatar wrapper */}
-                  <div className="absolute inset-0 rounded-full bg-white flex items-center justify-center p-1 shadow-[0_1px_3px_rgba(0,0,0,0.02)] group-hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)] transition-shadow duration-500">
-                    <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center overflow-hidden relative">
-                      {/* Optional: Add real images here if available, otherwise stylish initials */}
-                      <span className="font-display text-2xl sm:text-3xl font-bold text-[#ea580c] group-hover:scale-110 transition-transform duration-500">{member.initials}</span>
-                      <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                  </div>
-                </div>
-                <h3 className="font-display text-base sm:text-xl font-bold text-[#111827] mb-0.5 sm:mb-1">{member.name}</h3>
-                <p className="text-[#ea580c] font-body text-[10px] sm:text-sm font-semibold uppercase tracking-wider">{member.role}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 

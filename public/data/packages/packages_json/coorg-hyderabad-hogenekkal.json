@@ -1,0 +1,58 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Coorg, Hyderabad & Hogenakkal: Hills, Heritage & Waterfalls",
+  "location": "Coorg, Hyderabad & Hogenakkal, India",
+  "duration": "6 Days / 7 Nights",
+  "price": 25000,
+  "rating": 4.84,
+  "description": "Experience the cool mist of Coorg's coffee valleys, the royal Nizami charm and film city attractions of Hyderabad, and the roaring, Kaveri river cascades of Hogenakkal waterfalls. A complete tour of Central and Southern India.",
+  "highlights": [
+    "Spend a full day exploring the grand sets of Ramoji Film City",
+    "Explore Coorg's Abbey Falls, Golden Temple, and Raja's Seat",
+    "Experience a traditional coracle ride at Hogenakkal Falls",
+    "Tour the historic Charminar and Golconda Fort in Hyderabad"
+  ],
+  "image": "/data/packages/packages_image/coorg-hyderabad-hogenekkal/01_coorg.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Historical",
+    "Nature"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 17.385,
+  "lng": 78.4867
+}

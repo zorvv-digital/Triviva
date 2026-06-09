@@ -1,0 +1,92 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Amman, Jordan",
+      "description": "Arrive in Amman, the capital of Jordan. Check into your hotel, relax and prepare for an incredible historical journey. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Mount Nebo, Nazareth & Cana",
+      "description": "Visit Mount Nebo, where Moses viewed the Promised Land. Cross the border into Israel to visit Nazareth and Cana, the site of the first miracle. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Mount of Beatitudes, Capernaum & Sea of Galilee Cruise",
+      "description": "Visit the Mount of Beatitudes, the site of the Sermon on the Mount, and Capernaum, the home of St. Peter. Take a peaceful boat cruise across the Sea of Galilee. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 4",
+      "title": "Jaffa Port & Mount of Olives (Jerusalem)",
+      "description": "Explore the ancient port city of Jaffa. Travel up to Jerusalem and ascend the Mount of Olives for a panoramic view of the Old City. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 5",
+      "title": "Gethsemane, Bethlehem & Dead Sea Float",
+      "description": "Visit the Garden of Gethsemane. Travel to Bethlehem to visit the Church of the Nativity. Conclude the day by floating in the salty waters of the Dead Sea. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 6",
+      "title": "Jericho & Bethany Tours",
+      "description": "Visit Jericho, the oldest continuously inhabited city in the world, and Bethany, the biblical home of Lazarus. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 7",
+      "title": "Golgotha (Jerusalem) to Cairo (Egypt)",
+      "description": "Visit Golgotha and the Holy Sepulchre in Jerusalem. Afterwards, make the journey across the Sinai Peninsula to Cairo, Egypt. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 8",
+      "title": "Giza Pyramids & Cairo City Tour",
+      "description": "Spend a full day exploring the Great Pyramids of Giza, the Sphinx, and the treasures of Cairo. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 9",
+      "title": "Cairo Departure",
+      "description": "Transfer to Cairo International Airport for your flight back home. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Holy Land: Historical & Spiritual Pilgrimage",
+  "location": "Jordan, Israel & Egypt",
+  "duration": "9 Days / 8 Nights",
+  "price": 25000,
+  "rating": 4.9,
+  "description": "Embark on a profound journey through Jordan, Israel, and Egypt. Visit holy sites including Mount Nebo, Nazareth, Cana, Mount of Beatitude, Capernaum, the Sea of Galilee, Jaffa, Mount of Olives, Gethsemane, Jericho, Dead Sea, Bethlehem, Golgotha, Bethany, and the pyramids of Cairo.",
+  "highlights": [
+    "Visit Mount Nebo, Nazareth, Cana, and Mount of Beatitudes",
+    "Sail on the Sea of Galilee and float in the Dead Sea",
+    "Explore Jerusalem (Mount of Olives, Garden of Gethsemane, Golgotha)",
+    "Tour Bethlehem, Jericho, Jaffa, and the Pyramids of Giza in Cairo",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/holy-land/01_HolyLand.webp",
+  "region": "international",
+  "categories": [
+    "International",
+    "Historical",
+    "Cultural"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "March",
+    "April",
+    "May",
+    "September",
+    "October",
+    "November"
+  ],
+  "showInHero": true,
+  "lat": 31.7683,
+  "lng": 35.2137
+}

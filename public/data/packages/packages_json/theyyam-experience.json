@@ -1,0 +1,57 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Premium hotel or heritage stay in Kannur"
+    },
+    {
+      "icon": "utensils",
+      "text": "All breakfasts and traditional Malabar meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Expert local guide explaining Theyyam rituals and folklore"
+    },
+    {
+      "icon": "ticket",
+      "text": "All temple entry permissions and ritual viewing coordinates"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for all sightseeing"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Theyyam: Mystical Ritual of Malabar",
+  "location": "Kannur, Kerala",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.88,
+  "description": "Experience the mystical world of Theyyam, an ancient ritual dance drama of North Kerala. Witness the divine invocation where mortals dress as deities, wearing elaborate red makeup, heavy ornaments, and towering headgear. Feel the intense devotion, traditional percussion, and fire-walking rituals in the sacred groves (kavus) of Kannur and Kasaragod. A once-in-a-lifetime spiritual journey into the heart of Malabar's folklore and ancient traditions.",
+  "highlights": [
+    "Witness authentic live Theyyam performances in traditional village shrines (kavus)",
+    "Interact with Theyyam artists and learn about the sacred makeup and towering headgears",
+    "Experience the vibrant drum beats, ancient chants, and mystical fire-walking rituals",
+    "Guided cultural tour focused entirely on the history and spiritual significance of Theyyam"
+  ],
+  "image": "/data/packages/packages_image/theyyam-experience/01_theyyam.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Cultural"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April"
+  ],
+  "showInHero": false,
+  "lat": 11.8745,
+  "lng": 75.3704
+}

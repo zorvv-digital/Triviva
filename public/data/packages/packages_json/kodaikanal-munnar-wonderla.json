@@ -1,0 +1,60 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Kodaikanal & Munnar: Double Hill-Station & Thrills",
+  "location": "Kodaikanal, Munnar & Kochi, India",
+  "duration": "3 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.84,
+  "description": "Escape to two of South India's most beloved hill stations, Kodaikanal and Munnar, followed by a day of adventure. Visit the star-shaped Kodai Lake, walk through the misty tea gardens of Munnar, and ride the rollercoasters at Wonderla.",
+  "highlights": [
+    "Explore Kodaikanal's Pillar Rocks and Coaker's Walk",
+    "Walk in Munnar's tea plantations and Echo Point",
+    "Enjoy high-energy rides and amusement at Wonderla"
+  ],
+  "image": "/data/packages/packages_image/kodaikanal-munnar-wonderla/01_kodaikanal.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature",
+    "Adventure Tour"
+  ],
+  "priority": 22,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May"
+  ],
+  "showInHero": false,
+  "lat": 10.2381,
+  "lng": 77.4892
+}

@@ -12,38 +12,23 @@
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Arrival in Kuala Lumpur & Twin Towers",
-      "description": "Fly into Kuala Lumpur. Visit iconic landmarks such as the Petronas Twin Towers, explore street markets, and check into your hotel."
+      "title": "Arrival in Kuala Lumpur & King's Palace Visit",
+      "description": "Fly into Kuala Lumpur. Check in to your hotel and visit the majestic King's Palace (Istana Negara) to see the royal residence. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 2",
-      "title": "Batu Caves Tour & Travel to Penang",
-      "description": "Climb the colorful steps of Batu Caves. In the afternoon, travel to Penang and check in."
+      "title": "Genting Highlands Scenic Excursion",
+      "description": "Take a day trip to Genting Highlands. Enjoy the cool mountain air, scenic cable car ride, and explore indoor/outdoor attractions. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 3",
-      "title": "Penang George Town Street Art & Food Tour",
-      "description": "Take a walking tour of the UNESCO George Town, photographing street art and tasting Penang street food."
+      "title": "Petronas Twin Towers & City Landmarks",
+      "description": "Marvel at the spectacular Petronas Twin Towers. Visit the historical Independence Square and the peaceful National Mosque. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 4",
-      "title": "Penang to Langkawi & Tioman Islands",
-      "description": "Travel to Langkawi or Tioman Islands. Check into your beachfront resort and watch the sunset."
-    },
-    {
-      "day": "Day 5",
-      "title": "Island Snorkeling & Diving Adventure",
-      "description": "Go on a boat trip for snorkeling, diving, and water activities in pristine, crystal-clear island waters."
-    },
-    {
-      "day": "Day 6",
-      "title": "Langkawi to Borneo Rainforest Safari",
-      "description": "Fly to Borneo. Head into the untamed rainforest to spot unique wildlife and explore natural beauty."
-    },
-    {
-      "day": "Day 7",
-      "title": "Borneo Indigenous Community Visit & Departure",
-      "description": "Visit an indigenous community village to immerse in their culture before transferring to the airport for departure."
+      "title": "Kuala Lumpur Shopping & Departure",
+      "description": "Enjoy a leisurely morning shopping or exploring Kuala Lumpur before transferring to the airport for your flight home. (Note: Itinerary details are subject to change)."
     }
   ],
   "gallery": [
@@ -52,25 +37,25 @@
     "/data/packages/packages_image/malaysia-explorer/03_gallery.webp",
     "/data/packages/packages_image/malaysia-explorer/04_gallery.webp"
   ],
-  "title": "Malaysia: Explorer Odyssey",
+  "title": "Malaysia: Kuala Lumpur & Genting Highlands",
   "location": "Malaysia",
-  "duration": "7 Days / 6 Nights",
+  "duration": "4 Days / 3 Nights",
   "price": 25000,
   "rating": 4.81,
-  "description": "Explore a land of incredible contrasts, from futuristic capital cities to ancient rainforests. Marvel at Kuala Lumpur's towering Petronas Twin Towers and the historic Batu Caves. Wander the colonial streets of George Town in Penang to see vibrant street art and sample famous local street food. Relax on the tropical beaches of Langkawi and Tioman, and journey into Borneo's wild rainforests to meet indigenous communities and encounter unique wildlife.",
+  "description": "Explore the vibrant heart of Malaysia. Tour the bustling capital of Kuala Lumpur, marvel at the towering Petronas Twin Towers, visit the historic Independence Square and the serene National Mosque. Venture up to the cool slopes of Genting Highlands for mountain scenery, theme parks, and entertainment.",
   "highlights": [
-    "View the spectacular Petronas Twin Towers and climb the steps of Batu Caves",
-    "Walk the UNESCO-listed colonial streets and street art lanes of Penang",
-    "Savor Malaysia's world-famous street food in Penang and Kuala Lumpur",
-    "Relax on the tropical beaches of Langkawi and Tioman Islands",
-    "Journey into the ancient rainforests of Borneo to spot wild orangutans",
-    "Meet indigenous Borneo communities and learn their traditional lifestyles"
+    "Explore iconic sights in Kuala Lumpur: Petronas Twin Towers and Independence Square",
+    "Visit the historic and majestic King's Palace (Istana Negara)",
+    "Enjoy the serene atmosphere of the National Mosque",
+    "Day trip to Genting Highlands with a scenic cable car ride",
+    "Please note: Itinerary details are subject to change"
   ],
   "image": "/data/packages/packages_image/malaysia-explorer/01-Malaysia.webp",
   "region": "international",
   "categories": [
     "International",
-    "Adventure Tour"
+    "City Tour",
+    "Cultural"
   ],
   "priority": 10,
   "bestTimeToVisit": [
