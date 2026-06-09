@@ -31,10 +31,7 @@
       "description": "Drive to the beautiful, crescent-shaped Palolem Beach in South Goa for a relaxing morning. Later, transfer to the airport or railway station for your return journey."
     }
   ],
-  "gallery": [
-    "/data/packages/packages_image/goa-package/02-Goa.webp",
-    "/data/packages/packages_image/goa-package/ChatGPT Image May 31, 2026, 02_13_18 PM.webp"
-  ],
+  "gallery": [],
   "title": "Goa: Beach & Heritage Getaway",
   "location": "Goa, India",
   "duration": "4 Days / 3 Nights",
@@ -49,7 +46,7 @@
     "Relax in the peaceful and pristine atmosphere of Palolem Beach in South Goa",
     "Indulge in authentic Indo-Portuguese culinary tours and local street food"
   ],
-  "image": "/data/packages/packages_image/goa-package/01-Goa.webp",
+  "image": "/data/packages/packages_image/goa-package/01_goa.webp",
   "region": "domestic",
   "categories": [
     "Domestic",

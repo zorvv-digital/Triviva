@@ -1,0 +1,59 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Coorg & Mysore: Hills, Heritage & Thrills",
+  "location": "Coorg, Mysore & Kochi, India",
+  "duration": "3 Days / 4 Nights",
+  "price": 25000,
+  "rating": 4.85,
+  "description": "A fantastic 3-day journey from the misty coffee plantations of Coorg to the historic palaces of Mysore and the thrilling adventure rides of Wonderla. Visit elephant camps, Buddhist monasteries, royal palaces, and experience high-speed waterslides.",
+  "highlights": [
+    "Walk through the fragrant coffee estates and waterfalls of Coorg",
+    "Visit the Namdroling Monastery (Golden Temple) in Bylakuppe",
+    "Tour the historic Mysore Palace and Brindavan Gardens",
+    "Enjoy a full day of entertainment at Wonderla Amusement Park"
+  ],
+  "image": "/data/packages/packages_image/coorg-mysore-wonderla/01_coorg.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Historical",
+    "Adventure Tour"
+  ],
+  "priority": 22,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 12.4244,
+  "lng": 75.7382
+}

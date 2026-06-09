@@ -377,7 +377,7 @@ const TrivivaApp = {
       id: "story-" + Date.now().toString().slice(-4),
       location: "Agra, India",
       title: "Taj Mahal Sunset View",
-      image: "/data/stories/Memory1.png",
+      image: "/data/stories/Memory1.webp",
       story: "A descriptive story about this trip."
     });
     this.renderForm("last_trips.json", this.currentData);

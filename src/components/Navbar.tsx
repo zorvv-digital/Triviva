@@ -55,9 +55,9 @@ const Navbar = () => {
         <div className="section-padding flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
             <img
-              src="/assets/Logo.png"
+              src="/assets/Logo.webp"
               alt="Triviva Logo"
-              className="h-16 w-auto transition-all duration-300"
+              className="h-10 w-auto transition-all duration-300"
               style={useWhiteNav ? { filter: "brightness(0) invert(1)" } : undefined}
             />
           </Link>

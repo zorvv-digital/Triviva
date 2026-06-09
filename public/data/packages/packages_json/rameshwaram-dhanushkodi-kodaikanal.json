@@ -1,0 +1,63 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Rameswaram Temple, Dhanushkodi & Memorial",
+      "description": "Visit the holy Ramanathaswamy Temple. Explore the ghost town of Dhanushkodi and visit the Dr. A.P.J. Abdul Kalam Memorial Museum. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Theni Grape Farms, Wagamon Meadows & Paruthumpara",
+      "description": "Travel through Cumbum and Theni, stopping to tour local grape farms. Proceed to Wagamon to walk in the Pine Valley Forest and see Mottakunnu meadows and Paruthumpara viewpoints. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Kodaikanal Sightseeing & Departure",
+      "description": "Drive up to Kodaikanal. Enjoy boating on Kodaikanal Lake, visit the majestic Pillar Rocks, and take in the view from Suicide Point before departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Rameshwaram, Dhanushkodi & Kodaikanal Tour",
+  "location": "Tamil Nadu & Kerala",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.81,
+  "description": "A diverse journey combining spiritual pilgrimage, historic ghost towns, lush grape farms, and cool hill stations. Visit Rameswaram Temple and Dhanushkodi, tour the grape gardens of Theni, explore Wagamon's pine forests, and see Kodaikanal's lakes and cliffs.",
+  "highlights": [
+    "Visit the historic Ramanathaswamy Temple in Rameswaram",
+    "Explore the ghost town of Dhanushkodi and Abdul Kalam Museum",
+    "Tour the grape farms of Cumbum and Theni",
+    "Walk in the Pine Valley Forest and Mottakunnu hills in Wagamon",
+    "Explore Kodaikanal Lake, Pillar Rocks, and Suicide Point",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/rameshwaram-dhanushkodi-kodaikanal/01_kodaikanal.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Historical",
+    "Mountain",
+    "Nature"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 9.2876,
+  "lng": 79.3129
+}

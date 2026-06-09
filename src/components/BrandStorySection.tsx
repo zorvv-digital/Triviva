@@ -42,44 +42,44 @@ const BrandStorySection = () => {
 
           {/* Right Column: Simple professional story description & CTA */}
           <div className="lg:col-span-7 space-y-4 md:space-y-6">
-            {/* Mobile-friendly combined text */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-slate-700 font-body text-base md:text-lg leading-relaxed md:hidden"
+              className="text-slate-700 font-display text-base md:text-lg leading-relaxed"
             >
-              Our journey began in 2016 as Triviva Trip Advisor. Today, we are proud to continue this legacy as Triviva Holidays, designing custom itineraries that connect you to authentic local cultures and handpicked destinations.
+              <span className="text-primary">
+                A dream that began with our father's vision and love for travel.
+              </span>{" "}
+              A man full of ideas, passion, and an endless curiosity for the world, he built this venture with his heart. Today, we proudly carry his dream forward, preserving his legacy while creating new journeys and unforgettable memories for others.
             </motion.p>
 
-            {/* Desktop version (original paragraph 1) */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-slate-700 font-body text-base md:text-lg leading-relaxed hidden md:block"
-            >
-              Our journey began in 2016 as Triviva Trip Advisor, built on a simple promise: to help travelers discover the world through meaningful, personal journeys. 
-            </motion.p>
-            
-            {/* Desktop version (original paragraph 2) */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-slate-600 font-body text-sm md:text-base leading-relaxed hidden md:block"
+              className="text-slate-600 font-display text-sm md:text-base leading-relaxed"
             >
-              Over the years, our brand has grown and evolved. Today, we are proud to continue this legacy as Triviva Holidays. We craft custom itineraries that connect you directly with local cultures, authentic traditions, and handpicked destinations.
+              More than a travel agency, this is a tribute to his spirit, our family's passion, and the belief that every journey has a story.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-primary font-display font-semibold text-sm md:text-base leading-relaxed"
+            >
+              Turning travel dreams into memories since 2016.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
               className="pt-2 md:pt-4"
             >
               <Link

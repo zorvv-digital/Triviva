@@ -12,33 +12,23 @@
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Hanoi Arrival & Old Quarter Tour",
-      "description": "Arrive in Hanoi. Explore the Old Quarter and Hoan Kiem Lake, and enjoy local Vietnamese coffee."
+      "title": "Hanoi Arrival & Temple of Literature Tour",
+      "description": "Arrive in Hanoi. Check in to your hotel and visit the historic Temple of Literature, Vietnam's first national university. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 2",
-      "title": "Hanoi to Halong Bay Overnight Cruise",
-      "description": "Drive to Halong Bay. Board a luxury cruise ship. Kayak around limestone karsts and visit caves."
+      "title": "Hoan Kiem Lake & Water Puppet Show",
+      "description": "Discover the heart of Hanoi by strolling around Hoan Kiem Lake and visiting Ngoc Son Temple. In the evening, attend a traditional Vietnamese Water Puppet Show. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 3",
-      "title": "Halong Bay to Hoi An Ancient Town",
-      "description": "Fly to Da Nang and transfer to Hoi An. Tour the lantern-lit ancient streets and historic buildings."
+      "title": "Ho Chi Minh Mausoleum & Transfer to Halong Bay",
+      "description": "Visit the solemn Ho Chi Minh President Mausoleum complex. In the afternoon, transfer to Halong Bay and board a cruise ship to admire the limestone karsts. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 4",
-      "title": "Hoi An to Ho Chi Minh City Sightseeing",
-      "description": "Fly to Ho Chi Minh City. Visit the War Remnants Museum and the historic Post Office."
-    },
-    {
-      "day": "Day 5",
-      "title": "Cu Chi Tunnels & Mekong Delta Tour",
-      "description": "Excursion to the Cu Chi Tunnels. Later, take a boat trip through the Mekong Delta floating markets."
-    },
-    {
-      "day": "Day 6",
-      "title": "Ho Chi Minh City Departure",
-      "description": "Check out and transfer to the airport for your onward flight."
+      "title": "Halong Bay Cruise & Departure",
+      "description": "Spend the morning cruising among the breathtaking emerald waters of Halong Bay. Transfer back to Hanoi for your onward flight. (Note: Itinerary details are subject to change)."
     }
   ],
   "gallery": [
@@ -50,17 +40,16 @@
   ],
   "title": "Vietnam: Cultural Discovery",
   "location": "Vietnam",
-  "duration": "6 Days / 5 Nights",
+  "duration": "4 Days / 3 Nights",
   "price": 25000,
   "rating": 4.8,
-  "description": "Journey through a land of spectacular natural beauty, ancient history, and vibrant cultures. Discover Hanoi's French-colonial Old Quarter and the historic Ho Chi Minh Mausoleum, and cruise past the limestone karsts of Halong Bay on an overnight ship. Walk the magical lantern-lit streets of ancient Hoi An, explore the historic war tunnels of Cu Chi near Ho Chi Minh City, and cruise past the floating markets and orchards of the Mekong Delta.",
+  "description": "Immerse yourself in Vietnam's rich heritage. Explore Hanoi's historic sites including the Temple of Literature and Ho Chi Minh Mausoleum, enjoy a traditional Water Puppet Show by Hoan Kiem Lake, and cruise through the majestic limestone islands of Halong Bay.",
   "highlights": [
-    "Explore Hanoi's historic Old Quarter and visit the Ho Chi Minh Mausoleum",
-    "Overnight luxury cruise through the limestone karsts and caves of Halong Bay",
-    "Go kayaking and cave exploring in Halong Bay's emerald waters",
-    "Stroll through the magical, lantern-lit colonial streets of ancient Hoi An",
-    "Visit the historic Cu Chi Tunnels and War Remnants Museum in Ho Chi Minh City",
-    "Cruise past floating markets and fruit orchards in the lush Mekong Delta"
+    "Visit Hanoi's historic Temple of Literature and Ho Chi Minh Mausoleum",
+    "Enjoy a traditional Water Puppet Show in Hanoi",
+    "Walk around the peaceful shores of Hoan Kiem Lake",
+    "Cruise through the spectacular limestone karsts of Halong Bay",
+    "Please note: Itinerary details are subject to change"
   ],
   "image": "/data/packages/packages_image/vietnam-discover/01-Vietnam.webp",
   "region": "international",

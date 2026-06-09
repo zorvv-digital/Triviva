@@ -50,7 +50,22 @@ const iconMap = {
   payment: CreditCard
 };
 
-const includedIcons = [Plane, Hotel, Utensils, Camera, Check];
+const getIconForText = (text: string) => {
+  const lower = text.toLowerCase();
+  
+  if (lower.includes("operator") || lower.includes("guide") || lower.includes("organizer")) return iconMap.guide;
+  if (lower.includes("ticket") || lower.includes("permit") || lower.includes("pass")) return iconMap.ticket;
+  if (lower.includes("insurance") || lower.includes("shield")) return iconMap.shield;
+  if (lower.includes("hotel") || lower.includes("accommodation") || lower.includes("stay") || lower.includes("resort")) return iconMap.hotel;
+  if (lower.includes("car") || lower.includes("rental") || lower.includes("vehicle") || lower.includes("transfer")) return iconMap.car;
+  if (lower.includes("passport") || lower.includes("visa")) return iconMap.payment;
+  if (lower.includes("cruise") || lower.includes("boat") || lower.includes("ship")) return iconMap.ship;
+  if (lower.includes("flight") || lower.includes("plane")) return iconMap.plane;
+  if (lower.includes("meal") || lower.includes("dinner") || lower.includes("lunch") || lower.includes("food") || lower.includes("utensils")) return iconMap.utensils;
+  if (lower.includes("breakfast") || lower.includes("coffee")) return iconMap.coffee;
+  
+  return Check;
+};
 
 const PackageDetail = () => {
   const { id } = useParams();
@@ -61,6 +76,8 @@ const PackageDetail = () => {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const { getPackageOffer, getDiscountedPrice } = useOfferInfo();
 
+  const baseId = id ? id.replace("-2", "") : "";
+
   const handleBack = (e: React.MouseEvent) => {
     e.preventDefault();
     if (window.history.length > 1) {
@@ -70,14 +87,11 @@ const PackageDetail = () => {
     }
   };
 
-  const pkgOffer = details ? getPackageOffer(details.id) : null;
-  const discountedPrice = details ? getDiscountedPrice(details.id, details.price) : null;
+  const pkgOffer = baseId ? getPackageOffer(baseId) : null;
+  const discountedPrice = baseId && details ? getDiscountedPrice(baseId, details.price) : null;
 
   useEffect(() => {
-    if (!id) return;
-    
-    // Strip trailing '-2' from duplicated package keys to load correct JSON file
-    const baseId = id.replace("-2", "");
+    if (!baseId) return;
     
     setLoading(true);
     setError(null);
@@ -95,7 +109,7 @@ const PackageDetail = () => {
         setError(err.message || "Failed to load package");
         setLoading(false);
       });
-  }, [id]);
+  }, [baseId]);
 
   if (loading) {
     return (
@@ -242,60 +256,64 @@ const PackageDetail = () => {
             </motion.div>
 
             {/* Itinerary */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-display text-3xl font-bold text-foreground mb-10">Itinerary</h2>
-              <div className="flex flex-col gap-6 md:gap-8">
-                {details.itinerary.map((step, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1, duration: 0.6 }}
-                    className="flex gap-4 md:gap-8"
-                  >
-                    <div className="relative flex flex-col items-center min-w-[24px] md:min-w-[32px]">
-                      <div className="w-3 h-3 mt-8 rounded-full bg-primary ring-[6px] ring-primary/20 z-10" />
-                      {i !== details.itinerary.length - 1 && (
-                        <div className="absolute top-14 bottom-[-24px] md:bottom-[-32px] w-[1.5px] bg-primary/30" />
-                      )}
-                    </div>
-                    
-                    <div className="flex-1 bg-[#faf8f5] rounded-3xl p-6 md:p-8 border border-slate-200/60 transition-all duration-500 hover:bg-white hover:border-primary/30 hover:translate-x-1">
-                      <span className="text-primary font-body text-xs md:text-sm font-bold uppercase tracking-[0.15em] mb-2 block">
-                        {step.day}
-                      </span>
-                      <h3 className="font-display text-2xl md:text-3xl font-bold text-[#111827] mb-3">
-                        {step.title}
-                      </h3>
-                      <p className="text-[#6b7280] font-body text-sm md:text-base leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+            {details.itinerary && details.itinerary.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="font-display text-3xl font-bold text-foreground mb-10">Itinerary</h2>
+                <div className="flex flex-col gap-6 md:gap-8">
+                  {details.itinerary.map((step, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1, duration: 0.6 }}
+                      className="flex gap-4 md:gap-8"
+                    >
+                      <div className="relative flex flex-col items-center min-w-[24px] md:min-w-[32px]">
+                        <div className="w-3 h-3 mt-8 rounded-full bg-primary ring-[6px] ring-primary/20 z-10" />
+                        {i !== details.itinerary.length - 1 && (
+                          <div className="absolute top-14 bottom-[-24px] md:bottom-[-32px] w-[1.5px] bg-primary/30" />
+                        )}
+                      </div>
+                      
+                      <div className="flex-1 bg-[#faf8f5] rounded-3xl p-6 md:p-8 border border-slate-200/60 transition-all duration-500 hover:bg-white hover:border-primary/30 hover:translate-x-1">
+                        <span className="text-primary font-body text-xs md:text-sm font-bold uppercase tracking-[0.15em] mb-2 block">
+                          {step.day}
+                        </span>
+                        <h3 className="font-display text-2xl md:text-3xl font-bold text-[#111827] mb-3">
+                          {step.title}
+                        </h3>
+                        <p className="text-[#6b7280] font-body text-sm md:text-base leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
 
             {/* Gallery */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="font-display text-2xl font-bold text-foreground mb-6">Gallery</h2>
-              <div className="grid grid-cols-3 gap-4">
-                {details.gallery.map((img, i) => (
-                  <div key={i} className="img-curved aspect-square">
-                    <img src={getImage(img)} alt={`${details.title} gallery ${i + 1}`} className="w-full h-full object-cover" />
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+            {details.gallery && details.gallery.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="font-display text-2xl font-bold text-foreground mb-6">Gallery</h2>
+                <div className="grid grid-cols-3 gap-4">
+                  {details.gallery.map((img, i) => (
+                    <div key={i} className="img-curved aspect-square">
+                      <img src={getImage(img)} alt={`${details.title} gallery ${i + 1}`} className="w-full h-full object-cover" />
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
           </div>
 
           {/* Sidebar - Booking Card */}
@@ -345,7 +363,7 @@ const PackageDetail = () => {
                     
                     const IconComponent = isObject 
                       ? (iconMap[iconKey as keyof typeof iconMap] || Check) 
-                      : (includedIcons[i % includedIcons.length] || Check);
+                      : getIconForText(text);
 
                     return (
                       <div key={i} className="flex items-center gap-3">

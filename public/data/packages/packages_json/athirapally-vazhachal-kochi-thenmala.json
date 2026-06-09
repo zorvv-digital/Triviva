@@ -1,0 +1,65 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Athirapally & Vazhachal Waterfalls",
+      "description": "Visit the majestic and roaring Athirapally Waterfalls (the Niagaras of Kerala) and the nearby Vazhachal Waterfalls. Transfer to your hotel in Kochi. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kochi Heritage & 3-Hour Backwater Cruise",
+      "description": "Explore Fort Kochi, Mattancherry, and view the Container Terminal. Enjoy a peaceful 3-hour boating excursion in the backwaters. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Thenmala Dam, Palaruvi Falls & Laser Show",
+      "description": "Travel to Thenmala. Visit the Thenmala Dam, Deer Park, Palaruvi and Kuttikalam waterfalls. Watch the evening Laser Show before transfer for departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [
+    "/data/packages/packages_image/athirapally-vazhachal-kochi-thenmala/02_Athirapally.webp",
+    "/data/packages/packages_image/athirapally-vazhachal-kochi-thenmala/03_Athirapally.webp"
+  ],
+  "title": "Athirapally, Kochi & Thenmala Tour",
+  "location": "Kerala, India",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.72,
+  "description": "Embark on a natural and heritage tour across Kerala. Witness the spectacular Athirapally and Vazhachal waterfalls, explore the history and backwaters of Fort Kochi and Mattancherry, and experience eco-tourism, wildlife, and laser shows in Thenmala.",
+  "highlights": [
+    "Witness the breathtaking Athirapally and Vazhachal waterfalls",
+    "Tour the historic sites of Mattancherry and Fort Kochi",
+    "Enjoy a relaxing 3-hour backwater boating tour",
+    "Explore Thenmala Dam, Deer Park, and Palaruvi and Kuttikalam Waterfalls",
+    "Watch the spectacular Laser Show at Thenmala",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/athirapally-vazhachal-kochi-thenmala/01_Athirapally.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Nature",
+    "Cultural"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 9.9312,
+  "lng": 76.2673
+}

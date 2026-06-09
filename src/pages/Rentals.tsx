@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Info, CheckCircle2, ShieldCheck, Clock, Users } from "lucide-react";
+import { Info, CheckCircle2, ShieldCheck, Clock, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import VehicleCard, { Vehicle } from "@/components/rentals/VehicleCard";
 import RentalBookingModal from "@/components/rentals/RentalBookingModal";
-import FilterTabs from "@/components/ui/FilterTabs";
 import CTASection from "@/components/CTASection";
 
 const Rentals = () => {
@@ -32,9 +31,6 @@ const Rentals = () => {
       });
   }, []);
 
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedType, setSelectedType] = useState<"all" | "coach" | "minibus">("all");
-  
   const [selectedVehicle, setSelectedVehicle] = useState<Vehicle | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,20 +39,7 @@ const Rentals = () => {
     setIsModalOpen(true);
   };
 
-  const filteredVehicles = vehicles.filter((vehicle) => {
-    const matchesSearch =
-      vehicle.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      vehicle.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      vehicle.amenities.some((amenity) =>
-        amenity.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-
-    const matchesType = selectedType === "all" || vehicle.type === selectedType;
-
-    return matchesSearch && matchesType;
-  });
-
-  const sortedVehicles = [...filteredVehicles].sort((a, b) => a.priority - b.priority);
+  const sortedVehicles = [...vehicles].sort((a, b) => a.priority - b.priority);
 
   return (
     <div className="min-h-screen bg-background">
@@ -72,33 +55,7 @@ const Rentals = () => {
           </h1>
         </div>
 
-        {/* Search & Filter Header */}
-        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 md:gap-4 mb-6 md:mb-10 pb-4 md:pb-6 border-b border-black/[0.03]">
-          {/* Tabs Filter */}
-          <FilterTabs
-            options={[
-              { value: "all", label: "All Fleet" },
-              { value: "coach", label: "Luxury Coaches" },
-              { value: "minibus", label: "Mini Buses" },
-            ]}
-            selectedValue={selectedType}
-            onChange={(val) => setSelectedType(val)}
-          />
 
-          {/* Search Box */}
-          <div className="relative flex-grow max-w-md">
-            <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-              <Search className="w-4 h-4" />
-            </span>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by vehicle name or amenities..."
-              className="w-full pl-10 pr-4 py-3 bg-white border border-slate-200 rounded-full text-sm outline-none focus:border-primary transition-all shadow-sm"
-            />
-          </div>
-        </div>
 
         {/* Feature Cards Grid */}
         {loading ? (

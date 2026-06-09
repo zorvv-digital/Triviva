@@ -5,13 +5,13 @@ Curating unforgettable journeys. Discover handcrafted travel packages and bespok
 ## Project Visuals
 
 ### Travel Hero
-![Voyago Hero](docs/screenshots/hero.png)
+![Voyago Hero](docs/screenshots/hero.webp)
 
 ### Exclusive Packages
-![Voyago Packages](docs/screenshots/packages.png)
+![Voyago Packages](docs/screenshots/packages.webp)
 
 ### About Voyago
-![Voyago About](docs/screenshots/about.png)
+![Voyago About](docs/screenshots/about.webp)
 
 ## Getting Started
 

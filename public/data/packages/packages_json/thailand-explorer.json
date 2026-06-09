@@ -12,38 +12,23 @@
   "itinerary": [
     {
       "day": "Day 1",
-      "title": "Bangkok Arrival, Grand Palace & Wat Arun",
-      "description": "Arrive in Bangkok. Tour the Grand Palace, Wat Arun (Temple of Dawn), and experience local street markets."
+      "title": "Bangkok Arrival & Transfer to Pattaya (Alcazar Show)",
+      "description": "Arrive in Bangkok. Transfer directly to the seaside resort city of Pattaya. In the evening, attend the dazzling and world-famous Alcazar Cabaret Show. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 2",
-      "title": "Bangkok to Pattaya, Sanctuary of Truth",
-      "description": "Drive to Pattaya. Visit the stunning wooden Sanctuary of Truth temple. In the evening, explore Pattaya's Walking Street."
+      "title": "Coral Island Speedboat Tour & Sri Racha Tiger Zoo",
+      "description": "Take a thrilling speedboat ride to Coral Island for water sports and relaxation on white sand beaches. Later, visit the Sri Racha Tiger Zoo to see exotic wildlife. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 3",
-      "title": "Pattaya to Chiang Mai & Cooking Class",
-      "description": "Fly to Chiang Mai. Explore the old town and join a traditional Thai cooking class in the evening."
+      "title": "Bangkok Safari World & Marine Park Day Trip",
+      "description": "Travel back to Bangkok for a full-day adventure at Safari World and Marine Park. Enjoy open safari drives and fascinating marine mammal shows. (Note: Itinerary details are subject to change)."
     },
     {
       "day": "Day 4",
-      "title": "Elephant Nature Park & Jungle Trekking",
-      "description": "Visit the ethical Elephant Nature Park to interact with rescued elephants, followed by a jungle trek."
-    },
-    {
-      "day": "Day 5",
-      "title": "Chiang Mai to Phuket / Krabi Beaches",
-      "description": "Fly to Phuket or Krabi. Check into your beach resort and relax on the white sands."
-    },
-    {
-      "day": "Day 6",
-      "title": "Krabi/Phuket Island Hopping & Snorkeling",
-      "description": "Take a speedboat island-hopping tour. Snorkel in crystal-clear waters and relax in hidden coves."
-    },
-    {
-      "day": "Day 7",
-      "title": "Thailand Departure",
-      "description": "Enjoy a free morning before transferring to the airport for your return flight."
+      "title": "Bangkok Sightseeing & Departure",
+      "description": "Enjoy a morning of leisure or souvenir shopping in Bangkok before transferring to the airport for your departure flight. (Note: Itinerary details are subject to change)."
     }
   ],
   "gallery": [
@@ -52,19 +37,18 @@
     "/data/packages/packages_image/thailand-explorer/03_gallery.webp",
     "/data/packages/packages_image/thailand-explorer/04_gallery.webp"
   ],
-  "title": "Thailand: Tropical Explorer",
+  "title": "Thailand: Bangkok & Pattaya Explorer",
   "location": "Thailand",
-  "duration": "7 Days / 6 Nights",
+  "duration": "4 Days / 3 Nights",
   "price": 25000,
   "rating": 4.82,
-  "description": "Uncover the colors, culture, and coastal beauty of Thailand on an immersive Southeast Asian journey. Experience the energy of Bangkok's grand palaces and lively street food scenes, and explore the beaches, caves, and snorkeling reefs of Phuket and Krabi. Trek through the misty jungles of Chiang Mai, visit ethical elephant sanctuaries, and experience Pattaya's spectacular wooden Sanctuary of Truth and vibrant seaside entertainment.",
+  "description": "Discover the vibrant cities of Bangkok and Pattaya. Enjoy the gorgeous beaches and water activities at Coral Island, watch the spectacular Alcazar Show, visit the Sri Racha Tiger Zoo, and experience the thrill of Safari World and Marine Park.",
   "highlights": [
-    "Tour Bangkok's majestic Grand Palace and the iconic riverside Wat Arun temple",
-    "Discover Pattaya's wooden architectural masterpiece, the Sanctuary of Truth",
-    "Visit ethical elephant sanctuaries and trek the jungles of Chiang Mai",
-    "Relax on the world-famous white sand beaches of Phuket, Krabi, and Koh Samui",
-    "Speedboat island-hopping cruises with snorkeling in coral reefs",
-    "Join traditional Thai cooking classes and explore vibrant night markets"
+    "Attend the world-famous Alcazar Cabaret Show in Pattaya",
+    "Take a speedboat trip to Coral Island for beach activities",
+    "Explore the Sri Racha Tiger Zoo",
+    "Enjoy a full day at Safari World and Marine Park in Bangkok",
+    "Please note: Itinerary details are subject to change"
   ],
   "image": "/data/packages/packages_image/thailand-explorer/01-Thailand.webp",
   "region": "international",

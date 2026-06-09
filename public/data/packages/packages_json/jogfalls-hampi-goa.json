@@ -1,0 +1,56 @@
+{
+  "included": [
+    {
+      "icon": "hotel",
+      "text": "Comfortable hotel and resort stays"
+    },
+    {
+      "icon": "utensils",
+      "text": "Daily breakfast and regional dinner meals"
+    },
+    {
+      "icon": "guide",
+      "text": "Local experienced driver and sightseeing guide"
+    },
+    {
+      "icon": "ticket",
+      "text": "All applicable destination entry tickets"
+    },
+    {
+      "icon": "car",
+      "text": "Private air-conditioned transfers for the entire route"
+    }
+  ],
+  "itinerary": [],
+  "gallery": [],
+  "title": "Jog Falls, Hampi & Goa: Waterfalls, Ruins & Beaches",
+  "location": "Hampi, Shimoga & Goa, India",
+  "duration": "5 Days / 6 Nights",
+  "price": 25000,
+  "rating": 4.88,
+  "description": "Discover the spectacular ruins of the Vijayanagara Empire in Hampi, marvel at the majestic height of Jog Falls (one of India's tallest waterfalls), and unwind on the sandy beaches and heritage churches of Goa.",
+  "highlights": [
+    "Explore the UNESCO World Heritage ruins of Hampi (Virupaksha Temple, Stone Chariot)",
+    "Witness the breathtaking, roaring cascades of Jog Falls in Shimoga",
+    "Unwind on the golden sand beaches of Goa and explore Old Goa heritage"
+  ],
+  "image": "/data/packages/packages_image/jogfalls-hampi-goa/01_goa.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Nature",
+    "Historical",
+    "Beach"
+  ],
+  "priority": 12,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February"
+  ],
+  "showInHero": false,
+  "lat": 15.335,
+  "lng": 76.462
+}

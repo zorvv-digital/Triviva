@@ -36,12 +36,7 @@
       "description": "Enjoy a final hill sunrise, check out, and transfer to Madurai or Coimbatore for departure."
     }
   ],
-  "gallery": [
-    "/data/packages/packages_image/kodaikanal-package/02_gallery.webp",
-    "/data/packages/packages_image/kodaikanal-package/02_main.webp",
-    "/data/packages/packages_image/kodaikanal-package/03_gallery.webp",
-    "/data/packages/packages_image/kodaikanal-package/04_gallery.webp"
-  ],
+  "gallery": [],
   "title": "Kodaikanal: Tranquil Hills Escape",
   "location": "Kodaikanal, India",
   "duration": "5 Days / 4 Nights",
@@ -71,7 +66,7 @@
     "October",
     "November"
   ],
-  "showInHero": true,
+  "showInHero": false,
   "lat": 10.2381,
   "lng": 77.4892
 }

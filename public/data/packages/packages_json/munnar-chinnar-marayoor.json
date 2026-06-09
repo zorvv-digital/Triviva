@@ -1,0 +1,59 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Munnar Hills & National Park",
+      "description": "Explore the scenic Munnar hills. Visit Eravikulam National Park to spot the Nilgiri Tahr. Tour Mattupetty Dam, Echo Point, and the beautiful Kundala Dam. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Chinnar Trekking & Marayoor Sandalwood Forests",
+      "description": "Go for a trekking (trucking) expedition in Chinnar Wildlife Sanctuary. Visit the natural sandalwood forests and dolmens of Marayoor before departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Munnar, Chinnar & Marayoor Eco-Tour",
+  "location": "Kerala, India",
+  "duration": "2 Days / 1 Night",
+  "price": 25000,
+  "rating": 4.82,
+  "description": "A wonderful weekend getaway into the hills and forests of Munnar. Spot rare wildlife at Eravikulam National Park, visit scenic dams and echo points, go trekking in Chinnar Wildlife Sanctuary, and explore Marayoor's sandalwood forests.",
+  "highlights": [
+    "Explore Eravikulam National Park and view tea plantations",
+    "Visit Mattupetty Dam, Echo Point, and Kundala Dam in Munnar",
+    "Embark on a guided trekking (trucking) adventure in Chinnar Sanctuary",
+    "Walk through the fragrant Sandalwood Forests of Marayoor",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/munnar-chinnar-marayoor/01_Munnar.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Nature",
+    "Weekend Gateway"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May"
+  ],
+  "showInHero": false,
+  "lat": 10.0889,
+  "lng": 77.0595
+}

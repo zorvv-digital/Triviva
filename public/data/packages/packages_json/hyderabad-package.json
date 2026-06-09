@@ -1,0 +1,61 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Hyderabad Heritage, Golconda & Laser Show",
+      "description": "Arrive in Hyderabad. Visit the historic Charminar, Mecca Masjid, and the Salar Jung Museum. Explore the massive Golconda Fort and witness the evening Laser Show at Lumbini Park. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Ramoji Film City Day Tour",
+      "description": "Spend a full day exploring the magical world of Ramoji Film City, the world's largest integrated film studio complex. Enjoy live shows, film sets, and amusement rides. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Birla Temple & NTR Gardens",
+      "description": "Visit the white-marble Birla Temple and stroll through the lush NTR Gardens. Transfer to the station/airport for your departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Hyderabad: The City of Pearls",
+  "location": "Telangana, India",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.65,
+  "description": "Discover the heritage and modern entertainment of Hyderabad. Tour the iconic Charminar and Golconda Fort, marvel at the exhibits in Salar Jung Museum, visit Birla Temple, walk through NTR Gardens, see the Lumbini Park laser show, and explore Ramoji Film City.",
+  "highlights": [
+    "Spend a full day at the world-famous Ramoji Film City",
+    "Tour the historic Charminar and Mecca Masjid",
+    "Explore the archaeological wonders of Golconda Fort",
+    "Visit the Salar Jung Museum and white-marble Birla Temple",
+    "Enjoy NTR Gardens and the Lumbini Park Laser Show",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/hyderabad-package/01_Charminar.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Historical",
+    "City Tour"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 17.385,
+  "lng": 78.4867
+}

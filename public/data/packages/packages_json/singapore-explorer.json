@@ -1,0 +1,68 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Passport & Visa",
+    "Travel Insurance",
+    "Cruise Services",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Singapore & Marina Bay Sands SkyPark",
+      "description": "Arrive in Singapore. In the evening, ascend the Marina Bay Sands SkyPark for incredible panoramic views of the city skyline, followed by shopping on Orchard Road. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Suntec City, Merlion & Sentosa Island Excursion",
+      "description": "Visit Suntec City and marvel at the Fountain of Wealth. Photograph the iconic Merlion Park, then head to Sentosa Island for beachside fun and beautiful attractions. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Thian Hock Temple & Universal Studios Singapore",
+      "description": "Explore the historical Thian Hock Temple, Singapore's oldest Hokkien temple. Spend the rest of your day experiencing thrilling rides and world-class shows at Universal Studios. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 4",
+      "title": "Jurong Bird Park & Departure",
+      "description": "Explore the vibrant aviaries and bird shows at Jurong Bird Park before transferring to the airport for your return flight. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Singapore: City of Gardens & Entertainment",
+  "location": "Singapore",
+  "duration": "4 Days / 3 Nights",
+  "price": 25000,
+  "rating": 4.85,
+  "description": "Experience the ultimate fusion of modern architecture and nature in Singapore. Walk along Orchard Road, view the city from Marina Bay Sands SkyPark, visit the historic Thian Hock Temple, explore Sentosa Island, enjoy Universal Studios, and see exotic birds at Jurong Bird Park.",
+  "highlights": [
+    "Ascend the Marina Bay Sands SkyPark and shop on Orchard Road",
+    "See Suntec City's Fountain of Wealth and the famous Merlion",
+    "Visit the historical Thian Hock Temple and Sentosa Island",
+    "Enjoy a full day at Universal Studios Singapore and visit Jurong Bird Park",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/singapore-explorer/01_Singapore.webp",
+  "region": "international",
+  "categories": [
+    "International",
+    "City Tour",
+    "Historical"
+  ],
+  "priority": 10,
+  "bestTimeToVisit": [
+    "January",
+    "February",
+    "March",
+    "June",
+    "July",
+    "August",
+    "December"
+  ],
+  "showInHero": false,
+  "lat": 1.3521,
+  "lng": 103.8198
+}

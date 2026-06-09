@@ -1,0 +1,63 @@
+{
+  "included": [
+    "Tour Operator",
+    "Online Ticketing",
+    "Travel Insurance",
+    "Hotel Booking",
+    "Car Rental",
+    "Event Organizers"
+  ],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Chikmagalur Full-Day Trekking",
+      "description": "Arrive in Chikmagalur, Karnataka's coffee capital. Embark on a full-day trekking (trucking) adventure up the scenic mountain trails. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 2",
+      "title": "Mysore Heritage & Brindavan Gardens",
+      "description": "Travel to Mysore. Explore the grand Mysore Palace, visit the temple atop Chamundi Hills, and enjoy the evening musical fountains at Brindavan Gardens. (Note: Itinerary details are subject to change)."
+    },
+    {
+      "day": "Day 3",
+      "title": "Coorg Dubare, Nisargadhama & Golden Temple",
+      "description": "Drive to Coorg. Visit the Dubare Elephant Camp, walk through the bamboo forests of Nisargadhama, and marvel at the Namdroling Monastery Golden Temple before departure. (Note: Itinerary details are subject to change)."
+    }
+  ],
+  "gallery": [],
+  "title": "Chikmagalur, Mysore & Coorg Tour",
+  "location": "Karnataka, India",
+  "duration": "3 Days / 2 Nights",
+  "price": 25000,
+  "rating": 4.8,
+  "description": "Experience Karnataka's finest heritage and hill stations. Trek through the mist-covered coffee hills of Chikmagalur, admire the historic palaces of Mysore, and explore the waterfalls, elephant camps, and monasteries of Coorg.",
+  "highlights": [
+    "Enjoy a full-day trekking (trucking) expedition in Chikmagalur",
+    "Tour the magnificent Mysore Palace and Chamundi Hills",
+    "Enjoy the colorful lights and water show at Brindavan Gardens",
+    "Interact with elephants at Dubare Elephant Camp in Coorg",
+    "Walk through Nisargadhama island and visit the Tibetan Golden Temple",
+    "Please note: Itinerary details are subject to change"
+  ],
+  "image": "/data/packages/packages_image/chikmagalur-mysore-coorg/01_MysorePalace.webp",
+  "region": "domestic",
+  "categories": [
+    "Domestic",
+    "Mountain",
+    "Historical",
+    "Adventure Tour"
+  ],
+  "priority": 20,
+  "bestTimeToVisit": [
+    "September",
+    "October",
+    "November",
+    "December",
+    "January",
+    "February",
+    "March"
+  ],
+  "showInHero": false,
+  "lat": 12.2958,
+  "lng": 76.6394
+}
