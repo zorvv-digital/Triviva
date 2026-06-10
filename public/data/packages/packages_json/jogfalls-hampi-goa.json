@@ -21,7 +21,33 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Shimoga Arrival & Jog Falls Sightseeing",
+      "description": "Arrive in Shimoga and drive to Jog Falls. Witness the awe-inspiring, roaring cascades of the Sharavathi River, one of India's tallest plunge waterfalls."
+    },
+    {
+      "day": "Day 2",
+      "title": "Drive to Hampi & Sunset at Hemakuta Hill",
+      "description": "Drive to the ruins of Hampi. Check in and head to Hemakuta Hill to watch a breathtaking sunset over the boulder-strewn landscape and ancient temples."
+    },
+    {
+      "day": "Day 3",
+      "title": "Full Day Exploring UNESCO Ruins of Hampi",
+      "description": "Discover the incredible stone carvings at Vittala Temple, the royal Lotus Mahal, the Elephant Stables, and enjoy a coracle ride on the Tungabhadra River."
+    },
+    {
+      "day": "Day 4",
+      "title": "Travel to Goa & Sunset Beach Shacks",
+      "description": "Embark on a drive to Goa. Check in to your beachside hotel and spend the evening enjoying fresh local seafood and music at a beach shack."
+    },
+    {
+      "day": "Day 5",
+      "title": "Old Goa Heritage & Departure",
+      "description": "Tour the historic Basilica of Bom Jesus in Old Goa. Relax on Calangute Beach for a brief swim before heading to the airport or station for departure."
+    }
+  ],
   "gallery": [],
   "title": "Jog Falls, Hampi & Goa: Waterfalls, Ruins & Beaches",
   "location": "Hampi, Shimoga & Goa, India",

@@ -21,7 +21,33 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Bangalore & Garden City Sightseeing",
+      "description": "Arrive in Bangalore and check into your hotel. In the afternoon, visit Bangalore Palace and stroll through the historic Lalbagh Botanical Gardens."
+    },
+    {
+      "day": "Day 2",
+      "title": "Mysore Royal Palace & Brindavan Gardens",
+      "description": "Drive to Mysore. Visit the Chamundi Hills and the grand, illuminated Mysore Palace. In the evening, enjoy the musical fountain show at Brindavan Gardens."
+    },
+    {
+      "day": "Day 3",
+      "title": "Travel to Coorg & Bylakuppe Namdroling Monastery",
+      "description": "Travel to the misty hills of Coorg. En route, visit the Namdroling Monastery (Golden Temple) in Bylakuppe. Check into your valley resort."
+    },
+    {
+      "day": "Day 4",
+      "title": "Coorg Plantation Tour, Dubare Elephant Camp & Waterfalls",
+      "description": "Interact with elephants at Dubare Elephant Camp, witness the scenic beauty of Abbey Falls, and take a guided walk through a fragrant coffee plantation."
+    },
+    {
+      "day": "Day 5",
+      "title": "Transfer to Hyderabad & Evening Lake Visit",
+      "description": "Travel to the historic city of Hyderabad. In the evening, enjoy a boat ride on Hussain Sagar Lake to see the towering monolithic Buddha statue."
+    }
+  ],
   "gallery": [],
   "title": "Bangalore, Hyderabad & Coorg: Heritage Cities & Coffee Estates",
   "location": "Bangalore, Hyderabad & Coorg, India",

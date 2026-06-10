@@ -21,7 +21,23 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Drive to Coorg & Bylakuppe Golden Temple",
+      "description": "Drive from your starting city to Coorg. En route, stop to marvel at the massive golden statues of Namdroling Monastery in Bylakuppe. Check-in at your resort."
+    },
+    {
+      "day": "Day 2",
+      "title": "Abbey Falls, Coffee Plantations & Mysore Palace",
+      "description": "Visit the beautiful Abbey Falls and take a walk in a lush coffee plantation. In the afternoon, drive to Mysore to tour the historic Mysore Palace and Brindavan Gardens."
+    },
+    {
+      "day": "Day 3",
+      "title": "Wonderla Theme Park Adventure",
+      "description": "Travel to the world-class Wonderla Amusement Park. Spend the day enjoying high-thrill rollercoasters, family rides, and refreshing water slides before departure."
+    }
+  ],
   "gallery": [],
   "title": "Coorg & Mysore: Hills, Heritage & Thrills",
   "location": "Coorg, Mysore & Kochi, India",

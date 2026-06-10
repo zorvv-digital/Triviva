@@ -21,7 +21,38 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Hyderabad & Historic Landmarks",
+      "description": "Arrive in Hyderabad. Check into your hotel and set off to explore the iconic Charminar, Mecca Masjid, and the bustling Laad Bazaar."
+    },
+    {
+      "day": "Day 2",
+      "title": "Full Day at Ramoji Film City",
+      "description": "Spend a full day exploring the cinematic magic of Ramoji Film City, featuring spectacular movie sets, action shows, and themed parks."
+    },
+    {
+      "day": "Day 3",
+      "title": "Golconda Fort & Travel to Hogenakkal",
+      "description": "Tour the acoustic ruins of Golconda Fort and the Qutb Shahi Tombs. Later in the afternoon, proceed on your journey toward Hogenakkal."
+    },
+    {
+      "day": "Day 4",
+      "title": "Coracle Ride at Hogenakkal Falls & Drive to Coorg",
+      "description": "Marvel at the roaring Kaveri river cascades and enjoy a thrilling traditional coracle boat ride. In the afternoon, drive to the misty hills of Coorg."
+    },
+    {
+      "day": "Day 5",
+      "title": "Coorg Valleys, Abbey Falls & Raja's Seat",
+      "description": "Explore Coorg's natural beauty. Visit Abbey Falls, the historic Madikeri Fort, and watch a gorgeous sunset from the hilltop at Raja's Seat."
+    },
+    {
+      "day": "Day 6",
+      "title": "Bylakuppe Golden Temple & Departure",
+      "description": "Visit the peaceful Namdroling Monastery (Golden Temple) in Bylakuppe and walk through local coffee estates before transferring for your departure."
+    }
+  ],
   "gallery": [],
   "title": "Coorg, Hyderabad & Hogenakkal: Hills, Heritage & Waterfalls",
   "location": "Coorg, Hyderabad & Hogenakkal, India",

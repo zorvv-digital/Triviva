@@ -21,7 +21,23 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Wayanad & Spice Forest Walks",
+      "description": "Arrive in Wayanad. Trek to the ancient Edakkal Caves, see the massive Banasura Sagar Dam, and walk through fragrant spice plantations."
+    },
+    {
+      "day": "Day 2",
+      "title": "Drive to Ooty & Lake Boating",
+      "description": "Drive through the Nilgiri forests to Ooty. Visit the Botanical Gardens, take a relaxing boat ride on Ooty Lake, and enjoy the views from Doddabetta Peak."
+    },
+    {
+      "day": "Day 3",
+      "title": "Black Thunder Water Park Fun & Departure",
+      "description": "Drive down to Mettupalayam. Spend a full, fun-filled day in the refreshing wave pools, splash rides, and water slides of Black Thunder Theme Park before departing."
+    }
+  ],
   "gallery": [],
   "title": "Wayanad & Ooty: Scenic Hills & Theme Park Tour",
   "location": "Wayanad & Ooty, India",

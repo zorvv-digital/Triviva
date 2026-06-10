@@ -21,7 +21,28 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Munnar & Misty Tea Estates",
+      "description": "Arrive in Munnar and check in. Walk through the sprawling green tea gardens, visit Mattupetty Dam, and spot rare Nilgiri Tahrs at Eravikulam National Park."
+    },
+    {
+      "day": "Day 2",
+      "title": "Spice Plantations & Periyar Boat Safari in Thekkady",
+      "description": "Drive to Thekkady. Take a guided boat safari on Periyar Lake to watch for wild elephants, and tour a local cardamom and pepper plantation."
+    },
+    {
+      "day": "Day 3",
+      "title": "Wagamon Meadows & Pine Forest to Alleppey",
+      "description": "Explore the quiet hill station of Wagamon, walking through the pine forest and green meadows. Later, drive down to the backwaters of Alleppey."
+    },
+    {
+      "day": "Day 4",
+      "title": "Alleppey Houseboat Cruise & Departure",
+      "description": "Board a traditional luxury houseboat. Cruise through narrow canals lined with coconut palms, enjoy authentic Kerala meals, and transfer for departure."
+    }
+  ],
   "gallery": [],
   "title": "Munnar, Thekkady & Alleppey: Highlands & Backwaters",
   "location": "Munnar, Thekkady & Alleppey, India",

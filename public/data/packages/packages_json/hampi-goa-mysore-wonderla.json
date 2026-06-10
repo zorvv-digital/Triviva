@@ -21,7 +21,38 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Hampi Ruins & Ancient Monuments",
+      "description": "Arrive in Hampi. Spend the day touring the magnificent ruins of the Vijayanagara Empire, including Virupaksha Temple and the iconic Stone Chariot."
+    },
+    {
+      "day": "Day 2",
+      "title": "Journey from Hampi to Goa",
+      "description": "Embark on a scenic drive across the Western Ghats into Goa. Check in to your beach hotel and enjoy a relaxing evening by the sea."
+    },
+    {
+      "day": "Day 3",
+      "title": "Old Goa Churches & Mandovi River Cruise",
+      "description": "Explore the UNESCO-listed Portuguese-era churches of Old Goa. In the evening, enjoy a sunset boat cruise along the scenic Mandovi River."
+    },
+    {
+      "day": "Day 4",
+      "title": "Travel to Mysore & Palace Illumination",
+      "description": "Travel south to the heritage city of Mysore. In the evening, tour the spectacular, illuminated Mysore Palace and the bustling Devraj Market."
+    },
+    {
+      "day": "Day 5",
+      "title": "Thrills at Wonderla Amusement Park",
+      "description": "Enjoy a full day of non-stop action and high-energy excitement at Wonderla, testing your courage on the extreme land and water slides."
+    },
+    {
+      "day": "Day 6",
+      "title": "Mysore Sightseeing & Departure",
+      "description": "Visit Chamundi Hills and the Nandi Bull temple. Shop for traditional Mysore silk and sandalwood souvenirs before transferring for your departure."
+    }
+  ],
   "gallery": [],
   "title": "Hampi, Goa & Mysore: Ruins, Beaches & Palaces",
   "location": "Hampi, Goa & Mysore, India",

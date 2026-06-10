@@ -21,7 +21,23 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Trivandrum & Kanyakumari Sunset",
+      "description": "Arrive in Trivandrum. Visit Padmanabhaswamy Temple, Kovalam Beach, and drive to Kanyakumari in the evening to witness the spectacular sunset."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kanyakumari Sunrise & Travel to Kochi",
+      "description": "Watch the beautiful sunrise at Kanyakumari beach. Visit the Vivekananda Rock Memorial via ferry, then drive to Kochi in the afternoon."
+    },
+    {
+      "day": "Day 3",
+      "title": "Wonderla Theme Park Thrills & Departure",
+      "description": "Spend a full day enjoying the high-thrill rollercoasters, family rides, and massive water pools at Wonderla Kochi before heading for departure."
+    }
+  ],
   "gallery": [],
   "title": "Trivandrum, Kanyakumari & Wonderla: Coast & Theme Park",
   "location": "Trivandrum, Kanyakumari & Kochi, India",

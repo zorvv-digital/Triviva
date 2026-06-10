@@ -21,7 +21,33 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrival in Goa & Beach Relaxation",
+      "description": "Arrive in tropical Goa. Check in to your beach resort and spend the day relaxing on the golden sands of Calangute and Baga beaches, enjoying sunset views."
+    },
+    {
+      "day": "Day 2",
+      "title": "Transfer to Dandeli & White Water Rafting",
+      "description": "Drive to Dandeli, South India's adventure hub. Experience a thrilling white-water rafting expedition on the Kali River and watch for crocodiles."
+    },
+    {
+      "day": "Day 3",
+      "title": "Shimoga Waterfalls & Heritage Sites",
+      "description": "Travel to Shimoga. Visit local waterfalls, historic temples, and enjoy the scenic greenery of the Western Ghats landscape."
+    },
+    {
+      "day": "Day 4",
+      "title": "Drive to Chikmagalur & Mullayanagiri Trek",
+      "description": "Drive to Chikmagalur. Hike up to Mullayanagiri Peak, the highest point in Karnataka, to witness the mist rolling over the coffee estates below."
+    },
+    {
+      "day": "Day 5",
+      "title": "Coffee Estate Walk & Departure",
+      "description": "Take a guided walk through a private coffee estate to learn about bean cultivation. Savor a freshly brewed local coffee cup before departing."
+    }
+  ],
   "gallery": [],
   "title": "Goa, Dandeli & Chikmagalur: Beaches, Rafting & Coffee Hills",
   "location": "Goa, Dandeli & Chikmagalur, India",
