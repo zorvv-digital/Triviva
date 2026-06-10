@@ -21,7 +21,28 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Trivandrum & Kovalam Beach",
+      "description": "Arrive in Trivandrum. Visit the historic Sree Padmanabhaswamy Temple and spend a relaxing evening on the golden sands of Kovalam Beach."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kanyakumari Confluence & Vivekananda Rock",
+      "description": "Drive to Kanyakumari, India's southern tip. Take a ferry to the Vivekananda Rock Memorial and watch the sun set over the confluence of three oceans."
+    },
+    {
+      "day": "Day 3",
+      "title": "Drive to Ponmudi Misty Hills",
+      "description": "Travel to the quiet, winding hills of Ponmudi. Hike through the misty green trails, enjoy mountain views, and watch the sunset from the hills."
+    },
+    {
+      "day": "Day 4",
+      "title": "Thenmala Eco-Tourism & Departure",
+      "description": "Explore Thenmala Eco-Tourism zone. Visit the Thenmala Dam, walk in the deer park, and witness the musical fountain show before your departure."
+    }
+  ],
   "gallery": [],
   "title": "Trivandrum, Kanyakumari & Ponmudi: Southern Hills & Coast",
   "location": "Trivandrum, Kanyakumari & Ponmudi, India",

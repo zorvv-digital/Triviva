@@ -21,7 +21,18 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Mysore & Palace Sightseeing",
+      "description": "Arrive in Mysore. Tour the magnificent Mysore Palace and watch the beautiful musical fountain and light show at Brindavan Gardens in the evening."
+    },
+    {
+      "day": "Day 2",
+      "title": "Travel to Ooty & Blue Hills Sightseeing",
+      "description": "Drive up to the Nilgiri hills to Ooty. Visit the Ooty Botanical Gardens, take a peaceful boat ride on Ooty Lake, and enjoy the view from Doddabetta Peak."
+    }
+  ],
   "gallery": [],
   "title": "Ooty & Mysore: Royal Heritage & Scenic Hills",
   "location": "Mysore & Ooty, India",

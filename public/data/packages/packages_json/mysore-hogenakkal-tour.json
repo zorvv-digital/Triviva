@@ -21,7 +21,18 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Mysore & Royal Heritage",
+      "description": "Arrive in Mysore. Explore the majestic Mysore Palace, Chamundi Hills, and enjoy the musical fountain show at Brindavan Gardens."
+    },
+    {
+      "day": "Day 2",
+      "title": "Coracle Ride at Hogenakkal Falls & Departure",
+      "description": "Drive to Hogenakkal Falls. Enjoy a traditional coracle boat ride right under the massive, roaring waterfalls before returning for your departure."
+    }
+  ],
   "gallery": [],
   "title": "Mysore & Hogenakkal: Palaces & Waterfalls Tour",
   "location": "Mysore & Hogenakkal, India",

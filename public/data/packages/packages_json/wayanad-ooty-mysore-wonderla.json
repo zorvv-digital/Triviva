@@ -21,7 +21,28 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Wayanad & Spice Farms Walk",
+      "description": "Arrive in Wayanad. Explore the ancient rock engravings of Edakkal Caves and see the earthen Banasura Sagar Dam. Walk through cardamom and pepper plantations."
+    },
+    {
+      "day": "Day 2",
+      "title": "Drive to Ooty & Nilgiri Tea Gardens",
+      "description": "Drive to Ooty. Walk in the sprawling tea gardens, visit the Doddabetta Peak for panoramic views, and enjoy a quiet boat ride on Ooty Lake."
+    },
+    {
+      "day": "Day 3",
+      "title": "Mysore Palace & Brindavan Musical Fountains",
+      "description": "Drive down to Mysore. Visit the historic Chamundi Temple and the majestic Mysore Palace. Witness the beautiful evening musical fountain at Brindavan Gardens."
+    },
+    {
+      "day": "Day 4",
+      "title": "Wonderla Theme Park Adventure & Departure",
+      "description": "Drive to Wonderla Amusement Park. Spend a full day of fun on the rollercoasters and water slides before transferring for your departure."
+    }
+  ],
   "gallery": [],
   "title": "Wayanad, Ooty & Mysore: Heritage, Hills & Thrills",
   "location": "Wayanad, Ooty, Mysore & Kochi, India",

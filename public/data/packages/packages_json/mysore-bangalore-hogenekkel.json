@@ -21,7 +21,23 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Bangalore & Palace Sightseeing",
+      "description": "Arrive in Bangalore. Visit the grand Bangalore Palace, explore Vidhana Soudha's external architecture, and stroll through Lalbagh Botanical Gardens."
+    },
+    {
+      "day": "Day 2",
+      "title": "Mysore Palace & Chamundi Hills",
+      "description": "Drive to Mysore. Visit Chamundi Hills for a city panoramic view, tour the spectacular Mysore Palace, and enjoy the evening at Brindavan Gardens."
+    },
+    {
+      "day": "Day 3",
+      "title": "Hogenakkal Coracle Boat Ride & Departure",
+      "description": "Drive to Hogenakkal Falls. Take a thrilling coracle boat ride through the deep gorge and misty Kaveri River cascades before heading for departure."
+    }
+  ],
   "gallery": [],
   "title": "Mysore, Bangalore & Hogenakkal: Royal Cities & Waterfalls",
   "location": "Bangalore, Mysore & Hogenakkal, India",

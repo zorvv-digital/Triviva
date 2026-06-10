@@ -262,7 +262,13 @@ const PackageDetail = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-display text-3xl font-bold text-foreground mb-10">Itinerary</h2>
+                <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+                  <h2 className="font-display text-3xl font-bold text-foreground">Itinerary</h2>
+                  <span className="text-xs md:text-sm font-body text-amber-700 bg-amber-50 dark:bg-amber-950/25 border border-amber-200/50 px-3.5 py-1.5 rounded-full inline-flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                    *Tentative itinerary – subject to change based on local conditions
+                  </span>
+                </div>
                 <div className="flex flex-col gap-6 md:gap-8">
                   {details.itinerary.map((step, i) => (
                     <motion.div

@@ -21,7 +21,28 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Kodaikanal & Scenic Views",
+      "description": "Arrive in the princess of hill stations, Kodaikanal. Walk along the edge of Coaker's Walk and enjoy a relaxing boat cruise on Kodaikanal Lake."
+    },
+    {
+      "day": "Day 2",
+      "title": "Pillar Rocks & Coracle Ride at Hogenakkal Falls",
+      "description": "See Kodaikanal's famous Pillar Rocks. Drive down the hills to Hogenakkal and experience a thrilling coracle boat ride below the roaring Kaveri River falls."
+    },
+    {
+      "day": "Day 3",
+      "title": "Mysore Palace & Brindavan Musical Fountains",
+      "description": "Travel to Mysore. Tour the grand Mysore Palace, visit the sacred Chamundi Temple, and witness the spectacular evening fountain show at Brindavan Gardens."
+    },
+    {
+      "day": "Day 4",
+      "title": "Adventure Day at Wonderla Theme Park & Departure",
+      "description": "Spend a full day of high-thrill amusement at Wonderla, trying the fast waterslides and high-speed coasters before concluding your tour."
+    }
+  ],
   "gallery": [],
   "title": "Kodaikanal, Hogenakkal & Mysore: Lakes, Falls & Palaces",
   "location": "Kodaikanal, Hogenakkal & Mysore, India",

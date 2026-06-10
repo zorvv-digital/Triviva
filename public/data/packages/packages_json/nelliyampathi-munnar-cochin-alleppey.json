@@ -21,7 +21,28 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Nelliyampathi & Orange Orchards",
+      "description": "Arrive in Nelliyampathi. Explore the untouched orange orchards, cloud-kissed tea estates, and witness the deep valley from Seetharkundu viewpoint."
+    },
+    {
+      "day": "Day 2",
+      "title": "Drive to Munnar & Tea Gardens Walk",
+      "description": "Drive to Munnar. Spend the afternoon walking through the lush green tea gardens, visit Mattupetty Dam, and enjoy the sunset at Echo Point."
+    },
+    {
+      "day": "Day 3",
+      "title": "Fort Kochi Heritage Tour to Alleppey",
+      "description": "Travel to Cochin. See the historic Chinese Fishing Nets, St. Francis Church, and Jew Town. In the evening, travel to the backwaters of Alleppey."
+    },
+    {
+      "day": "Day 4",
+      "title": "Alleppey Houseboat Backwater Cruise & Departure",
+      "description": "Board a luxury houseboat. Relax as you glide along the quiet backwater lakes, enjoying traditional Kerala meals on board before your departure."
+    }
+  ],
   "gallery": [],
   "title": "Nelliyampathi, Munnar & Alleppey: Eco-Hills & Houseboat",
   "location": "Nelliyampathi, Munnar & Alleppey, India",

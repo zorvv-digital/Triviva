@@ -21,7 +21,18 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Munnar & Spice & Tea Tour",
+      "description": "Arrive in Munnar. Walk through the misty, rolling tea plantations, visit Mattupetty Dam, and explore Eravikulam National Park."
+    },
+    {
+      "day": "Day 2",
+      "title": "Wonderla Theme Park Adventure & Departure",
+      "description": "Travel to Kochi. Spend a full, high-action day experiencing the incredible amusement rides, water slides, and wave pools at Wonderla before departing."
+    }
+  ],
   "gallery": [],
   "title": "Munnar & Wonderla: Hills & Amusement Thrills",
   "location": "Munnar & Kochi, Kerala",

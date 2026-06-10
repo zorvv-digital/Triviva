@@ -21,7 +21,23 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Kodaikanal & Lake Boating",
+      "description": "Arrive in Kodaikanal, check into your hotel, and head out to see Coaker's Walk and the Pillar Rocks. Enjoy a lovely evening boat cruise on the star-shaped Kodai Lake."
+    },
+    {
+      "day": "Day 2",
+      "title": "Drive to Munnar & Tea Gardens Walk",
+      "description": "Drive across the scenic state boundary to Munnar. Walk through the misty, rolling green tea plantations and listen to your voice echo at Echo Point."
+    },
+    {
+      "day": "Day 3",
+      "title": "Wonderla Amusement Park & Departure",
+      "description": "Travel to Kochi and spend a full day of adventure, splash pools, and high-energy thrills at Wonderla Amusement Park before heading for departure."
+    }
+  ],
   "gallery": [],
   "title": "Kodaikanal & Munnar: Double Hill-Station & Thrills",
   "location": "Kodaikanal, Munnar & Kochi, India",

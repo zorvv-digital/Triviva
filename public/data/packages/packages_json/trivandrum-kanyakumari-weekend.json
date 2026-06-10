@@ -21,7 +21,18 @@
       "text": "Private air-conditioned transfers for the entire route"
     }
   ],
-  "itinerary": [],
+  "itinerary": [
+    {
+      "day": "Day 1",
+      "title": "Arrive in Trivandrum & Kovalam Beach",
+      "description": "Arrive in Trivandrum. Tour Sree Padmanabhaswamy Temple and the local art museum. Spend the late afternoon relaxing on Kovalam Beach."
+    },
+    {
+      "day": "Day 2",
+      "title": "Kanyakumari Rock Memorial & Departure",
+      "description": "Drive to Kanyakumari. Visit the Vivekananda Rock Memorial and Thiruvalluvar Statue. Witness a spectacular sunset at the ocean confluence before departure."
+    }
+  ],
   "gallery": [],
   "title": "Trivandrum & Kanyakumari: Southern Tip Getaway",
   "location": "Trivandrum & Kanyakumari, India",
