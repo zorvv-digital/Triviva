@@ -15,7 +15,6 @@ const DESTINATIONS = [
   "KASHMIR",
   "BALI",
   "KERALA",
-  "GOA",
 ] as const;
 
 const WORD_CONTAINER_VARIANTS = {
@@ -101,7 +100,6 @@ const DESTINATION_IMAGES: Record<string, string> = {
   MALDIVES: "/data/packages/packages_image/maldives-luxury/01-Maldives.webp",
   BALI: "/data/packages/packages_image/bali-bliss/01-Bali.webp",
   KERALA: "/data/packages/packages_image/kerala-backwaters/01-Kerala.webp",
-  GOA: "/data/packages/packages_image/goa-package/01-Goa.webp",
 };
 
 

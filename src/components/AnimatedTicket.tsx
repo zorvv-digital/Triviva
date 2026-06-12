@@ -102,17 +102,6 @@ export const TICKET_DATA = {
     message: "SERENE BACKWATERS CALL, LET'S REJUVENATE IN KERALA!",
     image: "/data/packages/packages_image/kerala-backwaters/01-Kerala.webp",
   },
-  GOA: {
-    fromCity: "KOCHI",
-    fromCode: "COK",
-    toCity: "GOA, INDIA",
-    toCode: "GOI",
-    date: "03 OCT 2026",
-    time: "10:15 AM",
-    passenger: "VIKRAM SEN",
-    message: "SUN-KISSED SHORES AND HERITAGE, WE ARE GOING TO GOA!",
-    image: "/data/packages/packages_image/goa-package/01-Goa.webp",
-  },
 };
 
 const Barcode = () => (
